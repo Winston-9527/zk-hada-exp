@@ -47,3 +47,9 @@ Common to A/B: Merkle depth 2 and the issued tree in the tests contains only the
 Allowed (bounded): Dmax=4 lifecycle; C4 = 73,534 constraints "paper-facing full E2E"; RQ136 depths 2/4/8/20 (artifacts missing locally); RQ137 C6 depth32 sub-benchmark (missing).
 Blocked: production EVM gas; "SNARK enforces threshold accountability"; unqualified C4; full C1–C6 integrated benchmark; first/SOTA; submission-ready.
 The 06-20 paper rewrite (e44847d) postdates V146 (06-16) and contradicts several blocked claims.
+
+## 4. Where D_max = 4 comes from, and what "depth 4" means in the circuit
+- Origin: a design decision in PIVOT_ZK_DAC.md (2026-06-05/06), section 2.1 ("hard bound, enforced by fixed-size Groth16 circuit with padding"), with an illustrative Human→Master→Sub→SubSub→SubSubSub tree. The only quantitative justification recorded is feasibility: 4 × EdDSA-Poseidon (8,086 each, RQ105) fits Groth16, unlike pairing/ECDSA signatures. No workload or threat analysis selects 4 over 3 or 5. The paper's Sybil-amplification argument justifies *a* bound, not this value.
+- Circuit meaning (A/B, [source] generate_chain): 4 fixed certificate slots. Real chain entity0→entity1→entity2→entity3, and the last real entity self-signs the terminal cert. So depth 4 = 4 keys / 3 delegation edges + 1 self-cert, not "Human + 4 levels" as in the PIVOT diagram.
+- Shorter chains are padded with prover-generated keys that self-sign zero-capability certs; nothing in the circuit marks or constrains padding. Consequence: with zero terminal capability, a depth-2/3 chain can only prove action_hash = 0. The 6 "valid" witnesses at depth 2/3 and the 32 forgery mutations (base = depth-2 chain) therefore exercise an empty action.
+- There is no depth field in the cert hash, so "depth enforced in-circuit" only means "at most 4 slots exist".
