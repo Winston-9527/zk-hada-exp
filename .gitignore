@@ -6,3 +6,5 @@ __pycache__/
 *.ptau
 *.pem
 build/
+work/t1/*/build/
+work/t1/*/lib/
