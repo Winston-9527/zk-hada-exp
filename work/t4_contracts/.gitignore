@@ -1,0 +1,3 @@
+node_modules/
+zk/*.zkey
+zk/setup.log

@@ -1,0 +1,20 @@
+{
+ "chain": "anvil 1.5.1 local, hardfork cancun, chainid 31337",
+ "now": 2000000100,
+ "execute_first_gasUsed": 636224,
+ "execute_second_gasUsed": 599212,
+ "replay_status": "revert",
+ "replay_err": "eturned an error response: error code 3: execution reverted: custom error 0x63734faa, data: \"0x63734faa\": NullifierSpent",
+ "reqcap0_status": "revert",
+ "verifyProof_returns": "true",
+ "poseidon7_estimate_tx": 317969,
+ "target_calls": 2,
+ "addresses": {
+  "gate": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+  "verifier": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+  "poseidon": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+  "target": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+  "data1": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+  "data2": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512"
+ }
+}
