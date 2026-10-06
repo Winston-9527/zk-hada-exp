@@ -11,7 +11,7 @@ export async function init() { if (!_e) { _e = await buildEddsa(); _p = await bu
 
 function prng(seed) { let c = 0; return (n) => crypto.createHash("sha256").update(`${seed}:${c++}`).digest().subarray(0, n); }
 
-export async function buildInstance({ D = 4, MD = 16, RD = 16, seed = 0, now = 1000, caps, expiries, nRevoked = 8, issuedExtra = 8, action } = {}) {
+export async function buildInstance({ D = 4, MD = 16, RD = 16, seed = 0, now = 1000, caps, expiries, nRevoked = 8, issuedExtra = 8, action, extraLeaves = [], extraRevoked = [] } = {}) {
   const { eddsa, poseidon } = await init(); const F = eddsa.F; const P = (xs) => F.toObject(poseidon(xs.map(BigInt)));
   const rnd = prng(`zkdac-v2-${D}-${seed}`);
   const ents = [];
@@ -33,6 +33,7 @@ export async function buildInstance({ D = 4, MD = 16, RD = 16, seed = 0, now = 1
   // issued tree (depth MD): our certs at indices 0..D-1 plus random other leaves
   const leaves = new Map();
   for (let i = 0; i < D; i++) leaves.set(BigInt(i * 7919 + 3), cert[i]);
+  extraLeaves.forEach((v, k) => leaves.set(BigInt(200000 + k * 17), BigInt(v)));
   for (let k = 0; k < issuedExtra; k++) leaves.set(BigInt(100000 + k * 31), BigInt("0x" + Buffer.from(rnd(31)).toString("hex")));
   const zero = [0n]; for (let l = 0; l < MD; l++) zero.push(P([zero[l], zero[l]]));
   let level = new Map(leaves); const levels = [level];
@@ -54,6 +55,7 @@ export async function buildInstance({ D = 4, MD = 16, RD = 16, seed = 0, now = 1
   const smt = await newMemEmptyTrie();
   const revokedIds = [];
   for (let k = 0; k < nRevoked; k++) { const id = BigInt("0x" + Buffer.from(rnd(31)).toString("hex")); revokedIds.push(id); await smt.insert(id, 0n); }
+  for (const k of extraRevoked) { revokedIds.push(BigInt(k)); await smt.insert(BigInt(k), 0n); }
   const r_sib = [], r_oldKey = [], r_oldValue = [], r_isOld0 = [];
   for (let i = 0; i < D; i++) {
     const res = await smt.find(cert[i]);
@@ -75,5 +77,5 @@ export async function buildInstance({ D = 4, MD = 16, RD = 16, seed = 0, now = 1
     act_chain_id: act.chain_id, act_verifier: act.verifier, act_method: act.method, act_params_hash: act.params_hash,
     act_amount: act.amount, act_req_cap: act.req_cap, act_nonce: act.nonce,
   });
-  return { input, meta: { D, MD, RD, seed, cert: s(cert), revokedIds: s(revokedIds), P: (xs) => P(xs), smt, ents, revoked_root, issued_root } };
+  return { input, meta: { leaves, levels, zero, merkleIdx: (v) => [...leaves.entries()].find(([, x]) => x === BigInt(v))?.[0], merklePath: (idx) => { let i = BigInt(idx); const sib = [], bit = []; for (let l = 0; l < MD; l++) { sib.push(levels[l].get(i ^ 1n) ?? zero[l]); bit.push(Number(i & 1n)); i >>= 1n; } return { sib, bit }; }, exclusion: async (key) => { const res = await smt.find(BigInt(key)); const sib = res.siblings.map((x) => F.toObject(x)); while (sib.length < RD) sib.push(0n); return { found: res.found, sib, oldKey: res.isOld0 ? 0n : F.toObject(res.notFoundKey), oldValue: res.isOld0 ? 0n : F.toObject(res.notFoundValue), isOld0: res.isOld0 ? 1 : 0 }; }, caps, expiries, now, act, D, MD, RD, seed, cert: s(cert), revokedIds: s(revokedIds), P: (xs) => P(xs), smt, ents, revoked_root, issued_root } };
 }

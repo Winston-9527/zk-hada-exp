@@ -1,0 +1,44 @@
+{
+ "circuit": "baseline committed RQ108 (46,593)",
+ "summary": {
+  "AGREE": 2,
+  "FALSE_ACCEPT": 3
+ },
+ "rows": [
+  {
+   "id": "A00",
+   "name": "control valid, switches=1",
+   "circuit": "accept",
+   "expected": "accept",
+   "class": "AGREE"
+  },
+  {
+   "id": "A01",
+   "name": "forged sig, switches=1",
+   "circuit": "reject",
+   "expected": "reject",
+   "class": "AGREE"
+  },
+  {
+   "id": "A01",
+   "name": "forged sig0, eddsa switches=0",
+   "circuit": "accept",
+   "expected": "reject",
+   "class": "FALSE_ACCEPT"
+  },
+  {
+   "id": "A01",
+   "name": "all switches 0, arbitrary roots",
+   "circuit": "accept",
+   "expected": "reject",
+   "class": "FALSE_ACCEPT"
+  },
+  {
+   "id": "A07",
+   "name": "free nullifier secret: 5 different secrets for the same chain/action",
+   "circuit": "5/5 accepted, 5 distinct nullifiers",
+   "expected": "at most 1 nullifier per holder/action",
+   "class": "FALSE_ACCEPT"
+  }
+ ]
+}

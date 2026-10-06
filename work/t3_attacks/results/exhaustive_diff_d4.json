@@ -1,0 +1,1032 @@
+{
+ "D": 4,
+ "total": 247,
+ "agree": 42,
+ "disagreements": [
+  {
+   "field": "now",
+   "circuit": true,
+   "oracle": false
+  },
+  {
+   "field": "m_sib.0.0",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.0.1",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.0.2",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.0.3",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.0.4",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.0.5",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.0.6",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.0.7",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.0.8",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.0.9",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.0.10",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.0.11",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.0.12",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.0.13",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.0.14",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.0.15",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.0",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.1",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.2",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.3",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.4",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.5",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.6",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.7",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.8",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.9",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.10",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.11",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.12",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.13",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.14",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.1.15",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.0",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.1",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.2",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.3",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.4",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.5",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.6",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.7",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.8",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.9",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.10",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.11",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.12",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.13",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.14",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.2.15",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.0",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.1",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.2",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.3",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.4",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.5",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.6",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.7",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.8",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.9",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.10",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.11",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.12",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.13",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.14",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_sib.3.15",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.0",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.1",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.2",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.3",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.4",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.5",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.6",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.7",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.8",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.9",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.10",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.11",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.12",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.13",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.14",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.0.15",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.0",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.1",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.2",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.3",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.4",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.5",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.6",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.7",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.8",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.9",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.10",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.11",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.12",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.13",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.14",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.1.15",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.0",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.1",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.2",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.3",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.4",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.5",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.6",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.7",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.8",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.9",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.10",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.11",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.12",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.13",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.14",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.2.15",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.0",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.1",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.2",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.3",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.4",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.5",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.6",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.7",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.8",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.9",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.10",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.11",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.12",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.13",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.14",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "m_bit.3.15",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.0",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.1",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.2",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.3",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.4",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.5",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.6",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.7",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.8",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.9",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.10",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.11",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.12",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.13",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.14",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.0.15",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.0",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.1",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.2",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.3",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.4",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.5",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.6",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.7",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.8",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.9",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.10",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.11",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.12",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.13",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.14",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.1.15",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.0",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.1",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.2",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.3",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.4",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.5",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.6",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.7",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.8",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.9",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.10",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.11",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.12",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.13",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.14",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.2.15",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.0",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.1",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.2",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.3",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.4",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.5",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.6",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.7",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.8",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.9",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.10",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.11",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.12",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.13",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.14",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_sib.3.15",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_oldKey.0",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_oldKey.1",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_oldKey.2",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_oldKey.3",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_oldValue.0",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_oldValue.1",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_oldValue.2",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_oldValue.3",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_isOld0.0",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_isOld0.1",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_isOld0.2",
+   "circuit": false,
+   "oracle": true
+  },
+  {
+   "field": "r_isOld0.3",
+   "circuit": false,
+   "oracle": true
+  }
+ ]
+}
