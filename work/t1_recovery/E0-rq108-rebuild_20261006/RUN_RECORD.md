@@ -9,3 +9,9 @@
 - Not done: witness / zkey / proof / verify (no historical zkey; needs fresh ptau + setup), so 'source->r1cs' is closed, the rest of the chain is open.
 - Claims: supports "RQ108 has 46,585 constraints"; does NOT support paper's 46,593 (still UNSOURCED), nor any security claim (circuit has the T2 vulnerabilities).
 Manifest: see rebuild output `build/MANIFEST.sha256` (not committed; r1cs sha256 a26c62ffde3657e41b1c77f583e0f6261400e06fb61796acbe6de8a174857d39, tgz 9f80fa85d9c186589998d15e6dcb8ec59a6ed3fe1ec3cb2f753e493d94dd46b6).
+
+## Correction (same day, see E0-rq108-committed-variant_20261006)
+The committed 412-line .circom is NOT the generator's output. Two distinct circuits exist:
+- generator variant (335 lines, `enabled` hardwired to 1): 46,585 constraints, 69 private inputs  <- RQ108 compile_metrics
+- committed variant (412 lines, 12 private `*_enabled` switches): **46,593 constraints**, 81 private inputs <- the paper's C5 number
+So 46,593 is sourced (committed variant) but that variant has the switch vulnerability; it is not the circuit that RQ108's recorded metrics describe.

@@ -1,0 +1,11 @@
+witness d=4 OK
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+witness d=2 OK
+[32;22m[INFO]  [39;1msnarkJS[0m: OK!
+a26c62ffde3657e41b1c77f583e0f6261400e06fb61796acbe6de8a174857d39  /private/tmp/claude-501/-Users-siyuan-Developer-ZK-HADA--claude-worktrees-paper-experiment-repo-a19e50/3d442c9a-7276-4911-af3d-25c8c501e8e8/scratchpad/zk-hada-exp/work/t1_recovery/E0-rq108-witness_20261006/../E0-rq108-rebuild_20261006/build/out/rq108_fixed.r1cs
+7697316d42f8113eb4004d2e83374a677f4fbff239437921826cfd2bef9d8cb7  circuit.zkey
+02cb78a7f53aaa9baf6efce97660e5189597c2c463206126a1b67f9afcecb1ba  vk.json
+b1f58b3307963395096cd984c2041cd96a6ec18cfa3eb7936dc376a3f08f4d88  proof_d4.json
+af1ef0b605038a72821ed9e8ae8e73c7611be4ee778b82b3d309026bd47f402a  public_d4.json
+4225a68a8751b690bc6787d7bc2ed31758debf621fd0c4c72b2a74baf0094ce3  input_d4.json
+3a907623b834d1d04075ca506504b8337248e26c5a29687c85c4118fa232b798  w_d4.wtns
