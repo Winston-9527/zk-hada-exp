@@ -8,7 +8,7 @@ v2 results are kept unchanged in ../results (index: ../../ARCHIVE_pre_v3.md).
 ## Summary (D=4; A02b also D=1..3) — 62 cases
 AGREE_REJECT 38, AGREE_ACCEPT 6, BAD_WITNESS_ONLY 4, FALSE_ACCEPT 13, COMPLETENESS_GAP 1.
 - Statement-level attacks rejected as in v2: A02–A09, A11b (attacker swaps ctx_hash to keccak(Y) without the holder secret), A12a/b, A13, A15, A16.
-- FALSE_ACCEPT pre-registered as POLICY (5): A10 replay, A11-req prover-chosen req_cap=0, A12c stale revoked_root ×3, A14 now=0. All closed at the contract in #18.
+- FALSE_ACCEPT pre-registered as POLICY (6): A10 replay, A11-req prover-chosen req_cap=0, A12c stale revoked_root ×3, A14 now=0. All closed at the contract in #18. (Corrected 2026-10-07: first version said 5; 6 + 7 A11a = 13.)
 - **FALSE_ACCEPT NOT pre-registered as POLICY (7): A11a** — the public inputs stay those of action X while the verifier executes action Y
   (one of chain id / verifier address / method / target / params / amount / nonce changed). The circuit cannot see which action is executed in layout C; binding
   ctx_hash to the executed action is by construction the contract's job (it computes ctx_hash itself). The addendum classified A11a as a plain "reject" — that
