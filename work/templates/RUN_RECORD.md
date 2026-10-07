@@ -1,0 +1,11 @@
+# Run record: <exp_id>
+- Date / operator(agent):
+- Issue / PR:
+- Source commit (zk-hada-exp):          Historical commit (if used):
+- Environment: OS / circom / snarkjs / node / forge / ptau:
+- Command(s) (verbatim):
+- Inputs + seeds (with sha256):
+- Outputs (with sha256, see MANIFEST.sha256):
+- Results:
+- Failures / anomalies / deviations:
+- Claims supported / not supported:
