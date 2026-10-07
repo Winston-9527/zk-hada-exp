@@ -1,0 +1,17 @@
+{
+ "D": 4,
+ "total": 241,
+ "agree": 36,
+ "disagreements_by_field": {
+  "now (circuit accept, oracle reject)": 1,
+  "m_sib (circuit reject, oracle accept)": 64,
+  "m_bit (circuit reject, oracle accept)": 64,
+  "r_sib (circuit reject, oracle accept)": 64,
+  "r_oldKey (circuit reject, oracle accept)": 4,
+  "r_oldValue (circuit reject, oracle accept)": 4,
+  "r_isOld0 (circuit reject, oracle accept)": 4
+ },
+ "statement_level_disagreements": [
+  "now (circuit accept, oracle reject)"
+ ]
+}

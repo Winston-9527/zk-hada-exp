@@ -146,4 +146,25 @@ contract VariantC is VariantBase {
         ZkDacGateBase.Proof memory p = _proof(0); uint256 nf = fx.readUint(_k(0, "nullifier"));
         vm.expectRevert(ZkDacGateBase.InvalidProof.selector); gate.execute(p, iR, rR, nf, NOW, a);
     }
+    // T3 v3 A11a closed at the contract: a proof for action X must not authorize a different executed action Y (one field changed at a time).
+    function _expectInvalid(ZkDacGateBase.Action memory a) internal {
+        (uint256 iR, uint256 rR) = _root(0); ZkDacGateBase.Proof memory p = _proof(0); uint256 nf = fx.readUint(_k(0, "nullifier"));
+        vm.expectRevert(ZkDacGateBase.InvalidProof.selector); gate.execute(p, iR, rR, nf, NOW, a);
+    }
+    function test_A11a_otherChainId() public { vm.chainId(137); _expectInvalid(_act(0)); }
+    function test_A11a_otherTarget() public { ZkDacGateBase.Action memory a = _act(0); a.target = address(new MockTarget()); _expectInvalid(a); }
+    function test_A11a_otherParams() public { ZkDacGateBase.Action memory a = _act(0); a.params = hex"01"; _expectInvalid(a); }
+    function test_A11a_otherNonce() public { ZkDacGateBase.Action memory a = _act(0); a.nonce = 999; _expectInvalid(a); }
+    function test_A11a_otherMethodSameCap() public {
+        bytes4 m2 = 0x095ea7b3; vm.prank(OP); gate.setMethod(m2, uint32(fx.readUint(".reqCap")), true);   // enabled, same required cap
+        ZkDacGateBase.Action memory a = _act(0); a.method = m2; _expectInvalid(a);
+    }
+    function test_A11a_otherVerifierAddress() public {
+        // same code, same roots, deployed at a different address: ctx_hash includes address(this)
+        address other = address(0xBEEF0001);
+        deployCodeTo("ZkDacGate.sol:ZkDacGateC", abi.encode(ver, OP, fx.readUint(".issuedRoot"), fx.readUint(".R0"), uint64(300), uint64(300), uint64(60)), other);
+        vm.prank(OP); ZkDacGateBase(other).setMethod(METHOD, uint32(fx.readUint(".reqCap")), true);
+        (uint256 iR, uint256 rR) = _root(0); ZkDacGateBase.Proof memory p = _proof(0); uint256 nf = fx.readUint(_k(0, "nullifier"));
+        vm.expectRevert(ZkDacGateBase.InvalidProof.selector); ZkDacGateBase(other).execute(p, iR, rR, nf, NOW, _act(0));
+    }
 }
