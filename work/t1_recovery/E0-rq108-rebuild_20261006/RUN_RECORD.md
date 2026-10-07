@@ -15,3 +15,8 @@ The committed 412-line .circom is NOT the generator's output. Two distinct circu
 - generator variant (335 lines, `enabled` hardwired to 1): 46,585 constraints, 69 private inputs  <- RQ108 compile_metrics
 - committed variant (412 lines, 12 private `*_enabled` switches): **46,593 constraints**, 81 private inputs <- the paper's C5 number
 So 46,593 is sourced (committed variant) but that variant has the switch vulnerability; it is not the circuit that RQ108's recorded metrics describe.
+
+## Correction (2026-10-07)
+"the generator's templates are raw strings that carry `{{`, so its direct output is not valid Circom" is **wrong**: circom 2.2.3 accepts `{{`/`}}` as written.
+The 46,585 vs 46,593 split is a version difference (RQ108 @ f494963 vs @ 7966d60/HEAD after commit 11b988b), established with an exact source-hash match in
+`work/t1/FINDINGS.md`. The constraint counts and r1cs hashes reported here are unaffected.
