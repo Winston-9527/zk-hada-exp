@@ -1,0 +1,1 @@
+{"name":"e0-rq108-witness","private":true,"type":"module","dependencies":{"@zk-kit/baby-jubjub":"1.0.3","@zk-kit/eddsa-poseidon":"1.0.5","poseidon-lite":"0.3.0"}}
