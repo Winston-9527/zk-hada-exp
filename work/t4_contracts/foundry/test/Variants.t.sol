@@ -2,11 +2,12 @@
 pragma solidity ^0.8.24;
 import {Test, console2} from "forge-std/Test.sol";
 import {stdJson} from "forge-std/StdJson.sol";
-import {ZkDacGateBase, ZkDacGate, ZkDacGateA, ZkDacGateB} from "../src/ZkDacGate.sol";
+import {ZkDacGateBase, ZkDacGate, ZkDacGateA, ZkDacGateB, ZkDacGateC} from "../src/ZkDacGate.sol";
 import {PoseidonOpt} from "../src/PoseidonOpt.sol";
 import {Groth16Verifier} from "../src/Groth16Verifier.sol";
 import {Groth16VerifierA} from "../src/Groth16VerifierA.sol";
 import {Groth16VerifierB} from "../src/Groth16VerifierB.sol";
+import {Groth16VerifierC} from "../src/Groth16VerifierC.sol";
 import {MockTarget} from "./Targets.sol";
 
 /// Same behavioural checks + gas breakdown for the three public-input layouts (v2 / A / B), each with its own real proofs.
@@ -120,5 +121,29 @@ contract VariantB is VariantBase {
     }
     function _verifyDirect(ZkDacGateBase.Proof memory p, uint256[] memory s) internal view override returns (bool) {
         return Groth16VerifierB(ver).verifyProof(p.a, p.b, p.c, [s[0], s[1], s[2], s[3], s[4], s[5], s[6], s[7], s[8], s[9], s[10]]);
+    }
+}
+contract VariantC is VariantBase {
+    using stdJson for string;
+    function variant() internal pure override returns (string memory) { return "C"; }
+    function _deployGate(uint256 issued, uint256 r0) internal override {
+        ver = address(new Groth16VerifierC());
+        deployCodeTo("ZkDacGate.sol:ZkDacGateC", abi.encode(ver, OP, issued, r0, uint64(300), uint64(300), uint64(60)), fx.readAddress(".gate"));
+        gate = ZkDacGateBase(fx.readAddress(".gate"));
+    }
+    function _verifyDirect(ZkDacGateBase.Proof memory p, uint256[] memory s) internal view override returns (bool) {
+        return Groth16VerifierC(ver).verifyProof(p.a, p.b, p.c, [s[0], s[1], s[2], s[3], s[4], s[5]]);
+    }
+    function test_ctxHashMatchesProof() public view {
+        // public signal order fixed by circuit declaration order: issued, revoked, nullifier, now, ctx_hash, req_cap
+        uint256[] memory s = _pubs(0);
+        assertEq(ZkDacGateC(address(gate)).ctxHash(_act(0)), s[4]);
+        assertEq(s[5], fx.readUint(".reqCap"));
+        assertEq(s[2], fx.readUint(_k(0, "nullifier")));
+    }
+    function test_amountSubstitutionRejected() public {
+        (uint256 iR, uint256 rR) = _root(0); ZkDacGateBase.Action memory a = _act(0); a.amount = 1e18;
+        ZkDacGateBase.Proof memory p = _proof(0); uint256 nf = fx.readUint(_k(0, "nullifier"));
+        vm.expectRevert(ZkDacGateBase.InvalidProof.selector); gate.execute(p, iR, rR, nf, NOW, a);
     }
 }

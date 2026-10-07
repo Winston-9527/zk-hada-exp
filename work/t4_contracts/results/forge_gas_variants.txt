@@ -1,18 +1,16 @@
+  [C] public inputs 6
+  [C] verifyProof 229468
+  [C] execute #1 (excl. intrinsic) 319296
+  [C] execute #2 (excl. intrinsic) 256396
   [B] public inputs 11
   [B] verifyProof 263433
   [B] execute #1 (excl. intrinsic) 353570
   [B] execute #2 (excl. intrinsic) 290670
-  [B] calldata bytes 644
-  [B] intrinsic+calldata (EIP-2028) 28028
   [v2] public inputs 5
   [v2] verifyProof 222675
   [v2] execute #1 (excl. intrinsic) 637761
   [v2] execute #2 (excl. intrinsic) 567361
-  [v2] calldata bytes 644
-  [v2] intrinsic+calldata (EIP-2028) 28052
   [A] public inputs 4
   [A] verifyProof 215965
   [A] execute #1 (excl. intrinsic) 676408
   [A] execute #2 (excl. intrinsic) 606008
-  [A] calldata bytes 644
-  [A] intrinsic+calldata (EIP-2028) 28028

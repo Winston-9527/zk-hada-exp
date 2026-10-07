@@ -17,7 +17,8 @@ def run(args, cwd=HERE, ok=True, env=None):
 # ---- deployment plan (identical nonce sequence on every client => identical addresses) ----
 PLAN = [("v2", "d1"), ("v2", "d2"), ("v2", "pos"), ("v2", "ver"), ("v2", "tgt"), ("v2", "gate"),
         ("A", "d1"), ("A", "d2"), ("A", "pos"), ("A", "ver"), ("A", "tgt"), ("A", "gate"),
-        ("B", "ver"), ("B", "tgt"), ("B", "gate")]
+        ("B", "ver"), ("B", "tgt"), ("B", "gate"),
+        ("C", "ver"), ("C", "tgt"), ("C", "gate")]
 addr = {}
 for n, key in enumerate(PLAN):
     addr[key] = run(["cast", "compute-address", DEPLOYER, "--nonce", str(n)]).stdout.split()[-1]
@@ -25,7 +26,7 @@ for n, key in enumerate(PLAN):
 # ---- fixtures: generated once, used on all clients ----
 NOW = int(time.time()) - 30
 fx = {}
-for v in ["v2", "A", "B"]:
+for v in ["v2", "A", "B", "C"]:
     out = os.path.join(SCRATCH, f"chainfx_{v}.json")
     env = dict(os.environ, VARIANT=v, GATE=addr[(v, "gate")], TARGET=addr[(v, "tgt")], NOW=str(NOW), CHAIN_ID=str(CHAIN_ID), OUT=out)
     run(["node", "gen_fixtures.mjs"], env=env)
@@ -72,15 +73,15 @@ def client_run(name, start_cmd, rpc, fund_from=None, pre=None):
             if key == "d1": got[(v, key)] = send("--create", init(pd["d1"]))["contractAddress"]
             elif key == "d2": got[(v, key)] = send("--create", init(pd["d2"]))["contractAddress"]
             elif key == "pos": got[(v, key)] = create("src/PoseidonOpt.sol:PoseidonOpt", str(pd["t"]), str(pd["nrp"]), got[(v, "d1")], got[(v, "d2")], str(pd["len1"]), str(pd["len2"]))
-            elif key == "ver": got[(v, key)] = create({"v2": "src/Groth16Verifier.sol:Groth16Verifier", "A": "src/Groth16VerifierA.sol:Groth16VerifierA", "B": "src/Groth16VerifierB.sol:Groth16VerifierB"}[v])
+            elif key == "ver": got[(v, key)] = create({"v2": "src/Groth16Verifier.sol:Groth16Verifier", "A": "src/Groth16VerifierA.sol:Groth16VerifierA", "B": "src/Groth16VerifierB.sol:Groth16VerifierB", "C": "src/Groth16VerifierC.sol:Groth16VerifierC"}[v])
             elif key == "tgt": got[(v, key)] = create("test/Targets.sol:MockTarget")
             elif key == "gate":
                 roots = [str(int(f["issuedRoot"], 16)), str(int(f["R0"], 16)), WIN, WIN, SKEW]
-                if v == "B": got[(v, key)] = create("src/ZkDacGate.sol:ZkDacGateB", got[(v, "ver")], DEPLOYER, *roots)
+                if v in ("B", "C"): got[(v, key)] = create(f"src/ZkDacGate.sol:ZkDacGate{v}", got[(v, "ver")], DEPLOYER, *roots)
                 else: got[(v, key)] = create(f"src/ZkDacGate.sol:{'ZkDacGate' if v == 'v2' else 'ZkDacGateA'}", got[(v, "ver")], got[(v, "pos")], DEPLOYER, *roots)
             assert got[(v, key)].lower() == addr[(v, key)].lower(), (v, key, got[(v, key)], addr[(v, key)])
         sig = "execute((uint256[2],uint256[2][2],uint256[2]),uint256,uint256,uint256,uint64,(address,bytes4,uint256,uint256,bytes))"
-        for v in ["v2", "A", "B"]:
+        for v in ["v2", "A", "B", "C"]:
             f = fx[v]; gate = addr[(v, "gate")]
             send(gate, "setMethod(bytes4,uint32,bool)", f["method"], str(f["reqCap"]), "true")
             def args(i):

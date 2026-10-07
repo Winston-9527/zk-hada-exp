@@ -3,6 +3,8 @@
 //   v2: 5 public inputs (issued, revoked, digest7, nullifier, now)   circuit t2_circuit_fix/zkdac_v2 main_d2
 //   A : 4 public inputs (issued, revoked, digest8(ctx, now), nullifier) circuit variants/main_A_d2
 //   B : 11 public inputs (issued, revoked, nullifier, now, 7 ctx fields) circuit variants/main_B_d2
+//   C : 6 public inputs (issued, revoked, nullifier, now, ctx_hash, req_cap)  circuit variants/main_C_d2
+//       ctx_hash = keccak256(abi.encode(chainid, gate, method, target, params, amount, nonce)) >> 8 (computed by the contract)
 import { buildInstance, R, init } from "../t2_circuit_fix/zkdac_v2/scripts/lib.mjs";
 import * as snarkjs from "snarkjs"; import consts from "./node_modules/circomlibjs/src/poseidon_constants_opt.js"; import { ethers } from "ethers"; import fs from "fs";
 const V = process.env.VARIANT ?? "v2", D = 2;
@@ -10,6 +12,7 @@ const CFG = {
   v2: { wasm: "../t2_circuit_fix/zkdac_v2/build/d2/main_d2_js/main_d2.wasm", zkey: "zk/d2.zkey", poseidonT: 8 },
   A: { wasm: "variants/build/main_A_d2_js/main_A_d2.wasm", zkey: "variants/build/A.zkey", poseidonT: 9 },
   B: { wasm: "variants/build/main_B_d2_js/main_B_d2.wasm", zkey: "variants/build/B.zkey", poseidonT: null },
+  C: { wasm: "variants/build/main_C_d2_js/main_C_d2.wasm", zkey: "variants/build/C.zkey", poseidonT: null },
 }[V];
 export const GATE = process.env.GATE ?? "0x000000000000000000000000000000000000dAC1", TARGET = process.env.TARGET ?? "0x000000000000000000000000000000000000Ba5e";
 const CHAIN = BigInt(process.env.CHAIN_ID ?? 31337), METHOD = 0xa9059cbbn, REQ = 1n, NOW = Number(process.env.NOW ?? 1000);
@@ -22,6 +25,15 @@ function adapt(input, meta) {               // v2 instance -> variant input
     input.action_digest = d8.toString(); input.nullifier = meta.P([1952805748n, BigInt(input.holder_sk), d8]).toString();
   }
   if (V === "B") delete input.action_digest;
+  if (V === "C") {
+    const a = meta.act;
+    const enc = ethers.utils.defaultAbiCoder.encode(["uint256", "address", "bytes4", "address", "bytes", "uint256", "uint256"],
+      [a.chain_id, GATE.toLowerCase(), ethers.utils.hexZeroPad("0x" + a.method.toString(16), 4), TARGET.toLowerCase(), PARAMS, a.amount, a.nonce]);
+    const ctx = BigInt(ethers.utils.keccak256(enc)) >> 8n;
+    const d = meta.P([ctx, a.req_cap]);
+    for (const k of ["action_digest", "act_chain_id", "act_verifier", "act_method", "act_params_hash", "act_amount", "act_nonce"]) delete input[k];
+    input.ctx_hash = ctx.toString(); input.nullifier = meta.P([1952805748n, BigInt(input.holder_sk), d]).toString();
+  }
   return input;
 }
 async function prove(name, opts) {
@@ -30,7 +42,7 @@ async function prove(name, opts) {
   const t0 = performance.now(); const { proof, publicSignals } = await snarkjs.groth16.fullProve(input, CFG.wasm, CFG.zkey); const ms = performance.now() - t0;
   const cd = JSON.parse("[" + (await snarkjs.groth16.exportSolidityCallData(proof, publicSignals)) + "]");
   console.error(V, name, "prove ms", ms.toFixed(0));
-  return { name, a: cd[0], b: cd[1], c: cd[2], pub: cd[3], nullifier: input.nullifier, now: String(input.now), digest: input.action_digest ?? null,
+  return { name, a: cd[0], b: cd[1], c: cd[2], pub: cd[3], nullifier: input.nullifier, now: String(input.now), digest: input.action_digest ?? null, ctxHash: input.ctx_hash ?? null,
            nonce: String(opts.action.nonce), amount: String(opts.action.amount ?? 100n), proveMs: Math.round(ms), meta };
 }
 function poseidonData(t) {   // constants as words: C, S, M (row-major M[j][i]), P; split into two data contracts (< 24 KB each)

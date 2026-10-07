@@ -5,6 +5,7 @@ interface IPoseidon { function hash(uint256[] calldata) external view returns (u
 interface IAgentTarget { function onAuthorized(bytes4 method, uint256 amount, bytes calldata params) external; }
 interface IVerifier4 { function verifyProof(uint[2] calldata, uint[2][2] calldata, uint[2] calldata, uint[4] calldata) external view returns (bool); }
 interface IVerifier5 { function verifyProof(uint[2] calldata, uint[2][2] calldata, uint[2] calldata, uint[5] calldata) external view returns (bool); }
+interface IVerifier6 { function verifyProof(uint[2] calldata, uint[2][2] calldata, uint[2] calldata, uint[6] calldata) external view returns (bool); }
 interface IVerifier11 { function verifyProof(uint[2] calldata, uint[2][2] calldata, uint[2] calldata, uint[11] calldata) external view returns (bool); }
 
 /// Verifier-side obligations that the ZK-DAC circuit cannot enforce on its own (issue #18):
@@ -129,5 +130,19 @@ contract ZkDacGateB is ZkDacGateBase {
     function _proofOk(Proof calldata pr, uint256 iRoot, uint256 rRoot, uint256 nullifier, uint64 nowTs, Action calldata act) internal view override returns (bool) {
         uint256[7] memory f = _ctx(act);
         return verifier.verifyProof(pr.a, pr.b, pr.c, [iRoot, rRoot, nullifier, uint256(nowTs), f[0], f[1], f[2], f[3], f[4], f[5], f[6]]);
+    }
+}
+
+/// Variant C: the contract keccak-hashes the context the circuit never opens (Semaphore-style `keccak >> 8`);
+/// public inputs: issued_root, revoked_root, nullifier, now, ctx_hash, req_cap (6 total); no Poseidon on-chain.
+contract ZkDacGateC is ZkDacGateBase {
+    IVerifier6 public immutable verifier;
+    constructor(address v, address op, uint256 iRoot, uint256 rRoot, uint64 iWin, uint64 rWin, uint64 skew)
+        ZkDacGateBase(op, iRoot, rRoot, iWin, rWin, skew) { verifier = IVerifier6(v); }
+    function ctxHash(Action calldata act) public view returns (uint256) {
+        return uint256(keccak256(abi.encode(block.chainid, address(this), act.method, act.target, act.params, act.amount, act.nonce))) >> 8;
+    }
+    function _proofOk(Proof calldata pr, uint256 iRoot, uint256 rRoot, uint256 nullifier, uint64 nowTs, Action calldata act) internal view override returns (bool) {
+        return verifier.verifyProof(pr.a, pr.b, pr.c, [iRoot, rRoot, nullifier, uint256(nowTs), ctxHash(act), uint256(requiredCap[act.method])]);
     }
 }
