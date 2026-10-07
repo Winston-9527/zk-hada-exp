@@ -1,5 +1,5 @@
   verifyProof (first call in tx, cold account, 5 public inputs) 222627
-  actionDigest Poseidon(7) on-chain 308854
-  execute total (excl. intrinsic/calldata) 598324
+  actionDigest Poseidon(7) on-chain (incl. call into gate) 334455
+  execute total (excl. intrinsic/calldata) 623967
   calldata bytes 644
-  intrinsic + calldata gas (EIP-2028) 28040
+  intrinsic + calldata gas (EIP-2028) 28052
