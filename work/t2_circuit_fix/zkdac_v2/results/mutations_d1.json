@@ -1,0 +1,357 @@
+{
+ "D": 1,
+ "field_mutations": [
+  {
+   "field": "issued_root",
+   "accepted": false
+  },
+  {
+   "field": "revoked_root",
+   "accepted": false
+  },
+  {
+   "field": "action_digest",
+   "accepted": false
+  },
+  {
+   "field": "nullifier",
+   "accepted": false
+  },
+  {
+   "field": "now",
+   "accepted": true
+  },
+  {
+   "field": "ent_Ax[0]",
+   "accepted": false
+  },
+  {
+   "field": "ent_Ax[1]",
+   "accepted": false
+  },
+  {
+   "field": "ent_Ay[0]",
+   "accepted": false
+  },
+  {
+   "field": "ent_Ay[1]",
+   "accepted": false
+  },
+  {
+   "field": "sig_S[0]",
+   "accepted": false
+  },
+  {
+   "field": "sig_R8x[0]",
+   "accepted": false
+  },
+  {
+   "field": "sig_R8y[0]",
+   "accepted": false
+  },
+  {
+   "field": "cap[0]",
+   "accepted": false
+  },
+  {
+   "field": "expiry[0]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][0]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][1]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][2]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][3]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][4]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][5]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][6]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][7]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][8]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][9]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][10]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][11]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][12]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][13]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][14]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][15]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][0]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][1]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][2]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][3]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][4]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][5]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][6]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][7]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][8]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][9]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][10]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][11]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][12]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][13]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][14]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][15]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][0]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][1]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][2]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][3]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][4]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][5]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][6]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][7]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][8]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][9]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][10]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][11]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][12]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][13]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][14]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][15]",
+   "accepted": false
+  },
+  {
+   "field": "r_oldKey[0]",
+   "accepted": false
+  },
+  {
+   "field": "r_oldValue[0]",
+   "accepted": false
+  },
+  {
+   "field": "r_isOld0[0]",
+   "accepted": false
+  },
+  {
+   "field": "holder_sk",
+   "accepted": false
+  },
+  {
+   "field": "act_chain_id",
+   "accepted": false
+  },
+  {
+   "field": "act_verifier",
+   "accepted": false
+  },
+  {
+   "field": "act_method",
+   "accepted": false
+  },
+  {
+   "field": "act_params_hash",
+   "accepted": false
+  },
+  {
+   "field": "act_amount",
+   "accepted": false
+  },
+  {
+   "field": "act_req_cap",
+   "accepted": false
+  },
+  {
+   "field": "act_nonce",
+   "accepted": false
+  }
+ ],
+ "semantic": [
+  {
+   "name": "holder_sk_alias_plus_order",
+   "accepted": false
+  },
+  {
+   "name": "nullifier_other_secret",
+   "accepted": false
+  },
+  {
+   "name": "nullifier_pubkey_derived_no_secret",
+   "accepted": false
+  },
+  {
+   "name": "action_method_changed_digest_stale",
+   "accepted": false
+  },
+  {
+   "name": "action_amount_changed_digest_stale",
+   "accepted": false
+  },
+  {
+   "name": "action_digest_other_chain_id",
+   "accepted": false
+  },
+  {
+   "name": "expired_now_after_expiry",
+   "accepted": false
+  },
+  {
+   "name": "now_equals_terminal_expiry_boundary_EXPECT_ACCEPT",
+   "accepted": true
+  },
+  {
+   "name": "now_huge_field_wrap",
+   "accepted": false
+  },
+  {
+   "name": "merkle_bit_not_boolean",
+   "accepted": false
+  },
+  {
+   "name": "action_req_cap_not_covered_by_terminal",
+   "accepted": false
+  },
+  {
+   "name": "revoked_cert0_stale_nonmembership_proof",
+   "accepted": false
+  },
+  {
+   "name": "revoked_cert0_forged_exclusion_isOld0",
+   "accepted": false
+  }
+ ],
+ "summary": {
+  "field_mutations": 73,
+  "field_accepted": 1,
+  "semantic": 13,
+  "semantic_accepted": 1
+ }
+}
