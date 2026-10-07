@@ -1,0 +1,72 @@
+{
+ "valid": {
+  "1": true,
+  "2": true,
+  "3": true,
+  "4": true
+ },
+ "a13b": [
+  {
+   "shared_low_bits": 17,
+   "extra_revoked": 3,
+   "circuit": true,
+   "oracle": true
+  },
+  {
+   "shared_low_bits": 40,
+   "extra_revoked": 3,
+   "circuit": true,
+   "oracle": true
+  },
+  {
+   "shared_low_bits": 200,
+   "extra_revoked": 3,
+   "circuit": true,
+   "oracle": true
+  }
+ ],
+ "revocation": [
+  {
+   "case": "revoke cert 0: stale witness vs new root",
+   "accepted": false
+  },
+  {
+   "case": "revoke cert 0: honest re-proof",
+   "result": "no witness exists"
+  },
+  {
+   "case": "revoke cert 0: predecessor leaf in new tree",
+   "accepted": false
+  },
+  {
+   "case": "revoke cert 1: stale witness vs new root",
+   "accepted": false
+  },
+  {
+   "case": "revoke cert 1: honest re-proof",
+   "result": "no witness exists"
+  },
+  {
+   "case": "revoke cert 1: predecessor leaf in new tree",
+   "accepted": false
+  },
+  {
+   "case": "revoke cert 3: stale witness vs new root",
+   "accepted": false
+  },
+  {
+   "case": "revoke cert 3: honest re-proof",
+   "result": "no witness exists"
+  },
+  {
+   "case": "revoke cert 3: predecessor leaf in new tree",
+   "accepted": false
+  }
+ ],
+ "exhaustive_d2": {
+  "mutations": 173,
+  "accepted": [
+   "now"
+  ]
+ }
+}

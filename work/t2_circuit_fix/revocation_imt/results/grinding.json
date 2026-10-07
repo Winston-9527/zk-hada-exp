@@ -1,0 +1,32 @@
+{
+ "cpu": "Apple M5 Pro",
+ "cores": 15,
+ "rate_circomlibjs_wasm_per_s": 7020,
+ "rate_poseidon_lite_per_s": 4050,
+ "rd16_real_attack": {
+  "tries": "97506",
+  "seconds": 13.96,
+  "expiries_found": [
+   "9473",
+   "97505"
+  ]
+ },
+ "extrapolation_single_core": {
+  "16": {
+   "expected_trials": 65536,
+   "single_core_hours": 0.0025933505422222223
+  },
+  "20": {
+   "expected_trials": 1048576,
+   "single_core_hours": 0.04149360867555556
+  },
+  "24": {
+   "expected_trials": 16777216,
+   "single_core_hours": 0.6638977388088889
+  },
+  "32": {
+   "expected_trials": 4294967296,
+   "single_core_hours": 169.95782113507556
+  }
+ }
+}

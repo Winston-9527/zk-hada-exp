@@ -1,0 +1,9 @@
+structure,depth,constraints
+smt,16,10802
+imt,16,10465
+smt,20,12938
+imt,20,12545
+smt,24,15074
+imt,24,14625
+smt,32,19346
+imt,32,18785
