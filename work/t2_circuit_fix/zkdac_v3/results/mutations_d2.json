@@ -1,0 +1,592 @@
+{
+ "circuit": "zkdac_v3",
+ "D": 2,
+ "field_mutations": [
+  {
+   "field": "issued_root",
+   "accepted": false
+  },
+  {
+   "field": "revoked_root",
+   "accepted": false
+  },
+  {
+   "field": "nullifier",
+   "accepted": false
+  },
+  {
+   "field": "now",
+   "accepted": true
+  },
+  {
+   "field": "ent_Ax[0]",
+   "accepted": false
+  },
+  {
+   "field": "ent_Ax[1]",
+   "accepted": false
+  },
+  {
+   "field": "ent_Ax[2]",
+   "accepted": false
+  },
+  {
+   "field": "ent_Ay[0]",
+   "accepted": false
+  },
+  {
+   "field": "ent_Ay[1]",
+   "accepted": false
+  },
+  {
+   "field": "ent_Ay[2]",
+   "accepted": false
+  },
+  {
+   "field": "sig_S[0]",
+   "accepted": false
+  },
+  {
+   "field": "sig_S[1]",
+   "accepted": false
+  },
+  {
+   "field": "sig_R8x[0]",
+   "accepted": false
+  },
+  {
+   "field": "sig_R8x[1]",
+   "accepted": false
+  },
+  {
+   "field": "sig_R8y[0]",
+   "accepted": false
+  },
+  {
+   "field": "sig_R8y[1]",
+   "accepted": false
+  },
+  {
+   "field": "cap[0]",
+   "accepted": false
+  },
+  {
+   "field": "cap[1]",
+   "accepted": false
+  },
+  {
+   "field": "expiry[0]",
+   "accepted": false
+  },
+  {
+   "field": "expiry[1]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][0]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][1]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][2]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][3]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][4]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][5]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][6]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][7]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][8]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][9]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][10]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][11]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][12]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][13]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][14]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[0][15]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][0]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][1]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][2]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][3]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][4]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][5]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][6]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][7]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][8]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][9]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][10]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][11]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][12]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][13]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][14]",
+   "accepted": false
+  },
+  {
+   "field": "m_sib[1][15]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][0]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][1]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][2]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][3]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][4]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][5]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][6]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][7]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][8]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][9]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][10]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][11]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][12]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][13]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][14]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[0][15]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][0]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][1]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][2]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][3]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][4]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][5]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][6]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][7]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][8]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][9]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][10]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][11]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][12]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][13]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][14]",
+   "accepted": false
+  },
+  {
+   "field": "m_bit[1][15]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][0]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][1]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][2]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][3]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][4]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][5]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][6]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][7]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][8]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][9]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][10]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][11]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][12]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][13]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][14]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[0][15]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][0]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][1]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][2]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][3]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][4]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][5]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][6]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][7]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][8]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][9]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][10]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][11]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][12]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][13]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][14]",
+   "accepted": false
+  },
+  {
+   "field": "r_sib[1][15]",
+   "accepted": false
+  },
+  {
+   "field": "r_oldKey[0]",
+   "accepted": true
+  },
+  {
+   "field": "r_oldKey[1]",
+   "accepted": true
+  },
+  {
+   "field": "r_oldValue[0]",
+   "accepted": true
+  },
+  {
+   "field": "r_oldValue[1]",
+   "accepted": true
+  },
+  {
+   "field": "r_isOld0[0]",
+   "accepted": false
+  },
+  {
+   "field": "r_isOld0[1]",
+   "accepted": false
+  },
+  {
+   "field": "holder_sk",
+   "accepted": false
+  },
+  {
+   "field": "act_req_cap",
+   "accepted": false
+  },
+  {
+   "field": "ctx_hash",
+   "accepted": false
+  }
+ ],
+ "semantic": [
+  {
+   "name": "holder_sk_alias_plus_order",
+   "accepted": false
+  },
+  {
+   "name": "nullifier_other_secret",
+   "accepted": false
+  },
+  {
+   "name": "nullifier_pubkey_derived_no_secret",
+   "accepted": false
+  },
+  {
+   "name": "ctx_hash_changed_nullifier_stale",
+   "accepted": false
+  },
+  {
+   "name": "ctx_hash_other_chain_nullifier_stale",
+   "accepted": false
+  },
+  {
+   "name": "req_cap_changed_nullifier_stale",
+   "accepted": false
+  },
+  {
+   "name": "holder_reproves_for_other_ctx_EXPECT_ACCEPT",
+   "accepted": true
+  },
+  {
+   "name": "req_cap_zero_consistent_EXPECT_ACCEPT_contract_must_fix_req_cap",
+   "accepted": true
+  },
+  {
+   "name": "expired_now_after_expiry",
+   "accepted": false
+  },
+  {
+   "name": "now_equals_terminal_expiry_boundary_EXPECT_ACCEPT",
+   "accepted": true
+  },
+  {
+   "name": "now_huge_field_wrap",
+   "accepted": false
+  },
+  {
+   "name": "merkle_bit_not_boolean",
+   "accepted": false
+  },
+  {
+   "name": "cap_overreach_hop1",
+   "accepted": false
+  },
+  {
+   "name": "req_cap_not_covered_by_terminal",
+   "accepted": false
+  },
+  {
+   "name": "child_expiry_exceeds_parent",
+   "accepted": false
+  },
+  {
+   "name": "revoked_cert0_stale_nonmembership_proof",
+   "accepted": false
+  },
+  {
+   "name": "revoked_cert1_stale_nonmembership_proof",
+   "accepted": false
+  },
+  {
+   "name": "revoked_cert0_forged_exclusion_isOld0",
+   "accepted": false
+  }
+ ],
+ "summary": {
+  "field_mutations": 125,
+  "field_accepted": [
+   "now",
+   "r_oldKey[0]",
+   "r_oldKey[1]",
+   "r_oldValue[0]",
+   "r_oldValue[1]"
+  ],
+  "semantic": 18,
+  "semantic_unexpected": []
+ }
+}
