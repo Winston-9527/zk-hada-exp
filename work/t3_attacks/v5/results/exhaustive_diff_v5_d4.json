@@ -1,0 +1,21 @@
+{
+ "D": 4,
+ "total": 360,
+ "agree": 53,
+ "disagreements_by_field": {
+  "now (circuit accept, oracle reject)": 1,
+  "m_sib (circuit reject, oracle accept)": 64,
+  "m_bit (circuit reject, oracle accept)": 64,
+  "r_low_value (circuit reject, oracle accept)": 4,
+  "r_low_next_index (circuit reject, oracle accept)": 4,
+  "r_low_next_value (circuit reject, oracle accept)": 4,
+  "r_sib (circuit reject, oracle accept)": 80,
+  "r_bit (circuit reject, oracle accept)": 80,
+  "rt_depth (circuit reject, oracle accept)": 1,
+  "rt_index (circuit reject, oracle accept)": 1,
+  "rt_sib (circuit reject, oracle accept)": 4
+ },
+ "statement_level_disagreements": [
+  "now (circuit accept, oracle reject)"
+ ]
+}
