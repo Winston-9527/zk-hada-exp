@@ -9,8 +9,8 @@ for T in ${MODES:-a c}; do for D in ${DS:-1 2 3 4}; do
   rm build/zk/$T${D}_0.zkey
   snarkjs zkey verify build/$T$D/main_${T}_d$D.r1cs $PTAU build/zk/$T$D.zkey >> build/zk/setup_$T$D.log 2>&1 && echo "$T$D zkey verify OK" || echo "$T$D zkey verify FAILED"
   snarkjs zkey export verificationkey build/zk/$T$D.zkey zk/vk_$T$D.json >> build/zk/setup_$T$D.log 2>&1
-  snarkjs zkey export solidityverifier build/zk/$T$D.zkey zk/Groth16VerifierV7$UD$D.sol >> build/zk/setup_$T$D.log 2>&1
-  sed -i '' "s/contract Groth16Verifier /contract Groth16VerifierV7$UD$D /" zk/Groth16VerifierV7$UD$D.sol
+  snarkjs zkey export solidityverifier build/zk/$T$D.zkey zk/Groth16VerifierV7${U}D$D.sol >> build/zk/setup_$T$D.log 2>&1
+  sed -i '' "s/contract Groth16Verifier /contract Groth16VerifierV7${U}D$D /" zk/Groth16VerifierV7${U}D$D.sol
   echo "$T$D setup $(( $(date +%s) - s ))s"
 done; done
 shasum -a 256 build/zk/[ac]*.zkey zk/vk_*.json $PTAU | sed 's#\.\./\.\./##' > zk/MANIFEST.sha256
