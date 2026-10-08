@@ -1,0 +1,35 @@
+{
+ "D1": {
+  "original_verifies": true,
+  "order_ok": true,
+  "issued_root+1_verifies": false,
+  "revoked_root+1_verifies": false,
+  "root_root+1_verifies": false,
+  "nullifier+1_verifies": false,
+  "now+1_verifies": false,
+  "ctx_hash+1_verifies": false,
+  "act_req_cap+1_verifies": false
+ },
+ "D2": {
+  "original_verifies": true,
+  "order_ok": true,
+  "issued_root+1_verifies": false,
+  "revoked_root+1_verifies": false,
+  "root_root+1_verifies": false,
+  "nullifier+1_verifies": false,
+  "now+1_verifies": false,
+  "ctx_hash+1_verifies": false,
+  "act_req_cap+1_verifies": false
+ },
+ "D4": {
+  "original_verifies": true,
+  "order_ok": true,
+  "issued_root+1_verifies": false,
+  "revoked_root+1_verifies": false,
+  "root_root+1_verifies": false,
+  "nullifier+1_verifies": false,
+  "now+1_verifies": false,
+  "ctx_hash+1_verifies": false,
+  "act_req_cap+1_verifies": false
+ }
+}
