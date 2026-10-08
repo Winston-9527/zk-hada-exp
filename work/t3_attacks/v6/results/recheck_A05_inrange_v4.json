@@ -1,0 +1,18 @@
+[
+ {
+  "extraLeafBase": 200000,
+  "in_tree": false,
+  "A05": false,
+  "A05b": false,
+  "A05c_control": true,
+  "A_cert0_path_in_B_tree_with_B_hop0_EXPECT_REJECT": false
+ },
+ {
+  "extraLeafBase": 40000,
+  "in_tree": true,
+  "A05": false,
+  "A05b": false,
+  "A05c_control": true,
+  "A_cert0_path_in_B_tree_with_B_hop0_EXPECT_REJECT": false
+ }
+]

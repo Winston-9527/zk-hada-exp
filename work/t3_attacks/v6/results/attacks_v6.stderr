@@ -1,0 +1,348 @@
+ERROR:  4 Error in template ZkDacChainV6_340 line: 168
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:41806) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+ERROR:  4 Error in template MerkleMember_326 line: 44
+Error in template ZkDacChainV6_340 line: 119
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template MerkleMember_326 line: 44
+Error in template ZkDacChainV6_340 line: 119
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV6_340 line: 112
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV6_340 line: 112
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV6_340 line: 112
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV6_340 line: 112
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV6_340 line: 112
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV6_340 line: 112
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV6_340 line: 112
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV6_340 line: 112
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV6_340 line: 112
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 187
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_338 line: 38
+Error in template ZkDacChainV6_340 line: 170
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 187
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 187
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 115
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template MerkleMember_326 line: 44
+Error in template ZkDacChainV6_340 line: 119
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template MerkleMember_326 line: 37
+Error in template ZkDacChainV6_340 line: 119
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template MerkleMember_326 line: 37
+Error in template ZkDacChainV6_340 line: 119
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 187
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 187
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 187
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 187
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 187
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 187
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 187
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMember_320 line: 67
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 125
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 137
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 137
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 137
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 133
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV6_340 line: 137
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_321 line: 38
+Error in template LeqU64_325 line: 59
+Error in template ZkDacChainV6_340 line: 128
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template LeqU64_325 line: 62
+Error in template ZkDacChainV6_340 line: 128
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_335 line: 38
+Error in template CapSubset_336 line: 51
+Error in template ZkDacChainV6_340 line: 161
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_335 line: 38
+Error in template CapSubset_336 line: 51
+Error in template ZkDacChainV6_340 line: 161
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template CapSubset_336 line: 52
+Error in template ZkDacChainV6_340 line: 161
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template CapSubset_336 line: 52
+Error in template ZkDacChainV6_340 line: 181
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template LeqU64_325 line: 62
+Error in template ZkDacChainV6_340 line: 162
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_321 line: 38
+Error in template LeqU64_325 line: 59
+Error in template ZkDacChainV6_340 line: 128
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMember_320 line: 67
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMember_320 line: 67
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMember_320 line: 59
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMember_320 line: 67
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMember_320 line: 59
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMember_320 line: 67
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMember_320 line: 59
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMember_320 line: 67
+Error in template ZkDacChainV6_340 line: 153
+
+(node:41806) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV6_340 line: 153
+
