@@ -1,0 +1,59 @@
+{
+ "depth": 20,
+ "inserted": 300,
+ "honest": {
+  "tried": 205,
+  "accepted": 205
+ },
+ "negatives": [
+  {
+   "name": "member_with_predecessor_leaf",
+   "accepted": false
+  },
+  {
+   "name": "member_with_own_leaf",
+   "accepted": false
+  },
+  {
+   "name": "member_forged_skip_leaf_old_path",
+   "accepted": false
+  },
+  {
+   "name": "member_via_end_leaf",
+   "accepted": false
+  },
+  {
+   "name": "member_key_mod_p_representative",
+   "accepted": false
+  },
+  {
+   "name": "non_boolean_path_bit",
+   "accepted": false
+  },
+  {
+   "name": "next_value_tampered",
+   "accepted": false
+  },
+  {
+   "name": "low_value_ge_2^252",
+   "accepted": false
+  },
+  {
+   "name": "wrong_root",
+   "accepted": false
+  },
+  {
+   "name": "low_leaf_of_a_different_gap",
+   "accepted": false
+  },
+  {
+   "name": "key_zero_sentinel",
+   "accepted": false
+  }
+ ],
+ "summary": {
+  "honest_accepted": "205/205",
+  "negatives_accepted": [],
+  "negatives": 11
+ }
+}
