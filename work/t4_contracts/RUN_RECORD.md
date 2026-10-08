@@ -51,3 +51,9 @@ Gas (D=2; first execute on a fresh anvil, cancun):
 - Registration contract for #17 (nf_domain map, replace + auto-revoke) — needs the registration circuit first.
 - D=3/4 proofs (ptau 2^17; `ssh 201` unavailable) — on-chain gas is independent of D, proving time is not (T5).
 - Root publication is trusted to an operator (no on-chain tree maintenance); stated as an assumption.
+
+## Correction (2026-10-08): forge-std version
+"forge-std 314b0bf" above is **wrong**: `forge init --no-git` does not make lib/forge-std a git repository, so `git rev-parse` inside it returned the
+*enclosing* zk-hada-exp commit. The forge-std version actually used on 2026-10-06/07 is unknown (whatever `forge init` of forge 1.5.1 fetched).
+From 2026-10-08 the tests run against forge-std **v1.17.0 (f3dae6e6ee381f25eb6a246f7da9b85c91a68219)**; all earlier tests pass unchanged on it (54/54).
+Install: `git clone https://github.com/foundry-rs/forge-std foundry/lib/forge-std && git -C foundry/lib/forge-std checkout v1.17.0`.

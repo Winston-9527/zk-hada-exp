@@ -22,3 +22,20 @@ At equal revocation depth 16, v4 (119,343) is below v3/SMT (120,691). **Capacity
 | 4 | 337 | now | 33 | none |
 Only `now` +1 (another valid statement) is accepted; the benign isOld0 fields of the SMT version no longer exist. Semantic cases as in v3 plus, for every hop,
 revoking that certificate and then trying: stale witness vs new root, predecessor leaf, own leaf, forged skip leaf, end-of-list leaf — all rejected.
+
+## Proving (dev ptau 2^17, 2026-10-08)
+- ptau: `work/ptau/make_pot17.sh` — new 2 s, one contribution 17 s, prepare phase 2 **507 s**, verify 9 s ("Powers of Tau Ok"); 150,996,395 bytes,
+  sha256 28671bef15ba2c1c86aa8bc452540a12d0a7f86b8ec3fadce1565ad8c15c3a2b. **Dev-only, single local contribution — not a trusted setup.**
+- zkeys: `scripts/setup_zkeys.sh` — D=1..4 setup 19 / 22 / 24 / 25 s, each `snarkjs zkey verify` OK against r1cs + ptau; hashes in zk/MANIFEST.sha256;
+  verification keys zk/vk_d*.json and Solidity verifiers zk/Groth16VerifierV4D*.sol committed. zkeys + ptau archived in release `v4-proving-material-20261008`.
+- Benchmark: `node scripts/prove_bench.mjs 10 > results/prove_bench.json` — 10 runs per depth, **each run a fresh instance** (seed 1000+run: new keys,
+  certificates, trees, witness); snarkjs 0.7.6 in node 24 (wasm prover), Apple M5 Pro, nothing else heavy running. Times in ms, mean ± SD (median):
+| D | constraints | verified | witness | prove | verify (snarkjs) |
+|---|---|---|---|---|---|
+| 1 | 36,079 | 10/10 | 89.5 ± 5.5 | 594.2 ± 36.4 (583.7) | 6.7 ± 0.5 |
+| 2 | 66,607 | 10/10 | 116.0 ± 2.0 | 1103.0 ± 14.7 (1103.8) | 7.1 ± 0.1 |
+| 3 | 97,135 | 10/10 | 143.7 ± 4.4 | 1315.3 ± 23.2 (1308.0) | 5.7 ± 0.6 |
+| 4 | 127,663 | 10/10 | 170.8 ± 2.9 | 1529.8 ± 18.6 (1531.0) | 7.2 ± 0.2 |
+  Proof: 8 field elements on-chain (256 B), 6 public inputs, independent of D. The jump D=1→2 is larger than D=2→3→4, plausibly because D=1 fits an FFT
+  domain of 2^16 while D=2..4 need 2^17 (not isolated experimentally). These are T5 preview numbers (one machine, N=10); the full latency study is T5 (#7).
+  Not comparable to the paper's "1.51 s ± 0.53" (46,593-constraint historical circuit, unknown machine, no artefact — see work/t1/CLAIM_EVIDENCE_MAP.md).
