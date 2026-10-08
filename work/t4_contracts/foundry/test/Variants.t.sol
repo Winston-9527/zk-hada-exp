@@ -8,6 +8,8 @@ import {Groth16Verifier} from "../src/Groth16Verifier.sol";
 import {Groth16VerifierA} from "../src/Groth16VerifierA.sol";
 import {Groth16VerifierB} from "../src/Groth16VerifierB.sol";
 import {Groth16VerifierC} from "../src/Groth16VerifierC.sol";
+import {Groth16VerifierV4D2} from "../src/Groth16VerifierV4D2.sol";
+import {Groth16VerifierV4D4} from "../src/Groth16VerifierV4D4.sol";
 import {MockTarget} from "./Targets.sol";
 
 /// Same behavioural checks + gas breakdown for the three public-input layouts (v2 / A / B), each with its own real proofs.
@@ -125,13 +127,13 @@ contract VariantB is VariantBase {
 }
 contract VariantC is VariantBase {
     using stdJson for string;
-    function variant() internal pure override returns (string memory) { return "C"; }
-    function _deployGate(uint256 issued, uint256 r0) internal override {
+    function variant() internal pure virtual override returns (string memory) { return "C"; }
+    function _deployGate(uint256 issued, uint256 r0) internal virtual override {
         ver = address(new Groth16VerifierC());
         deployCodeTo("ZkDacGate.sol:ZkDacGateC", abi.encode(ver, OP, issued, r0, uint64(300), uint64(300), uint64(60)), fx.readAddress(".gate"));
         gate = ZkDacGateBase(fx.readAddress(".gate"));
     }
-    function _verifyDirect(ZkDacGateBase.Proof memory p, uint256[] memory s) internal view override returns (bool) {
+    function _verifyDirect(ZkDacGateBase.Proof memory p, uint256[] memory s) internal view virtual override returns (bool) {
         return Groth16VerifierC(ver).verifyProof(p.a, p.b, p.c, [s[0], s[1], s[2], s[3], s[4], s[5]]);
     }
     function test_ctxHashMatchesProof() public view {
@@ -166,5 +168,32 @@ contract VariantC is VariantBase {
         vm.prank(OP); ZkDacGateBase(other).setMethod(METHOD, uint32(fx.readUint(".reqCap")), true);
         (uint256 iR, uint256 rR) = _root(0); ZkDacGateBase.Proof memory p = _proof(0); uint256 nf = fx.readUint(_k(0, "nullifier"));
         vm.expectRevert(ZkDacGateBase.InvalidProof.selector); ZkDacGateBase(other).execute(p, iR, rR, nf, NOW, _act(0));
+    }
+}
+
+/// v4 main circuit (layout C + IMT revocation): same public-input layout and gate as C, so every C test (A11a, ctx_hash, amount, replay, clock, req_cap)
+/// is inherited and runs against real v4 proofs. D=2 and D=4 to show on-chain behaviour and gas do not depend on the delegation depth.
+contract VariantV4D2 is VariantC {
+    using stdJson for string;
+    function variant() internal pure virtual override returns (string memory) { return "V4D2"; }
+    function _deployGate(uint256 issued, uint256 r0) internal virtual override {
+        ver = address(new Groth16VerifierV4D2());
+        deployCodeTo("ZkDacGate.sol:ZkDacGateC", abi.encode(ver, OP, issued, r0, uint64(300), uint64(300), uint64(60)), fx.readAddress(".gate"));
+        gate = ZkDacGateBase(fx.readAddress(".gate"));
+    }
+    function _verifyDirect(ZkDacGateBase.Proof memory p, uint256[] memory s) internal view virtual override returns (bool) {
+        return Groth16VerifierV4D2(ver).verifyProof(p.a, p.b, p.c, [s[0], s[1], s[2], s[3], s[4], s[5]]);
+    }
+}
+contract VariantV4D4 is VariantC {
+    using stdJson for string;
+    function variant() internal pure override returns (string memory) { return "V4D4"; }
+    function _deployGate(uint256 issued, uint256 r0) internal override {
+        ver = address(new Groth16VerifierV4D4());
+        deployCodeTo("ZkDacGate.sol:ZkDacGateC", abi.encode(ver, OP, issued, r0, uint64(300), uint64(300), uint64(60)), fx.readAddress(".gate"));
+        gate = ZkDacGateBase(fx.readAddress(".gate"));
+    }
+    function _verifyDirect(ZkDacGateBase.Proof memory p, uint256[] memory s) internal view override returns (bool) {
+        return Groth16VerifierV4D4(ver).verifyProof(p.a, p.b, p.c, [s[0], s[1], s[2], s[3], s[4], s[5]]);
     }
 }

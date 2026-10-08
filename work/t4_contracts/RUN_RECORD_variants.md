@@ -54,3 +54,9 @@ separate public inputs because the circuit compares them with the certificate's 
 
 ## Not done
 mainnet-fork / testnet; optimised Poseidon; D=3/4 (proving time only; on-chain gas does not depend on D).
+
+## Correction (2026-10-08): forge-std version
+This record did not state a forge-std version; the sibling RUN_RECORD.md stated "forge-std 314b0bf", which is wrong (`forge init --no-git` leaves lib/forge-std
+without its own git repo, so `git rev-parse` returned the enclosing zk-hada-exp commit). The version used here on 2026-10-06/07 is unknown.
+From 2026-10-08 the tests run against forge-std **v1.17.0 (f3dae6e6ee381f25eb6a246f7da9b85c91a68219)**; all earlier tests pass unchanged on it (54/54).
+Install: `git clone https://github.com/foundry-rs/forge-std foundry/lib/forge-std && git -C foundry/lib/forge-std checkout v1.17.0`.
