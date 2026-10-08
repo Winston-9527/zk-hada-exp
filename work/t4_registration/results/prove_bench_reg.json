@@ -1,0 +1,21 @@
+{
+ "machine": "Apple M5 Pro x15",
+ "group_size": 1000,
+ "group_depth": 10,
+ "MAX_DEPTH": 20,
+ "runs": 10,
+ "verified": "10/10",
+ "witness_ms": {
+  "mean": 52.5,
+  "sd": 1.5
+ },
+ "prove_ms": {
+  "mean": 310.8,
+  "sd": 38
+ },
+ "verify_ms": {
+  "mean": 6.5,
+  "sd": 0.3
+ },
+ "note": "master key placeholder (1,2) is fine at witness level: only the action proof checks the master's signature"
+}

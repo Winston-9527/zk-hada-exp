@@ -1,0 +1,103 @@
+{
+ "group_size": 37,
+ "group_depth": 6,
+ "MAX_DEPTH": 20,
+ "valid": {
+  "tried": 37,
+  "accepted": 37
+ },
+ "r1": {
+  "same_human_same_domain_two_masters_same_nf": true,
+  "same_human_other_domain_different_nf": true,
+  "other_humans_distinct_nf": true,
+  "differs_from_semaphore_nullifier_with_scope_domain": true
+ },
+ "negatives": [
+  {
+   "name": "other member's secret, own path/nf/leaf0",
+   "accepted": false
+  },
+  {
+   "name": "secret alias s + l",
+   "accepted": false
+  },
+  {
+   "name": "secret alias s + l with matching nf (second nullifier)",
+   "accepted": false
+  },
+  {
+   "name": "non-member (proof against a group that includes them, root of the real group)",
+   "accepted": false
+  },
+  {
+   "name": "depth > MAX_DEPTH with group_root 0 (BinaryMerkleRoot returns 0)",
+   "accepted": false
+  },
+  {
+   "name": "nf for another domain",
+   "accepted": false
+  },
+  {
+   "name": "nf from unrelated secret",
+   "accepted": false
+  },
+  {
+   "name": "nf + 1",
+   "accepted": false
+  },
+  {
+   "name": "leaf0 for a different master than claimed",
+   "accepted": false
+  },
+  {
+   "name": "leaf0 with larger cap than witnessed",
+   "accepted": false
+  },
+  {
+   "name": "cap0 >= 2^32",
+   "accepted": false
+  },
+  {
+   "name": "expiry0 >= 2^64",
+   "accepted": false
+  },
+  {
+   "name": "leaf0 with hop index 1 (non-root certificate)",
+   "accepted": false
+  },
+  {
+   "name": "tampered sibling",
+   "accepted": false
+  }
+ ],
+ "end_to_end": [
+  {
+   "D": 1,
+   "ent0_is_semaphore_identity": true,
+   "leaf0_equals_action_cert0": true,
+   "registration_accepted": true,
+   "action_accepted": true
+  },
+  {
+   "D": 2,
+   "ent0_is_semaphore_identity": true,
+   "leaf0_equals_action_cert0": true,
+   "registration_accepted": true,
+   "action_accepted": true
+  },
+  {
+   "D": 4,
+   "ent0_is_semaphore_identity": true,
+   "leaf0_equals_action_cert0": true,
+   "registration_accepted": true,
+   "action_accepted": true
+  }
+ ],
+ "summary": {
+  "valid": "37/37",
+  "r1_all_true": true,
+  "negatives_accepted": [],
+  "negatives": 14,
+  "end_to_end_ok": true
+ }
+}

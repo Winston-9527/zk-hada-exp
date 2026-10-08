@@ -11,12 +11,13 @@ export async function init() { if (!_e) { _e = await buildEddsa(); _p = await bu
 
 function prng(seed) { let c = 0; return (n) => crypto.createHash("sha256").update(`${seed}:${c++}`).digest().subarray(0, n); }
 
-export async function buildInstance({ D = 4, MD = 16, RD = 16, seed = 0, now = 1000, caps, expiries, nRevoked = 8, issuedExtra = 8, action, extraLeaves = [], extraRevoked = [] } = {}) {
+export async function buildInstance({ D = 4, MD = 16, RD = 16, seed = 0, now = 1000, caps, expiries, nRevoked = 8, issuedExtra = 8, action, extraLeaves = [], extraRevoked = [], entPrv = [] } = {}) {
   const { eddsa, poseidon } = await init(); const F = eddsa.F; const P = (xs) => F.toObject(poseidon(xs.map(BigInt)));
   const rnd = prng(`zkdac-v2-${D}-${seed}`);
   const ents = [];
   for (let i = 0; i <= D; i++) {
-    const prv = rnd(32);
+    const r = rnd(32);                       // always draw, so the PRNG stream (and every default instance) is unchanged
+    const prv = entPrv[i] ? Buffer.from(entPrv[i]) : r;   // entPrv: optional externally supplied private keys (e.g. a Semaphore identity, #17)
     const A = eddsa.prv2pub(prv);
     const sBuff = eddsa.pruneBuffer(createBlakeHash("blake512").update(Buffer.from(prv)).digest());
     const sk = BigInt(Scalar.shr(Scalar.fromRprLE(sBuff, 0, 32), 3)) % SUBORDER; // EdDSA scalar reduced mod subgroup order (same pubkey)
