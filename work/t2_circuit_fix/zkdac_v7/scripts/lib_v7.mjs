@@ -6,7 +6,7 @@ import { init } from "../../zkdac_v6/scripts/lib_v6.mjs";
 import crypto from "crypto";
 export { init, R, SUBORDER, TAG, ctxHash, DEFAULT_CTX, IMT, trunc, RT, newRootTree, rootProof, KEY_TAG, keyHash, refreshKeys, refreshAll } from "../../zkdac_v6/scripts/lib_v6.mjs";
 export const R_BITS = 251n;
-const rand251 = (tag) => BigInt("0x" + crypto.createHash("sha256").update(tag).digest("hex")) >> 5n;   // < 2^251
+const rand251 = (tag) => BigInt("0x" + crypto.createHash("sha256").update(tag).digest("hex")) >> 5n;   // < 2^251 (may exceed the subgroup order l ~ 2^250.6: harmless, r*Base8 is taken mod l)
 // deterministic auditor committee key for tests (threshold sharing of tsk is E6)
 export async function auditorKey(label = "auditor-0") {
   const { eddsa } = await init(); const bj = eddsa.babyJub, F = bj.F;
@@ -60,6 +60,6 @@ export async function buildInstanceV7({ mode = "C", accSeed, auditor = "auditor-
   const { tsk, tpk } = await auditorKey(auditor);
   const ents = input.ent_Ax.map((x, i) => [BigInt(x), BigInt(input.ent_Ay[i])]);
   await encryptChain(input, ents, tpk, mode, accSeed ?? `${meta.D}-${meta.seed}-${mode}`);
-  Object.assign(meta, { mode, tsk, tpk, ents });
+  Object.assign(meta, { mode, tsk, tpk, accEnts: ents });   // not "ents": meta.ents holds the entity objects (prv, sk)
   return { input, meta };
 }

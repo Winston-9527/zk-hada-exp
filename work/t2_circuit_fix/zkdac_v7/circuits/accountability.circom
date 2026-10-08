@@ -12,7 +12,8 @@ include "circomlib/circuits/bitify.circom";
 include "circomlib/circuits/escalarmulfix.circom";
 include "circomlib/circuits/escalarmulany.circom";
 
-// (c1, c2) = (r*Base8, M + r*PK); r < 2^251 (< subgroup order)
+// (c1, c2) = (r*Base8, M + r*PK); r < 2^251. NOTE (T3 v7 A19f): 2^251 > subgroup order l (~2^250.6), so r and r + l (when < 2^251) are both
+// accepted; they give the SAME ciphertext, so this witness aliasing has no effect on the statement.
 template ElGamalEnc() {
     signal input r; signal input pk[2]; signal input m[2];
     signal output c1[2]; signal output c2[2];

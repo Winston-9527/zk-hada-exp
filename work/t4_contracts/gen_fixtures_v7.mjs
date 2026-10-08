@@ -30,7 +30,7 @@ for (const mode of ["A", "C"]) for (const D of [2, 4]) {
   if (mode === "A") { pub.acc_c1x = ct.slice(0, N); pub.acc_c1y = ct.slice(N, 2 * N); pub.acc_c2x = ct.slice(2 * N, 3 * N); pub.acc_c2y = ct.slice(3 * N, 4 * N); }
   else { [pub.acc_c1x, pub.acc_c1y, pub.acc_c2x, pub.acc_c2y] = [[ct[0]], [ct[1]], [ct[2]], [ct[3]]]; pub.acc_e = Array.from({ length: N }, (_, j) => [ct[4 + 2 * j], ct[5 + 2 * j]]); }
   const dec = await decryptChain(pub, meta.tsk, mode);
-  const recovered = dec.every((p, j) => p[0] === meta.ents[j][0] && p[1] === meta.ents[j][1]);
+  const recovered = dec.every((p, j) => p[0] === meta.accEnts[j][0] && p[1] === meta.accEnts[j][1]);
   if (!recovered) throw new Error(`auditor failed to recover the chain (${mode} D=${D})`);
   const cd = JSON.parse("[" + (await snarkjs.groth16.exportSolidityCallData(proof, publicSignals)) + "]");
   console.error(`action ${mode} D=${D}: ${publicSignals.length} public inputs, ${ct.length} ciphertext words, auditor recovers ent[0..${D}]`);
