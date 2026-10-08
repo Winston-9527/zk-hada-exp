@@ -26,6 +26,7 @@ Constraints: MAX_DEPTH 16 / 20 / 32 = 15,340 / 17,436 / 23,724 (my earlier estim
 - Proofs: zkey (setup 14 s, `zkey verify` OK; hashes zk/MANIFEST.sha256); 10/10 verified, group of 1,000 (depth 10): witness 52.5 ± 1.5 ms,
   prove 310.8 ± 38.0 ms, verify 6.5 ± 0.3 ms (results/prove_bench_reg.json). Solidity verifier zk/Groth16VerifierRegister.sol.
 
-## Not done (needs a design decision, see #17)
-On-chain enforcement that only registered hop-0 certificates enter the issued tree, and automatic revocation of a replaced master; no salt in cert0 (analysis in #17).
+## Follow-up (2026-10-08, decision in #17: option b, no salt)
+On-chain enforcement is implemented by the v5 action circuit (`../t2_circuit_fix/zkdac_v5`) and the registry contract (`../t4_contracts/RUN_RECORD_v5.md`):
+the hop-0 certificate must be in the registry's LeanIMT; re-registration replaces the leaf in place; replaced leaves are retired.
 Minor doc issue found: the v4 action-nullifier tag 1952805748 is commented as "zkdc" but is ASCII "test" (any distinct constant is fine; not changed).

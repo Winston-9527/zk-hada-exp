@@ -35,4 +35,4 @@ Benchmark (results/prove_bench.json; 10 fresh instances per depth, Apple M5 Pro 
 | 2 | 10/10 | 116.6 ± 3 | 1130.9 ± 17.3 (1132.7) | 7.4 ± 0.3 |
 | 3 | 10/10 | 144.9 ± 3.9 | 1326.1 ± 12.6 (1321.3) | 5.4 ± 0.1 |
 | 4 | 10/10 | 172.8 ± 5.3 | 1533 ± 19.5 (1537.6) | 7.4 ± 0.2 |
-Within noise of v4 (594 / 1103 / 1315 / 1530 ms): the extra 2,187 constraints do not change the FFT domain (2^16 for D=1, 2^17 for D=2..4).
+vs v4 (594 / 1103 / 1315 / 1530 ms): +23 / +28 / +11 / +3 ms (≤ 4%; D=2 ≈ 1.7 SD). The extra 2,187 constraints do not change the FFT domain (2^16 for D=1, 2^17 for D=2..4).
