@@ -1,0 +1,6 @@
+  register #1 (LeanIMT insert into empty tree) 342170
+  register #2 (LeanIMT insert) 360368
+  re-register (LeanIMT in-place update) 345874
+  registration verifyProof alone (4 public inputs) 213219
+  v6 verifyProof (7 public inputs, incl. ctxHash call) 236395
+  v6 execute #1 (excl. intrinsic) 318707

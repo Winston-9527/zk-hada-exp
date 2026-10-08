@@ -11,7 +11,7 @@ export async function init() { if (!_e) { _e = await buildEddsa(); _p = await bu
 
 function prng(seed) { let c = 0; return (n) => crypto.createHash("sha256").update(`${seed}:${c++}`).digest().subarray(0, n); }
 
-export async function buildInstance({ D = 4, MD = 16, RD = 16, seed = 0, now = 1000, caps, expiries, nRevoked = 8, issuedExtra = 8, action, extraLeaves = [], extraRevoked = [], entPrv = [] } = {}) {
+export async function buildInstance({ D = 4, MD = 16, RD = 16, seed = 0, now = 1000, caps, expiries, nRevoked = 8, issuedExtra = 8, action, extraLeaves = [], extraLeafBase = 200000, extraRevoked = [], entPrv = [] } = {}) {
   const { eddsa, poseidon } = await init(); const F = eddsa.F; const P = (xs) => F.toObject(poseidon(xs.map(BigInt)));
   const rnd = prng(`zkdac-v2-${D}-${seed}`);
   const ents = [];
@@ -34,7 +34,10 @@ export async function buildInstance({ D = 4, MD = 16, RD = 16, seed = 0, now = 1
   // issued tree (depth MD): our certs at indices 0..D-1 plus random other leaves
   const leaves = new Map();
   for (let i = 0; i < D; i++) leaves.set(BigInt(i * 7919 + 3), cert[i]);
-  extraLeaves.forEach((v, k) => leaves.set(BigInt(200000 + k * 17), BigInt(v)));
+  // NOTE (2026-10-08, #28): the default extraLeafBase 200000 and the issuedExtra indices 100000+ are >= 2^MD for MD = 16, so those leaves are
+  // NOT in issued_root (only our own certs at 3 + 7919 i are). Kept as default so existing instances stay byte-identical; pass
+  // extraLeafBase < 2^MD (e.g. 40000) when the extra leaves must really be members.
+  extraLeaves.forEach((v, k) => leaves.set(BigInt(extraLeafBase + k * 17), BigInt(v)));
   for (let k = 0; k < issuedExtra; k++) leaves.set(BigInt(100000 + k * 31), BigInt("0x" + Buffer.from(rnd(31)).toString("hex")));
   const zero = [0n]; for (let l = 0; l < MD; l++) zero.push(P([zero[l], zero[l]]));
   let level = new Map(leaves); const levels = [level];

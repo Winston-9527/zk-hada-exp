@@ -1,0 +1,56 @@
+{
+ "D": 3,
+ "rows": [
+  {
+   "circuit": "v5",
+   "path": "chain 2 (unknown parent M2)",
+   "revoked": "none",
+   "accepted": true
+  },
+  {
+   "circuit": "v5",
+   "path": "chain 2 (unknown parent M2)",
+   "revoked": "chain-1 cert1 (incoming) + cert2 (outgoing), 2 entries",
+   "accepted": true
+  },
+  {
+   "circuit": "v6",
+   "path": "chain 2 (unknown parent M2)",
+   "revoked": "none",
+   "accepted": true
+  },
+  {
+   "circuit": "v6",
+   "path": "chain 2 (unknown parent M2)",
+   "revoked": "key K, 1 entry",
+   "accepted": false,
+   "note": "no witness: key is a member: no non-membership witne"
+  },
+  {
+   "circuit": "v5",
+   "path": "chain 1 (known parent M1)",
+   "revoked": "none",
+   "accepted": true
+  },
+  {
+   "circuit": "v5",
+   "path": "chain 1 (known parent M1)",
+   "revoked": "chain-1 cert1 (incoming) + cert2 (outgoing), 2 entries",
+   "accepted": false,
+   "note": "no witness: key is a member: no non-membership witne"
+  },
+  {
+   "circuit": "v6",
+   "path": "chain 1 (known parent M1)",
+   "revoked": "none",
+   "accepted": true
+  },
+  {
+   "circuit": "v6",
+   "path": "chain 1 (known parent M1)",
+   "revoked": "key K, 1 entry",
+   "accepted": false,
+   "note": "no witness: key is a member: no non-membership witne"
+  }
+ ]
+}
