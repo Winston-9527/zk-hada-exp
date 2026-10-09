@@ -8,3 +8,4 @@ __pycache__/
 build/
 work/t1/*/build/
 work/t1/*/lib/
+node_modules
