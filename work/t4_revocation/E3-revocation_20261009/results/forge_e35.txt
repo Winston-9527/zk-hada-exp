@@ -1,0 +1,28 @@
+No files changed, compilation skipped
+
+Ran 7 tests for test/E3Window.t.sol:E3WindowTest
+[PASS] test_repostOldRoot_reacceptsIt_POLICY() (gas: 3161229)
+[PASS] test_secondUpdate_doesNotExtendOldRoot() (gas: 2747184)
+[PASS] test_window_0() (gas: 4066998)
+Logs:
+  E3.5 delta 0 s: accepted at t0+delta, StaleRevokedRoot at t0+delta+1; updateRoots gas 26997
+
+[PASS] test_window_12() (gas: 4066997)
+Logs:
+  E3.5 delta 12 s: accepted at t0+delta, StaleRevokedRoot at t0+delta+1; updateRoots gas 26997
+
+[PASS] test_window_240() (gas: 4066998)
+Logs:
+  E3.5 delta 240 s: accepted at t0+delta, StaleRevokedRoot at t0+delta+1; updateRoots gas 26997
+
+[PASS] test_window_3600() (gas: 4067020)
+Logs:
+  E3.5 delta 3600 s: accepted at t0+delta, StaleRevokedRoot at t0+delta+1; updateRoots gas 26997
+
+[PASS] test_window_60() (gas: 4067042)
+Logs:
+  E3.5 delta 60 s: accepted at t0+delta, StaleRevokedRoot at t0+delta+1; updateRoots gas 26997
+
+Suite result: ok. 7 passed; 0 failed; 0 skipped; finished in 17.88ms (37.84ms CPU time)
+
+Ran 1 test suite in 100.48ms (17.88ms CPU time): 7 tests passed, 0 failed, 0 skipped (7 total tests)
