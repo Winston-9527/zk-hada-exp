@@ -1,0 +1,41 @@
+ERROR:  4 Error in template NoteTransfer_325 line: 84
+
+(node:31886) Warning: Closing file descriptor 11 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31886) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+ERROR:  4 Error in template NoteTransfer_325 line: 64
+
+(node:31886) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_240 line: 38
+Error in template NoteTransfer_325 line: 63
+
+(node:31886) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template NoteTransfer_325 line: 98
+
+(node:31886) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template NoteTransfer_325 line: 95
+
+(node:31886) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template NoteTransfer_325 line: 83
+
+(node:31886) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template NoteTransfer_325 line: 95
+
+(node:31886) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template NoteTransfer_325 line: 55
+
+(node:31886) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template NoteTransfer_325 line: 52
+
+file:///Users/siyuan/Developer/zk-hada-exp/work/t2_circuit_fix/zkdac_v4/scripts/imt.mjs:39
+    const k = trunc(keyFull); if (this.has(k)) throw new Error("key is a member: no non-membership witness");
+                                                     ^
+
+Error: key is a member: no non-membership witness
+    at IMT.nonMemberWitness (file:///Users/siyuan/Developer/zk-hada-exp/work/t2_circuit_fix/zkdac_v4/scripts/imt.mjs:39:54)
+    at file:///Users/siyuan/Developer/zk-hada-exp/work/h3_prestudy/H3-prestudy_20261009/note_lib.mjs:27:56
+    at Array.map (<anonymous>)
+    at Module.transfer (file:///Users/siyuan/Developer/zk-hada-exp/work/h3_prestudy/H3-prestudy_20261009/note_lib.mjs:27:20)
+    at file:///Users/siyuan/Developer/zk-hada-exp/work/h3_prestudy/H3-prestudy_20261009/cases.mjs:44:15
+
+Node.js v24.14.1

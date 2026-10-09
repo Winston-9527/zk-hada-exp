@@ -1,0 +1,27 @@
+{
+ "machine": "Apple M5 Pro x15",
+ "node": "v24.14.1",
+ "constraints": {
+  "nonlinear": 45397,
+  "linear": 38461,
+  "total": 83858
+ },
+ "public_inputs": 7,
+ "runs": 10,
+ "verified": "10/10",
+ "witness_ms": {
+  "mean": 105.9,
+  "sd": 2,
+  "median": 105.5
+ },
+ "prove_ms": {
+  "mean": 1200.9,
+  "sd": 37.5,
+  "median": 1190
+ },
+ "verify_ms": {
+  "mean": 6,
+  "sd": 0.2,
+  "median": 6
+ }
+}

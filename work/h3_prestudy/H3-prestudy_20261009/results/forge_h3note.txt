@@ -1,0 +1,13 @@
+No files changed, compilation skipped
+
+Ran 3 tests for test/H3Note.t.sol:H3NoteTest
+[PASS] test_gas_and_doubleSpend() (gas: 839761)
+Logs:
+  note_transfer verifyProof (7 public inputs) 267159
+  prototype transfer step (verify + roots + nullifier + 2 LeanIMT inserts + event; excl. intrinsic/calldata) 559618
+
+[PASS] test_nullifierBlocksDoubleSpend_evenWithRootPinned() (gas: 596318)
+[PASS] test_rootMatchesJs() (gas: 11854)
+Suite result: ok. 3 passed; 0 failed; 0 skipped; finished in 11.70ms (6.29ms CPU time)
+
+Ran 1 test suite in 94.50ms (11.70ms CPU time): 3 tests passed, 0 failed, 0 skipped (3 total tests)

@@ -1,0 +1,77 @@
+{
+ "date": "2026-10-09T08:57:59.042Z",
+ "M1": {
+  "S1_accepted": 200,
+  "S2_accepted": 100,
+  "S3_accepted": 100,
+  "S3_second_delegation_of_same_note": "rejected (note already consumed)",
+  "budget": 100
+ },
+ "M2": {
+  "budget": 100,
+  "agents": 32,
+  "each": 10,
+  "S1_accepted_total": 320,
+  "S2": {
+   "succeeded": 10,
+   "rejected": 22,
+   "accepted_total": 100
+  },
+  "S3_one_shared_note": {
+   "succeeded_in_block": 1,
+   "note": "one success per note version per block; the change note must be re-proved for the next block"
+  },
+  "S3_presplit_10x10": {
+   "succeeded_in_block": 10,
+   "accepted_total": 100,
+   "presplit_transactions": 10
+  },
+  "invariants": [
+   true,
+   true
+  ]
+ },
+ "M3": {
+  "S1_accepted": 500,
+  "S2_accepted": 100,
+  "S3_accepted": 100
+ },
+ "M4": {
+  "revoked": "e1:A>B",
+  "S3": {
+   "split_output": "rejected (frozen)",
+   "rotated": "rejected (frozen)",
+   "grandchild_C": "rejected (frozen)",
+   "sibling_A_rest": "accepted"
+  },
+  "invariant_holds": true,
+  "frozen_balance": 40,
+  "S2": "a per-root counter has no per-edge state: blocking only B's subtree needs either public lineage on every spend or root-level revocation (kills A too)"
+ },
+ "M5": {
+  "spends": 100,
+  "S2_publicly_linked_pairs": "4950/4950",
+  "S1_S3": "no public field shared between spends (nullifiers / commitments)"
+ },
+ "M6": {
+  "S3": {
+   "max_ops": 5,
+   "states_explored": 986650,
+   "invariant_failures": 0,
+   "violations": 0,
+   "example": null,
+   "ms": 314
+  },
+  "mutant_drop_lineage_on_split": {
+   "max_ops": 5,
+   "states_explored": 983460,
+   "invariant_failures": 0,
+   "violations": 4537,
+   "example": {
+    "kind": "spend-from-revoked-lineage",
+    "note": 1
+   },
+   "ms": 292
+  }
+ }
+}
