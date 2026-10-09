@@ -1,0 +1,39 @@
+ERROR:  4 Error in template BudgetMint_78 line: 11
+
+(node:35134) Warning: Closing file descriptor 11 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:35134) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+ERROR:  4 Error in template ZkDacChainV8_423 line: 237
+
+(node:35134) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:35134) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_240 line: 38
+Error in template BudgetTransfer_327 line: 62
+
+(node:35134) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 100
+
+(node:35134) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 97
+
+(node:35134) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 97
+
+(node:35134) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 97
+
+(node:35134) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 54
+
+(node:35134) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 83
+
+(node:35134) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTPath_319 line: 39
+Error in template IMTNonMember_320 line: 73
+Error in template ZkDacChainV8_423 line: 142
+
+(node:35134) Warning: Closing file descriptor 11 on garbage collection
+27 rows, 0 unexpected

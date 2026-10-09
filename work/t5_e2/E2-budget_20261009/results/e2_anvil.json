@@ -1,0 +1,782 @@
+{
+ "date": "2026-10-09T09:39:00.173Z",
+ "client": "anvil/v1.5.1",
+ "hardfork": "prague",
+ "now": 1791538728,
+ "windows": {
+  "revoked_s": 30,
+  "note_s": 600,
+  "clock_skew_s": 3600
+ },
+ "a1": {
+  "name": "a1",
+  "blocks": [
+   28
+  ],
+  "submitted": 10,
+  "succeeded": 10,
+  "failed_by_reason": {},
+  "rows": [
+   {
+    "label": "a1-S1",
+    "holder": "S1",
+    "status": 1,
+    "gasUsed": 681390,
+    "txIndex": 0,
+    "reason": null
+   },
+   {
+    "label": "a1-S2",
+    "holder": "S2",
+    "status": 1,
+    "gasUsed": 646688,
+    "txIndex": 1,
+    "reason": null
+   },
+   {
+    "label": "a1-S3",
+    "holder": "S3",
+    "status": 1,
+    "gasUsed": 673754,
+    "txIndex": 2,
+    "reason": null
+   },
+   {
+    "label": "a1-S4",
+    "holder": "S4",
+    "status": 1,
+    "gasUsed": 619586,
+    "txIndex": 3,
+    "reason": null
+   },
+   {
+    "label": "a1-S5",
+    "holder": "S5",
+    "status": 1,
+    "gasUsed": 646688,
+    "txIndex": 4,
+    "reason": null
+   },
+   {
+    "label": "a1-S6",
+    "holder": "S6",
+    "status": 1,
+    "gasUsed": 646700,
+    "txIndex": 5,
+    "reason": null
+   },
+   {
+    "label": "a1-S7",
+    "holder": "S7",
+    "status": 1,
+    "gasUsed": 673790,
+    "txIndex": 6,
+    "reason": null
+   },
+   {
+    "label": "a1-S8",
+    "holder": "S8",
+    "status": 1,
+    "gasUsed": 646640,
+    "txIndex": 7,
+    "reason": null
+   },
+   {
+    "label": "a1-S9",
+    "holder": "S9",
+    "status": 1,
+    "gasUsed": 673790,
+    "txIndex": 8,
+    "reason": null
+   },
+   {
+    "label": "a1-S10",
+    "holder": "S10",
+    "status": 1,
+    "gasUsed": 673778,
+    "txIndex": 9,
+    "reason": null
+   }
+  ],
+  "attempts": 32,
+  "no_note_so_no_proof": 22,
+  "accepted_total": 100
+ },
+ "a2": {
+  "name": "a2",
+  "blocks": [
+   34
+  ],
+  "submitted": 12,
+  "succeeded": 4,
+  "failed_by_reason": {
+   "BudgetSpent": 8
+  },
+  "rows": [
+   {
+    "label": "a2-T1-1",
+    "holder": "T1",
+    "status": 1,
+    "gasUsed": 622426,
+    "txIndex": 0,
+    "reason": null
+   },
+   {
+    "label": "a2-T1-2",
+    "holder": "T1",
+    "status": 0,
+    "gasUsed": 66181,
+    "txIndex": 1,
+    "reason": "BudgetSpent"
+   },
+   {
+    "label": "a2-T1-3",
+    "holder": "T1",
+    "status": 0,
+    "gasUsed": 66193,
+    "txIndex": 2,
+    "reason": "BudgetSpent"
+   },
+   {
+    "label": "a2-T2-1",
+    "holder": "T2",
+    "status": 1,
+    "gasUsed": 651862,
+    "txIndex": 3,
+    "reason": null
+   },
+   {
+    "label": "a2-T2-2",
+    "holder": "T2",
+    "status": 0,
+    "gasUsed": 66217,
+    "txIndex": 4,
+    "reason": "BudgetSpent"
+   },
+   {
+    "label": "a2-T2-3",
+    "holder": "T2",
+    "status": 0,
+    "gasUsed": 66193,
+    "txIndex": 5,
+    "reason": "BudgetSpent"
+   },
+   {
+    "label": "a2-T3-1",
+    "holder": "T3",
+    "status": 1,
+    "gasUsed": 651814,
+    "txIndex": 6,
+    "reason": null
+   },
+   {
+    "label": "a2-T3-2",
+    "holder": "T3",
+    "status": 0,
+    "gasUsed": 66181,
+    "txIndex": 7,
+    "reason": "BudgetSpent"
+   },
+   {
+    "label": "a2-T3-3",
+    "holder": "T3",
+    "status": 0,
+    "gasUsed": 66229,
+    "txIndex": 8,
+    "reason": "BudgetSpent"
+   },
+   {
+    "label": "a2-T4-1",
+    "holder": "T4",
+    "status": 1,
+    "gasUsed": 678892,
+    "txIndex": 9,
+    "reason": null
+   },
+   {
+    "label": "a2-T4-2",
+    "holder": "T4",
+    "status": 0,
+    "gasUsed": 66193,
+    "txIndex": 10,
+    "reason": "BudgetSpent"
+   },
+   {
+    "label": "a2-T4-3",
+    "holder": "T4",
+    "status": 0,
+    "gasUsed": 66181,
+    "txIndex": 11,
+    "reason": "BudgetSpent"
+   }
+  ],
+  "accepted_total": 40,
+  "successful_labels": [
+   "a2-T1-1",
+   "a2-T2-1",
+   "a2-T3-1",
+   "a2-T4-1"
+  ]
+ },
+ "a2_revocation": {
+  "name": "a2-revocation",
+  "blocks": [
+   37
+  ],
+  "submitted": 2,
+  "succeeded": 1,
+  "failed_by_reason": {
+   "StaleRevokedRoot": 1
+  },
+  "rows": [
+   {
+    "label": "rev-T1",
+    "holder": "T1",
+    "status": 0,
+    "gasUsed": 58200,
+    "txIndex": 0,
+    "reason": "StaleRevokedRoot"
+   },
+   {
+    "label": "rev-T2",
+    "holder": "T2",
+    "status": 1,
+    "gasUsed": 649504,
+    "txIndex": 1,
+    "reason": null
+   }
+  ],
+  "T1_fresh_proof_after_revocation": "no witness (key is a member: no non-membership witness)"
+ },
+ "a3": {
+  "name": "a3",
+  "blocks": [
+   38
+  ],
+  "submitted": 64,
+  "succeeded": 64,
+  "failed_by_reason": {},
+  "rows": [
+   {
+    "label": "a3-S1-1",
+    "holder": "S1",
+    "status": 1,
+    "gasUsed": 416928,
+    "txIndex": 0,
+    "reason": null
+   },
+   {
+    "label": "a3-S1-2",
+    "holder": "S1",
+    "status": 1,
+    "gasUsed": 416964,
+    "txIndex": 1,
+    "reason": null
+   },
+   {
+    "label": "a3-S2-1",
+    "holder": "S2",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 2,
+    "reason": null
+   },
+   {
+    "label": "a3-S2-2",
+    "holder": "S2",
+    "status": 1,
+    "gasUsed": 416976,
+    "txIndex": 3,
+    "reason": null
+   },
+   {
+    "label": "a3-S3-1",
+    "holder": "S3",
+    "status": 1,
+    "gasUsed": 416928,
+    "txIndex": 4,
+    "reason": null
+   },
+   {
+    "label": "a3-S3-2",
+    "holder": "S3",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 5,
+    "reason": null
+   },
+   {
+    "label": "a3-S4-1",
+    "holder": "S4",
+    "status": 1,
+    "gasUsed": 416976,
+    "txIndex": 6,
+    "reason": null
+   },
+   {
+    "label": "a3-S4-2",
+    "holder": "S4",
+    "status": 1,
+    "gasUsed": 416916,
+    "txIndex": 7,
+    "reason": null
+   },
+   {
+    "label": "a3-S5-1",
+    "holder": "S5",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 8,
+    "reason": null
+   },
+   {
+    "label": "a3-S5-2",
+    "holder": "S5",
+    "status": 1,
+    "gasUsed": 416940,
+    "txIndex": 9,
+    "reason": null
+   },
+   {
+    "label": "a3-S6-1",
+    "holder": "S6",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 10,
+    "reason": null
+   },
+   {
+    "label": "a3-S6-2",
+    "holder": "S6",
+    "status": 1,
+    "gasUsed": 416940,
+    "txIndex": 11,
+    "reason": null
+   },
+   {
+    "label": "a3-S7-1",
+    "holder": "S7",
+    "status": 1,
+    "gasUsed": 416928,
+    "txIndex": 12,
+    "reason": null
+   },
+   {
+    "label": "a3-S7-2",
+    "holder": "S7",
+    "status": 1,
+    "gasUsed": 416916,
+    "txIndex": 13,
+    "reason": null
+   },
+   {
+    "label": "a3-S8-1",
+    "holder": "S8",
+    "status": 1,
+    "gasUsed": 416940,
+    "txIndex": 14,
+    "reason": null
+   },
+   {
+    "label": "a3-S8-2",
+    "holder": "S8",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 15,
+    "reason": null
+   },
+   {
+    "label": "a3-S9-1",
+    "holder": "S9",
+    "status": 1,
+    "gasUsed": 416916,
+    "txIndex": 16,
+    "reason": null
+   },
+   {
+    "label": "a3-S9-2",
+    "holder": "S9",
+    "status": 1,
+    "gasUsed": 416916,
+    "txIndex": 17,
+    "reason": null
+   },
+   {
+    "label": "a3-S10-1",
+    "holder": "S10",
+    "status": 1,
+    "gasUsed": 416904,
+    "txIndex": 18,
+    "reason": null
+   },
+   {
+    "label": "a3-S10-2",
+    "holder": "S10",
+    "status": 1,
+    "gasUsed": 416964,
+    "txIndex": 19,
+    "reason": null
+   },
+   {
+    "label": "a3-S11-1",
+    "holder": "S11",
+    "status": 1,
+    "gasUsed": 416940,
+    "txIndex": 20,
+    "reason": null
+   },
+   {
+    "label": "a3-S11-2",
+    "holder": "S11",
+    "status": 1,
+    "gasUsed": 416940,
+    "txIndex": 21,
+    "reason": null
+   },
+   {
+    "label": "a3-S12-1",
+    "holder": "S12",
+    "status": 1,
+    "gasUsed": 416928,
+    "txIndex": 22,
+    "reason": null
+   },
+   {
+    "label": "a3-S12-2",
+    "holder": "S12",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 23,
+    "reason": null
+   },
+   {
+    "label": "a3-S13-1",
+    "holder": "S13",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 24,
+    "reason": null
+   },
+   {
+    "label": "a3-S13-2",
+    "holder": "S13",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 25,
+    "reason": null
+   },
+   {
+    "label": "a3-S14-1",
+    "holder": "S14",
+    "status": 1,
+    "gasUsed": 416916,
+    "txIndex": 26,
+    "reason": null
+   },
+   {
+    "label": "a3-S14-2",
+    "holder": "S14",
+    "status": 1,
+    "gasUsed": 416928,
+    "txIndex": 27,
+    "reason": null
+   },
+   {
+    "label": "a3-S15-1",
+    "holder": "S15",
+    "status": 1,
+    "gasUsed": 416964,
+    "txIndex": 28,
+    "reason": null
+   },
+   {
+    "label": "a3-S15-2",
+    "holder": "S15",
+    "status": 1,
+    "gasUsed": 416940,
+    "txIndex": 29,
+    "reason": null
+   },
+   {
+    "label": "a3-S16-1",
+    "holder": "S16",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 30,
+    "reason": null
+   },
+   {
+    "label": "a3-S16-2",
+    "holder": "S16",
+    "status": 1,
+    "gasUsed": 416940,
+    "txIndex": 31,
+    "reason": null
+   },
+   {
+    "label": "a3-S17-1",
+    "holder": "S17",
+    "status": 1,
+    "gasUsed": 416928,
+    "txIndex": 32,
+    "reason": null
+   },
+   {
+    "label": "a3-S17-2",
+    "holder": "S17",
+    "status": 1,
+    "gasUsed": 416964,
+    "txIndex": 33,
+    "reason": null
+   },
+   {
+    "label": "a3-S18-1",
+    "holder": "S18",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 34,
+    "reason": null
+   },
+   {
+    "label": "a3-S18-2",
+    "holder": "S18",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 35,
+    "reason": null
+   },
+   {
+    "label": "a3-S19-1",
+    "holder": "S19",
+    "status": 1,
+    "gasUsed": 416916,
+    "txIndex": 36,
+    "reason": null
+   },
+   {
+    "label": "a3-S19-2",
+    "holder": "S19",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 37,
+    "reason": null
+   },
+   {
+    "label": "a3-S20-1",
+    "holder": "S20",
+    "status": 1,
+    "gasUsed": 416928,
+    "txIndex": 38,
+    "reason": null
+   },
+   {
+    "label": "a3-S20-2",
+    "holder": "S20",
+    "status": 1,
+    "gasUsed": 416928,
+    "txIndex": 39,
+    "reason": null
+   },
+   {
+    "label": "a3-S21-1",
+    "holder": "S21",
+    "status": 1,
+    "gasUsed": 416940,
+    "txIndex": 40,
+    "reason": null
+   },
+   {
+    "label": "a3-S21-2",
+    "holder": "S21",
+    "status": 1,
+    "gasUsed": 416940,
+    "txIndex": 41,
+    "reason": null
+   },
+   {
+    "label": "a3-S22-1",
+    "holder": "S22",
+    "status": 1,
+    "gasUsed": 416928,
+    "txIndex": 42,
+    "reason": null
+   },
+   {
+    "label": "a3-S22-2",
+    "holder": "S22",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 43,
+    "reason": null
+   },
+   {
+    "label": "a3-S23-1",
+    "holder": "S23",
+    "status": 1,
+    "gasUsed": 416940,
+    "txIndex": 44,
+    "reason": null
+   },
+   {
+    "label": "a3-S23-2",
+    "holder": "S23",
+    "status": 1,
+    "gasUsed": 416940,
+    "txIndex": 45,
+    "reason": null
+   },
+   {
+    "label": "a3-S24-1",
+    "holder": "S24",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 46,
+    "reason": null
+   },
+   {
+    "label": "a3-S24-2",
+    "holder": "S24",
+    "status": 1,
+    "gasUsed": 416940,
+    "txIndex": 47,
+    "reason": null
+   },
+   {
+    "label": "a3-S25-1",
+    "holder": "S25",
+    "status": 1,
+    "gasUsed": 416964,
+    "txIndex": 48,
+    "reason": null
+   },
+   {
+    "label": "a3-S25-2",
+    "holder": "S25",
+    "status": 1,
+    "gasUsed": 416964,
+    "txIndex": 49,
+    "reason": null
+   },
+   {
+    "label": "a3-S26-1",
+    "holder": "S26",
+    "status": 1,
+    "gasUsed": 416940,
+    "txIndex": 50,
+    "reason": null
+   },
+   {
+    "label": "a3-S26-2",
+    "holder": "S26",
+    "status": 1,
+    "gasUsed": 416916,
+    "txIndex": 51,
+    "reason": null
+   },
+   {
+    "label": "a3-S27-1",
+    "holder": "S27",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 52,
+    "reason": null
+   },
+   {
+    "label": "a3-S27-2",
+    "holder": "S27",
+    "status": 1,
+    "gasUsed": 416964,
+    "txIndex": 53,
+    "reason": null
+   },
+   {
+    "label": "a3-S28-1",
+    "holder": "S28",
+    "status": 1,
+    "gasUsed": 416916,
+    "txIndex": 54,
+    "reason": null
+   },
+   {
+    "label": "a3-S28-2",
+    "holder": "S28",
+    "status": 1,
+    "gasUsed": 416904,
+    "txIndex": 55,
+    "reason": null
+   },
+   {
+    "label": "a3-S29-1",
+    "holder": "S29",
+    "status": 1,
+    "gasUsed": 416928,
+    "txIndex": 56,
+    "reason": null
+   },
+   {
+    "label": "a3-S29-2",
+    "holder": "S29",
+    "status": 1,
+    "gasUsed": 416940,
+    "txIndex": 57,
+    "reason": null
+   },
+   {
+    "label": "a3-S30-1",
+    "holder": "S30",
+    "status": 1,
+    "gasUsed": 416964,
+    "txIndex": 58,
+    "reason": null
+   },
+   {
+    "label": "a3-S30-2",
+    "holder": "S30",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 59,
+    "reason": null
+   },
+   {
+    "label": "a3-S31-1",
+    "holder": "S31",
+    "status": 1,
+    "gasUsed": 416928,
+    "txIndex": 60,
+    "reason": null
+   },
+   {
+    "label": "a3-S31-2",
+    "holder": "S31",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 61,
+    "reason": null
+   },
+   {
+    "label": "a3-S32-1",
+    "holder": "S32",
+    "status": 1,
+    "gasUsed": 416952,
+    "txIndex": 62,
+    "reason": null
+   },
+   {
+    "label": "a3-S32-2",
+    "holder": "S32",
+    "status": 1,
+    "gasUsed": 416916,
+    "txIndex": 63,
+    "reason": null
+   }
+  ],
+  "accepted_total": 640
+ },
+ "conservation": {
+  "minted": 200,
+  "spent_on_chain": 150,
+  "note": "unspent = minted - spent by construction of each proof; checked per proof in-circuit; here: spent <= minted",
+  "spent_le_minted": true,
+  "final_note_root_matches_mirror": true
+ }
+}
