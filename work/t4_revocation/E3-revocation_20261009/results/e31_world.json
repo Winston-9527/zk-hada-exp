@@ -1,0 +1,5366 @@
+{
+ "date": "2026-10-09T05:18:31.678Z",
+ "holders": 46,
+ "rows": [
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S1>S11",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S1>S11>S111",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S1>S11>S112",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S1>S12",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S1>S12>S121",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S1>S12>S122",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S1>S13",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S1>S13>S131",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S1>S13>S132",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S2>S21",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S2>S21>S211",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S2>S21>S212",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S2>S22",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S2>S22>S221",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S2>S22>S222",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S2>S23",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S2>S23>S231",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S2>S23>S232",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S3",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S3>S31",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S3>S31>S311",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S3>S31>S312",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S3>S32",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S3>S32>S321",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S3>S32>S322",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S3>S33",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S3>S33>S331",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S3>S33>S332",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S4",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S4>S41",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S4>S41>S411",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S4>S41>S412",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S4>S42",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S4>S42>S421",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S4>S42>S422",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S4>S43",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S4>S43>S431",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S4>S43>S432",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H'>M'",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H'>M'>T1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H'>M'>T2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S1>X",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R0",
+   "holder": "H>M>S4>X",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M",
+   "D": 1,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S1",
+   "D": 2,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S11",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S11>S111",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S11>S112",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S12",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S12>S121",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S12>S122",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S13",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S13>S131",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S13>S132",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S2",
+   "D": 2,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S21",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S21>S211",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S21>S212",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S22",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S22>S221",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S22>S222",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S23",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S23>S231",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S23>S232",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S3",
+   "D": 2,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S31",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S31>S311",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S31>S312",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S32",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S32>S321",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S32>S322",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S33",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S33>S331",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S33>S332",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S4",
+   "D": 2,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S41",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S41>S411",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S41>S412",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S42",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S42>S421",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S42>S422",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S43",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S43>S431",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S43>S432",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H'>M'",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H'>M'>T1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H'>M'>T2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S1>X",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R1",
+   "holder": "H>M>S4>X",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S1",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S1",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S11",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S1>S11",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S11>S111",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S1>S11>S111",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S11>S112",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S1>S11>S112",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S12",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S1>S12",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S12>S121",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S1>S12>S121",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S12>S122",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S1>S12>S122",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S13",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S1>S13",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S13>S131",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S1>S13>S131",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S1>S13>S132",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S1>S13>S132",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S2",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S2",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S21",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S2>S21",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S21>S211",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S2>S21>S211",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S21>S212",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S2>S21>S212",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S22",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S2>S22",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S22>S221",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S2>S22>S221",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S22>S222",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S2>S22>S222",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S23",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S2>S23",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S23>S231",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S2>S23>S231",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S2>S23>S232",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S2>S23>S232",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S3",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S3",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S31",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S3>S31",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S31>S311",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S3>S31>S311",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S31>S312",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S3>S31>S312",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S32",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S3>S32",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S32>S321",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S3>S32>S321",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S32>S322",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S3>S32>S322",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S33",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S3>S33",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S33>S331",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S3>S33>S331",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S3>S33>S332",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S3>S33>S332",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S4",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S4",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S41",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S4>S41",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S41>S411",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S4>S41>S411",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S41>S412",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S4>S41>S412",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S42",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S4>S42",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S42>S421",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S4>S42>S421",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S42>S422",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S4>S42>S422",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S43",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S4>S43",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S43>S431",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S4>S43>S431",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S4>S43>S432",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S4>S43>S432",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S1>X",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S1>X",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R1",
+   "holder": "H>M>S4>X",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R1",
+   "holder": "H>M>S4>X",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A3",
+   "scenario": "R1",
+   "holder": "H>M",
+   "expected": "all reject",
+   "observed": "0/22 accepted",
+   "pass": true
+  },
+  {
+   "exp": "A4",
+   "scenario": "R1",
+   "holder": "H>M>Z_R1",
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "A6",
+   "scenario": "R1",
+   "holder": "H>S1",
+   "expected": "reject",
+   "observed": "reject (witness construction impossible: certificate not registered)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S1>S11",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S1>S11>S111",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S1>S11>S112",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S1>S12",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S1>S12>S121",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S1>S12>S122",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S1>S13",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S1>S13>S131",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S1>S13>S132",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S2",
+   "D": 2,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S21",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S21>S211",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S21>S212",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S22",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S22>S221",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S22>S222",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S23",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S23>S231",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S23>S232",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S3",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S3>S31",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S3>S31>S311",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S3>S31>S312",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S3>S32",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S3>S32>S321",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S3>S32>S322",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S3>S33",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S3>S33>S331",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S3>S33>S332",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S4",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S4>S41",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S4>S41>S411",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S4>S41>S412",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S4>S42",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S4>S42>S421",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S4>S42>S422",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S4>S43",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S4>S43>S431",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S4>S43>S432",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H'>M'",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H'>M'>T1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H'>M'>T2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S1>X",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R2",
+   "holder": "H>M>S4>X",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "A1",
+   "scenario": "R2",
+   "holder": "H>M>S2",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R2",
+   "holder": "H>M>S2",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S21",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R2",
+   "holder": "H>M>S2>S21",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S21>S211",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R2",
+   "holder": "H>M>S2>S21>S211",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S21>S212",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R2",
+   "holder": "H>M>S2>S21>S212",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S22",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R2",
+   "holder": "H>M>S2>S22",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S22>S221",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R2",
+   "holder": "H>M>S2>S22>S221",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S22>S222",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R2",
+   "holder": "H>M>S2>S22>S222",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S23",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R2",
+   "holder": "H>M>S2>S23",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S23>S231",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R2",
+   "holder": "H>M>S2>S23>S231",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R2",
+   "holder": "H>M>S2>S23>S232",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R2",
+   "holder": "H>M>S2>S23>S232",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A3",
+   "scenario": "R2",
+   "holder": "H>M>S2",
+   "expected": "all reject",
+   "observed": "0/22 accepted",
+   "pass": true
+  },
+  {
+   "exp": "A4",
+   "scenario": "R2",
+   "holder": "H>M>S2>Z_R2",
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "A5",
+   "scenario": "R2",
+   "holder": "H>M>S1>S2",
+   "expected": "accept (POLICY: new authorization by an unrevoked delegator)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true
+  },
+  {
+   "exp": "A6",
+   "scenario": "R2",
+   "holder": "H>M>S21",
+   "note": "hop 1 signature taken from H>M>S2>S21",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "L",
+   "scenario": "R2",
+   "holder": "H>M>S2>S21>S211",
+   "expected": "accept (FALSE ACCEPT under L)",
+   "observed": "accept",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L",
+   "scenario": "R2",
+   "holder": "H>M>S2>S21>S212",
+   "expected": "accept (FALSE ACCEPT under L)",
+   "observed": "accept",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L",
+   "scenario": "R2",
+   "holder": "H>M>S2>S22>S221",
+   "expected": "accept (FALSE ACCEPT under L)",
+   "observed": "accept",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L",
+   "scenario": "R2",
+   "holder": "H>M>S2>S22>S222",
+   "expected": "accept (FALSE ACCEPT under L)",
+   "observed": "accept",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L",
+   "scenario": "R2",
+   "holder": "H>M>S2>S23>S231",
+   "expected": "accept (FALSE ACCEPT under L)",
+   "observed": "accept",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L",
+   "scenario": "R2",
+   "holder": "H>M>S2>S23>S232",
+   "expected": "accept (FALSE ACCEPT under L)",
+   "observed": "accept",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L-summary",
+   "scenario": "R2",
+   "expected": "targets accepted under L unless own last entry revoked; non-targets accept",
+   "observed": "targets accepted 6/6; non-targets accepted 18/18",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L-enumerate",
+   "scenario": "R2",
+   "expected": "targets blocked under L only after one insert per descendant",
+   "observed": "6 extra inserts for 6 depth-4 targets; still accepted 0",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S1>S11",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S1>S11>S111",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S1>S11>S112",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S1>S12",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S1>S12>S121",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S1>S12>S122",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S1>S13",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S1>S13>S131",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S1>S13>S132",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S2>S21",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S2>S21>S211",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S2>S21>S212",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S2>S22",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S2>S22>S221",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S2>S22>S222",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S2>S23",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S2>S23>S231",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S2>S23>S232",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S3",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S3>S31",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S3>S31>S311",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S3>S31>S312",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S3>S32",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S3>S32>S321",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S3>S32>S322",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S3>S33",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S3>S33>S331",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S3>S33>S332",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S4",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S4>S41",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S4>S41>S411",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S4>S41>S412",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S4>S42",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S4>S42>S421",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S4>S42>S422",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S4>S43",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S4>S43>S431",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S4>S43>S432",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H'>M'",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H'>M'>T1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H'>M'>T2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S1>X",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R3",
+   "holder": "H>M>S4>X",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "A1",
+   "scenario": "R3",
+   "holder": "H>M>S2>S21",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R3",
+   "holder": "H>M>S2>S21",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R3",
+   "holder": "H>M>S2>S21>S211",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R3",
+   "holder": "H>M>S2>S21>S211",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R3",
+   "holder": "H>M>S2>S21>S212",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R3",
+   "holder": "H>M>S2>S21>S212",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A3",
+   "scenario": "R3",
+   "holder": "H>M>S2>S21",
+   "expected": "all reject",
+   "observed": "0/22 accepted",
+   "pass": true
+  },
+  {
+   "exp": "A4",
+   "scenario": "R3",
+   "holder": "H>M>S2>S21>Z_R3",
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "A5",
+   "scenario": "R3",
+   "holder": "H>M>S1>S21",
+   "expected": "accept (POLICY: new authorization by an unrevoked delegator)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true
+  },
+  {
+   "exp": "A6",
+   "scenario": "R3",
+   "holder": "H>M>S2>S211",
+   "note": "hop 2 signature taken from H>M>S2>S21>S211",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "L",
+   "scenario": "R3",
+   "holder": "H>M>S2>S21>S211",
+   "expected": "accept (FALSE ACCEPT under L)",
+   "observed": "accept",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L",
+   "scenario": "R3",
+   "holder": "H>M>S2>S21>S212",
+   "expected": "accept (FALSE ACCEPT under L)",
+   "observed": "accept",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L-summary",
+   "scenario": "R3",
+   "expected": "targets accepted under L unless own last entry revoked; non-targets accept",
+   "observed": "targets accepted 2/2; non-targets accepted 22/22",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L-enumerate",
+   "scenario": "R3",
+   "expected": "targets blocked under L only after one insert per descendant",
+   "observed": "2 extra inserts for 2 depth-4 targets; still accepted 0",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S1>S11",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S1>S11>S111",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S1>S11>S112",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S1>S12",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S1>S12>S121",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S1>S12>S122",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S1>S13",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S1>S13>S131",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S1>S13>S132",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S2>S21",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S2>S21>S211",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S2>S21>S212",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S2>S22",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S2>S22>S221",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S2>S22>S222",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S2>S23",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S2>S23>S231",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S2>S23>S232",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S3",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S3>S31",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S3>S31>S311",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S3>S31>S312",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S3>S32",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S3>S32>S321",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S3>S32>S322",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S3>S33",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S3>S33>S331",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S3>S33>S332",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S4",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S4>S41",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S4>S41>S411",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S4>S41>S412",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S4>S42",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S4>S42>S421",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S4>S42>S422",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S4>S43",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S4>S43>S431",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S4>S43>S432",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H'>M'",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H'>M'>T1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H'>M'>T2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S1>X",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R4",
+   "holder": "H>M>S4>X",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "A1",
+   "scenario": "R4",
+   "holder": "H>M>S2>S21>S211",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R4",
+   "holder": "H>M>S2>S21>S211",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A3",
+   "scenario": "R4",
+   "holder": "H>M>S2>S21>S211",
+   "expected": "all reject",
+   "observed": "0/22 accepted",
+   "pass": true
+  },
+  {
+   "exp": "A5",
+   "scenario": "R4",
+   "holder": "H>M>S2>S22>S211",
+   "expected": "accept (POLICY: new authorization by an unrevoked delegator)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true
+  },
+  {
+   "exp": "A6",
+   "scenario": "R4",
+   "expected": "reject",
+   "observed": "not applicable (revoked node has no descendant)",
+   "pass": true,
+   "na": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S1>S11",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S1>S11>S111",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S1>S11>S112",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S1>S12",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S1>S12>S121",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S1>S12>S122",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S1>S13",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S1>S13>S131",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S1>S13>S132",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S2>S21",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S2>S21>S211",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S2>S21>S212",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S2>S22",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S2>S22>S221",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S2>S22>S222",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S2>S23",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S2>S23>S231",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S2>S23>S232",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S3",
+   "D": 2,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S31",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S31>S311",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S31>S312",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S32",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S32>S321",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S32>S322",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S33",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S33>S331",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S33>S332",
+   "D": 4,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S4",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S4>S41",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S4>S41>S411",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S4>S41>S412",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S4>S42",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S4>S42>S421",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S4>S42>S422",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S4>S43",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S4>S43>S431",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S4>S43>S432",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H'>M'",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H'>M'>T1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H'>M'>T2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S1>X",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R5",
+   "holder": "H>M>S4>X",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "A1",
+   "scenario": "R5",
+   "holder": "H>M>S3",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R5",
+   "holder": "H>M>S3",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S31",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R5",
+   "holder": "H>M>S3>S31",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S31>S311",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R5",
+   "holder": "H>M>S3>S31>S311",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S31>S312",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R5",
+   "holder": "H>M>S3>S31>S312",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S32",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R5",
+   "holder": "H>M>S3>S32",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S32>S321",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R5",
+   "holder": "H>M>S3>S32>S321",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S32>S322",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R5",
+   "holder": "H>M>S3>S32>S322",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S33",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R5",
+   "holder": "H>M>S3>S33",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S33>S331",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R5",
+   "holder": "H>M>S3>S33>S331",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R5",
+   "holder": "H>M>S3>S33>S332",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R5",
+   "holder": "H>M>S3>S33>S332",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A3",
+   "scenario": "R5",
+   "holder": "H>M>S3",
+   "expected": "all reject",
+   "observed": "0/22 accepted",
+   "pass": true
+  },
+  {
+   "exp": "A4",
+   "scenario": "R5",
+   "holder": "H>M>S3>Z_R5",
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "A5",
+   "scenario": "R5",
+   "holder": "H>M>S1>S3",
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true,
+   "policy": false
+  },
+  {
+   "exp": "A6",
+   "scenario": "R5",
+   "holder": "H>M>S31",
+   "note": "hop 1 signature taken from H>M>S3>S31",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "L",
+   "scenario": "R5",
+   "holder": "H>M>S3>S31>S311",
+   "expected": "accept (FALSE ACCEPT under L)",
+   "observed": "accept",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L",
+   "scenario": "R5",
+   "holder": "H>M>S3>S31>S312",
+   "expected": "accept (FALSE ACCEPT under L)",
+   "observed": "accept",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L",
+   "scenario": "R5",
+   "holder": "H>M>S3>S32>S321",
+   "expected": "accept (FALSE ACCEPT under L)",
+   "observed": "accept",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L",
+   "scenario": "R5",
+   "holder": "H>M>S3>S32>S322",
+   "expected": "accept (FALSE ACCEPT under L)",
+   "observed": "accept",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L",
+   "scenario": "R5",
+   "holder": "H>M>S3>S33>S331",
+   "expected": "accept (FALSE ACCEPT under L)",
+   "observed": "accept",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L",
+   "scenario": "R5",
+   "holder": "H>M>S3>S33>S332",
+   "expected": "accept (FALSE ACCEPT under L)",
+   "observed": "accept",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L-summary",
+   "scenario": "R5",
+   "expected": "targets accepted under L unless own last entry revoked; non-targets accept",
+   "observed": "targets accepted 6/6; non-targets accepted 18/18",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "L-enumerate",
+   "scenario": "R5",
+   "expected": "targets blocked under L only after one insert per descendant",
+   "observed": "6 extra inserts for 6 depth-4 targets; still accepted 0",
+   "pass": true,
+   "ablation": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S1>S11",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S1>S11>S111",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S1>S11>S112",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S1>S12",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S1>S12>S121",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S1>S12>S122",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S1>S13",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S1>S13>S131",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S1>S13>S132",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S2>S21",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S2>S21>S211",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S2>S21>S212",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S2>S22",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S2>S22>S221",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S2>S22>S222",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S2>S23",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S2>S23>S231",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S2>S23>S232",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S3",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S3>S31",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S3>S31>S311",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S3>S31>S312",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S3>S32",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S3>S32>S321",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S3>S32>S322",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S3>S33",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S3>S33>S331",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S3>S33>S332",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S4",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S4>S41",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S4>S41>S411",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S4>S41>S412",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S4>S42",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S4>S42>S421",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S4>S42>S422",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S4>S43",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S4>S43>S431",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S4>S43>S432",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H'>M'",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H'>M'>T1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H'>M'>T2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S1>X",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R6",
+   "holder": "H>M>S4>X",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S1>S11",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S1>S11>S111",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S1>S11>S112",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S1>S12",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S1>S12>S121",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S1>S12>S122",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S1>S13",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S1>S13>S131",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S1>S13>S132",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S2>S21",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S2>S21>S211",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S2>S21>S212",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S2>S22",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S2>S22>S221",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S2>S22>S222",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S2>S23",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S2>S23>S231",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S2>S23>S232",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S3",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S3>S31",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S3>S31>S311",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S3>S31>S312",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S3>S32",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S3>S32>S321",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S3>S32>S322",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S3>S33",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S3>S33>S331",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S3>S33>S332",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S4",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S4>S41",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S4>S41>S411",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S4>S41>S412",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S4>S42",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S4>S42>S421",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S4>S42>S422",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S4>S43",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S4>S43>S431",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S4>S43>S432",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H'>M'",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H'>M'>T1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H'>M'>T2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S1>X",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7a",
+   "holder": "H>M>S4>X",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "A1",
+   "scenario": "R7a",
+   "holder": "H>M>S1>X",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R7a",
+   "holder": "H>M>S1>X",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A3",
+   "scenario": "R7a",
+   "holder": "H>M>S1>X",
+   "expected": "all reject",
+   "observed": "0/22 accepted",
+   "pass": true
+  },
+  {
+   "exp": "A4",
+   "scenario": "R7a",
+   "holder": "H>M>S1>X>Z_R7a",
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "A6",
+   "scenario": "R7a",
+   "expected": "reject",
+   "observed": "not applicable (revoked node has no descendant)",
+   "pass": true,
+   "na": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S1>S11",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S1>S11>S111",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S1>S11>S112",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S1>S12",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S1>S12>S121",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S1>S12>S122",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S1>S13",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S1>S13>S131",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S1>S13>S132",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S2>S21",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S2>S21>S211",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S2>S21>S212",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S2>S22",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S2>S22>S221",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S2>S22>S222",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S2>S23",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S2>S23>S231",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S2>S23>S232",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S3",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S3>S31",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S3>S31>S311",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S3>S31>S312",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S3>S32",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S3>S32>S321",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S3>S32>S322",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S3>S33",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S3>S33>S331",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S3>S33>S332",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S4",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S4>S41",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S4>S41>S411",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S4>S41>S412",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S4>S42",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S4>S42>S421",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S4>S42>S422",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S4>S43",
+   "D": 3,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S4>S43>S431",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S4>S43>S432",
+   "D": 4,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H'>M'",
+   "D": 1,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H'>M'>T1",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H'>M'>T2",
+   "D": 2,
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S1>X",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "E3.1",
+   "scenario": "R7b",
+   "holder": "H>M>S4>X",
+   "D": 3,
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "A1",
+   "scenario": "R7b",
+   "holder": "H>M>S1>X",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R7b",
+   "holder": "H>M>S1>X",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A1",
+   "scenario": "R7b",
+   "holder": "H>M>S4>X",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "exp": "A2",
+   "scenario": "R7b",
+   "holder": "H>M>S4>X",
+   "expected": "accept (POLICY: old root; gate window decides)",
+   "observed": "accept",
+   "pass": true,
+   "policy": true,
+   "oldRoot": "3033049403509113685300512778009901293385898394783473815998126923124782270970"
+  },
+  {
+   "exp": "A3",
+   "scenario": "R7b",
+   "holder": "H>M>S1>X",
+   "expected": "all reject",
+   "observed": "0/22 accepted",
+   "pass": true
+  },
+  {
+   "exp": "A4",
+   "scenario": "R7b",
+   "holder": "H>M>S1>X>Z_R7b",
+   "expected": "reject",
+   "observed": "reject (no non-membership witness)",
+   "pass": true
+  },
+  {
+   "exp": "A6",
+   "scenario": "R7b",
+   "expected": "reject",
+   "observed": "not applicable (revoked node has no descendant)",
+   "pass": true,
+   "na": true
+  }
+ ],
+ "unexpected": 0
+}

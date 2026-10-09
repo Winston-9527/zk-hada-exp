@@ -1,0 +1,11 @@
+0a1,2
+> // E3 ABLATION L (NOT a protocol circuit): copy of ../../../t2_circuit_fix/zkdac_v7/circuits/zkdac_chain_v7.circom with revocation checked only for
+> // the last certificate and the last key. Used to show the causal role of the per-hop check. Diff: ablation/leafonly.diff.
+133a136
+>         if (i == D - 1) {                              // E3 ABLATION L: revocation checked for the LAST certificate only
+137a141
+>         }
+159c163
+<         for (var t = 0; t < D - 1; t++) {
+---
+>         for (var t = D - 2; t < D - 1; t++) {                // E3 ABLATION L: only the LAST key ent[D]
