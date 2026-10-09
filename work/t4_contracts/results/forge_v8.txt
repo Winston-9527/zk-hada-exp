@@ -1,0 +1,20 @@
+No files changed, compilation skipped
+
+Ran 8 tests for test/V8.t.sol:V8Test
+[PASS] test_GB2_amountMismatch() (gas: 31471241)
+[PASS] test_GB4_noteRootAfterWindow() (gas: 15840729)
+[PASS] test_GB5_mintNonOperator() (gas: 2925643)
+[PASS] test_GB7_revocationFreezesBudget() (gas: 47861532)
+[PASS] test_actionThenTransferOfSameNote() (gas: 39960022)
+[PASS] test_gas() (gas: 29773384)
+Logs:
+  v8 mint (excl. intrinsic and calldata) 300982
+  v8 transferBudget (2 note inserts) 473346
+  v8 execute D=2 budgeted (excl. intrinsic and calldata) 583771
+  v8 execute D=4 budgeted (excl. intrinsic and calldata) 552684
+
+[PASS] test_mintWrongAmount() (gas: 2951036)
+[PASS] test_sequence() (gas: 32947756)
+Suite result: ok. 8 passed; 0 failed; 0 skipped; finished in 45.83ms (188.93ms CPU time)
+
+Ran 1 test suite in 104.22ms (45.83ms CPU time): 8 tests passed, 0 failed, 0 skipped (8 total tests)
