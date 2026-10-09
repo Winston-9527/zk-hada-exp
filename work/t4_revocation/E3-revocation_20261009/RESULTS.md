@@ -118,6 +118,19 @@ Two additional forge tests (not pre-registered, recorded for #18):
 - Forge test development: the first versions failed with NotOperator (a view call inside the pranked call consumed `vm.prank`, the pitfall in HANDOFF §6).
   Then an inserted comment swallowed the gas-measurement statement (reported 0 gas). Both fixed before the recorded run.
 
+## Assessment of L3 against the research design (added 2026-10-09, user decision: disclose, do not change the circuit)
+- Privacy target of the first version (research design line 27): hide lineage from the **public verifier**; what each participant knows is listed separately.
+  L1 shows the public verifier cannot recognise any revocation entry → target met.
+- H2 and its stop condition (lines 58, 321) do not depend on salting: E3.1/E3.2 hold either way.
+- The leakage function (line 253) already admits "handles exposed by design after revocation"; L2/L3 fall in that class.
+- Disclosed deviation: line 97 proposes revocation handles derived from an independent secret. The implementation uses the unsalted certificate hash, so
+  anyone who knows both keys of an edge and has a narrow prior on (cap, expiry) can recognise its revocation. The issuer and the descendants of the edge know
+  it anyway; an auditor who opened an action already knows the chain's keys, so the increment is "this edge was revoked". Line 97's core requirement — that
+  knowing a handle must not suffice to revoke — is about revocation authority (#18), not salting.
+- Paper wording (proposed for party A): leakage L includes "a revoked certificate entry is recognisable by parties who know both endpoint keys and a prior on
+  (cap, expiry); not by the public verifier". A salted handle (new circuit, setup, T2/T3/E3 re-run, ≈ 1 day) is left as an option if a stronger claim is
+  needed.
+
 ## Limits
 - Witness-level evaluation, apart from E3.5's real proof (T2 established witness = proof level for the public fields).
 - One world shape.
