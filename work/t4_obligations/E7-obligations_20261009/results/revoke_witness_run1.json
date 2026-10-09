@@ -1,0 +1,142 @@
+{
+ "date": "2026-10-09T08:32:09.387Z",
+ "instance": "buildInstanceV7({D:4, seed:1, mode:'C'})",
+ "imt_leaves": 13,
+ "rows": [
+  {
+   "id": "V1",
+   "case": "issuer ent[1] revokes cert hop 1",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "V2",
+   "case": "holder ent[2] revokes its incoming cert hop 1",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "V1",
+   "case": "issuer ent[2] revokes cert hop 2",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "V2",
+   "case": "holder ent[3] revokes its incoming cert hop 2",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "V1",
+   "case": "issuer ent[3] revokes cert hop 3",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "V2",
+   "case": "holder ent[4] revokes its incoming cert hop 3",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "V3",
+   "case": "key ent[2] revokes its own key entry",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "V3",
+   "case": "key ent[3] revokes its own key entry",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "V3",
+   "case": "key ent[4] revokes its own key entry",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "V4",
+   "case": "ancestor ent[1] (not the issuer) uses its own sk for cert hop 2",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "V4",
+   "case": "ancestor ent[1] presents its own cert hop 1 as authority for entry = cert hop 2",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "V5",
+   "case": "knows entry + both public keys, random sk",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "V5",
+   "case": "key entry of ent[3] with who = 1 and ent[4]'s sk",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "V5",
+   "case": "key entry of ent[3] signed with ent[2]'s sk (its issuer)",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "V6",
+   "case": "wrong new_root (+1)",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "V6",
+   "case": "entry already revoked (second insertion of the same entry)",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "V6",
+   "case": "low leaf not the predecessor (0 other leaves below k)",
+   "expected": "all reject",
+   "observed": "0/0 accepted",
+   "pass": false
+  },
+  {
+   "id": "V6",
+   "case": "next_index = 1 (occupied slot)",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "V6",
+   "case": "next_index = count + 5 (empty, not count)",
+   "expected": "circuit accepts; contract binds next_index = count",
+   "observed": "accept",
+   "pass": true,
+   "policy": true
+  }
+ ],
+ "unexpected": 1
+}

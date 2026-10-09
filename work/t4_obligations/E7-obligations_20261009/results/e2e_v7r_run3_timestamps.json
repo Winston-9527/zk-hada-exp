@@ -1,0 +1,4246 @@
+{
+ "now": 1791535463,
+ "chain_id": 1337,
+ "clock_skew_s": 3600,
+ "revoked_window_s": 5,
+ "addresses": {
+  "poseidonT3": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+  "verReg": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+  "registry": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+  "verC4": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+  "verRevoke": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+  "revocations": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+  "target": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+  "gate": "0xa513E6E4b8f2a923D98304ec87F64353C4D5C853"
+ },
+ "fixtures_sha256": "fa5146ba5f9fe900c3ea48c2d1018d9893d1d79e4c8365144b2e81cd57e56ddc",
+ "runs": [
+  {
+   "client": "geth --dev, genesis without bogotaTime (Osaka only)",
+   "version": "Geth/v1.17.7-stable/darwin-arm64/go1.27.1",
+   "wall_clock_revoke_sent": 1791535526,
+   "wall_clock_execute2_sent": 1791535533,
+   "tx": {
+    "setGroupRoot": {
+     "status": "0x1",
+     "gasUsed": 45746,
+     "logs": 1,
+     "calldata": {
+      "bytes": 68,
+      "zero": 31,
+      "nonzero": 37,
+      "eip2028_calldata_gas": 716,
+      "eip7623_floor_total": 22790
+     },
+     "block": 9,
+     "block_timestamp": 1791535534,
+     "wall_clock_at_report": 1791535533
+    },
+    "register_0": {
+     "status": "0x1",
+     "gasUsed": 362597,
+     "logs": 1,
+     "calldata": {
+      "bytes": 420,
+      "zero": 63,
+      "nonzero": 357,
+      "eip2028_calldata_gas": 5964,
+      "eip7623_floor_total": 35910
+     },
+     "block": 10,
+     "block_timestamp": 1791535535,
+     "wall_clock_at_report": 1791535533
+    },
+    "register_1": {
+     "status": "0x1",
+     "gasUsed": 405414,
+     "logs": 1,
+     "calldata": {
+      "bytes": 420,
+      "zero": 62,
+      "nonzero": 358,
+      "eip2028_calldata_gas": 5976,
+      "eip7623_floor_total": 35940
+     },
+     "block": 11,
+     "block_timestamp": 1791535536,
+     "wall_clock_at_report": 1791535533
+    },
+    "setMethod": {
+     "status": "0x1",
+     "gasUsed": 66482,
+     "logs": 0,
+     "calldata": {
+      "bytes": 100,
+      "zero": 90,
+      "nonzero": 10,
+      "eip2028_calldata_gas": 520,
+      "eip7623_floor_total": 22300
+     },
+     "block": 12,
+     "block_timestamp": 1791535537,
+     "wall_clock_at_report": 1791535533
+    },
+    "execute_1": {
+     "status": "0x1",
+     "gasUsed": 484925,
+     "logs": 2,
+     "calldata": {
+      "bytes": 1188,
+      "zero": 316,
+      "nonzero": 872,
+      "eip2028_calldata_gas": 15216,
+      "eip7623_floor_total": 59040
+     },
+     "block": 13,
+     "block_timestamp": 1791535538,
+     "wall_clock_at_report": 1791535533,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+       "input4": "0xad7203b6",
+       "gasUsed": 484925,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2462,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2486,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0xcf7ed3acca5a467e9e704c703e8d87f634fb0fc9",
+       "input4": "0xa0c2a19a",
+       "gasUsed": 335156,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x227293d7",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x11f51db5",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2ccb3109",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1a733b4c",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x14964b78",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x04715e02",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x053871d4",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x06d5dff9",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x16b2deb1",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2009e2cc",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2f981b26",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0b734604",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x0f0e9aa1",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0f0e9aa1",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2397e468",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x288ec23f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x09a4285d",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0fc12dd4",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x282bc5cf",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x08d5107f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x24adb7db",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1365d76e",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x30166614",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x011ebc0f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x085bfe1c",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x10ed7131",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x22b83c8c",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x25eadb02",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x1d186cc5",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0dc85188",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2f8c99d6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x02f74e71",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2544d2da",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1560b04e",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x14dd09b6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2554c2d4",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x0e90f2a6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2b1ad4b1",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2524dc26",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x01f2c0cd",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x20fc00da",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x105e9059",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x282021d9",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x19f1594c",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x227713c5",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x02a1a33f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000008",
+       "input4": "0x1751f499",
+       "gasUsed": 181000,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "CALL",
+       "to": "0x0165878a594ca255338adfa4d48449f69242eb8f",
+       "input4": "0x35af7587",
+       "gasUsed": 49243,
+       "error": null
+      }
+     ]
+    },
+    "execute_1_replay_forced": {
+     "status": "0x0",
+     "gasUsed": 59040,
+     "logs": 0,
+     "calldata": {
+      "bytes": 1188,
+      "zero": 316,
+      "nonzero": 872,
+      "eip2028_calldata_gas": 15216,
+      "eip7623_floor_total": 59040
+     },
+     "block": 14,
+     "block_timestamp": 1791535539,
+     "wall_clock_at_report": 1791535533,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+       "input4": "0xad7203b6",
+       "gasUsed": 59040,
+       "error": "execution reverted"
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2462,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2486,
+       "error": null
+      }
+     ],
+     "revert_reason_at_parent_block": "Error: server returned an error response: error code 3: execution reverted, data: \"0x63734faa\""
+    },
+    "revoke": {
+     "status": "0x1",
+     "gasUsed": 273556,
+     "logs": 1,
+     "calldata": {
+      "bytes": 324,
+      "zero": 0,
+      "nonzero": 324,
+      "eip2028_calldata_gas": 5184,
+      "eip7623_floor_total": 33960
+     },
+     "block": 15,
+     "block_timestamp": 1791535540,
+     "wall_clock_at_report": 1791535533,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x2ef0b308",
+       "gasUsed": 273556,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9",
+       "input4": "0x5fe8c13b",
+       "gasUsed": 208946,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x1930bc1f",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x180b0641",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2a4a65fd",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x15f909b3",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x042622ca",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0f96e65d",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x05e9be25",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0018efbd",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000008",
+       "input4": "0x09a148aa",
+       "gasUsed": 181000,
+       "error": null
+      }
+     ]
+    },
+    "execute_2_after_window_forced": {
+     "status": "0x1",
+     "gasUsed": 450264,
+     "logs": 2,
+     "calldata": {
+      "bytes": 1188,
+      "zero": 313,
+      "nonzero": 875,
+      "eip2028_calldata_gas": 15252,
+      "eip7623_floor_total": 59130
+     },
+     "block": 16,
+     "block_timestamp": 1791535541,
+     "wall_clock_at_report": 1791535533,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+       "input4": "0xad7203b6",
+       "gasUsed": 450264,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x87a7bb73",
+       "gasUsed": 4765,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2486,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0xcf7ed3acca5a467e9e704c703e8d87f634fb0fc9",
+       "input4": "0xa0c2a19a",
+       "gasUsed": 335156,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x227293d7",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x11f51db5",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2ccb3109",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1a733b4c",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x14964b78",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x04715e02",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x053871d4",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x079cddb2",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x16b2deb1",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2009e2cc",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2f981b26",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x24ee41ad",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x0f0e9aa1",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0f0e9aa1",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2397e468",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x288ec23f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x09a4285d",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0fc12dd4",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x282bc5cf",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x08d5107f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x24adb7db",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1365d76e",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x30166614",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x011ebc0f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x085bfe1c",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x10ed7131",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x22b83c8c",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x25eadb02",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x1d186cc5",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0dc85188",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2f8c99d6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x02f74e71",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2544d2da",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1560b04e",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x14dd09b6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2554c2d4",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x0e90f2a6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2b1ad4b1",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2524dc26",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x01f2c0cd",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x20fc00da",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x105e9059",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x282021d9",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x19f1594c",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x227713c5",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x02a1a33f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000008",
+       "input4": "0x035214af",
+       "gasUsed": 181000,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "CALL",
+       "to": "0x0165878a594ca255338adfa4d48449f69242eb8f",
+       "input4": "0x35af7587",
+       "gasUsed": 12243,
+       "error": null
+      }
+     ],
+     "revert_reason_at_parent_block": "0x"
+    }
+   },
+   "target_calls": 2,
+   "revocations_root_is_newRoot": true
+  },
+  {
+   "client": "geth --dev as shipped",
+   "version": "Geth/v1.17.7-stable/darwin-arm64/go1.27.1",
+   "wall_clock_revoke_sent": 1791535558,
+   "wall_clock_execute2_sent": 1791535565,
+   "tx": {
+    "setGroupRoot": {
+     "status": "0x1",
+     "gasUsed": 133766,
+     "logs": 1,
+     "calldata": {
+      "bytes": 68,
+      "zero": 31,
+      "nonzero": 37,
+      "eip2028_calldata_gas": 716,
+      "eip7623_floor_total": 22790
+     },
+     "block": 10,
+     "block_timestamp": 1791535566,
+     "wall_clock_at_report": 1791535565
+    },
+    "register_0": {
+     "status": "0x1",
+     "gasUsed": 802997,
+     "logs": 1,
+     "calldata": {
+      "bytes": 420,
+      "zero": 63,
+      "nonzero": 357,
+      "eip2028_calldata_gas": 5964,
+      "eip7623_floor_total": 35910
+     },
+     "block": 11,
+     "block_timestamp": 1791535567,
+     "wall_clock_at_report": 1791535565
+    },
+    "register_1": {
+     "status": "0x1",
+     "gasUsed": 860614,
+     "logs": 1,
+     "calldata": {
+      "bytes": 420,
+      "zero": 62,
+      "nonzero": 358,
+      "eip2028_calldata_gas": 5976,
+      "eip7623_floor_total": 35940
+     },
+     "block": 12,
+     "block_timestamp": 1791535568,
+     "wall_clock_at_report": 1791535565
+    },
+    "setMethod": {
+     "status": "0x1",
+     "gasUsed": 242522,
+     "logs": 0,
+     "calldata": {
+      "bytes": 100,
+      "zero": 90,
+      "nonzero": 10,
+      "eip2028_calldata_gas": 520,
+      "eip7623_floor_total": 22300
+     },
+     "block": 13,
+     "block_timestamp": 1791535569,
+     "wall_clock_at_report": 1791535565
+    },
+    "execute_1": {
+     "status": "0x1",
+     "gasUsed": 750585,
+     "logs": 2,
+     "calldata": {
+      "bytes": 1188,
+      "zero": 316,
+      "nonzero": 872,
+      "eip2028_calldata_gas": 15216,
+      "eip7623_floor_total": 59040
+     },
+     "block": 14,
+     "block_timestamp": 1791535570,
+     "wall_clock_at_report": 1791535565,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+       "input4": "0xad7203b6",
+       "gasUsed": 750585,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2462,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2486,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0xcf7ed3acca5a467e9e704c703e8d87f634fb0fc9",
+       "input4": "0xa0c2a19a",
+       "gasUsed": 335156,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x227293d7",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x11f51db5",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2ccb3109",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1a733b4c",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x14964b78",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x04715e02",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x053871d4",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x06d5dff9",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x16b2deb1",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2009e2cc",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2f981b26",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0b734604",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x0f0e9aa1",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0f0e9aa1",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2397e468",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x288ec23f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x09a4285d",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0fc12dd4",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x282bc5cf",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x08d5107f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x24adb7db",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1365d76e",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x30166614",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x011ebc0f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x085bfe1c",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x10ed7131",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x22b83c8c",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x25eadb02",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x1d186cc5",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0dc85188",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2f8c99d6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x02f74e71",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2544d2da",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1560b04e",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x14dd09b6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2554c2d4",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x0e90f2a6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2b1ad4b1",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2524dc26",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x01f2c0cd",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x20fc00da",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x105e9059",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x282021d9",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x19f1594c",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x227713c5",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x02a1a33f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000008",
+       "input4": "0x1751f499",
+       "gasUsed": 181000,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "CALL",
+       "to": "0x0165878a594ca255338adfa4d48449f69242eb8f",
+       "input4": "0x35af7587",
+       "gasUsed": 225183,
+       "error": null
+      }
+     ]
+    },
+    "execute_1_replay_forced": {
+     "status": "0x0",
+     "gasUsed": 59040,
+     "logs": 0,
+     "calldata": {
+      "bytes": 1188,
+      "zero": 316,
+      "nonzero": 872,
+      "eip2028_calldata_gas": 15216,
+      "eip7623_floor_total": 59040
+     },
+     "block": 15,
+     "block_timestamp": 1791535571,
+     "wall_clock_at_report": 1791535565,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+       "input4": "0xad7203b6",
+       "gasUsed": 59040,
+       "error": "execution reverted"
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2462,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2486,
+       "error": null
+      }
+     ],
+     "revert_reason_at_parent_block": "Error: server returned an error response: error code 3: execution reverted, data: \"0x63734faa\""
+    },
+    "revoke": {
+     "status": "0x1",
+     "gasUsed": 376376,
+     "logs": 1,
+     "calldata": {
+      "bytes": 324,
+      "zero": 0,
+      "nonzero": 324,
+      "eip2028_calldata_gas": 5184,
+      "eip7623_floor_total": 33960
+     },
+     "block": 16,
+     "block_timestamp": 1791535572,
+     "wall_clock_at_report": 1791535565,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x2ef0b308",
+       "gasUsed": 376376,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9",
+       "input4": "0x5fe8c13b",
+       "gasUsed": 208946,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x1930bc1f",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x180b0641",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2a4a65fd",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x15f909b3",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x042622ca",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0f96e65d",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x05e9be25",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0018efbd",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000008",
+       "input4": "0x09a148aa",
+       "gasUsed": 181000,
+       "error": null
+      }
+     ]
+    },
+    "execute_2_after_window_forced": {
+     "status": "0x1",
+     "gasUsed": 547084,
+     "logs": 2,
+     "calldata": {
+      "bytes": 1188,
+      "zero": 313,
+      "nonzero": 875,
+      "eip2028_calldata_gas": 15252,
+      "eip7623_floor_total": 59130
+     },
+     "block": 17,
+     "block_timestamp": 1791535573,
+     "wall_clock_at_report": 1791535565,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+       "input4": "0xad7203b6",
+       "gasUsed": 547084,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x87a7bb73",
+       "gasUsed": 4765,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2486,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0xcf7ed3acca5a467e9e704c703e8d87f634fb0fc9",
+       "input4": "0xa0c2a19a",
+       "gasUsed": 335156,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x227293d7",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x11f51db5",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2ccb3109",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1a733b4c",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x14964b78",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x04715e02",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x053871d4",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x079cddb2",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x16b2deb1",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2009e2cc",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2f981b26",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x24ee41ad",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x0f0e9aa1",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0f0e9aa1",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2397e468",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x288ec23f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x09a4285d",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0fc12dd4",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x282bc5cf",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x08d5107f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x24adb7db",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1365d76e",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x30166614",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x011ebc0f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x085bfe1c",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x10ed7131",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x22b83c8c",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x25eadb02",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x1d186cc5",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0dc85188",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2f8c99d6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x02f74e71",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2544d2da",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1560b04e",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x14dd09b6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2554c2d4",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x0e90f2a6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2b1ad4b1",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2524dc26",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x01f2c0cd",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x20fc00da",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x105e9059",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x282021d9",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x19f1594c",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x227713c5",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x02a1a33f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000008",
+       "input4": "0x035214af",
+       "gasUsed": 181000,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "CALL",
+       "to": "0x0165878a594ca255338adfa4d48449f69242eb8f",
+       "input4": "0x35af7587",
+       "gasUsed": 19343,
+       "error": null
+      }
+     ],
+     "revert_reason_at_parent_block": "0x"
+    }
+   },
+   "target_calls": 2,
+   "revocations_root_is_newRoot": true
+  },
+  {
+   "client": "anvil --hardfork osaka",
+   "version": "anvil/v1.5.1",
+   "wall_clock_revoke_sent": 1791535566,
+   "wall_clock_execute2_sent": 1791535573,
+   "tx": {
+    "setGroupRoot": {
+     "status": "0x1",
+     "gasUsed": 45746,
+     "logs": 1,
+     "calldata": {
+      "bytes": 68,
+      "zero": 31,
+      "nonzero": 37,
+      "eip2028_calldata_gas": 716,
+      "eip7623_floor_total": 22790
+     },
+     "block": 9,
+     "block_timestamp": 1791535566,
+     "wall_clock_at_report": 1791535573
+    },
+    "register_0": {
+     "status": "0x1",
+     "gasUsed": 362597,
+     "logs": 1,
+     "calldata": {
+      "bytes": 420,
+      "zero": 63,
+      "nonzero": 357,
+      "eip2028_calldata_gas": 5964,
+      "eip7623_floor_total": 35910
+     },
+     "block": 10,
+     "block_timestamp": 1791535566,
+     "wall_clock_at_report": 1791535573
+    },
+    "register_1": {
+     "status": "0x1",
+     "gasUsed": 405414,
+     "logs": 1,
+     "calldata": {
+      "bytes": 420,
+      "zero": 62,
+      "nonzero": 358,
+      "eip2028_calldata_gas": 5976,
+      "eip7623_floor_total": 35940
+     },
+     "block": 11,
+     "block_timestamp": 1791535566,
+     "wall_clock_at_report": 1791535573
+    },
+    "setMethod": {
+     "status": "0x1",
+     "gasUsed": 66482,
+     "logs": 0,
+     "calldata": {
+      "bytes": 100,
+      "zero": 90,
+      "nonzero": 10,
+      "eip2028_calldata_gas": 520,
+      "eip7623_floor_total": 22300
+     },
+     "block": 12,
+     "block_timestamp": 1791535566,
+     "wall_clock_at_report": 1791535573
+    },
+    "execute_1": {
+     "status": "0x1",
+     "gasUsed": 484925,
+     "logs": 2,
+     "calldata": {
+      "bytes": 1188,
+      "zero": 316,
+      "nonzero": 872,
+      "eip2028_calldata_gas": 15216,
+      "eip7623_floor_total": 59040
+     },
+     "block": 13,
+     "block_timestamp": 1791535566,
+     "wall_clock_at_report": 1791535573,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+       "input4": "0xad7203b6",
+       "gasUsed": 484925,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2462,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2486,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0xcf7ed3acca5a467e9e704c703e8d87f634fb0fc9",
+       "input4": "0xa0c2a19a",
+       "gasUsed": 335156,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x227293d7",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x11f51db5",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2ccb3109",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1a733b4c",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x14964b78",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x04715e02",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x053871d4",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x06d5dff9",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x16b2deb1",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2009e2cc",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2f981b26",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0b734604",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x0f0e9aa1",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0f0e9aa1",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2397e468",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x288ec23f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x09a4285d",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0fc12dd4",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x282bc5cf",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x08d5107f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x24adb7db",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1365d76e",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x30166614",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x011ebc0f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x085bfe1c",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x10ed7131",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x22b83c8c",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x25eadb02",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x1d186cc5",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0dc85188",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2f8c99d6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x02f74e71",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2544d2da",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1560b04e",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x14dd09b6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2554c2d4",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x0e90f2a6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2b1ad4b1",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2524dc26",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x01f2c0cd",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x20fc00da",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x105e9059",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x282021d9",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x19f1594c",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x227713c5",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x02a1a33f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000008",
+       "input4": "0x1751f499",
+       "gasUsed": 181000,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "CALL",
+       "to": "0x0165878a594ca255338adfa4d48449f69242eb8f",
+       "input4": "0x35af7587",
+       "gasUsed": 49243,
+       "error": null
+      }
+     ]
+    },
+    "execute_1_replay_forced": {
+     "status": "0x0",
+     "gasUsed": 59040,
+     "logs": 0,
+     "calldata": {
+      "bytes": 1188,
+      "zero": 316,
+      "nonzero": 872,
+      "eip2028_calldata_gas": 15216,
+      "eip7623_floor_total": 59040
+     },
+     "block": 14,
+     "block_timestamp": 1791535566,
+     "wall_clock_at_report": 1791535573,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+       "input4": "0xad7203b6",
+       "gasUsed": 59040,
+       "error": "execution reverted"
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2462,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2486,
+       "error": null
+      }
+     ],
+     "revert_reason_at_parent_block": "Error: server returned an error response: error code 3: execution reverted: custom error 0x63734faa, data: \"0x63734faa\""
+    },
+    "revoke": {
+     "status": "0x1",
+     "gasUsed": 273556,
+     "logs": 1,
+     "calldata": {
+      "bytes": 324,
+      "zero": 0,
+      "nonzero": 324,
+      "eip2028_calldata_gas": 5184,
+      "eip7623_floor_total": 33960
+     },
+     "block": 15,
+     "block_timestamp": 1791535566,
+     "wall_clock_at_report": 1791535574,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x2ef0b308",
+       "gasUsed": 273556,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9",
+       "input4": "0x5fe8c13b",
+       "gasUsed": 208946,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x1930bc1f",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x180b0641",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2a4a65fd",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x15f909b3",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x042622ca",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0f96e65d",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x05e9be25",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0018efbd",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000008",
+       "input4": "0x09a148aa",
+       "gasUsed": 181000,
+       "error": null
+      }
+     ]
+    },
+    "execute_2_after_window_forced": {
+     "status": "0x0",
+     "gasUsed": 59130,
+     "logs": 0,
+     "calldata": {
+      "bytes": 1188,
+      "zero": 313,
+      "nonzero": 875,
+      "eip2028_calldata_gas": 15252,
+      "eip7623_floor_total": 59130
+     },
+     "block": 16,
+     "block_timestamp": 1791535573,
+     "wall_clock_at_report": 1791535574,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+       "input4": "0xad7203b6",
+       "gasUsed": 59130,
+       "error": "execution reverted"
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x87a7bb73",
+       "gasUsed": 4765,
+       "error": null
+      }
+     ],
+     "revert_reason_at_parent_block": "0x"
+    }
+   },
+   "target_calls": 1,
+   "revocations_root_is_newRoot": true
+  },
+  {
+   "client": "anvil --hardfork prague",
+   "version": "anvil/v1.5.1",
+   "wall_clock_revoke_sent": 1791535575,
+   "wall_clock_execute2_sent": 1791535582,
+   "tx": {
+    "setGroupRoot": {
+     "status": "0x1",
+     "gasUsed": 45746,
+     "logs": 1,
+     "calldata": {
+      "bytes": 68,
+      "zero": 31,
+      "nonzero": 37,
+      "eip2028_calldata_gas": 716,
+      "eip7623_floor_total": 22790
+     },
+     "block": 9,
+     "block_timestamp": 1791535574,
+     "wall_clock_at_report": 1791535582
+    },
+    "register_0": {
+     "status": "0x1",
+     "gasUsed": 362597,
+     "logs": 1,
+     "calldata": {
+      "bytes": 420,
+      "zero": 63,
+      "nonzero": 357,
+      "eip2028_calldata_gas": 5964,
+      "eip7623_floor_total": 35910
+     },
+     "block": 10,
+     "block_timestamp": 1791535574,
+     "wall_clock_at_report": 1791535582
+    },
+    "register_1": {
+     "status": "0x1",
+     "gasUsed": 405414,
+     "logs": 1,
+     "calldata": {
+      "bytes": 420,
+      "zero": 62,
+      "nonzero": 358,
+      "eip2028_calldata_gas": 5976,
+      "eip7623_floor_total": 35940
+     },
+     "block": 11,
+     "block_timestamp": 1791535574,
+     "wall_clock_at_report": 1791535582
+    },
+    "setMethod": {
+     "status": "0x1",
+     "gasUsed": 66482,
+     "logs": 0,
+     "calldata": {
+      "bytes": 100,
+      "zero": 90,
+      "nonzero": 10,
+      "eip2028_calldata_gas": 520,
+      "eip7623_floor_total": 22300
+     },
+     "block": 12,
+     "block_timestamp": 1791535574,
+     "wall_clock_at_report": 1791535582
+    },
+    "execute_1": {
+     "status": "0x1",
+     "gasUsed": 484925,
+     "logs": 2,
+     "calldata": {
+      "bytes": 1188,
+      "zero": 316,
+      "nonzero": 872,
+      "eip2028_calldata_gas": 15216,
+      "eip7623_floor_total": 59040
+     },
+     "block": 13,
+     "block_timestamp": 1791535574,
+     "wall_clock_at_report": 1791535582,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+       "input4": "0xad7203b6",
+       "gasUsed": 484925,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2462,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2486,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0xcf7ed3acca5a467e9e704c703e8d87f634fb0fc9",
+       "input4": "0xa0c2a19a",
+       "gasUsed": 335156,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x227293d7",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x11f51db5",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2ccb3109",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1a733b4c",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x14964b78",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x04715e02",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x053871d4",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x06d5dff9",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x16b2deb1",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2009e2cc",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2f981b26",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0b734604",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x0f0e9aa1",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0f0e9aa1",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2397e468",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x288ec23f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x09a4285d",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0fc12dd4",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x282bc5cf",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x08d5107f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x24adb7db",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1365d76e",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x30166614",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x011ebc0f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x085bfe1c",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x10ed7131",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x22b83c8c",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x25eadb02",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x1d186cc5",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0dc85188",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2f8c99d6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x02f74e71",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2544d2da",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1560b04e",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x14dd09b6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2554c2d4",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x0e90f2a6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2b1ad4b1",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2524dc26",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x01f2c0cd",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x20fc00da",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x105e9059",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x282021d9",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x19f1594c",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x227713c5",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x02a1a33f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000008",
+       "input4": "0x1751f499",
+       "gasUsed": 181000,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "CALL",
+       "to": "0x0165878a594ca255338adfa4d48449f69242eb8f",
+       "input4": "0x35af7587",
+       "gasUsed": 49243,
+       "error": null
+      }
+     ]
+    },
+    "execute_1_replay_forced": {
+     "status": "0x0",
+     "gasUsed": 59040,
+     "logs": 0,
+     "calldata": {
+      "bytes": 1188,
+      "zero": 316,
+      "nonzero": 872,
+      "eip2028_calldata_gas": 15216,
+      "eip7623_floor_total": 59040
+     },
+     "block": 14,
+     "block_timestamp": 1791535574,
+     "wall_clock_at_report": 1791535582,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+       "input4": "0xad7203b6",
+       "gasUsed": 59040,
+       "error": "execution reverted"
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2462,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2486,
+       "error": null
+      }
+     ],
+     "revert_reason_at_parent_block": "Error: server returned an error response: error code 3: execution reverted: custom error 0x63734faa, data: \"0x63734faa\""
+    },
+    "revoke": {
+     "status": "0x1",
+     "gasUsed": 273556,
+     "logs": 1,
+     "calldata": {
+      "bytes": 324,
+      "zero": 0,
+      "nonzero": 324,
+      "eip2028_calldata_gas": 5184,
+      "eip7623_floor_total": 33960
+     },
+     "block": 15,
+     "block_timestamp": 1791535575,
+     "wall_clock_at_report": 1791535582,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x2ef0b308",
+       "gasUsed": 273556,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9",
+       "input4": "0x5fe8c13b",
+       "gasUsed": 208946,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x1930bc1f",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x180b0641",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2a4a65fd",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x15f909b3",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x042622ca",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0f96e65d",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x05e9be25",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0018efbd",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000008",
+       "input4": "0x09a148aa",
+       "gasUsed": 181000,
+       "error": null
+      }
+     ]
+    },
+    "execute_2_after_window_forced": {
+     "status": "0x0",
+     "gasUsed": 59130,
+     "logs": 0,
+     "calldata": {
+      "bytes": 1188,
+      "zero": 313,
+      "nonzero": 875,
+      "eip2028_calldata_gas": 15252,
+      "eip7623_floor_total": 59130
+     },
+     "block": 16,
+     "block_timestamp": 1791535582,
+     "wall_clock_at_report": 1791535582,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+       "input4": "0xad7203b6",
+       "gasUsed": 59130,
+       "error": "execution reverted"
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x87a7bb73",
+       "gasUsed": 4765,
+       "error": null
+      }
+     ],
+     "revert_reason_at_parent_block": "0x"
+    }
+   },
+   "target_calls": 1,
+   "revocations_root_is_newRoot": true
+  },
+  {
+   "client": "anvil --hardfork cancun",
+   "version": "anvil/v1.5.1",
+   "wall_clock_revoke_sent": 1791535583,
+   "wall_clock_execute2_sent": 1791535590,
+   "tx": {
+    "setGroupRoot": {
+     "status": "0x1",
+     "gasUsed": 45746,
+     "logs": 1,
+     "calldata": {
+      "bytes": 68,
+      "zero": 31,
+      "nonzero": 37,
+      "eip2028_calldata_gas": 716,
+      "eip7623_floor_total": 22790
+     },
+     "block": 9,
+     "block_timestamp": 1791535582,
+     "wall_clock_at_report": 1791535590
+    },
+    "register_0": {
+     "status": "0x1",
+     "gasUsed": 362597,
+     "logs": 1,
+     "calldata": {
+      "bytes": 420,
+      "zero": 63,
+      "nonzero": 357,
+      "eip2028_calldata_gas": 5964,
+      "eip7623_floor_total": 35910
+     },
+     "block": 10,
+     "block_timestamp": 1791535582,
+     "wall_clock_at_report": 1791535590
+    },
+    "register_1": {
+     "status": "0x1",
+     "gasUsed": 405414,
+     "logs": 1,
+     "calldata": {
+      "bytes": 420,
+      "zero": 62,
+      "nonzero": 358,
+      "eip2028_calldata_gas": 5976,
+      "eip7623_floor_total": 35940
+     },
+     "block": 11,
+     "block_timestamp": 1791535583,
+     "wall_clock_at_report": 1791535590
+    },
+    "setMethod": {
+     "status": "0x1",
+     "gasUsed": 66482,
+     "logs": 0,
+     "calldata": {
+      "bytes": 100,
+      "zero": 90,
+      "nonzero": 10,
+      "eip2028_calldata_gas": 520,
+      "eip7623_floor_total": 22300
+     },
+     "block": 12,
+     "block_timestamp": 1791535583,
+     "wall_clock_at_report": 1791535590
+    },
+    "execute_1": {
+     "status": "0x1",
+     "gasUsed": 484925,
+     "logs": 2,
+     "calldata": {
+      "bytes": 1188,
+      "zero": 316,
+      "nonzero": 872,
+      "eip2028_calldata_gas": 15216,
+      "eip7623_floor_total": 59040
+     },
+     "block": 13,
+     "block_timestamp": 1791535583,
+     "wall_clock_at_report": 1791535590,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+       "input4": "0xad7203b6",
+       "gasUsed": 484925,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2462,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2486,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0xcf7ed3acca5a467e9e704c703e8d87f634fb0fc9",
+       "input4": "0xa0c2a19a",
+       "gasUsed": 335156,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x227293d7",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x11f51db5",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2ccb3109",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1a733b4c",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x14964b78",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x04715e02",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x053871d4",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x06d5dff9",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x16b2deb1",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2009e2cc",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2f981b26",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0b734604",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x0f0e9aa1",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0f0e9aa1",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2397e468",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x288ec23f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x09a4285d",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0fc12dd4",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x282bc5cf",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x08d5107f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x24adb7db",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1365d76e",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x30166614",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x011ebc0f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x085bfe1c",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x10ed7131",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x22b83c8c",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x25eadb02",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x1d186cc5",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0dc85188",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2f8c99d6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x02f74e71",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2544d2da",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x1560b04e",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x14dd09b6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2554c2d4",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x0e90f2a6",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x2b1ad4b1",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2524dc26",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x01f2c0cd",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x20fc00da",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x105e9059",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x282021d9",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x19f1594c",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x227713c5",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x02a1a33f",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000008",
+       "input4": "0x1751f499",
+       "gasUsed": 181000,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "CALL",
+       "to": "0x0165878a594ca255338adfa4d48449f69242eb8f",
+       "input4": "0x35af7587",
+       "gasUsed": 49243,
+       "error": null
+      }
+     ]
+    },
+    "execute_1_replay_forced": {
+     "status": "0x0",
+     "gasUsed": 55213,
+     "logs": 0,
+     "calldata": {
+      "bytes": 1188,
+      "zero": 316,
+      "nonzero": 872,
+      "eip2028_calldata_gas": 15216,
+      "eip7623_floor_total": 59040
+     },
+     "block": 14,
+     "block_timestamp": 1791535583,
+     "wall_clock_at_report": 1791535590,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+       "input4": "0xad7203b6",
+       "gasUsed": 55213,
+       "error": "execution reverted"
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2462,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0",
+       "input4": "0x87a7bb73",
+       "gasUsed": 2486,
+       "error": null
+      }
+     ],
+     "revert_reason_at_parent_block": "Error: server returned an error response: error code 3: execution reverted: custom error 0x63734faa, data: \"0x63734faa\""
+    },
+    "revoke": {
+     "status": "0x1",
+     "gasUsed": 273556,
+     "logs": 1,
+     "calldata": {
+      "bytes": 324,
+      "zero": 0,
+      "nonzero": 324,
+      "eip2028_calldata_gas": 5184,
+      "eip7623_floor_total": 33960
+     },
+     "block": 15,
+     "block_timestamp": 1791535583,
+     "wall_clock_at_report": 1791535590,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x2ef0b308",
+       "gasUsed": 273556,
+       "error": null
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9",
+       "input4": "0x5fe8c13b",
+       "gasUsed": 208946,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x1930bc1f",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x180b0641",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x2a4a65fd",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x15f909b3",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x042622ca",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0f96e65d",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000007",
+       "input4": "0x05e9be25",
+       "gasUsed": 6000,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000006",
+       "input4": "0x0018efbd",
+       "gasUsed": 150,
+       "error": null
+      },
+      {
+       "depth": 2,
+       "type": "STATICCALL",
+       "to": "0x0000000000000000000000000000000000000008",
+       "input4": "0x09a148aa",
+       "gasUsed": 181000,
+       "error": null
+      }
+     ]
+    },
+    "execute_2_after_window_forced": {
+     "status": "0x0",
+     "gasUsed": 49741,
+     "logs": 0,
+     "calldata": {
+      "bytes": 1188,
+      "zero": 313,
+      "nonzero": 875,
+      "eip2028_calldata_gas": 15252,
+      "eip7623_floor_total": 59130
+     },
+     "block": 16,
+     "block_timestamp": 1791535590,
+     "wall_clock_at_report": 1791535590,
+     "frames": [
+      {
+       "depth": 0,
+       "type": "CALL",
+       "to": "0xa513e6e4b8f2a923d98304ec87f64353c4d5c853",
+       "input4": "0xad7203b6",
+       "gasUsed": 49741,
+       "error": "execution reverted"
+      },
+      {
+       "depth": 1,
+       "type": "STATICCALL",
+       "to": "0x5fc8d32690cc91d4c39d9d3abcbd16989f875707",
+       "input4": "0x87a7bb73",
+       "gasUsed": 4765,
+       "error": null
+      }
+     ],
+     "revert_reason_at_parent_block": "0x"
+    }
+   },
+   "target_calls": 1,
+   "revocations_root_is_newRoot": true
+  }
+ ],
+ "geth_dev_fork_times": {
+  "shanghaiTime": 0,
+  "cancunTime": 0,
+  "pragueTime": 0,
+  "osakaTime": 0,
+  "bogotaTime": 0
+ }
+}

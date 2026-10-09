@@ -1,0 +1,43 @@
+No files changed, compilation skipped
+
+Ran 12 tests for test/RevokeV7R.t.sol:RevokeV7RTest
+[PASS] test_authorizedSequence() (gas: 2082259)
+[PASS] test_concurrent() (gas: 1844873)
+[PASS] test_fieldOverflow_rejected() (gas: 902965)
+[PASS] test_gas_gateExecute() (gas: 3556490)
+Logs:
+  ZkDacGateV7R.execute #1 C_D4 (excl. intrinsic and calldata) 441751
+
+[PASS] test_gas_revoke() (gas: 1389034)
+Logs:
+  revoke_transition verifyProof (4 public inputs) 213891
+  ZkDacRevocations.revoke #1 (excl. intrinsic and calldata) 237029
+
+[PASS] test_gate_executesBeforeRevocation() (gas: 3551863)
+[PASS] test_gate_revokedByIssuer_windowThenRejected() (gas: 4430743)
+[PASS] test_nextIndexMustBeCount() (gas: 1116442)
+[PASS] test_noRootSetter_and_oldRootExpires() (gas: 1149283)
+[PASS] test_otherEntry_rejected() (gas: 1115858)
+[PASS] test_replay_rejected() (gas: 1462406)
+[PASS] test_tamperedNewRoot_rejected() (gas: 1115889)
+Suite result: ok. 12 passed; 0 failed; 0 skipped; finished in 15.19ms (50.59ms CPU time)
+
+Ran 15 tests for test/ObligationsV7.t.sol:ObligationsV7Test
+[PASS] test_G1_clockAtSkewEdge() (gas: 2426867)
+[PASS] test_G1_clockEqualsBlockTime() (gas: 2426186)
+[PASS] test_G1_clockInFuture() (gas: 1994370)
+[PASS] test_G1_clockTooOld() (gas: 1994572)
+[PASS] test_G2_businessRevertRollsBack() (gas: 2828395)
+[PASS] test_G3_reentrantReplayRejected() (gas: 2634836)
+[PASS] test_G4_otherAmount() (gas: 2344852)
+[PASS] test_G4_otherChainId() (gas: 2345211)
+[PASS] test_G4_otherGateAddress() (gas: 2802269)
+[PASS] test_G4_otherMethodSameCap() (gas: 2496660)
+[PASS] test_G4_otherNonce() (gas: 2344930)
+[PASS] test_G4_otherParams() (gas: 2344921)
+[PASS] test_G4_otherTarget() (gas: 2355221)
+[PASS] test_G5_requiredCapFromContract() (gas: 2454798)
+[PASS] test_G6_disabledMethod() (gas: 2095595)
+Suite result: ok. 15 passed; 0 failed; 0 skipped; finished in 17.66ms (60.26ms CPU time)
+
+Ran 2 test suites in 115.26ms (32.85ms CPU time): 27 tests passed, 0 failed, 0 skipped (27 total tests)
