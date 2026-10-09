@@ -51,3 +51,14 @@ zkeys: setup 19–39 s each, all "ZKey Ok!"; sizes A 25.0 / 48.8 / 76.8 / 96.3 M
 Mode C as the main circuit: fewer constraints, fewer public inputs, less gas (D = 4: execute 438,574 vs 482,508), faster proving, in exchange for the Poseidon-PRF
 assumption. Mode A stays as the measured alternative that needs only ElGamal (DDH). Gas: ../../t4_contracts/RUN_RECORD_v7.md.
 Not done here (E6): threshold sharing of the committee secret with partial decryption + share proofs; the auditor side above uses a single secret.
+
+## Addendum 2026-10-09 (appended; E6, PR #33): mode A cannot detect a wrong opening from its output
+Found by the E6 negative control `O3 forced` (`../../t4_accountability/E6-threshold-opening_20261009/results/cases.json`): when an opening is computed from
+wrong decryption material (here: Lagrange interpolation on t−1 = 2 shares, i.e. S' ≠ tsk·c1), **mode A outputs c2_j − S'_j, which is always a valid
+prime-order-subgroup point** (150/150 recovered points, D = 4, 30 openings) — a plausible but wrong "accountable key". Nothing in the output reveals the error,
+so a buggy or malicious combiner that skips share verification could attribute an action to a key that never signed it (framing risk, G-NFF).
+In **mode C** the same error gives a wrong K, and the Poseidon keystream then yields coordinates that are not on the curve (0/420 on-curve, D = 1..4), so the
+opening output carries a built-in consistency check.
+In both modes the actual protection is the verification of every partial decryption (DLEQ against the member's published key; E6 O6/O7/O12); mode C adds a
+free second check. Decision 2026-10-09 (user): mode C is the main circuit; mode A remains the measured ElGamal-only alternative and, if used, MUST verify every
+share before combining. Recommendation above unchanged; this is an additional reason for C.
