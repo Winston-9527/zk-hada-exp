@@ -1,0 +1,59 @@
+{
+ "date": "2026-10-09T11:03:43.908Z",
+ "client": "anvil/v1.5.1",
+ "hardfork": "prague",
+ "receipts": {
+  "v8": {
+   "mint": {
+    "status": 1,
+    "gasUsed": 320464,
+    "calldata_bytes": 324
+   },
+   "transfer_1": {
+    "status": 1,
+    "gasUsed": 510481,
+    "calldata_bytes": 420
+   },
+   "execute_D2": {
+    "status": 1,
+    "gasUsed": 671054,
+    "calldata_bytes": 1188,
+    "public_inputs": 23
+   },
+   "execute_D4": {
+    "status": 1,
+    "gasUsed": 636125,
+    "calldata_bytes": 1316,
+    "public_inputs": 27
+   }
+  },
+  "v9": {
+   "mint": {
+    "status": 1,
+    "gasUsed": 320401,
+    "calldata_bytes": 324
+   },
+   "transfer_1": {
+    "status": 1,
+    "gasUsed": 510503,
+    "calldata_bytes": 420
+   },
+   "execute_D2": {
+    "status": 1,
+    "gasUsed": 577509,
+    "calldata_bytes": 1092,
+    "public_inputs": 18
+   },
+   "execute_D4": {
+    "status": 1,
+    "gasUsed": 564147,
+    "calldata_bytes": 1156,
+    "public_inputs": 20
+   }
+  }
+ },
+ "diff_v9_minus_v8": {
+  "execute_D2": -93545,
+  "execute_D4": -71978
+ }
+}

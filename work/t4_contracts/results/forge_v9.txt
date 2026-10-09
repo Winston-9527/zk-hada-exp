@@ -1,0 +1,27 @@
+No files changed, compilation skipped
+
+Ran 11 tests for test/V9.t.sol:V9Test
+[PASS] test_GB2_amountMismatch() (gas: 30966811)
+[PASS] test_GB4_noteRootAfterWindow() (gas: 15585868)
+[PASS] test_GB5_mintNonOperator() (gas: 2741583)
+[PASS] test_GB7_revocationFreezesBudget() (gas: 47218467)
+[PASS] test_actionThenTransferOfSameNote() (gas: 39302241)
+[PASS] test_gas() (gas: 29341608)
+Logs:
+  v9 mint (excl. intrinsic and calldata) 300943
+  v9 transferBudget (2 note inserts) 473356
+  v9 execute D=2 budgeted (excl. intrinsic and calldata) 528611
+  v9 execute D=4 budgeted (excl. intrinsic and calldata) 480879
+
+[PASS] test_mintWrongAmount() (gas: 2779002)
+[PASS] test_sequence() (gas: 32311435)
+[PASS] test_v9_registerStateMatchesCircuit_permissionless_idempotent() (gas: 2222133)
+Logs:
+  v9 registerState, already registered 1841
+  v9 registerState, new combination (on-chain PoseidonT4) 106105
+
+[PASS] test_v9_replayOfExecutedProof() (gas: 9967788)
+[PASS] test_v9_unregisteredStateCombination() (gas: 6808859)
+Suite result: ok. 11 passed; 0 failed; 0 skipped; finished in 51.58ms (209.50ms CPU time)
+
+Ran 1 test suite in 114.21ms (51.58ms CPU time): 11 tests passed, 0 failed, 0 skipped (11 total tests)
