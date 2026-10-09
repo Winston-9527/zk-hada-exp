@@ -1,0 +1,114 @@
+{
+ "mode": "C",
+ "machine": "Apple M5 Pro x15",
+ "node": "v24.14.1",
+ "snarkjs": "0.7.6",
+ "runs": 10,
+ "note": "times in ms; fresh instance per run (seed = 1000 + run)",
+ "depths": {
+  "1": {
+   "verified": "10/10",
+   "witness_ms": {
+    "mean": 105,
+    "sd": 5,
+    "median": 103.2,
+    "min": 102.1,
+    "max": 118.7
+   },
+   "prove_ms": {
+    "mean": 679.5,
+    "sd": 35.6,
+    "median": 668,
+    "min": 663.5,
+    "max": 780.1
+   },
+   "verify_ms": {
+    "mean": 5.4,
+    "sd": 0.8,
+    "median": 5.1,
+    "min": 4.6,
+    "max": 7
+   },
+   "proof_calldata_bytes": 256,
+   "public_inputs": 17
+  },
+  "2": {
+   "verified": "10/10",
+   "witness_ms": {
+    "mean": 140.9,
+    "sd": 3.9,
+    "median": 139.7,
+    "min": 138.5,
+    "max": 151.9
+   },
+   "prove_ms": {
+    "mean": 1279.6,
+    "sd": 8.3,
+    "median": 1280.8,
+    "min": 1266.2,
+    "max": 1290.6
+   },
+   "verify_ms": {
+    "mean": 6,
+    "sd": 0.6,
+    "median": 6.2,
+    "min": 4.5,
+    "max": 6.5
+   },
+   "proof_calldata_bytes": 256,
+   "public_inputs": 19
+  },
+  "3": {
+   "verified": "10/10",
+   "witness_ms": {
+    "mean": 176.4,
+    "sd": 3.9,
+    "median": 175.4,
+    "min": 174,
+    "max": 187.3
+   },
+   "prove_ms": {
+    "mean": 2133.3,
+    "sd": 7.3,
+    "median": 2135.9,
+    "min": 2118.4,
+    "max": 2141.1
+   },
+   "verify_ms": {
+    "mean": 5.9,
+    "sd": 0.4,
+    "median": 6,
+    "min": 4.9,
+    "max": 6.2
+   },
+   "proof_calldata_bytes": 256,
+   "public_inputs": 21
+  },
+  "4": {
+   "verified": "10/10",
+   "witness_ms": {
+    "mean": 212.5,
+    "sd": 4.7,
+    "median": 212,
+    "min": 206.4,
+    "max": 223.9
+   },
+   "prove_ms": {
+    "mean": 2445.4,
+    "sd": 18.8,
+    "median": 2440.6,
+    "min": 2422.8,
+    "max": 2480
+   },
+   "verify_ms": {
+    "mean": 4.7,
+    "sd": 0.2,
+    "median": 4.7,
+    "min": 4.5,
+    "max": 5
+   },
+   "proof_calldata_bytes": 256,
+   "public_inputs": 23
+  }
+ }
+}

@@ -1,0 +1,12 @@
+  poseidon sponge commit, n = 14 elements, T6 calls = 4 688776
+  poseidon sponge commit, n = 20 elements, T6 calls = 5 858110
+  single PoseidonT6 169870
+  single PoseidonT3 32500
+  v7 A D=2: public inputs 21, verifyProof 325016
+  v7 A D=2: execute #1 (excl. intrinsic and calldata) 423929
+  v7 A D=4: public inputs 29, verifyProof 378216
+  v7 A D=4: execute #1 (excl. intrinsic and calldata) 482508
+  v7 C D=2: public inputs 19, verifyProof 311716
+  v7 C D=2: execute #1 (excl. intrinsic and calldata) 409285
+  v7 C D=4: public inputs 23, verifyProof 338316
+  v7 C D=4: execute #1 (excl. intrinsic and calldata) 438574
