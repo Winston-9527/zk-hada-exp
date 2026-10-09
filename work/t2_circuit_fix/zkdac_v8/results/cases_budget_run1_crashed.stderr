@@ -1,0 +1,16 @@
+ERROR:  4 Error in template BudgetMint_78 line: 11
+
+(node:35111) Warning: Closing file descriptor 11 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:35111) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+file:///Users/siyuan/Developer/zk-hada-exp/work/t2_circuit_fix/zkdac_v8/scripts/lib_v8.mjs:13
+export function notePath(tree, cm) { const idx = tree.indexOf(cm); if (idx < 0) throw new Error("note not in tree"); const p = tree.generateProof(idx); const sib = p.siblings.map(String); while (sib.length < NT) sib.push("0"); return { nt_depth: String(p.siblings.length), nt_index: String(p.index), nt_sib: sib }; }
+                                                                                      ^
+
+Error: note not in tree
+    at notePath (file:///Users/siyuan/Developer/zk-hada-exp/work/t2_circuit_fix/zkdac_v8/scripts/lib_v8.mjs:13:87)
+    at setBudget (file:///Users/siyuan/Developer/zk-hada-exp/work/t2_circuit_fix/zkdac_v8/scripts/lib_v8.mjs:18:110)
+    at BudgetWorld.actionWitness (file:///Users/siyuan/Developer/zk-hada-exp/work/t2_circuit_fix/zkdac_v8/scripts/budget_world.mjs:22:112)
+    at file:///Users/siyuan/Developer/zk-hada-exp/work/t2_circuit_fix/zkdac_v8/scripts/cases_budget.mjs:23:15
+
+Node.js v24.14.1

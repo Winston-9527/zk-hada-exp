@@ -1,0 +1,196 @@
+{
+ "date": "2026-10-09T09:31:26.145Z",
+ "rows": [
+  {
+   "id": "MINT",
+   "case": "mint opens to the public q",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "MINT",
+   "case": "public q differs from the committed q",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "TR",
+   "case": "M delegates 40 to S1 (depth 1 -> 2)",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "E2E",
+   "case": "S1 spends 10 of the delegated note in a v8 action proof (D = 2)",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "TR",
+   "case": "S1 delegates 30 to S11 (depth 2 -> 3)",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "TR",
+   "case": "S11 delegates all 30 to S111 (depth 3 -> 4)",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "E2E",
+   "case": "S111 spends 30 in a v8 action proof (D = 4)",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "TR",
+   "case": "M splits its remaining 60 into 25 / 35",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "E2E",
+   "case": "sibling S2 tries to spend S1's real note (S2's own key and chain in the proof)",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "TR",
+   "case": "control: M delegates 20 to S2",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "TR-neg",
+   "case": "conservation broken (+1)",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "TR-neg",
+   "case": "field wrap q1 = p - 1",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "TR-neg",
+   "case": "change drops the lineage entry",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "TR-neg",
+   "case": "delegation without the child certificate entry",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "TR-neg",
+   "case": "delegation to S2 with S1's certificate as the new entry",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "TR-neg",
+   "case": "child certificate cap differs from the real certificate (entry mismatch)",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "TR-neg",
+   "case": "wrong sk",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "TR-neg",
+   "case": "depth-4 note delegates (no free slot)",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "REV",
+   "case": "S1 (revoked certificate): transfer",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "REV",
+   "case": "S1 (revoked certificate): action",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "REV",
+   "case": "S11 (below the revoked certificate): transfer",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "REV",
+   "case": "S11 (below the revoked certificate): action",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "REV",
+   "case": "S1 action with its pre-revocation witness and the new revoked root",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "REV",
+   "case": "S1 action with the pre-revocation witness and the OLD revoked root (POLICY: gate window)",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true,
+   "policy": true
+  },
+  {
+   "id": "REV",
+   "case": "M (above the revoked edge) still splits",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "REV",
+   "case": "M still delegates to the sibling S2",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "REV",
+   "case": "S2 (sibling) spends after the revocation",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  }
+ ],
+ "unexpected": 0
+}
