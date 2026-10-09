@@ -40,7 +40,7 @@
 
 ### 未合并 / 未完成的东西
 - **PR #31（#30，v7）**：等用户批准。合并后在 main 上复测：`forge test`（应 125/125）、`node scripts/smoke.mjs`（zkdac_v7）。
-- **release `v7-proving-material-20261008`**：首次上传因网络超时中断，只传上 a1/c1/c2；交接时正在后台重传 a2/a3/a4/c3/c4 和 MANIFEST。接手后先 `gh release view v7-proving-material-20261008 --json assets` 检查，缺的用 `gh release upload ... --clobber` 补，再全部下载核对 `zk/MANIFEST.sha256`。zkey 本地在 `work/t2_circuit_fix/zkdac_v7/build/zk/`。
+- **release `v7-proving-material-20261008`**：首次上传因网络超时中断，2026-10-09 补传完成；8 个 zkey + MANIFEST 已重新下载核对，哈希全部一致。
 - 已有 release（均已核对哈希）：`archive-pre-v3-20261007`、`v4-proving-material-20261008`、`v5-registration-proving-material-20261008`、`v6-proving-material-20261008`。
 - ptau：`work/ptau/hermez/powersOfTau28_hez_final_18.ptau`（不在 git 里；来源 circom.info，blake2b 与 snarkjs README 一致，已完整 verify；见该目录 README）。若本地丢失，从同一链接下载并核对 `EXPECTED_BLAKE2B.txt`。
 
@@ -55,7 +55,7 @@
 
 ## 4. 待办任务（按优先级）
 ### P0
-1. **跟进 PR #31 合并**与 v7 release 完整性（见上节）。确认主电路用方案 C 后，在 #11 更新清单里的数字（约束 / 公开输入 / gas / 时间）。
+1. **跟进 PR #31 合并**（v7 release 已完整）。确认主电路用方案 C 后，在 #11 更新清单里的数字（约束 / 公开输入 / gas / 时间）。
 
 ### P1
 2. **E6 门限问责打开**（#30、#6）。目前审计端用单一私钥 `tsk`。要做：
