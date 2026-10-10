@@ -3,7 +3,8 @@
 # T8 repro step 1: fresh dependency install (empty npm cache) + compile the circuits used by the results; C1 constraints, C2 r1cs/wasm sha256.
 source "$(dirname "$0")/common.sh"
 NPMC=${NPM_CACHE:-$OUT/npm-cache}; mkdir -p "$NPMC"
-for d in t2_circuit_fix/zkdac_v7 t4_registration t4_contracts; do log "npm ci $d"; (cd $W/$d && npm ci --cache "$NPMC" --no-audit --no-fund > "$OUT/npm_$(basename $d).log" 2>&1); done
+# attempt 2: the v9 libraries import the v2..v6 libraries (and T3 its own package), each with its own lockfile -> install all of them
+for d in t2_circuit_fix/zkdac_v2 t2_circuit_fix/zkdac_v3 t2_circuit_fix/zkdac_v4 t2_circuit_fix/zkdac_v5 t2_circuit_fix/zkdac_v6 t2_circuit_fix/revocation_imt t2_circuit_fix/zkdac_v7 t3_attacks t4_registration t4_contracts; do log "npm ci $d"; (cd $W/$d && npm ci --cache "$NPMC" --no-audit --no-fund > "$OUT/npm_$(echo $d | tr / _).log" 2>&1); done
 for v in zkdac_v8 zkdac_v9; do ln -sfn ../zkdac_v7/node_modules $W/t2_circuit_fix/$v/node_modules; done
 L7=$W/t2_circuit_fix/zkdac_v7
 FLAGS="-l circuits -l ../zkdac_v7/circuits -l node_modules -l node_modules/circomlib/circuits -l node_modules/@zk-kit/binary-merkle-root.circom/src"
