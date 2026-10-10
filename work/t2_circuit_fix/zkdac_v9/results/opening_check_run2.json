@@ -1,0 +1,30 @@
+{
+ "runs_per_depth": 10,
+ "committee": "t=3, n=5",
+ "depths": {
+  "1": {
+   "single_key_exact": "10/10",
+   "threshold_3of5_exact": "10/10",
+   "witness_with_committee_tpk_satisfiable": "10/10",
+   "forced_2_shares_wrong": "10/10"
+  },
+  "2": {
+   "single_key_exact": "10/10",
+   "threshold_3of5_exact": "10/10",
+   "witness_with_committee_tpk_satisfiable": "10/10",
+   "forced_2_shares_wrong": "10/10"
+  },
+  "3": {
+   "single_key_exact": "10/10",
+   "threshold_3of5_exact": "10/10",
+   "witness_with_committee_tpk_satisfiable": "10/10",
+   "forced_2_shares_wrong": "10/10"
+  },
+  "4": {
+   "single_key_exact": "10/10",
+   "threshold_3of5_exact": "10/10",
+   "witness_with_committee_tpk_satisfiable": "10/10",
+   "forced_2_shares_wrong": "10/10"
+  }
+ }
+}
