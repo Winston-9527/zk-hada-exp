@@ -27,7 +27,10 @@ export function toV9(input, accSeed) {
 }
 // x from y on BabyJub (a x^2 + y^2 = 1 + d x^2 y^2) with the given parity
 export function xFromY(y, parity) { const yy = F.square(F.e(y)); const num = F.sub(F.one, yy), den = F.sub(F.e(168700n), F.mul(F.e(168696n), yy));
-  const x2 = F.div(num, den); const r = F.sqrt(x2); if (r === null) return null; let x = F.toObject(r); if ((x & 1n) !== BigInt(parity)) x = mod(-x); return x; }
+  if (F.isZero(den)) return null; const x2 = F.div(num, den);
+  // Legendre check first: circomlibjs' wasm F.sqrt does not return on non-residues (found by T3 v9 run 1; malformed ciphertexts only)
+  { const v = F.toObject(x2); let r = 1n, bb = v, e = (P - 1n) / 2n; while (e > 0n) { if (e & 1n) r = (r * bb) % P; bb = (bb * bb) % P; e >>= 1n; } if (v !== 0n && r !== 1n) return null; }
+  const r = F.sqrt(x2); if (r === null) return null; let x = F.toObject(r); if ((x & 1n) !== BigInt(parity)) x = mod(-x); return x; }
 // auditor side: from S = tsk * c1 (single key: S = tsk * c1; threshold: Lagrange-combined partial decryptions) recover ent[0..N-1]
 export function openWithS(pub, S) {
   const K = pt(bj.addPoint([F.e(BigInt(pub.c2[0])), F.e(BigInt(pub.c2[1]))], [F.neg(F.e(BigInt(S[0]))), F.e(BigInt(S[1]))]));
