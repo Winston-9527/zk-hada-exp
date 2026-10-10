@@ -1,4 +1,5 @@
 #!/bin/bash
+# (attempt 1 of the clean build failed here: circom needs an existing -o directory; build/ is not in git)
 # T8 repro step 1: fresh dependency install (empty npm cache) + compile the circuits used by the results; C1 constraints, C2 r1cs/wasm sha256.
 source "$(dirname "$0")/common.sh"
 NPMC=${NPM_CACHE:-$OUT/npm-cache}; mkdir -p "$NPMC"
@@ -6,7 +7,7 @@ for d in t2_circuit_fix/zkdac_v7 t4_registration t4_contracts; do log "npm ci $d
 for v in zkdac_v8 zkdac_v9; do ln -sfn ../zkdac_v7/node_modules $W/t2_circuit_fix/$v/node_modules; done
 L7=$W/t2_circuit_fix/zkdac_v7
 FLAGS="-l circuits -l ../zkdac_v7/circuits -l node_modules -l node_modules/circomlib/circuits -l node_modules/@zk-kit/binary-merkle-root.circom/src"
-cd $W/t2_circuit_fix/zkdac_v9; for D in 1 2 3 4; do log "circom v9 c$D"; circom circuits/main_c_d$D.circom --r1cs --wasm --sym $FLAGS -o build/c$D > "$OUT/circom_v9_c$D.log"; done
+cd $W/t2_circuit_fix/zkdac_v9; for D in 1 2 3 4; do log "circom v9 c$D"; mkdir -p build/c$D; circom circuits/main_c_d$D.circom --r1cs --wasm --sym $FLAGS -o build/c$D > "$OUT/circom_v9_c$D.log"; done
 cd $W/t2_circuit_fix/zkdac_v8; for n in budget_transfer budget_mint; do log "circom v8 $n"; mkdir -p build/$n; circom circuits/$n.circom --r1cs --wasm --sym $FLAGS -o build/$n > "$OUT/circom_$n.log"; done
 cd $W/t4_registration; log "circom reg20"; mkdir -p build/r20; circom circuits/main_reg_20.circom --r1cs --wasm --sym -l node_modules/circomlib/circuits -l node_modules/@zk-kit/binary-merkle-root.circom/src -o build/r20 > "$OUT/circom_reg20.log"
 cd $W/t4_obligations/E7-obligations_20261009/revoke; log "circom revoke"; mkdir -p build; circom circuits/revoke_transition.circom --r1cs --wasm --sym -l $L7/circuits -l $L7/node_modules -l $L7/node_modules/circomlib/circuits -o build > "$OUT/circom_revoke.log"
