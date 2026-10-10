@@ -1,0 +1,11 @@
+'BudgetSM.T1_conservation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BudgetSM.T1_used_le_minted' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BudgetSM.T2_subtree_conservation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BudgetSM.T2_usedUnder_le_inflow' depends on axioms: [propext, Classical.choice, Quot.sound]
+'BudgetSM.T3_revocation_monotone' depends on axioms: [propext, Quot.sound]
+'BudgetSM.T4_freeze' depends on axioms: [propext, Quot.sound]
+BudgetSM.T2_usedUnder_le_inflow : ∀ (Δ : ℕ) {s : BudgetSM.St},
+  BudgetSM.Reachable Δ s → ∀ (c : ℕ), s.usedUnder c ≤ s.inflow c
+BudgetSM.T4_freeze : ∀ (Δ : ℕ) {s s' : BudgetSM.St},
+  Relation.ReflTransGen (BudgetSM.Step Δ) s s' →
+    ∀ (c t : ℕ), s.revokedAt c = some t → t + Δ < s.now → s'.usedUnder c = s.usedUnder c
