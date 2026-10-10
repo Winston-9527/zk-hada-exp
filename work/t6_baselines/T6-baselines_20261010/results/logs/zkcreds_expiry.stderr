@@ -1,0 +1,354 @@
+warning: unused import: `LeafParam`
+  --> src/com_tree.rs:19:41
+   |
+19 |     merkle_tree::{Config as TreeConfig, LeafParam, TwoToOneParam},
+   |                                         ^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `boolean::Boolean`
+  --> src/pred.rs:17:37
+   |
+17 | use ark_r1cs_std::{alloc::AllocVar, boolean::Boolean, eq::EqGadget};
+   |                                     ^^^^^^^^^^^^^^^^
+
+warning: unused import: `core::borrow::Borrow`
+  --> src/test_util.rs:3:5
+   |
+ 3 | use core::borrow::Borrow;
+   |     ^^^^^^^^^^^^^^^^^^^^
+   |
+help: if this is a test module, consider adding a `#[cfg(test)]` to the containing module
+  --> src/lib.rs:14:1
+   |
+14 | pub mod test_util;
+   | ^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `ComNonceVar` and `Com`
+  --> src/test_util.rs:10:17
+   |
+10 |     Bytestring, Com, ComNonceVar, ComParam, ComParamVar,
+   |                 ^^^  ^^^^^^^^^^^
+   |
+help: if this is a test module, consider adding a `#[cfg(test)]` to the containing module
+  --> src/lib.rs:14:1
+   |
+14 | pub mod test_util;
+   | ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `constraints::CommitmentGadget`
+  --> src/test_util.rs:15:24
+   |
+15 |     commitment::{self, constraints::CommitmentGadget, CommitmentScheme},
+   |                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+   |
+help: if this is a test module, consider adding a `#[cfg(test)]` to the containing module
+  --> src/lib.rs:14:1
+   |
+14 | pub mod test_util;
+   | ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `AllocationMode`
+  --> src/test_util.rs:25:23
+   |
+25 |     alloc::{AllocVar, AllocationMode},
+   |                       ^^^^^^^^^^^^^^
+   |
+help: if this is a test module, consider adding a `#[cfg(test)]` to the containing module
+  --> src/lib.rs:14:1
+   |
+14 | pub mod test_util;
+   | ^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `CRH`
+  --> src/test_util.rs:16:48
+   |
+16 |     crh::{bowe_hopwood, pedersen, TwoToOneCRH, CRH},
+   |                                                ^^^
+
+warning: field `pinput` is never read
+   --> src/proof_data_structures.rs:132:16
+    |
+120 | pub struct PredPublicInput<E, A, AV, AC, ACG, H, HG>
+    |            --------------- field in this struct
+...
+132 |     pub(crate) pinput: E::G1Projective,
+    |                ^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `pinput` is never read
+   --> src/proof_data_structures.rs:234:16
+    |
+225 | pub struct BirthPublicInput<E, A, AV, AC, ACG>
+    |            ---------------- field in this struct
+...
+234 |     pub(crate) pinput: E::G1Projective,
+    |                ^^^^^^
+
+warning: field `pinput` is never read
+   --> src/proof_data_structures.rs:358:16
+    |
+347 | pub struct TreePublicInput<E, A, AC, ACG, H, HG>
+    |            --------------- field in this struct
+...
+358 |     pub(crate) pinput: E::G1Projective,
+    |                ^^^^^^
+
+warning: type alias `PedersenCom` is never used
+  --> src/test_util.rs:82:17
+   |
+82 | pub(crate) type PedersenCom<W> = commitment::pedersen::Commitment<Jubjub, W>;
+   |                 ^^^^^^^^^^^
+
+warning: type alias `PedersenComG` is never used
+  --> src/test_util.rs:83:17
+   |
+83 | pub(crate) type PedersenComG<W> =
+   |                 ^^^^^^^^^^^^
+
+warning: `zkcreds` (lib) generated 12 warnings (run `cargo fix --lib -p zkcreds` to apply 6 suggestions)
+warning: unused import: `core::borrow::Borrow`
+ --> benches/microbenches/multishow.rs:5:5
+  |
+5 | use core::borrow::Borrow;
+  |     ^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `ComNonceVar`
+  --> benches/microbenches/multishow.rs:19:5
+   |
+19 |     ComNonceVar, ComParam, ComParamVar,
+   |     ^^^^^^^^^^^
+
+warning: unused imports: `EdwardsParameters` and `constraints::FqVar`
+  --> benches/microbenches/multishow.rs:25:27
+   |
+25 | use ark_ed_on_bls12_381::{constraints::FqVar, EdwardsParameters};
+   |                           ^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^
+
+warning: unused import: `AllocationMode`
+  --> benches/microbenches/multishow.rs:28:23
+   |
+28 |     alloc::{AllocVar, AllocationMode},
+   |                       ^^^^^^^^^^^^^^
+
+warning: unused imports: `SeedableRng`, `io::Write`, and `rngs::StdRng`
+  --> benches/microbenches/multishow.rs:39:5
+   |
+39 |     io::Write,
+   |     ^^^^^^^^^
+40 |     rand::{rngs::StdRng, Rng, SeedableRng},
+   |            ^^^^^^^^^^^^       ^^^^^^^^^^^
+
+warning: unused import: `lazy_static::lazy_static`
+  --> benches/microbenches/multishow.rs:44:5
+   |
+44 | use lazy_static::lazy_static;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `AccountableAttrs`
+ --> benches/microbenches/multishow_age.rs:2:13
+  |
+2 |     attrs::{AccountableAttrs, Attrs},
+  |             ^^^^^^^^^^^^^^^^
+
+warning: unused import: `core::borrow::Borrow`
+ --> benches/microbenches/pseudonymous_show.rs:5:5
+  |
+5 | use core::borrow::Borrow;
+  |     ^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `ComNonceVar`
+  --> benches/microbenches/pseudonymous_show.rs:19:5
+   |
+19 |     ComNonceVar, ComParam, ComParamVar,
+   |     ^^^^^^^^^^^
+
+warning: unused import: `crh::TwoToOneCRH`
+  --> benches/microbenches/pseudonymous_show.rs:23:59
+   |
+23 | use ark_crypto_primitives::{commitment::CommitmentScheme, crh::TwoToOneCRH};
+   |                                                           ^^^^^^^^^^^^^^^^
+
+warning: unused imports: `EdwardsParameters` and `constraints::FqVar`
+  --> benches/microbenches/pseudonymous_show.rs:25:27
+   |
+25 | use ark_ed_on_bls12_381::{constraints::FqVar, EdwardsParameters};
+   |                           ^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^
+
+warning: unused import: `AllocationMode`
+  --> benches/microbenches/pseudonymous_show.rs:28:23
+   |
+28 |     alloc::{AllocVar, AllocationMode},
+   |                       ^^^^^^^^^^^^^^
+
+warning: unused imports: `SeedableRng`, `io::Write`, and `rngs::StdRng`
+  --> benches/microbenches/pseudonymous_show.rs:39:5
+   |
+39 |     io::Write,
+   |     ^^^^^^^^^
+40 |     rand::{rngs::StdRng, Rng, SeedableRng},
+   |            ^^^^^^^^^^^^       ^^^^^^^^^^^
+
+warning: unused import: `lazy_static::lazy_static`
+  --> benches/microbenches/pseudonymous_show.rs:44:5
+   |
+44 | use lazy_static::lazy_static;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `core::borrow::Borrow`
+ --> benches/microbenches/revealing_multishow.rs:5:5
+  |
+5 | use core::borrow::Borrow;
+  |     ^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `ComNonceVar`
+  --> benches/microbenches/revealing_multishow.rs:19:5
+   |
+19 |     ComNonceVar, ComParam, ComParamVar,
+   |     ^^^^^^^^^^^
+
+warning: unused import: `crh::TwoToOneCRH`
+  --> benches/microbenches/revealing_multishow.rs:23:59
+   |
+23 | use ark_crypto_primitives::{commitment::CommitmentScheme, crh::TwoToOneCRH};
+   |                                                           ^^^^^^^^^^^^^^^^
+
+warning: unused imports: `EdwardsParameters` and `constraints::FqVar`
+  --> benches/microbenches/revealing_multishow.rs:25:27
+   |
+25 | use ark_ed_on_bls12_381::{constraints::FqVar, EdwardsParameters};
+   |                           ^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^
+
+warning: unused import: `AllocationMode`
+  --> benches/microbenches/revealing_multishow.rs:28:23
+   |
+28 |     alloc::{AllocVar, AllocationMode},
+   |                       ^^^^^^^^^^^^^^
+
+warning: unused imports: `SeedableRng`, `io::Write`, and `rngs::StdRng`
+  --> benches/microbenches/revealing_multishow.rs:39:5
+   |
+39 |     io::Write,
+   |     ^^^^^^^^^
+40 |     rand::{rngs::StdRng, Rng, SeedableRng},
+   |            ^^^^^^^^^^^^       ^^^^^^^^^^^
+
+warning: unused import: `lazy_static::lazy_static`
+  --> benches/microbenches/revealing_multishow.rs:44:5
+   |
+44 | use lazy_static::lazy_static;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `core::borrow::Borrow`
+ --> benches/microbenches/simple_expiry.rs:5:5
+  |
+5 | use core::borrow::Borrow;
+  |     ^^^^^^^^^^^^^^^^^^^^
+
+warning: unused imports: `AccountableAttrs as AccountableAttrsTrait`, `AccountableAttrsVar as AccountableAttrsVarTrait`, `ComNonceVar`, `MultishowableAttrs`, `RevealingMultishowChecker`, and `setup_poseidon_params`
+  --> benches/microbenches/simple_expiry.rs:9:9
+   |
+ 9 |         AccountableAttrs as AccountableAttrsTrait, AccountableAttrsVar as AccountableAttrsVarTrait,
+   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+...
+15 |     poseidon_utils::{setup_poseidon_params, Bls12PoseidonCommitter, Bls12PoseidonCrh, ComNonce},
+   |                      ^^^^^^^^^^^^^^^^^^^^^
+...
+18 |     revealing_multishow::{MultishowableAttrs, RevealingMultishowChecker},
+   |                           ^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^^^^^^^^^
+19 |     zk_utils::UnitVar,
+20 |     ComNonceVar, ComParam, ComParamVar,
+   |     ^^^^^^^^^^^
+
+warning: unused import: `crh::TwoToOneCRH`
+  --> benches/microbenches/simple_expiry.rs:24:59
+   |
+24 | use ark_crypto_primitives::{commitment::CommitmentScheme, crh::TwoToOneCRH};
+   |                                                           ^^^^^^^^^^^^^^^^
+
+warning: unused imports: `EdwardsParameters` and `constraints::FqVar`
+  --> benches/microbenches/simple_expiry.rs:26:27
+   |
+26 | use ark_ed_on_bls12_381::{constraints::FqVar, EdwardsParameters};
+   |                           ^^^^^^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^
+
+warning: unused import: `AllocationMode`
+  --> benches/microbenches/simple_expiry.rs:29:23
+   |
+29 |     alloc::{AllocVar, AllocationMode},
+   |                       ^^^^^^^^^^^^^^
+
+warning: unused imports: `SeedableRng`, `io::Write`, and `rngs::StdRng`
+  --> benches/microbenches/simple_expiry.rs:40:5
+   |
+40 |     io::Write,
+   |     ^^^^^^^^^
+41 |     rand::{rngs::StdRng, Rng, SeedableRng},
+   |            ^^^^^^^^^^^^       ^^^^^^^^^^^
+
+warning: unused import: `arkworks_utils::Curve`
+  --> benches/microbenches/simple_expiry.rs:43:5
+   |
+43 | use arkworks_utils::Curve;
+   |     ^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `lazy_static::lazy_static`
+  --> benches/microbenches/simple_expiry.rs:45:5
+   |
+45 | use lazy_static::lazy_static;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `MERKLE_CRH_PARAM`
+ --> benches/microbenches/tree_forest_tradeoff.rs:9:35
+  |
+9 |     test_util::{NameAndBirthYear, MERKLE_CRH_PARAM},
+  |                                   ^^^^^^^^^^^^^^^^
+
+warning: unused import: `ark_crypto_primitives::commitment::CommitmentScheme`
+  --> benches/microbenches/multishow.rs:23:5
+   |
+23 | use ark_crypto_primitives::commitment::CommitmentScheme;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `commitment::CommitmentScheme`
+  --> benches/microbenches/simple_expiry.rs:24:29
+   |
+24 | use ark_crypto_primitives::{commitment::CommitmentScheme, crh::TwoToOneCRH};
+   |                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `commitment::CommitmentScheme`
+  --> benches/microbenches/pseudonymous_show.rs:23:29
+   |
+23 | use ark_crypto_primitives::{commitment::CommitmentScheme, crh::TwoToOneCRH};
+   |                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `commitment::CommitmentScheme`
+  --> benches/microbenches/revealing_multishow.rs:23:29
+   |
+23 | use ark_crypto_primitives::{commitment::CommitmentScheme, crh::TwoToOneCRH};
+   |                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: `zkcreds` (bench "t6_micro") generated 34 warnings (run `cargo fix --bench "t6_micro" -p zkcreds` to apply 30 suggestions)
+    Finished `bench` profile [optimized + debuginfo] target(s) in 0.05s
+     Running benches/t6_micro.rs (target/release/deps/t6_micro-72b6aacfbab7d9b1)
+      192.02 real      1124.19 user       138.31 sys
+          1553924096  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              261731  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   1  signals received
+                  41  voluntary context switches
+             9140821  involuntary context switches
+          1040224280  instructions retired
+           307400678  cycles elapsed
+            45351560  peak memory footprint
