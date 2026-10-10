@@ -1,0 +1,8 @@
+.venv/
+repro/out/
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.out
+!latex.log

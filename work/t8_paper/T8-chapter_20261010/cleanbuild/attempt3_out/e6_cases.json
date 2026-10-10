@@ -1,0 +1,469 @@
+{
+ "date": "2026-10-10T14:45:43.492Z",
+ "committee": "t=3, n=5 (trusted dealer, Feldman VSS)",
+ "fixtures": [
+  "results/fixtures_C_e1.json",
+  "results/fixtures_C_e2.json",
+  "results/fixtures_A_e1.json"
+ ],
+ "total": 65,
+ "failed": 0,
+ "rows": [
+  {
+   "id": "O1",
+   "variant": "mode C D=1: 10 three-subsets x 3 actions",
+   "expected": "open, exact",
+   "observed": "30/30 exact",
+   "pass": true
+  },
+  {
+   "id": "O2",
+   "variant": "mode C D=1: 4- and 5-subsets x 3 actions",
+   "expected": "open, exact",
+   "observed": "18/18 exact",
+   "pass": true
+  },
+  {
+   "id": "O3",
+   "variant": "mode C D=1: 2-subsets x 3 actions",
+   "expected": "INSUFFICIENT",
+   "observed": "30/30 INSUFFICIENT",
+   "pass": true
+  },
+  {
+   "id": "O3",
+   "variant": "mode C D=1: forced Lagrange on 2 shares (negative control)",
+   "expected": "points != ent",
+   "observed": "30/30 wrong; on-curve 0/60 recovered points",
+   "pass": true
+  },
+  {
+   "id": "O1",
+   "variant": "mode C D=2: 10 three-subsets x 3 actions",
+   "expected": "open, exact",
+   "observed": "30/30 exact",
+   "pass": true
+  },
+  {
+   "id": "O2",
+   "variant": "mode C D=2: 4- and 5-subsets x 3 actions",
+   "expected": "open, exact",
+   "observed": "18/18 exact",
+   "pass": true
+  },
+  {
+   "id": "O3",
+   "variant": "mode C D=2: 2-subsets x 3 actions",
+   "expected": "INSUFFICIENT",
+   "observed": "30/30 INSUFFICIENT",
+   "pass": true
+  },
+  {
+   "id": "O3",
+   "variant": "mode C D=2: forced Lagrange on 2 shares (negative control)",
+   "expected": "points != ent",
+   "observed": "30/30 wrong; on-curve 0/90 recovered points",
+   "pass": true
+  },
+  {
+   "id": "O1",
+   "variant": "mode C D=3: 10 three-subsets x 3 actions",
+   "expected": "open, exact",
+   "observed": "30/30 exact",
+   "pass": true
+  },
+  {
+   "id": "O2",
+   "variant": "mode C D=3: 4- and 5-subsets x 3 actions",
+   "expected": "open, exact",
+   "observed": "18/18 exact",
+   "pass": true
+  },
+  {
+   "id": "O3",
+   "variant": "mode C D=3: 2-subsets x 3 actions",
+   "expected": "INSUFFICIENT",
+   "observed": "30/30 INSUFFICIENT",
+   "pass": true
+  },
+  {
+   "id": "O3",
+   "variant": "mode C D=3: forced Lagrange on 2 shares (negative control)",
+   "expected": "points != ent",
+   "observed": "30/30 wrong; on-curve 0/120 recovered points",
+   "pass": true
+  },
+  {
+   "id": "O1",
+   "variant": "mode C D=4: 10 three-subsets x 3 actions",
+   "expected": "open, exact",
+   "observed": "30/30 exact",
+   "pass": true
+  },
+  {
+   "id": "O2",
+   "variant": "mode C D=4: 4- and 5-subsets x 3 actions",
+   "expected": "open, exact",
+   "observed": "18/18 exact",
+   "pass": true
+  },
+  {
+   "id": "O3",
+   "variant": "mode C D=4: 2-subsets x 3 actions",
+   "expected": "INSUFFICIENT",
+   "observed": "30/30 INSUFFICIENT",
+   "pass": true
+  },
+  {
+   "id": "O3",
+   "variant": "mode C D=4: forced Lagrange on 2 shares (negative control)",
+   "expected": "points != ent",
+   "observed": "30/30 wrong; on-curve 0/150 recovered points",
+   "pass": true
+  },
+  {
+   "id": "O1",
+   "variant": "mode A D=4: 10 three-subsets x 3 actions",
+   "expected": "open, exact",
+   "observed": "30/30 exact",
+   "pass": true
+  },
+  {
+   "id": "O2",
+   "variant": "mode A D=4: 4- and 5-subsets x 3 actions",
+   "expected": "open, exact",
+   "observed": "18/18 exact",
+   "pass": true
+  },
+  {
+   "id": "O3",
+   "variant": "mode A D=4: 2-subsets x 3 actions",
+   "expected": "INSUFFICIENT",
+   "observed": "30/30 INSUFFICIENT",
+   "pass": true
+  },
+  {
+   "id": "O3",
+   "variant": "mode A D=4: forced Lagrange on 2 shares (negative control)",
+   "expected": "points != ent",
+   "observed": "30/30 wrong; on-curve 150/150 recovered points",
+   "pass": true
+  },
+  {
+   "id": "O4",
+   "variant": "member 1 twice + member 2",
+   "expected": "duplicate rejected -> INSUFFICIENT",
+   "observed": "INSUFFICIENT; m1 DUPLICATE_INDEX",
+   "pass": true
+  },
+  {
+   "id": "O5",
+   "variant": "index 1 twice (own share + member 2's share relabelled) + member 3",
+   "expected": "both index-1 copies rejected -> INSUFFICIENT",
+   "observed": "INSUFFICIENT; blame [{\"i\":1,\"why\":\"DUPLICATE_INDEX\"},{\"i\":1,\"why\":\"DUPLICATE_INDEX\"}]",
+   "pass": true
+  },
+  {
+   "id": "O6",
+   "variant": "sanity: the s' DLEQ proof verifies against Y' = s'G",
+   "expected": "true",
+   "observed": "true",
+   "pass": true
+  },
+  {
+   "id": "O6",
+   "variant": "member 1 D_i plusG + members 2,3",
+   "expected": "share rejected -> INSUFFICIENT",
+   "observed": "INSUFFICIENT; m1 DLEQ_FAIL",
+   "pass": true
+  },
+  {
+   "id": "O6",
+   "variant": "member 1 D_i random + members 2,3",
+   "expected": "share rejected -> INSUFFICIENT",
+   "observed": "INSUFFICIENT; m1 DLEQ_FAIL",
+   "pass": true
+  },
+  {
+   "id": "O6",
+   "variant": "member 1 D_i otherKey + members 2,3",
+   "expected": "share rejected -> INSUFFICIENT",
+   "observed": "INSUFFICIENT; m1 DLEQ_FAIL",
+   "pass": true
+  },
+  {
+   "id": "O7",
+   "variant": "member 1 proof z+1",
+   "expected": "share rejected",
+   "observed": "INSUFFICIENT; m1 DLEQ_FAIL",
+   "pass": true
+  },
+  {
+   "id": "O7",
+   "variant": "member 1 proof A1 replaced (changes ch)",
+   "expected": "share rejected",
+   "observed": "INSUFFICIENT; m1 DLEQ_FAIL",
+   "pass": true
+  },
+  {
+   "id": "O7",
+   "variant": "member 1 proof A1/A2 swapped",
+   "expected": "share rejected",
+   "observed": "INSUFFICIENT; m1 DLEQ_FAIL",
+   "pass": true
+  },
+  {
+   "id": "O8",
+   "variant": "member 1's share for action B submitted for action A",
+   "expected": "rejected",
+   "observed": "INSUFFICIENT; m1 EVENT_MISMATCH",
+   "pass": true
+  },
+  {
+   "id": "O8",
+   "variant": "same, ev field relabelled to action A",
+   "expected": "rejected",
+   "observed": "INSUFFICIENT; m1 DLEQ_FAIL",
+   "pass": true
+  },
+  {
+   "id": "O9",
+   "variant": "same D_i and c1, proof relabelled to another event id",
+   "expected": "rejected (challenge binds ev)",
+   "observed": "INSUFFICIENT; m1 DLEQ_FAIL",
+   "pass": true
+  },
+  {
+   "id": "O10",
+   "variant": "action under TPK_2: epoch derived from public TPK",
+   "expected": "epoch 2",
+   "observed": "epoch 2",
+   "pass": true
+  },
+  {
+   "id": "O10",
+   "variant": "epoch-1 member asked to share for an epoch-2 action",
+   "expected": "refuse",
+   "observed": "EPOCH_MISMATCH",
+   "pass": true
+  },
+  {
+   "id": "O10",
+   "variant": "3 epoch-1 shares for the epoch-2 action (proper combiner)",
+   "expected": "rejected EPOCH_MISMATCH",
+   "observed": "INSUFFICIENT; blame EPOCH_MISMATCH",
+   "pass": true
+  },
+  {
+   "id": "O10",
+   "variant": "naive combiner using the shares' claimed epoch-1 keys (negative control)",
+   "expected": "points != ent",
+   "observed": "OK; exact false; consistency check false",
+   "pass": true,
+   "note": "shows why the epoch must come from the TPK bound in the proof"
+  },
+  {
+   "id": "O11",
+   "variant": "2 epoch-2 shares + 1 epoch-1 share",
+   "expected": "INSUFFICIENT",
+   "observed": "INSUFFICIENT; blame [{\"i\":3,\"why\":\"EPOCH_MISMATCH\"}]",
+   "pass": true
+  },
+  {
+   "id": "O10",
+   "variant": "epoch-2 action opened by epoch-2 members (control)",
+   "expected": "open, exact",
+   "observed": "OK; exact true",
+   "pass": true
+  },
+  {
+   "id": "O12",
+   "variant": "5 submitted: m1 forged (s' with valid DLEQ for Y'), m4 z+1, m2/m3/m5 honest",
+   "expected": "open; m1, m4 identified",
+   "observed": "OK; exact true; used 2,3,5; blame [{\"i\":1,\"why\":\"DLEQ_FAIL\"},{\"i\":4,\"why\":\"DLEQ_FAIL\"}]",
+   "pass": true
+  },
+  {
+   "id": "O13",
+   "variant": "c1x+1, original proof",
+   "expected": "proof fails -> refuse",
+   "observed": "PROOF_INVALID",
+   "pass": true
+  },
+  {
+   "id": "O13",
+   "variant": "c1x+1, control WITHOUT proof check",
+   "expected": "points != ent (or member refuses)",
+   "observed": "member refuses INVALID_C1",
+   "pass": true
+  },
+  {
+   "id": "O13",
+   "variant": "c2x+1, original proof",
+   "expected": "proof fails -> refuse",
+   "observed": "PROOF_INVALID",
+   "pass": true
+  },
+  {
+   "id": "O13",
+   "variant": "c2x+1, control WITHOUT proof check",
+   "expected": "points != ent (or member refuses)",
+   "observed": "exact false; consistency false",
+   "pass": true
+  },
+  {
+   "id": "O13",
+   "variant": "e[0][0]+1, original proof",
+   "expected": "proof fails -> refuse",
+   "observed": "PROOF_INVALID",
+   "pass": true
+  },
+  {
+   "id": "O13",
+   "variant": "e[0][0]+1, control WITHOUT proof check",
+   "expected": "points != ent (or member refuses)",
+   "observed": "exact false; consistency false",
+   "pass": true
+  },
+  {
+   "id": "O13",
+   "variant": "e[4][1]+1, original proof",
+   "expected": "proof fails -> refuse",
+   "observed": "PROOF_INVALID",
+   "pass": true
+  },
+  {
+   "id": "O13",
+   "variant": "e[4][1]+1, control WITHOUT proof check",
+   "expected": "points != ent (or member refuses)",
+   "observed": "exact false; consistency false",
+   "pass": true
+  },
+  {
+   "id": "O13",
+   "variant": "c1 from action B, original proof",
+   "expected": "proof fails -> refuse",
+   "observed": "PROOF_INVALID",
+   "pass": true
+  },
+  {
+   "id": "O13",
+   "variant": "c1 from action B, control WITHOUT proof check",
+   "expected": "points != ent (or member refuses)",
+   "observed": "exact false; consistency false",
+   "pass": true
+  },
+  {
+   "id": "O14",
+   "variant": "sanity: T = l·Generator has order 8",
+   "expected": "order 8",
+   "observed": "4T = id: false, 8T = id: true",
+   "pass": true
+  },
+  {
+   "id": "O14",
+   "variant": "c1 = identity",
+   "expected": "refuse",
+   "observed": "INVALID_C1",
+   "pass": true
+  },
+  {
+   "id": "O14",
+   "variant": "c1 = order 2 (0,-1)",
+   "expected": "refuse",
+   "observed": "INVALID_C1",
+   "pass": true
+  },
+  {
+   "id": "O14",
+   "variant": "c1 = order 8",
+   "expected": "refuse",
+   "observed": "INVALID_C1",
+   "pass": true
+  },
+  {
+   "id": "O14",
+   "variant": "c1 = off-curve",
+   "expected": "refuse",
+   "observed": "INVALID_C1",
+   "pass": true
+  },
+  {
+   "id": "O14",
+   "variant": "c1 = c1 + T (outside subgroup)",
+   "expected": "refuse",
+   "observed": "INVALID_C1",
+   "pass": true
+  },
+  {
+   "id": "O15",
+   "variant": "TPK honest",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "O15",
+   "variant": "TPK identity",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "O15",
+   "variant": "TPK order 2",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "O15",
+   "variant": "TPK order 8",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "O15",
+   "variant": "TPK TPK + T (outside subgroup)",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "O15",
+   "variant": "TPK off-curve",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "O15",
+   "variant": "TPK valid point != A_0",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "O16",
+   "variant": "combine() source never touches member secrets / _tsk; shares carry only {i, epoch, ev, parts:[{D, pf:{A1,A2,z}}]}",
+   "expected": "holds",
+   "observed": "secret refs in combine: false; share keys i,epoch,ev,parts",
+   "pass": true
+  },
+  {
+   "id": "O17",
+   "variant": "honest shares pass the Feldman check (epochs 1, 2)",
+   "expected": "pass",
+   "observed": "10/10",
+   "pass": true
+  },
+  {
+   "id": "O17",
+   "variant": "dealer sends member 2 the share s_2 + 1",
+   "expected": "check fails (complaint)",
+   "observed": "fail",
+   "pass": true
+  }
+ ]
+}
