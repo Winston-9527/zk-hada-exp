@@ -12,4 +12,8 @@ for k in 1 2 3 4; do mkdir -p $W/t2_circuit_fix/zkdac_v9/build/zk; cp $D/v9_c$k.
 mkdir -p $W/t2_circuit_fix/zkdac_v8/build/zk $W/t4_registration/build/zk $W/t4_obligations/E7-obligations_20261009/revoke/build/zk
 cp $D/v8_budget_transfer.zkey $W/t2_circuit_fix/zkdac_v8/build/zk/budget_transfer.zkey; cp $D/v8_budget_mint.zkey $W/t2_circuit_fix/zkdac_v8/build/zk/budget_mint.zkey
 cp $D/reg20.zkey $W/t4_registration/build/zk/reg20.zkey; cp $D/revoke_rt.zkey $W/t4_obligations/E7-obligations_20261009/revoke/build/zk/rt.zkey
+# attempt 3: the registration key (reg20) was set up on the LOCAL dev ptau 2^17 (t4_registration/RUN_RECORD.md), published in release v4 as dev_pot17.ptau
+DEVP=$W/ptau/pot17_final.ptau
+if [ ! -f "$DEVP" ]; then for i in 1 2 3 4 5; do gh release download v4-proving-material-20261008 -R $R -p dev_pot17.ptau -O "$DEVP" --clobber && break; sleep 20; done; fi
+[ "$(shasum -a 256 "$DEVP" | awk '{print $1}')" = "28671bef15ba2c1c86aa8bc452540a12d0a7f86b8ec3fadce1565ad8c15c3a2b" ] && log "dev ptau 2^17 sha256 ok" || { log "dev ptau FAIL"; exit 1; }
 log "20_fetch done"
