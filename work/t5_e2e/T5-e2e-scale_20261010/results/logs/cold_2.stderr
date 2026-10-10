@@ -1,0 +1,19 @@
+03:18:17 cold slot 2 D=1 local 1007.1 prove 844.6
+        3.65 real         9.60 user         0.49 sys
+          1891057664  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              205143  page reclaims
+                  88  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  38  messages sent
+                  38  messages received
+                   0  signals received
+                   0  voluntary context switches
+               12482  involuntary context switches
+        108483176745  instructions retired
+         43030539704  cycles elapsed
+          1746995408  peak memory footprint

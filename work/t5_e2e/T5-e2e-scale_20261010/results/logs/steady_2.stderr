@@ -1,0 +1,62 @@
+03:14:58 warmup D 4 2885.1
+03:15:01 warmup D 3 2397
+03:15:03 warmup D 2 1548.65
+03:15:04 warmup D 1 908.95
+03:15:07 block 2 #0 D=3 local 2440.8 prove 2205.86 gas 713095
+03:15:08 block 2 #1 D=1 local 918.27 prove 749.34 gas 724691
+03:15:10 block 2 #2 D=2 local 1552.02 prove 1351.45 gas 732419
+03:15:12 block 2 #3 D=4 local 2711.78 prove 2440.96 gas 774988
+03:15:15 block 2 #4 D=4 local 2715.72 prove 2441.59 gas 693711
+03:15:16 block 2 #5 D=1 local 905.47 prove 740.81 gas 697579
+03:15:18 block 2 #6 D=2 local 1546.51 prove 1344.47 gas 705343
+03:15:21 block 2 #7 D=4 local 2713.24 prove 2441.85 gas 747899
+03:15:24 block 2 #8 D=3 local 2393.41 prove 2155.31 gas 713083
+03:15:25 block 2 #9 D=1 local 911.89 prove 743.59 gas 724691
+03:15:27 block 2 #10 D=3 local 2415.97 prove 2177.38 gas 740183
+03:15:30 block 2 #11 D=3 local 2395.59 prove 2158.86 gas 767259
+03:15:33 block 2 #12 D=4 local 2699.53 prove 2431.03 gas 720823
+03:15:35 block 2 #13 D=2 local 1555.25 prove 1349.53 gas 732455
+03:15:38 block 2 #14 D=4 local 2754.3 prove 2479.21 gas 747947
+03:15:40 block 2 #15 D=2 local 1556.56 prove 1352.38 gas 759495
+03:15:42 block 2 #16 D=4 local 2711.87 prove 2432.57 gas 747935
+03:15:45 block 2 #17 D=3 local 2415.68 prove 2176.37 gas 767247
+03:15:46 block 2 #18 D=1 local 913.72 prove 747.48 gas 751743
+03:15:49 block 2 #19 D=4 local 2763.86 prove 2488.85 gas 802100
+03:15:52 block 2 #20 D=3 local 2402.74 prove 2161.25 gas 658941
+03:15:53 block 2 #21 D=1 local 905.54 prove 739.59 gas 670515
+03:15:56 block 2 #22 D=4 local 2724.07 prove 2454.97 gas 693771
+03:15:58 block 2 #23 D=3 local 2404.78 prove 2162.21 gas 713083
+03:16:00 block 2 #24 D=2 local 1543.3 prove 1341.42 gas 678255
+03:16:01 block 2 #25 D=1 local 917.37 prove 749.41 gas 697603
+03:16:04 block 2 #26 D=4 local 2748.18 prove 2471.43 gas 720835
+03:16:07 block 2 #27 D=3 local 2393.33 prove 2155.06 gas 740123
+03:16:09 block 2 #28 D=3 local 2406.93 prove 2168.17 gas 686031
+03:16:11 block 2 #29 D=2 local 1566.66 prove 1363.57 gas 705307
+03:16:12 block 2 #30 D=1 local 908.44 prove 738.94 gas 697603
+03:16:13 block 2 #31 D=1 local 906.47 prove 740.99 gas 724643
+03:16:15 block 2 #32 D=1 local 906.58 prove 743.41 gas 697591
+03:16:16 block 2 #33 D=2 local 1541.76 prove 1340.71 gas 732443
+03:16:17 block 2 #34 D=1 local 926.03 prove 755.3 gas 724655
+03:16:20 block 2 #35 D=3 local 2426.96 prove 2193.08 gas 767271
+03:16:22 block 2 #36 D=2 local 1579.59 prove 1372.17 gas 678267
+03:16:25 block 2 #37 D=4 local 2720.47 prove 2450.3 gas 720823
+03:16:27 block 2 #38 D=2 local 1544.32 prove 1340.52 gas 705331
+03:16:28 block 2 #39 D=2 local 1553.25 prove 1347.55 gas 732419
+       95.38 real       613.92 user        19.70 sys
+          4446060544  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             9275620  page reclaims
+                 176  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                1070  messages sent
+                1070  messages received
+                   0  signals received
+                  17  voluntary context switches
+              599472  involuntary context switches
+       5727083749822  instructions retired
+       2700836544770  cycles elapsed
+          4212964920  peak memory footprint
