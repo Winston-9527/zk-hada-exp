@@ -1,0 +1,58 @@
+02:37:01 creds 100
+02:37:31 creds 200
+02:38:03 creds 300
+02:38:36 creds 400
+02:39:08 creds 500
+02:39:40 creds 600
+02:40:12 creds 700
+02:40:44 creds 800
+02:41:17 creds 900
+02:41:49 creds 1000
+02:42:21 creds 1100
+02:42:53 creds 1200
+02:43:03 agents 1230 by D 32/46/128/1024
+02:43:03 deployed gate 0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82
+02:43:17 registered masters 32
+02:43:21 minted
+02:44:35 transfers 50
+02:45:50 transfers 100
+02:47:06 transfers 150
+02:48:21 transfers 200
+02:49:36 transfers 250
+02:50:50 transfers 300
+02:52:05 transfers 350
+02:53:20 transfers 400
+02:54:35 transfers 450
+02:55:50 transfers 500
+02:57:04 transfers 550
+02:58:18 transfers 600
+02:59:32 transfers 650
+03:00:46 transfers 700
+03:02:01 transfers 750
+03:03:15 transfers 800
+03:04:31 transfers 850
+03:05:46 transfers 900
+03:07:02 transfers 950
+03:08:16 transfers 1000
+03:09:30 transfers 1050
+03:10:45 transfers 1100
+03:12:00 transfers 1150
+03:13:12 transfers done 1198
+     2199.56 real     12538.23 user       352.30 sys
+          3355836416  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+           168229862  page reclaims
+                  88  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+               21411  messages sent
+               21411  messages received
+                   0  signals received
+                  10  voluntary context switches
+            12342029  involuntary context switches
+     120754739242776  instructions retired
+      54834923422986  cycles elapsed
+          2708179920  peak memory footprint

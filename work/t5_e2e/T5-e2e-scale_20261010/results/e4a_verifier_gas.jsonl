@@ -1,0 +1,4 @@
+{"D":2,"verify_true":true,"tx_gasUsed":335193,"calldata_gas":12272,"verifier_exec_gas":301921,"calldata_bytes":836}
+{"D":1,"verify_true":true,"tx_gasUsed":328022,"calldata_gas":11748,"verifier_exec_gas":295274,"calldata_bytes":804}
+{"D":3,"verify_true":true,"tx_gasUsed":342340,"calldata_gas":12772,"verifier_exec_gas":308568,"calldata_bytes":868}
+{"D":4,"verify_true":true,"tx_gasUsed":349475,"calldata_gas":13260,"verifier_exec_gas":315215,"calldata_bytes":900}
