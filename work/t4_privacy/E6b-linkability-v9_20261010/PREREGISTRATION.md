@@ -44,3 +44,14 @@ Controls use the same generator with one change each; P1 needs new proofs (same 
 
 ## Outputs
 results/transcripts.jsonl (512 + 512 P1), results/deterministic.json, results/classifiers.json, RESULTS.md, RUN_RECORD.md. Failures kept.
+
+## Amendment A1 (2026-10-11, committed BEFORE the full classifier run; prompted by a 2-permutation timing run, kept in RESULTS.md as such)
+The timing run showed pooled out-of-fold AUCs far BELOW 0.5 for C3 (e.g. 0.04) and below 0.5 for C2. This is the known grouped-CV artefact: with
+few groups (8 parents, 4 per master), holding a group out shifts the training class prior against the held-out class, so an uninformative model's
+pooled scores anti-correlate with the label. A transcript-level label permutation breaks the group structure and does not reproduce the artefact,
+so it is not the matched baseline. Changes:
+1. The permutation null permutes labels at the unit the label belongs to: C1 the agent assignment of transcripts (8 per agent kept), C2 the parent
+   assignment of agents (8 per parent kept), C3 the master assignment of parents (4 / 4 kept); folds stay grouped by the true units.
+2. Reported in addition: mean within-fold AUC (folds where both classes occur), which is not affected by the prior shift.
+3. The decision rule is unchanged: LINK iff Holm-adjusted permutation p < 0.01 AND pooled AUC 95 % CI lower bound > 0.55. An AUC far below 0.5 is
+   reported and explained, never counted as a link or as evidence of privacy.

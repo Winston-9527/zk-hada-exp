@@ -1,0 +1,2 @@
+fresh exit 0
+p1 exit 0
