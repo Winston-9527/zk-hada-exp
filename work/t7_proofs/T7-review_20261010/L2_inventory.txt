@@ -1,0 +1,25 @@
+  ZkHada/CryptoAssumptions.lean:14:axiom A_Groth16_ZK :
+  ZkHada/CryptoAssumptions.lean:20:axiom A_Poseidon_CR :
+  ZkHada/CryptoAssumptions.lean:26:axiom A_Merkle_BIND :
+  ZkHada/CryptoAssumptions.lean:32:axiom A_BabyJub_ElGamal :
+  ZkHada/CryptoAssumptions.lean:38:axiom A_Shamir_Threshold :
+  ZkHada/CryptoAssumptions.lean:44:axiom A_EDDSA_EUF :
+  ZkHada/Basic.lean:96:noncomputable def Adv_Groth16_ZK      (s : SecurityParameter) : ℝ := 0
+  ZkHada/Basic.lean:97:noncomputable def Adv_Groth16_KS      (s : SecurityParameter) : ℝ := 0
+  ZkHada/Basic.lean:98:noncomputable def Adv_Poseidon_CR     (s : SecurityParameter) : ℝ := 0
+  ZkHada/Basic.lean:99:noncomputable def Adv_Merkle_BIND     (s : SecurityParameter) : ℝ := 0
+  ZkHada/Basic.lean:100:noncomputable def Adv_BabyJub_ElGamal (s : SecurityParameter) : ℝ := 0
+  ZkHada/Basic.lean:101:noncomputable def Adv_Shamir_Threshold (s : SecurityParameter) : ℝ := 0
+  ZkHada/Basic.lean:102:noncomputable def Adv_EDDSA_EUF       (s : SecurityParameter) : ℝ := 0
+  ZkHada/Basic.lean:103:noncomputable def Adv_Grobner        (d : ℝ) (L : ℝ) (s : SecurityParameter) : ℝ := 0
+  ZkHada/TNFF.lean:32:noncomputable def structural_real : StructuralOracle := λ _ => PMF.pure ()
+  ZkHada/TNFF.lean:33:noncomputable def structural_ideal : StructuralOracle := λ _ => PMF.pure ()
+  ZkHada/TNFF.lean:39:  PMF.pure false
+  ZkHada/TNFF.lean:57:axiom H4_ideal (A : PPT_Adversary) (s : SecurityParameter) : PrWin H4 A s = 1/2
+  ZkHada/TNFF.lean:76:axiom H2_to_H3_eddsa (A : PPT_Adversary) (s : SecurityParameter) :
+  ZkHada/TNFF.lean:80:axiom H3_to_H4_reduction (A : PPT_Adversary) (s : SecurityParameter) :
+  ZkHada/TNFF.lean:152:    sorry
+  ZkHada/TNFF.lean:157:  sorry
+  ZkHada/TANON.lean:18:noncomputable def TANON.G0_PrWin : ℝ := 3/4
+  ZkHada/TANON.lean:19:noncomputable def TANON.G1_PrWin : ℝ := 3/4
+  ZkHada/TANON.lean:20:noncomputable def TANON.G2_PrWin : ℝ := 1/2
