@@ -1,0 +1,131 @@
+⚠ [17100/17112] Built ZkHada.Basic (15s)
+warning: ZkHada/Basic.lean:96:39: Variable name `s` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ZkHada/Basic.lean:97:39: Variable name `s` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ZkHada/Basic.lean:98:39: Variable name `s` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ZkHada/Basic.lean:99:39: Variable name `s` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ZkHada/Basic.lean:100:39: Variable name `s` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ZkHada/Basic.lean:101:40: Variable name `s` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ZkHada/Basic.lean:102:39: Variable name `s` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ZkHada/Basic.lean:103:38: Variable name `d` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ZkHada/Basic.lean:103:46: Variable name `L` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ZkHada/Basic.lean:103:54: Variable name `s` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+✖ [17106/17112] Building ZkHada.TNFF (3.9s)
+trace: .> LEAN_PATH=/Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/.lake/packages/Cli/.lake/build/lib/lean:/Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/.lake/packages/batteries/.lake/build/lib/lean:/Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/.lake/packages/Qq/.lake/build/lib/lean:/Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/.lake/packages/aesop/.lake/build/lib/lean:/Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/.lake/packages/proofwidgets/.lake/build/lib/lean:/Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/.lake/packages/importGraph/.lake/build/lib/lean:/Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/.lake/packages/plausible/.lake/build/lib/lean:/Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/.lake/packages/mathlib/.lake/build/lib/lean:/Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/.lake/build/lib/lean /Users/siyuan/.elan/toolchains/leanprover--lean4---v4.31.0-rc2/bin/lean /Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/ZkHada/TNFF.lean -o /Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/.lake/build/lib/lean/ZkHada/TNFF.olean -i /Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/.lake/build/lib/lean/ZkHada/TNFF.ilean -c /Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/.lake/build/ir/ZkHada/TNFF.c --setup /Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/.lake/build/ir/ZkHada/TNFF.setup.json --json
+error: ZkHada/TNFF.lean:30:24: Unknown identifier `Oracle`
+error: ZkHada/TNFF.lean:32:56: Type mismatch
+  fun x => PMF.pure ()
+has type
+  ?m.2 → PMF Unit
+but is expected to have type
+  StructuralOracle
+error: ZkHada/TNFF.lean:33:57: Type mismatch
+  fun x => PMF.pure ()
+has type
+  ?m.2 → PMF Unit
+but is expected to have type
+  StructuralOracle
+warning: ZkHada/TNFF.lean:36:5: Variable name `shamir` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ZkHada/TNFF.lean:36:34: Variable name `elgamal` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ZkHada/TNFF.lean:37:5: Variable name `eddsa` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ZkHada/TNFF.lean:37:31: Variable name `structural` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ZkHada/TNFF.lean:38:5: Variable name `A` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: ZkHada/TNFF.lean:38:25: Variable name `s` is not explicitly referenced.
+
+The binding can be removed (if unused) or named `_` (if used implicitly).
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+error: ZkHada/TNFF.lean:42:21: Unknown identifier `shamir_real`
+error: ZkHada/TNFF.lean:42:33: Unknown identifier `elgamal_real`
+error: ZkHada/TNFF.lean:42:46: Unknown identifier `eddsa_real`
+error: ZkHada/TNFF.lean:45:21: Unknown identifier `shamir_ideal`
+error: ZkHada/TNFF.lean:45:34: Unknown identifier `elgamal_real`
+error: ZkHada/TNFF.lean:45:47: Unknown identifier `eddsa_real`
+error: ZkHada/TNFF.lean:48:21: Unknown identifier `shamir_ideal`
+error: ZkHada/TNFF.lean:48:34: Unknown identifier `elgamal_ideal`
+error: ZkHada/TNFF.lean:48:48: Unknown identifier `eddsa_real`
+error: ZkHada/TNFF.lean:51:21: Unknown identifier `shamir_ideal`
+error: ZkHada/TNFF.lean:51:34: Unknown identifier `elgamal_ideal`
+error: ZkHada/TNFF.lean:51:48: Unknown identifier `eddsa_ideal`
+error: ZkHada/TNFF.lean:54:21: Unknown identifier `shamir_ideal`
+error: ZkHada/TNFF.lean:54:34: Unknown identifier `elgamal_ideal`
+error: ZkHada/TNFF.lean:54:48: Unknown identifier `eddsa_ideal`
+error: ZkHada/TNFF.lean:63:12: Unknown identifier `shamir_oracle`
+error: ZkHada/TNFF.lean:62:62: unsolved goals
+A : PPT_Adversary
+s : SecurityParameter
+⊢ |PrWin H0 A s - PrWin H1 A s| ≤ Adv_Shamir_Threshold s
+error: ZkHada/TNFF.lean:70:12: Unknown identifier `elgamal_oracle`
+error: ZkHada/TNFF.lean:69:61: unsolved goals
+A : PPT_Adversary
+s : SecurityParameter
+⊢ |PrWin H1 A s - PrWin H2 A s| ≤ Adv_BabyJub_ElGamal s
+error: ZkHada/TNFF.lean:122:53: Unknown identifier `babyjub_elgamal_bound`
+error: ZkHada/TNFF.lean:123:53: Unknown identifier `shamir_threshold_bound`
+error: ZkHada/TNFF.lean:124:45: Unknown identifier `eddsa_euf_bound`
+warning: ZkHada/TNFF.lean:148:8: declaration uses `sorry`
+error: Lean exited with code 1
+Some required targets logged failures:
+- ZkHada.TNFF
+error: build failed
+lake build  805.57s user 258.81s system 905% cpu 1:57.52 total
+exit 1

@@ -1,0 +1,14 @@
+name = "zkHada"
+version = "0.1.0"
+defaultTargets = ["zkhada"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+
+[[lean_lib]]
+name = "ZkHada"
+
+[[lean_exe]]
+name = "zkhada"
+root = "Main"

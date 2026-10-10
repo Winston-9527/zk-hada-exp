@@ -1,0 +1,18 @@
+info: downloading https://releases.lean-lang.org/lean4/v4.31.0-rc2/lean-4.31.0-rc2-darwin_aarch64.tar.zst
+info: installing /Users/siyuan/.elan/toolchains/leanprover--lean4---v4.31.0-rc2
+info: mathlib: cloning https://github.com/leanprover-community/mathlib4
+info: mathlib: checking out revision '261b5e314a7e71cff47a151b610fa834b3e6a7ae'
+info: plausible: cloning https://github.com/leanprover-community/plausible
+info: plausible: checking out revision '744117af710b1c0400cd297c9ce91f8d0ad3a347'
+info: LeanSearchClient: cloning https://github.com/leanprover-community/LeanSearchClient
+info: LeanSearchClient: checking out revision 'c5d5b8fe6e5158def25cd28eb94e4141ad97c843'
+info: importGraph: cloning https://github.com/leanprover-community/import-graph
+info: importGraph: checking out revision '99c763c8a96d3d44fb4994e96eaa51ca4568449d'
+info: proofwidgets: cloning https://github.com/leanprover-community/ProofWidgets4
+info: proofwidgets: checking out revision 'b2da7698bdf22804095ea5b5007f23c09398f687'
+info: aesop: cloning https://github.com/leanprover-community/aesop
+info: stderr:
+Cloning into '/Users/siyuan/Developer/zk-hada-exp/work/t7_proofs/T7-review_20261010/mech_copy/.lake/packages/aesop'...
+fatal: unable to access 'https://github.com/leanprover-community/aesop/': LibreSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+error: external command 'git' exited with code 128
+exit 1
