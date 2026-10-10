@@ -1,0 +1,16 @@
+reg20.zkey: OK
+revoke_rt.zkey: OK
+v8_budget_mint.zkey: OK
+v8_budget_transfer.zkey: OK
+v9_c1.zkey: OK
+v9_c2.zkey: OK
+v9_c3.zkey: OK
+v9_c4.zkey: OK
+revoke_vk_rt.json: OK
+v8_vk_budget_mint.json: OK
+v8_vk_budget_transfer.json: OK
+v9_vk_c1.json: OK
+v9_vk_c2.json: OK
+v9_vk_c3.json: OK
+v9_vk_c4.json: OK
+vk_reg20.json: OK

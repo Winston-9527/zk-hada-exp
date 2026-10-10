@@ -5,8 +5,8 @@ The artifact contains the circuits (v9 and the earlier versions they extend), th
 pre-registration, raw outputs and run record, the Lean models, and the scripts that generate the numbers and figures of
 Section~\ref{sec:experiments}. Each number in that section is produced by a script from a recorded result file; the mapping (file, field,
 sha256) is part of the artifact.
-Proving keys are published as a release with their hashes; phase~1 is the public Hermez $2^{18}$ ceremony and phase~2 a single local contribution,
-so the keys are suitable for evaluation only.
+Proving keys are published as a release with their hashes; phase~1 is the public Hermez $2^{18}$ ceremony (except the registration circuit, whose phase~1 is a locally generated $2^{17}$ file)
+and phase~2 a single local contribution, so the keys are suitable for evaluation only.
 A clean build from a fresh clone and an empty package cache recompiles every circuit (\NConsVnineD{} constraints at $D=4$), checks the compiled
 artifacts against recorded hashes, verifies every released key against the fresh constraint system, runs the full contract test suite, and re-runs
 the attack suite and the threshold-opening cases, comparing them row by row with the recorded results.

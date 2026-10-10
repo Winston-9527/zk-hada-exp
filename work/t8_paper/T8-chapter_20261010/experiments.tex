@@ -16,8 +16,9 @@ Section~\ref{subsec:eval-lean}.
 \label{subsec:eval-setup}
 All measurements ran on one Apple M5 Pro (15 cores, 48\,GiB), node~24.14, circom~2.2.3, snarkjs~0.7.6 (Groth16 over BN254), forge/anvil~1.5.1
 (Prague). The v9 circuit has \NConsVnineA, \NConsVnineB, \NConsVnineC{} and \NConsVnineD{} constraints for $D=1..4$ and \NPubVnineD{} public inputs
-at $D=4$ (\NPubVeightD{} before input compression). Phase~1 of the setup is the public Hermez ceremony ($2^{18}$); \emph{phase~2 is a single local
-contribution, so the keys are for evaluation only and a deployment needs a phase-2 ceremony.} Every experiment was pre-registered (attack lists,
+at $D=4$ (\NPubVeightD{} before input compression). Phase~1 of the setup is the public Hermez ceremony ($2^{18}$) for the action, budget and revocation circuits, but a locally generated $2^{17}$
+file for the registration circuit; \emph{phase~2 is a single local contribution everywhere, so the keys are for evaluation only and a deployment
+needs a ceremony (for the registration circuit also a public phase~1).} Every experiment was pre-registered (attack lists,
 cases, statistics and targets committed before running); deviations are reported in the per-experiment records.
 
 \subsection{Relation conformance (Q1)}
