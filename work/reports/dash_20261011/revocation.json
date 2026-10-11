@@ -1,0 +1,28 @@
+[
+ {
+  "rate_pct": 1,
+  "edges_revoked": 12,
+  "agents_blocked_expected": 84,
+  "agents_checked": 1230,
+  "descendants_still_able": 0,
+  "unaffected_blocked": 0,
+  "inflight_rejected": 64,
+  "inflight_sample": 64,
+  "rebuilt_accepted": 32,
+  "rebuilt_sample": 32,
+  "revoke_gas_mean": 273541
+ },
+ {
+  "rate_pct": 10,
+  "edges_revoked": 120,
+  "agents_blocked_expected": 301,
+  "agents_checked": 1230,
+  "descendants_still_able": 0,
+  "unaffected_blocked": 0,
+  "inflight_rejected": 64,
+  "inflight_sample": 64,
+  "rebuilt_accepted": 32,
+  "rebuilt_sample": 32,
+  "revoke_gas_mean": 273538
+ }
+]

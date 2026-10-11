@@ -1,0 +1,130 @@
+[
+ {
+  "version": "v6",
+  "D": 1,
+  "prove_mean_ms": 583.9,
+  "prove_sd_ms": 3.8,
+  "n": 30,
+  "constraints": 38266
+ },
+ {
+  "version": "v6",
+  "D": 2,
+  "prove_mean_ms": 1170.6,
+  "prove_sd_ms": 9.1,
+  "n": 30,
+  "constraints": 81944
+ },
+ {
+  "version": "v6",
+  "D": 3,
+  "prove_mean_ms": 1457.5,
+  "prove_sd_ms": 25.3,
+  "n": 30,
+  "constraints": 125622
+ },
+ {
+  "version": "v6",
+  "D": 4,
+  "prove_mean_ms": 2284.5,
+  "prove_sd_ms": 32.1,
+  "n": 30,
+  "constraints": 169300
+ },
+ {
+  "version": "v7",
+  "D": 1,
+  "prove_mean_ms": 649.0,
+  "prove_sd_ms": 4.3,
+  "n": 30,
+  "constraints": 47058
+ },
+ {
+  "version": "v7",
+  "D": 2,
+  "prove_mean_ms": 1244.6,
+  "prove_sd_ms": 12.4,
+  "n": 30,
+  "constraints": 91948
+ },
+ {
+  "version": "v7",
+  "D": 3,
+  "prove_mean_ms": 2077.8,
+  "prove_sd_ms": 21.9,
+  "n": 30,
+  "constraints": 136838
+ },
+ {
+  "version": "v7",
+  "D": 4,
+  "prove_mean_ms": 2368.2,
+  "prove_sd_ms": 40.4,
+  "n": 30,
+  "constraints": 181728
+ },
+ {
+  "version": "v8",
+  "D": 1,
+  "prove_mean_ms": 734.9,
+  "prove_sd_ms": 5.8,
+  "n": 30,
+  "constraints": 60708
+ },
+ {
+  "version": "v8",
+  "D": 2,
+  "prove_mean_ms": 1330.0,
+  "prove_sd_ms": 14.0,
+  "n": 30,
+  "constraints": 105598
+ },
+ {
+  "version": "v8",
+  "D": 3,
+  "prove_mean_ms": 2164.5,
+  "prove_sd_ms": 21.9,
+  "n": 30,
+  "constraints": 150488
+ },
+ {
+  "version": "v8",
+  "D": 4,
+  "prove_mean_ms": 2430.8,
+  "prove_sd_ms": 19.9,
+  "n": 30,
+  "constraints": 195378
+ },
+ {
+  "version": "v9",
+  "D": 1,
+  "prove_mean_ms": 733.4,
+  "prove_sd_ms": 8.0,
+  "n": 30,
+  "constraints": 60622
+ },
+ {
+  "version": "v9",
+  "D": 2,
+  "prove_mean_ms": 1323.0,
+  "prove_sd_ms": 13.5,
+  "n": 30,
+  "constraints": 105424
+ },
+ {
+  "version": "v9",
+  "D": 3,
+  "prove_mean_ms": 2158.8,
+  "prove_sd_ms": 32.2,
+  "n": 30,
+  "constraints": 150226
+ },
+ {
+  "version": "v9",
+  "D": 4,
+  "prove_mean_ms": 2425.5,
+  "prove_sd_ms": 26.4,
+  "n": 30,
+  "constraints": 195028
+ }
+]

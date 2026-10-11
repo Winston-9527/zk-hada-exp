@@ -1,0 +1,30 @@
+[
+ {
+  "D": 1,
+  "b0_plaintext_median": 115215,
+  "v9_fresh_tree": 537339,
+  "v9_t5_world_mean": 686291,
+  "verifier_only": 295274
+ },
+ {
+  "D": 2,
+  "b0_plaintext_median": 153062,
+  "v9_fresh_tree": 545102,
+  "v9_t5_world_mean": 705890,
+  "verifier_only": 301921
+ },
+ {
+  "D": 3,
+  "b0_plaintext_median": 190883,
+  "v9_fresh_tree": 552865,
+  "v9_t5_world_mean": 726836,
+  "verifier_only": 308568
+ },
+ {
+  "D": 4,
+  "b0_plaintext_median": 228705,
+  "v9_fresh_tree": 560628,
+  "v9_t5_world_mean": 743211,
+  "verifier_only": 315215
+ }
+]
