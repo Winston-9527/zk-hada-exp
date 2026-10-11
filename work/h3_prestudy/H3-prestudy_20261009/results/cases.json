@@ -1,0 +1,170 @@
+{
+ "date": "2026-10-09T09:01:33.022Z",
+ "rows": [
+  {
+   "id": "C3",
+   "case": "depth 1: P delegates 60 to A, change 40",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "C3",
+   "case": "depth 2: A delegates 40 to B, change 20",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "C3",
+   "case": "depth 3: B splits 15 / 25 (same owner)",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "C3",
+   "case": "depth 3: B delegates 15 to C",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "C3",
+   "case": "depth 4: C spends 5, change 10",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "C3",
+   "case": "depth 3: B 'rotates' 25 to its fresh key B' (lineage grows)",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "C3",
+   "case": "depth 4 note cannot delegate further (no free lineage slot)",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "C3",
+   "case": "control: A spends 5, split 5 / 10",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "C2",
+   "case": "q_spent + q1 + q2 = q_in + 1 (out2 commitment consistent)",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "C2",
+   "case": "field wrap: q1 = p - 1, q2 chosen so the field sum matches",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "C2",
+   "case": "change note drops the last lineage entry",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "C2",
+   "case": "split output drops the last lineage entry",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "C2",
+   "case": "out1 to another owner without the delegate edge",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "C2",
+   "case": "delegate to D but out1 omits the new edge",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "C2",
+   "case": "wrong sk (B's key on A's note)",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "C2",
+   "case": "input lineage with a hole (skip slot 1's revocation check)",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "C2",
+   "case": "after revoking A->B: spend by C (grandchild, via split + delegate)",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true,
+   "why": "no non-membership witness"
+  },
+  {
+   "id": "C2",
+   "case": "after revoking A->B: spend by B' (rotated fresh key)",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true,
+   "why": "no non-membership witness"
+  },
+  {
+   "id": "C3",
+   "case": "after revoking A->B: A's own note (sibling side) still spends",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true
+  },
+  {
+   "id": "C2",
+   "case": "C with its pre-revocation witness and the NEW revoked root",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  },
+  {
+   "id": "C2",
+   "case": "C with its pre-revocation witness and the OLD revoked root (POLICY: gate window, as E3 A2)",
+   "expected": "accept",
+   "observed": "accept",
+   "pass": true,
+   "policy": true
+  },
+  {
+   "id": "C2",
+   "case": "revoked slot of C's note: every IMT leaf (12) as low leaf",
+   "expected": "all reject",
+   "observed": "0/12 accepted",
+   "pass": true
+  },
+  {
+   "id": "C2",
+   "case": "A's key revoked: A cannot move its note",
+   "expected": "reject",
+   "observed": "reject",
+   "pass": true
+  }
+ ],
+ "unexpected": 0
+}

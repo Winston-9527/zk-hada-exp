@@ -1,0 +1,82 @@
+ERROR:  4 Error in template NoteTransfer_325 line: 84
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:31968) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+ERROR:  4 Error in template NoteTransfer_325 line: 64
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_240 line: 38
+Error in template NoteTransfer_325 line: 63
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template NoteTransfer_325 line: 98
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template NoteTransfer_325 line: 95
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template NoteTransfer_325 line: 83
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template NoteTransfer_325 line: 95
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template NoteTransfer_325 line: 55
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template NoteTransfer_325 line: 52
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMemberIf_248 line: 33
+Error in template NoteTransfer_325 line: 73
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMemberIf_248 line: 25
+Error in template NoteTransfer_325 line: 73
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMemberIf_248 line: 25
+Error in template NoteTransfer_325 line: 73
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMemberIf_248 line: 25
+Error in template NoteTransfer_325 line: 73
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMemberIf_248 line: 25
+Error in template NoteTransfer_325 line: 73
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMemberIf_248 line: 25
+Error in template NoteTransfer_325 line: 73
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMemberIf_248 line: 25
+Error in template NoteTransfer_325 line: 73
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMemberIf_248 line: 25
+Error in template NoteTransfer_325 line: 73
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMemberIf_248 line: 25
+Error in template NoteTransfer_325 line: 73
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMemberIf_248 line: 25
+Error in template NoteTransfer_325 line: 73
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMemberIf_248 line: 25
+Error in template NoteTransfer_325 line: 73
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMemberIf_248 line: 21
+Error in template NoteTransfer_325 line: 73
+
+(node:31968) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template IMTNonMemberIf_248 line: 21
+Error in template NoteTransfer_325 line: 73
+
+23 rows, 0 unexpected
