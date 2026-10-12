@@ -2,8 +2,10 @@
 // (a) the action-nullifier cases removed (v9 has no action nullifier) and replaced by their v9 meaning, (b) state_root recomputed after every semantic
 // mutation (an attacker who changes a private root also recomputes the public state root), plus the pre-registered v9 cases S1, S2, K1, K2.
 // usage: node scripts/mutate_v9.mjs D > results/mutations_dD.json
-import { buildInstanceV9, ctxHash, init, R, SUBORDER, TAG, DEFAULT_CTX, trunc, rootProof, RT, keyHash, refreshAll, setBudget, noteCm, newNoteTree, rnd250, TAG_BNF, stateRoot } from "./lib_v9.mjs";
-import { satisfiable as satRaw } from "./witness_v9.mjs";
+// v9.1 copy (audit #57): every semantic case records the failing template/line; revoked_cert{i}_* refresh the key slots and every OTHER hop's
+// certificate witness against the new root, so hop i is the only stale one.
+import { buildInstanceV9, ctxHash, init, R, SUBORDER, TAG, DEFAULT_CTX, trunc, rootProof, RT, keyHash, refreshAll, refreshKeys, setBudget, noteCm, newNoteTree, rnd250, TAG_BNF, stateRoot } from "./lib_v9.mjs";
+import { satisfiable as satRaw, lastFail } from "./witness_v9.mjs";
 import { createRequire } from "module"; const { poseidon3 } = createRequire(new URL("../package.json", import.meta.url))("poseidon-lite");
 const MODE = "C";
 const buildInstanceV3 = (opts = {}) => buildInstanceV9(opts);
@@ -12,7 +14,7 @@ const satisfiable = (D, m) => { if (fixSR && !m.__keepSR) m.state_root = String(
 const D = Number(process.argv[2] ?? 4);
 const { input: base } = await buildInstanceV3({ D });
 const clone = (o) => JSON.parse(JSON.stringify(o));
-const out = { circuit: "zkdac_v9", mode: MODE, D, field_mutations: [], semantic: [] };
+const out = { circuit: "zkdac_v9_1", mode: MODE, D, field_mutations: [], semantic: [] };
 // 1) every scalar leaf: +1 mod p (path bits: flip)
 function* leaves(o, p = []) { if (Array.isArray(o)) for (let i = 0; i < o.length; i++) yield* leaves(o[i], [...p, i]); else yield p; }
 for (const key of Object.keys(base)) {
@@ -24,6 +26,7 @@ for (const key of Object.keys(base)) {
   }
 }
 fixSR = true;
+{ const push = out.semantic.push.bind(out.semantic); out.semantic.push = (x) => push(x.accepted === false && lastFail && !x.name.includes("generator") ? { ...x, fail: lastFail } : x); }
 // 2) semantic cases. Names ending in EXPECT_ACCEPT are legitimate statements (documented, not attacks).
 const sem = async (name, mut) => { const { input, meta } = await buildInstanceV3({ D }); const m = mut(clone(input), meta); out.semantic.push({ name, accepted: await satisfiable(D, m) }); };
 const nf = (t, sk, h, req) => t.P([TAG, BigInt(sk), t.P([BigInt(h), BigInt(req)])]).toString();
@@ -43,7 +46,8 @@ if (D > 1) { const exps = [5000, 4000, 3000, 2000].slice(0, D); exps[1] = exps[0
 const setLow = (m, i, t, idx) => { const L = t.imt.leaves[idx], p = t.imt.path(idx); m.r_low_value[i] = L.value.toString(); m.r_low_next_index[i] = L.nextIndex.toString(); m.r_low_next_value[i] = L.nextValue.toString(); m.r_sib[i] = p.sib.map(String); m.r_bit[i] = p.bit.map(String); return m; };
 for (let i = 0; i < D; i++) {
   const { input, meta } = await buildInstanceV3({ D }); meta.imt.insert(BigInt(meta.cert[i]));
-  const stale = clone(input); stale.revoked_root = meta.imt.root.toString();
+  const stale = refreshKeys(clone(input), meta);                  // v9.1: key slots and other hops valid under the new root
+  for (let j = 0; j < D; j++) if (j !== i) { const w = meta.imt.nonMemberWitness(meta.cert[j]); stale.r_low_value[j] = w.low_value; stale.r_low_next_index[j] = w.low_next_index; stale.r_low_next_value[j] = w.low_next_value; stale.r_sib[j] = w.sib; stale.r_bit[j] = w.bit; }
   out.semantic.push({ name: `revoked_cert${i}_stale_witness_new_root`, accepted: await satisfiable(D, stale) });
   const k = trunc(meta.cert[i]);
   out.semantic.push({ name: `revoked_cert${i}_predecessor_leaf`, accepted: await satisfiable(D, setLow(clone(stale), i, meta, meta.imt.lowIndex(k))) });

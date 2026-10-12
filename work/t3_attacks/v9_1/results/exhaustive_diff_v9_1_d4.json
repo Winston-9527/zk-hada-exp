@@ -1,0 +1,36 @@
+{
+ "D": 4,
+ "total": 534,
+ "agree": 89,
+ "disagreements_by_field": {
+  "now (circuit accept, oracle reject)": 1,
+  "m_sib (circuit reject, oracle accept)": 64,
+  "m_bit (circuit reject, oracle accept)": 64,
+  "act_req_cap (circuit accept, oracle reject)": 1,
+  "ctx_hash (circuit accept, oracle reject)": 1,
+  "r_low_value (circuit reject, oracle accept)": 4,
+  "r_low_next_index (circuit reject, oracle accept)": 4,
+  "r_low_next_value (circuit reject, oracle accept)": 4,
+  "r_sib (circuit reject, oracle accept)": 80,
+  "r_bit (circuit reject, oracle accept)": 80,
+  "rt_depth (circuit reject, oracle accept)": 1,
+  "rt_index (circuit reject, oracle accept)": 1,
+  "rt_sib (circuit reject, oracle accept)": 4,
+  "k_low_value (circuit reject, oracle accept)": 3,
+  "k_low_next_index (circuit reject, oracle accept)": 3,
+  "k_low_next_value (circuit reject, oracle accept)": 3,
+  "k_sib (circuit reject, oracle accept)": 60,
+  "k_bit (circuit reject, oracle accept)": 60,
+  "nt_depth (circuit reject, oracle accept)": 1,
+  "nt_index (circuit reject, oracle accept)": 1,
+  "nt_sib (circuit reject, oracle accept)": 2,
+  "acc_r (circuit reject, oracle accept)": 1,
+  "acc_kx (circuit reject, oracle accept)": 1,
+  "acc_ky (circuit reject, oracle accept)": 1
+ },
+ "statement_level_disagreements": [
+  "now (circuit accept, oracle reject)",
+  "act_req_cap (circuit accept, oracle reject)",
+  "ctx_hash (circuit accept, oracle reject)"
+ ]
+}

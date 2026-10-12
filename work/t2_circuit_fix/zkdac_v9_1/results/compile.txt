@@ -1,0 +1,12 @@
+D=1 non-linear constraints: 38756
+D=1 linear constraints: 21872
+D=2 non-linear constraints: 65407
+D=2 linear constraints: 40026
+D=3 non-linear constraints: 92058
+D=3 linear constraints: 58180
+D=4 non-linear constraints: 118709
+D=4 linear constraints: 76334
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Constraints: 60628 [32;22m[INFO]  [39;1msnarkJS[0m: # of Public Inputs: 17 
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Constraints: 105433 [32;22m[INFO]  [39;1msnarkJS[0m: # of Public Inputs: 18 
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Constraints: 150238 [32;22m[INFO]  [39;1msnarkJS[0m: # of Public Inputs: 19 
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Constraints: 195043 [32;22m[INFO]  [39;1msnarkJS[0m: # of Public Inputs: 20 
