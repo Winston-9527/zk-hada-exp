@@ -8,7 +8,8 @@
 We evaluate the main circuit and its gate contract along the research questions of the study: relation conformance (Q1), budget
 conservation under concurrency (Q2), revocation (Q3), transcript linkability (Q4), accountability (Q5) and cost (Q6), and compare against official
 implementations of neighbouring systems. The main circuit is v9.1: v9 plus an on-curve check of every encrypted chain key (Section~\ref{subsec:eval-accountability}).
-Cost and linkability were measured on v9; v9.1 adds 3(D+1) constraints, keeps every public input, and its verifier differs only in key constants.
+Cost and linkability were measured on v9; v9.1 adds 3(D+1) constraints, keeps every public input, its verifier differs only in key constants, and
+its proving time is not measurably different (paired runs).
 \textbf{Every test reported here is a finite conformance test of the implementation against the stated relation; none of it is a security proof.}
 Security arguments are in Section~\ref{sec:security}; the non-cryptographic invariants that are machine-checked are listed in
 Section~\ref{subsec:eval-lean}.
@@ -58,6 +59,17 @@ witnesses were rejected at the non-membership check, while \NFreeControls{} unaf
 The price of $\Delta$-fresh revocation is availability: after the window, every in-flight proof built on the old root is rejected, whether or not it is affected,
 (\NRevOneStale/\NRevSampleIn{} and \NRevTenStale/\NRevSampleIn{} in our samples), including those of unaffected agents, which re-prove once and succeed
 (\NRevOneRebuilt/\NRevSampleRe, \NRevTenRebuilt/\NRevSampleRe).
+
+\subsection{Transcript linkability (Q4)}
+\label{subsec:eval-linkability}
+We generated \NDetTranscripts{} real v9 action transcripts (proof, public inputs, roots) of 64 depth-4 agents under 8 parents and 2 masters, 8 actions each.
+No word value is shared between transcripts (\NDetShared) and no difference of ciphertext words repeats (\NDetDiff). Three classifiers (logistic
+regression, random forest, $k$-NN) trained on bit-level pair features, with folds grouped by agent or parent and a permutation null at the label's
+unit (\NLinkPerms{} permutations, Holm), detected a link in \NLinkDetected{} of \NLinkCells{} same-agent and sibling cells (largest 95\,\% CI lower
+bound of the AUC \NLinkMaxCiLo), while two planted leaks, reused ciphertext randomness and a public lineage tag, were detected in \NCtrlDetected{} of
+\NCtrlCells{} cells by the same rule (Holm $p\le\NCtrlHolm$). This bounds only these attacks: a leak that moves the classifier's AUC by less than the null's
+99th percentile (up to \NLinkNullQninetynine) would go unnoticed, and the master attribute cannot be tested with 8 parents (minimum attainable
+$p=\NCthreeMinP$). Our first analysis of the same data used a rule that could not report a link; this re-analysis is post hoc.
 
 \subsection{Accountability (Q5, H4)}
 \label{subsec:eval-accountability}
@@ -142,4 +154,5 @@ nullifier injectivity) and is checked for non-vacuity: removing the nullifier ch
 \label{subsec:eval-limits}
 One machine and one prover (snarkjs); native provers were not tested. The chain is a local anvil node, so inclusion latency excludes block time
 and finality. Phase~2 of the setup is not a ceremony. Tree heights are fixed by the compiled circuits and were not swept; depths beyond 4 were not
-compiled. The anonymity of v9 transcripts was not tested empirically, and the anonymity and no-false-framing arguments remain paper proofs.
+compiled. Linkability was tested only against the attacks above, and the anonymity and no-false-framing arguments remain paper proofs. Budget races used
+one sender in a fixed order; revocation at scale revoked certificates, not keys; the adversarial opening cases ran on the v7 ciphertext layout.

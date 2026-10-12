@@ -59,3 +59,20 @@ not results of this experiment.
 - The auditor links by design.
 - Revocation entries leak as disclosed in E3 (L2, L3).
 - 64 agents and 512 transcripts: a weak statistical link (AUC < 0.55) would not be detected at this size.
+
+## Correction 2026-10-12 (audit #54; appended, text above unchanged)
+- **The pre-registered decision rule could not report LINK.** With 100 permutations the smallest permutation p is 1/101, and the smallest
+  Holm-adjusted p over 9 tests is 9/101 ≈ 0.089 > 0.01. The 27 `holm_p` values are all 1 for that reason, not only because there was no signal.
+- **The controls were judged by a different rule** (raw p < 0.01). Under the primary rule they would also have counted as "not detected", which
+  by this pre-registration's own clause voids the negative result. "The pipeline has power against the leaks it targets" did not follow.
+- **C3 is untestable at this size** (8 parents, 70 labellings, minimum exact p 2/70).
+- **The bootstrap CI resampled pairs**, not the 64 agents, so it was too narrow.
+- **Amendment A1** was committed in the same commit as all data and the deterministic results (`cbe5594`). It was written after seeing the
+  timing run's pooled AUCs, and that run's output was not kept. It precedes only the classifier run (`e54eb7d`).
+- **The roots were not one snapshot.** The pre-registration says they were, but note_root (public position 24) changes with every action.
+- **Re-analysis:** `../E6b2-linkability-reanalysis_20261012/` (amendment A2, post hoc): 1,000 permutations, one rule for tests and controls,
+  CIs that resample agents, C3 exact.
+  - Result: no link in C1 / C2 (Holm p = 1, largest cluster-CI lower bound 0.471).
+  - Both controls detected in all 18 cells (Holm p = 0.006).
+  - C3 is not testable.
+  - The point AUCs above are unchanged; the CIs above are pair-bootstrap and too narrow.

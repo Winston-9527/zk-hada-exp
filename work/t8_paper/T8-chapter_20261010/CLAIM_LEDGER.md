@@ -137,6 +137,18 @@ Every number in experiments.tex is a macro below. Source paths are relative to `
 | `\NRatioWorldMax` | 8.63 | `t6_baselines/T6b-reanalysis_20261012/results/analysis_t6b.json` | ranges.t5_world[1] |
 | `\NCompressDiffB` | -7 | `t6_baselines/T6b-reanalysis_20261012/results/analysis_t6b.json` | components_paired[D=2, v8->v9].mean_diff_ms |
 | `\NCompressHolmB` | 0.031 | `t6_baselines/T6b-reanalysis_20261012/results/analysis_t6b.json` | components_paired[D=2, v8->v9].p_holm |
+| `\NLinkCells` | 18 | `t4_privacy/E6b2-linkability-reanalysis_20261012/results/classifiers_a2.json` | C1/C2 cells over seeds and models |
+| `\NLinkDetected` | 0 | `t4_privacy/E6b2-linkability-reanalysis_20261012/results/classifiers_a2.json` | count of link == true |
+| `\NLinkMaxCiLo` | 0.471 | `t4_privacy/E6b2-linkability-reanalysis_20261012/results/classifiers_a2.json` | max cluster-CI lower bound over C1/C2 cells |
+| `\NLinkPerms` | 1000 | `t4_privacy/E6b2-linkability-reanalysis_20261012/results/classifiers_a2.json` | perms |
+| `\NCtrlCells` | 18 | `t4_privacy/E6b2-linkability-reanalysis_20261012/results/classifiers_a2.json` | control cells |
+| `\NCtrlDetected` | 18 | `t4_privacy/E6b2-linkability-reanalysis_20261012/results/classifiers_a2.json` | count of controls_detected == true |
+| `\NCtrlHolm` | 0.006 | `t4_privacy/E6b2-linkability-reanalysis_20261012/results/classifiers_a2.json` | max holm_p over control cells |
+| `\NLinkNullQninetynine` | 0.70 | `t4_privacy/E6b2-linkability-reanalysis_20261012/results/classifiers_a2.json` | max 99th percentile of the C1 null AUC |
+| `\NCthreeMinP` | 0.029 | `t4_privacy/E6b2-linkability-reanalysis_20261012/results/c3_exact.json` | min_attainable_p |
+| `\NDetTranscripts` | 512 | `t4_privacy/E6b-linkability-v9_20261010/results/deterministic.json` | fresh.transcripts |
+| `\NDetShared` | 0 | `t4_privacy/E6b-linkability-v9_20261010/results/deterministic.json` | fresh.D1 shared word values |
+| `\NDetDiff` | 0 | `t4_privacy/E6b-linkability-v9_20261010/results/deterministic.json` | fresh.D2 equal ciphertext differences |
 | `\NLeanStmts` | 6 | `t7_proofs/T7b-lean-statemachine_20261010/check_output.txt` | theorem statements T1-T4 (incl. corollaries) whose axioms are only the standard ones |
 | `\NLeanSorry` | 0 | `t7_proofs/T7b-lean-statemachine_20261010/check_output.txt` | occurrences of sorryAx |
 
@@ -164,6 +176,9 @@ Every number in experiments.tex is a macro below. Source paths are relative to `
 | `t3_attacks/v9_1/results/attacks_v9_1.json` | `4c9a5cb94a7cc2177f8a1b92525f882e4f1c2b07e50e7e2daeaaa0d7ed3355ac` |
 | `t4_accountability/E6-threshold-opening_20261009/RESULTS.md` | `9c3caf433e7bf9c1a41e455f1507ac4c27125049cd2797fa86b1e721aab0b53b` |
 | `t4_accountability/E6-threshold-opening_20261009/results/cases.json` | `92a576b42a1a91339b4bd222d2a0d1a13931f83522ec752f077d00a3a4f1d637` |
+| `t4_privacy/E6b-linkability-v9_20261010/results/deterministic.json` | `e02e66be855d939cd5c44fcee98b8fdca8cdf952cb0901c06a55484dc2b16c9c` |
+| `t4_privacy/E6b2-linkability-reanalysis_20261012/results/c3_exact.json` | `14eb68b644493f3baa611d0ca264d75e71ac0158864830b8dd297aeb3eb3db14` |
+| `t4_privacy/E6b2-linkability-reanalysis_20261012/results/classifiers_a2.json` | `bf4c3166a32215684e50e10140bdc4e9b62fc69f0a559f9ce70a37c939129cc9` |
 | `t4_revocation/E3-revocation_20261009/RESULTS.md` | `0a32d2aa9b6f9914b0dc1864cc028e4add9c1362ff089d605b02e85eb70a0e13` |
 | `t4_revocation/E3-revocation_20261009/results/e31_world.json` | `bd976742e1f0b89b328d2861f06fea4689d86d30a435ce24be24e9031f8f3a56` |
 | `t5_e2/E2-budget_20261009/results/e2_anvil.json` | `6ef3b33b9e8c7a47b1cea1f60a4cf134251d9f38142b28e81e2c5efe01f5f36e` |

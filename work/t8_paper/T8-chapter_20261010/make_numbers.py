@@ -131,6 +131,20 @@ N("RatioFreshMax", f"{t6b['ranges']['fresh_tree'][1]:.2f}", T6B, "ranges.fresh_t
 cp = {(t["D"], t["pair"]): t for t in t6b["components_paired"]}
 N("CompressDiffB", f"{cp[(2, 'v8->v9')]['mean_diff_ms']:.0f}", T6B, "components_paired[D=2, v8->v9].mean_diff_ms")
 N("CompressHolmB", f"{cp[(2, 'v8->v9')]['p_holm']:.3f}", T6B, "components_paired[D=2, v8->v9].p_holm")
+EB = "t4_privacy/E6b2-linkability-reanalysis_20261012/results/classifiers_a2.json"; eb = J(EB)
+cells = [(sd, t, m, v) for sd, r in eb["seeds"].items() for t in ("C1_same_agent", "C2_sibling") for m, v in r[t].items()]
+ctrl = [(sd, t, m, v) for sd, r in eb["seeds"].items() for t in ("P1_C1_randomness_reuse", "P2_C2_lineage_tag") for m, v in r[t].items()]
+N("LinkCells", len(cells), EB, "C1/C2 cells over seeds and models"); N("LinkDetected", sum(1 for sd, r in eb["seeds"].items() for v in r["link"].values() if v), EB, "count of link == true")
+N("LinkMaxCiLo", f"{max(v['ci95_cluster'][0] for *_, v in cells):.3f}", EB, "max cluster-CI lower bound over C1/C2 cells")
+N("LinkPerms", eb["perms"], EB, "perms")
+N("CtrlCells", len(ctrl), EB, "control cells"); N("CtrlDetected", sum(1 for sd, r in eb["seeds"].items() for v in r["controls_detected"].values() if v), EB, "count of controls_detected == true")
+N("CtrlHolm", f"{max(v['holm_p'] for *_, v in ctrl):.3f}", EB, "max holm_p over control cells")
+N("LinkNullQninetynine", f"{max(v['perm_null_q99'] for sd, t, m, v in cells if t == 'C1_same_agent'):.2f}", EB, "max 99th percentile of the C1 null AUC")
+CE = "t4_privacy/E6b2-linkability-reanalysis_20261012/results/c3_exact.json"; ce = J(CE)
+N("CthreeMinP", f"{min(v['min_attainable_p'] for r in ce['seeds'].values() for v in r.values()):.3f}", CE, "min_attainable_p")
+DT = "t4_privacy/E6b-linkability-v9_20261010/results/deterministic.json"; dt = J(DT)["fresh"]
+N("DetTranscripts", dt["transcripts"], DT, "fresh.transcripts"); N("DetShared", dt["D1_word_values_shared_by_two_or_more_transcripts"], DT, "fresh.D1 shared word values")
+N("DetDiff", dt["D2_equal_ciphertext_differences_across_transcripts"], DT, "fresh.D2 equal ciphertext differences")
 # ---------- T7b ----------
 CK = "t7_proofs/T7b-lean-statemachine_20261010/check_output.txt"; ck = open(src(CK)).read()
 N("LeanStmts", len(re.findall(r"^'BudgetSM\.T\d_[^']*' depends on axioms: \[propext(, Classical\.choice)?, Quot\.sound\]$", ck, re.M)), CK, "theorem statements T1-T4 (incl. corollaries) whose axioms are only the standard ones")
