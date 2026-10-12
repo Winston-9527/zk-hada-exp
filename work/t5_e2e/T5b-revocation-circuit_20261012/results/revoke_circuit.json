@@ -1,0 +1,6551 @@
+{
+ "world": "T5 final (1 % + 10 % revocations)",
+ "revoked_edges": 120,
+ "blocked_agents": 301,
+ "controls": 64,
+ "summary": {
+  "control_free v9": {
+   "accept": 64
+  },
+  "control_free v9.1": {
+   "accept": 64
+  },
+  "blocked_pred v9": {
+   "IMTNonMember L67": 301
+  },
+  "blocked_pred v9.1": {
+   "IMTNonMember L67": 301
+  },
+  "blocked_own v9": {
+   "IMTNonMember L59": 301
+  },
+  "blocked_own v9.1": {
+   "IMTNonMember L59": 301
+  }
+ },
+ "false_accepts": [],
+ "rows": [
+  {
+   "kind": "control_free",
+   "agent": 683,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 515,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 37,
+   "D": 2,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 614,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 313,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 160,
+   "D": 3,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 619,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 356,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 1190,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 429,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 685,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 1156,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 758,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 133,
+   "D": 3,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 440,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 304,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 1023,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 1064,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 692,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 1188,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 468,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 562,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 335,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 1175,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 49,
+   "D": 2,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 189,
+   "D": 3,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 272,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 764,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 330,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 186,
+   "D": 3,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 184,
+   "D": 3,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 754,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 976,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 705,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 1183,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 1095,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 540,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 454,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 191,
+   "D": 3,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 742,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 691,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 72,
+   "D": 2,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 1054,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 756,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 645,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 846,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 1209,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 462,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 1026,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 762,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 720,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 447,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 673,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 1106,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 404,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 54,
+   "D": 2,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 723,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 464,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 339,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 115,
+   "D": 3,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 1132,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 418,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 1173,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "control_free",
+   "agent": 461,
+   "D": 4,
+   "v9": "accept",
+   "v9.1": "accept"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 41,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 41,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 43,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 43,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 61,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 61,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 65,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 65,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 69,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 69,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 70,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 70,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 75,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 75,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 76,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 76,
+   "D": 2,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 88,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 88,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 95,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 95,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 99,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 99,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 121,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 121,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 123,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 123,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 135,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 135,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 150,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 150,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 151,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 151,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 152,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 152,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 153,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 153,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 154,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 154,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 155,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 155,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 156,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 156,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 157,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 157,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 161,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 161,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 166,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 166,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 167,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 167,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 168,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 168,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 169,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 169,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 170,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 170,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 171,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 171,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 172,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 172,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 173,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 173,
+   "D": 3,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 176,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 176,
+   "D": 3,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 218,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 218,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 236,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 236,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 243,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 243,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 248,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 248,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 269,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 269,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 279,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 279,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 283,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 283,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 286,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 286,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 287,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 287,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 288,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 288,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 289,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 289,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 290,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 290,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 291,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 291,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 292,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 292,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 293,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 293,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 294,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 294,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 297,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 297,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 306,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 306,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 312,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 312,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 321,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 321,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 324,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 324,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 338,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 338,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 342,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 342,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 343,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 343,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 344,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 344,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 345,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 345,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 346,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 346,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 347,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 347,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 348,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 348,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 349,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 349,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 369,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 369,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 374,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 374,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 375,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 375,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 376,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 376,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 377,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 377,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 378,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 378,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 379,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 379,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 380,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 380,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 381,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 381,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 398,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 398,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 414,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 414,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 427,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 427,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 436,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 436,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 442,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 442,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 444,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 444,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 457,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 457,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 467,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 467,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 485,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 485,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 508,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 508,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 522,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 522,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 534,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 534,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 535,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 535,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 541,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 541,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 545,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 545,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 550,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 550,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 551,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 551,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 552,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 552,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 553,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 553,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 554,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 554,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 555,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 555,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 556,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 556,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 557,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 557,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 566,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 566,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 567,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 567,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 568,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 568,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 569,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 569,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 570,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 570,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 571,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 571,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 572,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 572,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 573,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 573,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 577,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 577,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 578,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 578,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 580,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 580,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 598,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 598,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 609,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 609,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 611,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 611,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 613,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 613,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 638,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 638,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 656,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 656,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 661,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 661,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 662,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 662,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 663,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 663,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 664,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 664,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 665,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 665,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 666,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 666,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 667,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 667,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 668,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 668,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 669,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 669,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 674,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 674,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 677,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 677,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 708,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 708,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 713,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 713,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 721,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 721,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 735,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 735,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 751,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 751,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 761,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 761,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 766,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 766,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 782,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 782,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 783,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 783,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 784,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 784,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 785,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 785,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 786,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 786,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 787,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 787,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 788,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 788,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 789,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 789,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 790,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 790,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 791,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 791,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 792,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 792,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 793,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 793,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 794,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 794,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 795,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 795,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 796,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 796,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 797,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 797,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 798,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 798,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 799,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 799,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 800,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 800,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 801,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 801,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 802,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 802,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 803,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 803,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 804,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 804,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 805,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 805,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 806,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 806,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 807,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 807,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 808,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 808,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 809,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 809,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 810,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 810,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 811,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 811,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 812,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 812,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 813,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 813,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 814,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 814,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 815,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 815,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 816,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 816,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 817,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 817,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 818,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 818,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 819,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 819,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 820,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 820,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 821,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 821,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 822,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 822,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 823,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 823,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 824,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 824,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 825,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 825,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 826,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 826,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 827,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 827,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 828,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 828,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 829,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 829,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 830,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 830,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 831,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 831,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 832,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 832,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 833,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 833,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 834,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 834,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 835,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 835,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 836,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 836,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 837,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 837,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 838,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 838,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 839,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 839,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 840,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 840,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 841,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 841,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 842,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 842,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 843,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 843,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 844,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 844,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 845,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 845,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 850,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 850,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 853,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 853,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 854,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 854,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 870,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 870,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 871,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 871,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 872,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 872,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 873,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 873,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 874,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 874,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 875,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 875,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 876,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 876,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 877,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 877,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 885,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 885,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 887,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 887,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 903,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 903,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 910,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 910,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 911,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 911,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 912,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 912,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 913,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 913,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 914,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 914,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 915,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 915,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 916,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 916,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 917,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 917,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 918,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 918,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 919,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 919,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 920,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 920,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 921,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 921,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 922,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 922,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 923,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 923,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 924,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 924,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 925,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 925,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 926,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 926,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 927,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 927,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 928,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 928,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 929,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 929,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 930,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 930,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 931,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 931,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 932,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 932,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 933,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 933,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 934,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 934,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 935,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 935,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 936,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 936,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 937,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 937,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 938,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 938,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 939,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 939,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 940,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 940,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 941,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 941,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 942,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 942,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 943,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 943,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 944,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 944,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 945,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 945,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 946,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 946,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 947,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 947,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 948,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 948,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 949,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 949,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 950,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 950,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 951,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 951,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 952,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 952,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 953,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 953,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 954,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 954,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 955,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 955,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 956,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 956,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 957,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 957,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 958,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 958,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 959,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 959,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 960,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 960,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 961,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 961,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 962,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 962,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 963,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 963,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 964,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 964,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 965,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 965,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 966,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 966,
+   "D": 4,
+   "revoked_hops": [
+    1,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 967,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 967,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 968,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 968,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 969,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 969,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 970,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 970,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 971,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 971,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 972,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 972,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 973,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 973,
+   "D": 4,
+   "revoked_hops": [
+    1
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 975,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 975,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 990,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 990,
+   "D": 4,
+   "revoked_hops": [
+    2,
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 991,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 991,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 992,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 992,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 993,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 993,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 994,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 994,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 995,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 995,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 996,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 996,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 997,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 997,
+   "D": 4,
+   "revoked_hops": [
+    2
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 998,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 998,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1013,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1013,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1021,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1021,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1049,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1049,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1051,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1051,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1063,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1063,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1069,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1069,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1096,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1096,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1125,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1125,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1139,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1139,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1140,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1140,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1149,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1149,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1155,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1155,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1157,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1157,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1163,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1163,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1176,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1176,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1182,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1182,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1196,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1196,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1207,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1207,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1217,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1217,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  },
+  {
+   "kind": "blocked_pred",
+   "agent": 1218,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L67",
+   "v9.1": "IMTNonMember L67"
+  },
+  {
+   "kind": "blocked_own",
+   "agent": 1218,
+   "D": 4,
+   "revoked_hops": [
+    3
+   ],
+   "v9": "IMTNonMember L59",
+   "v9.1": "IMTNonMember L59"
+  }
+ ]
+}
