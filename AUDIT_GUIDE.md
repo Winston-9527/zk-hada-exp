@@ -100,7 +100,7 @@ T5、T6、E6b 测的是 v9。v9.1 只多 3(D+1) 个约束，公开输入不变�
 | E3 撤销 | 598 行与预注册一致；其中目标拒绝 70 行及 A4/A5 来自生成器无见证，真正在电路层检验撤销的是 A3（22 个低位叶 × 7 个场景，0 接受）；消融 L 的 14/14 是构造上的必然结果，不作因果证据（#57） | `work/t4_revocation/E3-revocation_20261009/RESULTS.md`（文末更正） |
 | 规模化撤销 | 撤销率 1% / 10%：无关者误挡 0 / 0（电路求值）；被挡的 301 个 agent 用前驱叶 / 自身叶见证，v9 与 v9.1 电路 **301/301 拒绝**（T5b，原 T5 的“后代误接受 0”来自生成器）；在途证明 64/64 因窗口过期被拒（与是否撤销无关），重做后 32/32 成功 | `work/t5_e2e/T5-e2e-scale_20261010/results/e4b_revoke_*.json`、`work/t5_e2e/T5b-revocation-circuit_20261012/` |
 | E6 门限打开 | 65/65 与预注册一致（对抗用例只在 v7 布局上；v9.1 有诚实 3-of-5 与 2 份额检查 10/10） | `work/t4_accountability/E6-threshold-opening_20261009/results/cases.json`、`work/t2_circuit_fix/zkdac_v9_1/results/opening_check.json` |
-| E6b 可链接性 | 确定性检验：0 个共享值、0 个相等密文差。分类器：**E6b 的判据判不出 LINK**（100 次置换下 Holm 最小 0.089 > 0.01），对照用的是另一把尺子（#54）；“最大 CI 下界 0.494”只针对 C1/C2。重做见 E6b2：E6B2_PLACEHOLDER | `work/t4_privacy/E6b-linkability-v9_20261010/results/`、`work/t4_privacy/E6b2-linkability-reanalysis_20261012/` |
+| E6b 可链接性 | 确定性检验：0 个共享值、0 个相等密文差。分类器：**E6b 的判据判不出 LINK**（100 次置换下 Holm 最小 0.089 > 0.01），对照用的是另一把尺子（#54）；“最大 CI 下界 0.494”只针对 C1/C2。重做见 E6b2（1,000 次置换，主检验与对照同一判据，按 agent 重抽 CI）：C1/C2 在 3 个 seed × 3 个模型共 18 格中 0 格检出（Holm p = 1，最大 CI 下界 0.471）；对照 18/18 检出（Holm p = 0.006）；C3 在此规模下不可检验（最小可达 p = 0.029）；能检出的最小效应受零分布 99% 分位数限制（C1 AUC 约 0.70） | `work/t4_privacy/E6b-linkability-v9_20261010/results/`、`work/t4_privacy/E6b2-linkability-reanalysis_20261012/` |
 | 延迟（T5） | 本地计算 D=1..4：0.92 / 1.55 / 2.41 / 2.74 s（每格 N=30）；D=4 p95 2.86 s，95% CI [2.75, 3.01] s；p99 无法估计（原文给的是最大值）；峰值 RSS 4.51 GiB | `work/t5_e2e/T5-e2e-scale_20261010/results/analysis.json`、`work/t5_e2e/T5b-revocation-circuit_20261012/results/latency_p95_ci.json` |
 | gas | 验证器单独 315,215（D=4）；执行 gas ≈ 529,576 + 27,089·popcount + 7,763·D（R²≈1），**事后拟合**，只覆盖 note 下标 2,600–3,830（树深恒为 12）；近空树实测收据 564,147，拟合式在 popcount=0 处外推为 560,628 | 同上，以及 `gas_vs_note_index.txt`、`work/t2_circuit_fix/zkdac_v9/results/receipts_v8_v9.json` |
 | 1,230 个智能体并发 | 1,230/1,230 被接受，31 个区块 | `.../e4b_epoch1.json` |
@@ -114,7 +114,7 @@ T5、T6、E6b 测的是 v9。v9.1 只多 3(D+1) 个约束，公开输入不变�
 ```bash
 audit/check_prereg_order.sh
 ```
-脚本检查每个预注册文件的首次提交，是否是该实验**最早一个输出文件**（`results/` 下的原始输出或 RESULTS）首次提交的祖先，并列出在首个输出之时或之后修改过预注册的提交（2026-10-12 按 #59 修订：原脚本只比对 RESULTS.md、有一对重复、不处理缺失文件、不检查事后修改）。2026-10-12 运行：24 项 OK，E6b2 尚无结果；E6b 的预注册在 `cbe5594`（首个输出提交）中被修改，即修正 A1。
+脚本检查每个预注册文件的首次提交，是否是该实验**最早一个输出文件**（`results/` 下的原始输出或 RESULTS）首次提交的祖先，并列出在首个输出之时或之后修改过预注册的提交（2026-10-12 按 #59 修订：原脚本只比对 RESULTS.md、有一对重复、不处理缺失文件、不检查事后修改）。2026-10-12 运行：25 项全部 OK；E6b 的预注册在 `cbe5594`（首个输出提交）中被修改，即修正 A1。
 
 **更正**：原文说“PR 的时间线可以看出推送顺序”，这不成立。PR 时间线按提交时间排序，而提交时间可以在本地伪造。推送时间只在 GitHub Events API 中有，且只保留 90 天（`gh api repos/Winston-9527/zk-hada-exp/events`）。审计按 Events API 核对过：v3–v9、T3 v9、H3、E6、T5、T7b、T8 的推送顺序与提交顺序一致；**T3 v2（`d2fe747`→`fa73824`）没有对应的推送事件**，PR #15 在结果提交 5 秒后打开。祖先关系不等于推送顺序。
 
