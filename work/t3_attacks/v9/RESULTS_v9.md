@@ -84,3 +84,24 @@ Runs:
 ## Verdict
 **On v9 there is no FALSE_ACCEPT outside the pre-registered POLICY rows and the by-design witness-level row A11b-w; there is no COMPLETENESS_GAP.**
 Each POLICY row has a closing gate test, and the proof-level retargeting attempts all fail. This completes the T3 item of #39 and #41.
+
+## Corrections 2026-10-12 (audits #55 / #57 / #59; appended, text above unchanged)
+- **POLICY closure (#55).** "Each closed by the gate … POLICY_CLOSURE.md and V9.t.sol" was not true for v9. POLICY_CLOSURE.md covers the v7 gate,
+  and V9.t.sol closed 8 of the 20 rows. All 20 are now closed on ZkDacGateV9 by `V9Policy.t.sol`
+  (`../../t4_obligations/E7b-v9-policy-closure_20261012/POLICY_CLOSURE_V9.md`, forge 215 / 215). With V9.t.sol's skew of 1e6, A14 is not closed;
+  it is closed with skew 60.
+- **14 revocation rows were masked (#57).** A12b′ (cert 1, cert 3) and A13 × 12 failed at IMTPath L39 because the other hops' certificate witnesses
+  were stale (`refreshKeys` refreshed only the key slots), not at the IMTNonMember check they target. Re-run on v9.1 with the other hops
+  refreshed (`../v9_1/`): all rows are still rejected, now at IMTNonMember L67 / L59. Every row has the same class as here.
+- **Where the 114 AGREE_REJECT come from (#57):** 95 are rejected by the circuit at witness level, 8 by the generator (no witness exists,
+  circuit `n/a`) and 11 at proof level. (v9.1: 99 / 8 / 11 of 118, including the 4 A24 rows.)
+- **Off-curve keys (#53) were not covered.** No row built a malformed, off-curve or non-subgroup delegate key. v9.1 adds A24 (ent[0..3]
+  off-curve). On v9 these are 4 FALSE_ACCEPT (reference rows); on v9.1 they are 4 AGREE_REJECT at BabyCheck.
+- **A22i cannot fail as built:** the oracle world itself uses the identity TPK, so the row is AGREE_ACCEPT. The deployment check is off-chain
+  (POLICY_CLOSURE_V9.md, disclosed).
+- **Exhaustive diff filter:** the witness-only filter ignored the direction. Fixed in v9.1, so that (circuit accept, oracle reject) is never
+  filtered; the result is unchanged (534 / 89 / 3).
+- **Counting convention (#59):** FALSE_ACCEPT 21 = 20 POLICY + 1 A11b-w by design. Under v3's convention (any non-POLICY FALSE_ACCEPT counted)
+  this is "170 / 1".
+- **Order of commits:** the attack list was pre-registered (6deac6b). The attack implementation, the oracle, runs 1–3 and the oracle fix all landed
+  in `392199a`. The `notesByRoot` oracle rule was changed after run 2's COMPLETENESS_GAP (already disclosed).

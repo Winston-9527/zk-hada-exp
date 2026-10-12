@@ -98,3 +98,19 @@ machine state differed between sessions.
 - v9 actions must be budgeted. Non-value actions also consume a note: mint zero-value or small notes for them, or use the v7 gate.
 - A new root combination needs one registerState (≈ 0.1 M gas, anyone can pay it) before proofs against it can be submitted.
 - T3 attack suite on v9: not run yet (next task).
+
+## Corrections 2026-10-12 (audits #53 / #57; appended, text above unchanged)
+- **"The auditor still recovers every key" is false for v9 (#53).**
+  - Intermediate keys ent[0..D-1] are not checked to be on the curve. circomlib's EdDSA verifier uses only 8·A, computed with the addition formula.
+  - An off-curve A with 8·A = q·B8 passes at every hop j = 0..3: v9 witness satisfiable, and for j = 3 a real v9 proof verifies with the committed vk.
+  - The compressed opening then returns a different x for that key, so the key-revocation entry computed from the opening misses the key the
+    circuit checks.
+  - Evidence: `../zkdac_v9_1/results/offcurve_poc.json`.
+  - **Fixed in v9.1** (`../zkdac_v9_1/`): `BabyCheck` on every encrypted key, +3(D + 1) constraints. The same inputs are rejected at BabyCheck. v9 is
+    kept as the measured artefact. T5 / T6 / E6b numbers carry over to v9.1 with the paired proving delta stated in v9.1's RESULTS.
+- **T2 "0 unexpected" is relative to the author's labels** (#57). A semantic case is expected to be accepted iff its name contains
+  `EXPECT_ACCEPT`. Single-field mutations have no expectation; only the accepted fields are listed. "Satisfiable" means the wasm computes a
+  witness; it was not re-checked against the r1cs.
+- **The revoked_cert{i ≥ 1}_* cases (#57)** were built with stale witnesses on the other hops (and on the key slots), so they failed at IMTPath
+  for an unrelated reason. Re-run on v9.1 with the other hops refreshed: every case fails at the intended check (IMTNonMember L67 / L59 or
+  IMTPath L39 for the forged leaf), and the acceptance pattern is identical to v9 (`../zkdac_v9_1/results/mutations_d*.json`).

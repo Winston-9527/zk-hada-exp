@@ -138,3 +138,16 @@ Two additional forge tests (not pre-registered, recorded for #18):
 - JS timings.
 - Root-posting authority (#18) and on-chain IMT maintenance not addressed.
 - No formal proof.
+
+## Corrections 2026-10-12 (audit #57; appended, text above unchanged)
+- **What the E3.1 "targets rejected" column measures.** All 70 target rejections in E3.1, plus A4 (6) and A5 (1), are
+  `reject (no non-membership witness)`: the generator refused to build a witness (`world.mjs:47`, `e31_world.mjs:52-54`). The circuit was not
+  evaluated for them.
+  - A1 (stale witness, new root) is rejected only because of the root mismatch, whatever the revocation status.
+  - The rows that test the circuit's revocation logic are **A3** (every one of 22 low leaves for 7 scenarios, 0 accepted).
+  - Circuit-level evidence on the current circuit: T3 v9.1 A12b′ / A13 (rejected at IMTNonMember after the other hops were refreshed,
+    `../../t3_attacks/v9_1/`) and T5b (301 / 301 blocked agents rejected by the circuit, `../../t5_e2e/T5b-revocation-circuit_20261012/`).
+- **Ablation L is a construction check, not causal evidence.** `leafonly.diff` removes the non-terminal checks, and `e31_world.mjs:102` then puts the
+  old witnesses into the slots that are no longer checked, so 14 / 14 acceptances follow by construction. It shows that the per-hop check is the
+  only thing that blocks descendants in this circuit; it is not an independent experiment. "Causal evidence" is withdrawn.
+- E3 used the v7 circuit; v9 / v9.1 keep the same revocation section (unchanged since v6).

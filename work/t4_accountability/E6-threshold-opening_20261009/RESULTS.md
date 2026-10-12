@@ -78,3 +78,17 @@ Trusted dealer, no DKG; static corruption < t; ≥ t members can open any action
 opening verifier); DLEQ soundness/ZK, ElGamal-KEM and Poseidon-PRF are assumed, not proved here; scalar multiplication is not constant-time (circomlibjs);
 no key resharing between epochs (each epoch is an independent dealing); the paper's G-NFF / T-NFF must be rewritten around share verification (DLEQ) rather
 than Shamir reconstruction of the ElGamal secret (paper.tex line 418; #11 item 11).
+
+## Scope note 2026-10-12 (audit #58; appended)
+- **The adversarial cases O1–O16 ran on the v7 layout** (`cases.mjs:5`). For v9 / v9.1 there is only `opening_check.mjs`: honest 3-of-5 and a
+  forced 2-share opening, 10 / 10 per D. It does not verify the action proof, and its event id is synthetic. The v9.1 run is
+  `../../t2_circuit_fix/zkdac_v9_1/results/opening_check.json`. Not ported, for these reasons:
+  - O8 / O9 (shares replayed across events) act only on c1 and on the DLEQ challenge, which binds the event id. The KEM part (c1, c2 = ElGamal of
+    K) is the same in v7 mode C and v9, so these cases do not depend on the ciphertext layout.
+  - O13 (tampered ciphertext with the original proof) on v9.1 reduces to public-input binding: every public word + 1 makes the proof fail
+    (`../../t2_circuit_fix/zkdac_v9_1/results/public_binding.json`).
+  - The off-curve-key opening failure of v9 (#53) is fixed in v9.1 and covered by T3 v9.1 A24.
+- **Not covered:**
+  - a malicious dealer (the dealer is trusted);
+  - a lying combiner beyond the DLEQ checks;
+  - a public opening verifier, which the research design asks for and which does not exist.
