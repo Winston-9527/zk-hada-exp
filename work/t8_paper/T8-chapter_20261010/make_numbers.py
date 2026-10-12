@@ -110,6 +110,27 @@ for D in (1, 2, 3, 4):
 ct = {(t["D"], t["pair"]): t for t in t6["components"]["tests"]}
 N("AcctCostD", f"{ct[(4, 'v6->v7')]['diff_ms']:.0f}", T6, "components.tests[D=4, v6->v7].diff_ms"); N("BudgetCostD", f"{ct[(4, 'v7->v8')]['diff_ms']:.0f}", T6, "components.tests[D=4, v7->v8].diff_ms")
 N("AcctCostC", f"{ct[(3, 'v6->v7')]['diff_ms']:.0f}", T6, "components.tests[D=3, v6->v7].diff_ms")
+# ---------- 2026-10-12 audit fixes (#53-#59): v9.1, T3 v9.1, T5b, T6b ----------
+CV = "t2_circuit_fix/zkdac_v9_1/results/compile.txt"; cvs = re.findall(r"# of Constraints: (\d+)", open(src(CV)).read())
+for i, n in enumerate(cvs): N(f"ConsVnineOne{'ABCD'[i]}", c(int(n)), CV, f"snarkjs r1cs info, D = {i + 1} (v9.1)")
+A1 = "t3_attacks/v9_1/results/attacks_v9_1.json"; a1 = J(A1)
+N("TthreeOneRows", len(a1["rows"]), A1, "len(rows) (v9.1)")
+for k, m_ in [("AGREE_REJECT", "TthreeOneAgRej"), ("FALSE_ACCEPT", "TthreeOneFa")]: N(m_, a1["summary"].get(k, 0), A1, f"summary.{k} (v9.1)")
+N("OffCurveRej", sum(1 for r in a1["rows"] if r["id"] == "A24" and r["class"] == "AGREE_REJECT"), A1, "rows A24 with AGREE_REJECT")
+N("OffCurveVnineFa", sum(1 for r in a1["reference_v9"] if r["class"] == "FALSE_ACCEPT"), A1, "reference_v9 rows (A24 on v9) with FALSE_ACCEPT")
+TB = "t5_e2e/T5b-revocation-circuit_20261012/results/revoke_circuit.json"; tb = J(TB)
+N("BlockedAgents", tb["blocked_agents"], TB, "blocked_agents")
+N("BlockedRejPred", sum(v for k, v in tb["summary"]["blocked_pred v9"].items() if k != "accept"), TB, "summary['blocked_pred v9'] non-accept")
+N("BlockedRejOwn", sum(v for k, v in tb["summary"]["blocked_own v9"].items() if k != "accept"), TB, "summary['blocked_own v9'] non-accept")
+N("BlockedFA", len(tb["false_accepts"]), TB, "len(false_accepts) (v9 and v9.1)")
+N("FreeControls", tb["summary"]["control_free v9"].get("accept", 0), TB, "summary['control_free v9'].accept")
+LC = "t5_e2e/T5b-revocation-circuit_20261012/results/latency_p95_ci.json"; lc = J(LC)["cells"]["steady D=4 local_ms"]
+N("PninetyfiveLo", f"{lc['p95_ci95'][0] / 1000:.2f}", LC, "cells['steady D=4 local_ms'].p95_ci95[0] / 1000"); N("PninetyfiveHi", f"{lc['p95_ci95'][1] / 1000:.2f}", LC, "cells['steady D=4 local_ms'].p95_ci95[1] / 1000")
+T6B = "t6_baselines/T6b-reanalysis_20261012/results/analysis_t6b.json"; t6b = J(T6B)
+N("RatioFreshMax", f"{t6b['ranges']['fresh_tree'][1]:.2f}", T6B, "ranges.fresh_tree[1]"); N("RatioWorldMax", f"{t6b['ranges']['t5_world'][1]:.2f}", T6B, "ranges.t5_world[1]")
+cp = {(t["D"], t["pair"]): t for t in t6b["components_paired"]}
+N("CompressDiffB", f"{cp[(2, 'v8->v9')]['mean_diff_ms']:.0f}", T6B, "components_paired[D=2, v8->v9].mean_diff_ms")
+N("CompressHolmB", f"{cp[(2, 'v8->v9')]['p_holm']:.3f}", T6B, "components_paired[D=2, v8->v9].p_holm")
 # ---------- T7b ----------
 CK = "t7_proofs/T7b-lean-statemachine_20261010/check_output.txt"; ck = open(src(CK)).read()
 N("LeanStmts", len(re.findall(r"^'BudgetSM\.T\d_[^']*' depends on axioms: \[propext(, Classical\.choice)?, Quot\.sound\]$", ck, re.M)), CK, "theorem statements T1-T4 (incl. corollaries) whose axioms are only the standard ones")

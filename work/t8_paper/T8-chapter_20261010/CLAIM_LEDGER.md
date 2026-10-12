@@ -117,6 +117,26 @@ Every number in experiments.tex is a macro below. Source paths are relative to `
 | `\NAcctCostD` | 84 | `t6_baselines/T6-baselines_20261010/results/analysis.json` | components.tests[D=4, v6->v7].diff_ms |
 | `\NBudgetCostD` | 63 | `t6_baselines/T6-baselines_20261010/results/analysis.json` | components.tests[D=4, v7->v8].diff_ms |
 | `\NAcctCostC` | 620 | `t6_baselines/T6-baselines_20261010/results/analysis.json` | components.tests[D=3, v6->v7].diff_ms |
+| `\NConsVnineOneA` | 60,628 | `t2_circuit_fix/zkdac_v9_1/results/compile.txt` | snarkjs r1cs info, D = 1 (v9.1) |
+| `\NConsVnineOneB` | 105,433 | `t2_circuit_fix/zkdac_v9_1/results/compile.txt` | snarkjs r1cs info, D = 2 (v9.1) |
+| `\NConsVnineOneC` | 150,238 | `t2_circuit_fix/zkdac_v9_1/results/compile.txt` | snarkjs r1cs info, D = 3 (v9.1) |
+| `\NConsVnineOneD` | 195,043 | `t2_circuit_fix/zkdac_v9_1/results/compile.txt` | snarkjs r1cs info, D = 4 (v9.1) |
+| `\NTthreeOneRows` | 174 | `t3_attacks/v9_1/results/attacks_v9_1.json` | len(rows) (v9.1) |
+| `\NTthreeOneAgRej` | 118 | `t3_attacks/v9_1/results/attacks_v9_1.json` | summary.AGREE_REJECT (v9.1) |
+| `\NTthreeOneFa` | 21 | `t3_attacks/v9_1/results/attacks_v9_1.json` | summary.FALSE_ACCEPT (v9.1) |
+| `\NOffCurveRej` | 4 | `t3_attacks/v9_1/results/attacks_v9_1.json` | rows A24 with AGREE_REJECT |
+| `\NOffCurveVnineFa` | 4 | `t3_attacks/v9_1/results/attacks_v9_1.json` | reference_v9 rows (A24 on v9) with FALSE_ACCEPT |
+| `\NBlockedAgents` | 301 | `t5_e2e/T5b-revocation-circuit_20261012/results/revoke_circuit.json` | blocked_agents |
+| `\NBlockedRejPred` | 301 | `t5_e2e/T5b-revocation-circuit_20261012/results/revoke_circuit.json` | summary['blocked_pred v9'] non-accept |
+| `\NBlockedRejOwn` | 301 | `t5_e2e/T5b-revocation-circuit_20261012/results/revoke_circuit.json` | summary['blocked_own v9'] non-accept |
+| `\NBlockedFA` | 0 | `t5_e2e/T5b-revocation-circuit_20261012/results/revoke_circuit.json` | len(false_accepts) (v9 and v9.1) |
+| `\NFreeControls` | 64 | `t5_e2e/T5b-revocation-circuit_20261012/results/revoke_circuit.json` | summary['control_free v9'].accept |
+| `\NPninetyfiveLo` | 2.75 | `t5_e2e/T5b-revocation-circuit_20261012/results/latency_p95_ci.json` | cells['steady D=4 local_ms'].p95_ci95[0] / 1000 |
+| `\NPninetyfiveHi` | 3.01 | `t5_e2e/T5b-revocation-circuit_20261012/results/latency_p95_ci.json` | cells['steady D=4 local_ms'].p95_ci95[1] / 1000 |
+| `\NRatioFreshMax` | 6.70 | `t6_baselines/T6b-reanalysis_20261012/results/analysis_t6b.json` | ranges.fresh_tree[1] |
+| `\NRatioWorldMax` | 8.63 | `t6_baselines/T6b-reanalysis_20261012/results/analysis_t6b.json` | ranges.t5_world[1] |
+| `\NCompressDiffB` | -7 | `t6_baselines/T6b-reanalysis_20261012/results/analysis_t6b.json` | components_paired[D=2, v8->v9].mean_diff_ms |
+| `\NCompressHolmB` | 0.031 | `t6_baselines/T6b-reanalysis_20261012/results/analysis_t6b.json` | components_paired[D=2, v8->v9].p_holm |
 | `\NLeanStmts` | 6 | `t7_proofs/T7b-lean-statemachine_20261010/check_output.txt` | theorem statements T1-T4 (incl. corollaries) whose axioms are only the standard ones |
 | `\NLeanSorry` | 0 | `t7_proofs/T7b-lean-statemachine_20261010/check_output.txt` | occurrences of sorryAx |
 
@@ -132,17 +152,19 @@ Every number in experiments.tex is a macro below. Source paths are relative to `
 ## Source files (sha256 at generation time)
 | file | sha256 |
 |---|---|
-| `t2_circuit_fix/zkdac_v9/RESULTS.md` | `9757aea84aa15c904541216d88ab91f4f433734bb0c736183c09c76304a0d656` |
+| `t2_circuit_fix/zkdac_v9/RESULTS.md` | `6647df4da7c0ee340cb3269518b19ce9fdc8a5a396f9d9c197d6563f5411719f` |
 | `t2_circuit_fix/zkdac_v9/results/mutations_d1.json` | `e87ed50dedce718372ab2e542e1a0773cc974fbfa4297b930ada24394298fab6` |
 | `t2_circuit_fix/zkdac_v9/results/mutations_d2.json` | `4887fe654cd3843b815611dd687cb8e3b3014372e0309a2d4d17ad934ed00227` |
 | `t2_circuit_fix/zkdac_v9/results/mutations_d3.json` | `3d36cd7964fc5dc211ec7466f93cb622623e2c684970da4d2a3463b874eb7a30` |
 | `t2_circuit_fix/zkdac_v9/results/mutations_d4.json` | `746865abc802999e07bb0033455feafdd25d5906dc796eebf7387b2be437c394` |
 | `t2_circuit_fix/zkdac_v9/results/receipts_v8_v9.json` | `8bda900d26862fd3547f0c84dbe070253bfeafce921d9ffcbd0f4c12be9308b4` |
+| `t2_circuit_fix/zkdac_v9_1/results/compile.txt` | `98bf70efbf8445373b5390cf91c7de6e3990afac6f51d71d9bfe4beb15596549` |
 | `t3_attacks/v9/results/attacks_v9.json` | `9ab49cbb3bef7429b2c991474d971c60ba10332102c625201db637a8c830db02` |
 | `t3_attacks/v9/results/exhaustive_diff_v9_d4.json` | `893d23241661c733888f64732652fa5ca61e90bfbfbddba280c034fc20420238` |
-| `t4_accountability/E6-threshold-opening_20261009/RESULTS.md` | `92816f40dc33fde6c870ef6aa233c019d2b596582afd2836d72a096f827fe3d7` |
+| `t3_attacks/v9_1/results/attacks_v9_1.json` | `4c9a5cb94a7cc2177f8a1b92525f882e4f1c2b07e50e7e2daeaaa0d7ed3355ac` |
+| `t4_accountability/E6-threshold-opening_20261009/RESULTS.md` | `9c3caf433e7bf9c1a41e455f1507ac4c27125049cd2797fa86b1e721aab0b53b` |
 | `t4_accountability/E6-threshold-opening_20261009/results/cases.json` | `92a576b42a1a91339b4bd222d2a0d1a13931f83522ec752f077d00a3a4f1d637` |
-| `t4_revocation/E3-revocation_20261009/RESULTS.md` | `391e77dd085a5bf63eb9bf15442ebfbafd6e59582685d860e379101f8ae05895` |
+| `t4_revocation/E3-revocation_20261009/RESULTS.md` | `0a32d2aa9b6f9914b0dc1864cc028e4add9c1362ff089d605b02e85eb70a0e13` |
 | `t4_revocation/E3-revocation_20261009/results/e31_world.json` | `bd976742e1f0b89b328d2861f06fea4689d86d30a435ce24be24e9031f8f3a56` |
 | `t5_e2/E2-budget_20261009/results/e2_anvil.json` | `6ef3b33b9e8c7a47b1cea1f60a4cf134251d9f38142b28e81e2c5efe01f5f36e` |
 | `t5_e2e/T5-e2e-scale_20261010/results/analysis.json` | `a03ffeaf0f056b148cc9ef927a578fd2bfce8440824866d2759b57741d159636` |
@@ -150,7 +172,10 @@ Every number in experiments.tex is a macro below. Source paths are relative to `
 | `t5_e2e/T5-e2e-scale_20261010/results/e4b_revoke_10.json` | `31f84a06a4ead3d65d85c7c43ab7727adcea6a8d8e9b1aac86010825d337997b` |
 | `t5_e2e/T5-e2e-scale_20261010/results/gas_vs_note_index.txt` | `31e8d38a1cf12883d284b2a141a7a0343e99b25ddf9931c59a11fd631e6833c8` |
 | `t5_e2e/T5-e2e-scale_20261010/results/world_build.json` | `91f86f6b5d42fce8916ea37f01345a99b6fba0adc7a38a6beb7c91d02a603e14` |
+| `t5_e2e/T5b-revocation-circuit_20261012/results/latency_p95_ci.json` | `c3149246e035c33e8f7274daca4cdbdcb74d1132cc9a73cc3d7d6dda19508139` |
+| `t5_e2e/T5b-revocation-circuit_20261012/results/revoke_circuit.json` | `f0776d529ee328ae798a30e8896236c7e8a1d7b077801e0597a293615b80ddd1` |
 | `t6_baselines/T6-baselines_20261010/results/analysis.json` | `35b7611a561899b86e7818885b2d2ec28b23bb294aee29d0b57150ae130d3a14` |
 | `t6_baselines/T6-baselines_20261010/results/b0_anvil.json` | `19155c5cb75e8f0385b78d0c92e36329255e021162770448f7f2237fccd1c02d` |
+| `t6_baselines/T6b-reanalysis_20261012/results/analysis_t6b.json` | `10b8e4db1cac5a8eb59de9e5fdbbd0b10a808abf5dbb750c41962e3272837cd7` |
 | `t7_proofs/T7b-lean-statemachine_20261010/check_output.txt` | `a534a346d40b7114f936f9783482a05e0e5605171d725257f65ed13a29f1550e` |
 | `t8_paper/T8-chapter_20261010/repro/expected_constraints.txt` | `dc9ac633d5cadac53a0541a0b292c92ebaed9c1c6b8430517e1e576e16b9e0c7` |
