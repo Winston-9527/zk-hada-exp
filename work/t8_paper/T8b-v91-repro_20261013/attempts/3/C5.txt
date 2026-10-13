@@ -1,0 +1,7 @@
+C5 ok v9.1 smoke D=1..4 accepted and opened
+C5 ok T3 v9.1 summary
+C5 ok T3 v9.1 agree_reject_by_level
+C5 ok T3 v9.1 per-row (id, name, D, class, failure location)
+C5 ok exhaustive diff v9.1 D=4
+C5 ok E6 totals
+C5 ok E6 per-row pass/observed

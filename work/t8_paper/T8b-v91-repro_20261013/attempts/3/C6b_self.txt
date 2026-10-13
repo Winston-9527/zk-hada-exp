@@ -1,0 +1,4 @@
+C6 ok env2_proofs_d1.json: proofs made on enine (linux x64) verified on enine (linux x64): 10/10
+C6 ok env2_proofs_d2.json: proofs made on enine (linux x64) verified on enine (linux x64): 10/10
+C6 ok env2_proofs_d3.json: proofs made on enine (linux x64) verified on enine (linux x64): 10/10
+C6 ok env2_proofs_d4.json: proofs made on enine (linux x64) verified on enine (linux x64): 10/10

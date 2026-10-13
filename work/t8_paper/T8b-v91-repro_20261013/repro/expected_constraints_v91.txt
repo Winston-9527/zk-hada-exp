@@ -1,0 +1,12 @@
+t2_circuit_fix/zkdac_v9/build/c1/main_c_d1.r1cs 60622
+t2_circuit_fix/zkdac_v9/build/c2/main_c_d2.r1cs 105424
+t2_circuit_fix/zkdac_v9/build/c3/main_c_d3.r1cs 150226
+t2_circuit_fix/zkdac_v9/build/c4/main_c_d4.r1cs 195028
+t2_circuit_fix/zkdac_v8/build/budget_transfer/budget_transfer.r1cs 84008
+t2_circuit_fix/zkdac_v8/build/budget_mint/budget_mint.r1cs 1236
+t4_registration/build/r20/main_reg_20.r1cs 17436
+t4_obligations/E7-obligations_20261009/revoke/build/revoke_transition.r1cs 51815
+t2_circuit_fix/zkdac_v9_1/build/c1/main_c_d1.r1cs 60628
+t2_circuit_fix/zkdac_v9_1/build/c2/main_c_d2.r1cs 105433
+t2_circuit_fix/zkdac_v9_1/build/c3/main_c_d3.r1cs 150238
+t2_circuit_fix/zkdac_v9_1/build/c4/main_c_d4.r1cs 195043

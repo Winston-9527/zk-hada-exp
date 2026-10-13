@@ -1,0 +1,26 @@
+[06:06:02] C0 ok: frozen circuit sources identical to v9.1-freeze-20261013
+[06:06:02] npm ci t2_circuit_fix/zkdac_v2
+[06:06:41] npm ci t2_circuit_fix/zkdac_v3
+[06:06:43] npm ci t2_circuit_fix/zkdac_v4
+[06:06:45] npm ci t2_circuit_fix/zkdac_v5
+[06:06:53] npm ci t2_circuit_fix/zkdac_v6
+[06:06:55] npm ci t2_circuit_fix/revocation_imt
+[06:06:56] npm ci t2_circuit_fix/zkdac_v7
+[06:06:58] npm ci t3_attacks
+[06:06:59] npm ci t4_registration
+[06:07:01] npm ci t4_contracts
+[06:07:03] circom zkdac_v9_1 c1
+[06:07:08] circom zkdac_v9_1 c2
+[06:07:13] circom zkdac_v9_1 c3
+[06:07:19] circom zkdac_v9_1 c4
+[06:07:27] circom zkdac_v9 c1
+[06:07:32] circom zkdac_v9 c2
+[06:07:38] circom zkdac_v9 c3
+[06:07:43] circom zkdac_v9 c4
+[06:07:50] circom v8 budget_transfer
+[06:07:53] circom v8 budget_mint
+[06:07:54] circom reg20
+[06:07:56] circom revoke
+[06:08:22] C2 ok (byte-identical to the first-environment build)
+[06:08:22] 10_build done fail=0
+[06:08:22] download ptau

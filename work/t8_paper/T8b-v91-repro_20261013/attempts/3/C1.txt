@@ -1,0 +1,16 @@
+C1 ok t2_circuit_fix/zkdac_v9/build/c1/main_c_d1.r1cs 60622 constraints, 17 public inputs
+C1 ok t2_circuit_fix/zkdac_v9/build/c2/main_c_d2.r1cs 105424 constraints, 18 public inputs
+C1 ok t2_circuit_fix/zkdac_v9/build/c3/main_c_d3.r1cs 150226 constraints, 19 public inputs
+C1 ok t2_circuit_fix/zkdac_v9/build/c4/main_c_d4.r1cs 195028 constraints, 20 public inputs
+C1 ok t2_circuit_fix/zkdac_v8/build/budget_transfer/budget_transfer.r1cs 84008 constraints, 5 public inputs
+C1 ok t2_circuit_fix/zkdac_v8/build/budget_mint/budget_mint.r1cs 1236 constraints, 2 public inputs
+C1 ok t4_registration/build/r20/main_reg_20.r1cs 17436 constraints, 4 public inputs
+C1 ok t4_obligations/E7-obligations_20261009/revoke/build/revoke_transition.r1cs 51815 constraints, 4 public inputs
+C1 ok t2_circuit_fix/zkdac_v9_1/build/c1/main_c_d1.r1cs 60628 constraints, 17 public inputs
+C1 ok t2_circuit_fix/zkdac_v9_1/build/c2/main_c_d2.r1cs 105433 constraints, 18 public inputs
+C1 ok t2_circuit_fix/zkdac_v9_1/build/c3/main_c_d3.r1cs 150238 constraints, 19 public inputs
+C1 ok t2_circuit_fix/zkdac_v9_1/build/c4/main_c_d4.r1cs 195043 constraints, 20 public inputs
+C1 ok v9.1 D=1 public inputs 17
+C1 ok v9.1 D=2 public inputs 18
+C1 ok v9.1 D=3 public inputs 19
+C1 ok v9.1 D=4 public inputs 20

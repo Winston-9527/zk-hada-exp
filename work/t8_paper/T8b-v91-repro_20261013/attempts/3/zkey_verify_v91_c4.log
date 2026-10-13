@@ -1,0 +1,23 @@
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading r1cs
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading tauG2
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading alphatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Reading betatauG1
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit hash: 
+		aaba9789 b8401d29 0ca9c34b 5ac14b7e
+		954e89fe 3dc6365b bc32b8f6 5fcbc0f4
+		2d326fc1 450660d0 2f752d9c c3a66522
+		24787b3a 5978cc79 5b50c46d 3d9b1cb6
+[32;22m[INFO]  [39;1msnarkJS[0m: Circuit Hash: 
+		aaba9789 b8401d29 0ca9c34b 5ac14b7e
+		954e89fe 3dc6365b bc32b8f6 5fcbc0f4
+		2d326fc1 450660d0 2f752d9c c3a66522
+		24787b3a 5978cc79 5b50c46d 3d9b1cb6
+[32;22m[INFO]  [39;1msnarkJS[0m: -------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: contribution #1 dev-local:
+		d8adaa29 0882e917 d3ef3bd6 3dda4fa9
+		a1736f91 76260a32 c77184f1 5abd383b
+		6e63029c 0bb6bb27 f0ca533e 2c25e0fd
+		f6a1d821 7f05cc78 e595dbc5 e5652cef
+[32;22m[INFO]  [39;1msnarkJS[0m: -------------------------
+[32;22m[INFO]  [39;1msnarkJS[0m: ZKey Ok!
