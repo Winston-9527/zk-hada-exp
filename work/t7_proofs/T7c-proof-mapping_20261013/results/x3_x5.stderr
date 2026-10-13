@@ -1,0 +1,170 @@
+ERROR:  4 Error in template ZkDacChainV9_423 line: 200
+
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:98264) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+ERROR:  4 Error in template ZkDacChainV9_423 line: 194
+
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 225
+
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 223
+
+FAIL X3a D=2 input note not in the tree (rho changed) { sat: false, at: 'ZkDacChainV9 L223' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_321 line: 38
+Error in template ZkDacChainV9_423 line: 226
+
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_336 line: 38
+Error in template ZkDacChainV9_423 line: 196
+
+FAIL X3a D=4 holder_sk + l (same public key, aliased scalar) { sat: false, at: 'Num2Bits L38' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 194
+
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 225
+
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 223
+
+FAIL X3a D=4 input note not in the tree (rho changed) { sat: false, at: 'ZkDacChainV9 L223' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_321 line: 38
+Error in template ZkDacChainV9_423 line: 226
+
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 56
+
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 58
+
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_240 line: 38
+Error in template BudgetTransfer_327 line: 62
+
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacRegister_243 line: 32
+
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacRegister_243 line: 48
+
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=2 V at hop 0: no signature (S = 0, R8 = O) { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=2 V at hop 0: certificate signed by the adversary's key { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=2 V at hop 1: no signature (S = 0, R8 = O) { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=2 V at hop 1: certificate signed by the adversary's key { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=2 V at hop 1: V's real signature replayed from another certificate { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 194
+
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=4 V at hop 0: no signature (S = 0, R8 = O) { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=4 V at hop 0: certificate signed by the adversary's key { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=4 V at hop 0: V's real signature replayed from another certificate { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=4 V at hop 1: no signature (S = 0, R8 = O) { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=4 V at hop 1: certificate signed by the adversary's key { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=4 V at hop 1: V's real signature replayed from another certificate { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=4 V at hop 2: no signature (S = 0, R8 = O) { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=4 V at hop 2: certificate signed by the adversary's key { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=4 V at hop 2: V's real signature replayed from another certificate { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=4 V at hop 3: no signature (S = 0, R8 = O) { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=4 V at hop 3: certificate signed by the adversary's key { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_175 line: 56
+Error in template EdDSAPoseidonVerifier_176 line: 117
+Error in template ZkDacChainV9_423 line: 130
+
+FAIL X5a D=4 V at hop 3: V's real signature replayed from another certificate { sat: false, at: 'ForceEqualIfEnabled L56' }
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 194
+
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template AccHybridCompressed_342 line: 18
+Error in template ZkDacChainV9_423 line: 181
+
+(node:98264) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template AccHybridCompressed_342 line: 23
+Error in template ZkDacChainV9_423 line: 181
+
+43 rows, 20 not as expected

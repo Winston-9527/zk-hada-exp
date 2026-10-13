@@ -1,0 +1,6 @@
+[PASS] test_honest_sequence() (gas: 949435)
+  T7C X1c honest genesis -> R1 -> R2 accepted
+[PASS] test_skipSlot_rejected() (gas: 559164)
+  T7C X1c (iii') next_index = count + 1 rejected InvalidProof
+[PASS] test_staleOldRoot_rejected() (gas: 904459)
+  T7C X1c (v') stale old_root rejected InvalidProof

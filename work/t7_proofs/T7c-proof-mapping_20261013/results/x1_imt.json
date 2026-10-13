@@ -1,0 +1,180 @@
+{
+ "X1a": {
+  "trees": 64,
+  "queries": "k = 0..8",
+  "cases": 2304,
+  "agree": 2304,
+  "disagreements": [],
+  "completeness": "320/320 non-members have an accepting witness",
+  "forged_low_leaves": "1000/1000 rejected"
+ },
+ "X1b": [
+  {
+   "k": "3",
+   "k_plus_2_252": "7237005577332262213973186563042994240829374041602535252466099000494570602499",
+   "member": false,
+   "nonmember_k": true,
+   "nonmember_hi": true,
+   "same": true
+  },
+  {
+   "k": "7",
+   "k_plus_2_252": "7237005577332262213973186563042994240829374041602535252466099000494570602503",
+   "member": false,
+   "nonmember_k": true,
+   "nonmember_hi": true,
+   "same": true
+  },
+  {
+   "k": "11",
+   "k_plus_2_252": "7237005577332262213973186563042994240829374041602535252466099000494570602507",
+   "member": false,
+   "nonmember_k": true,
+   "nonmember_hi": true,
+   "same": true
+  },
+  {
+   "k": "9",
+   "k_plus_2_252": "7237005577332262213973186563042994240829374041602535252466099000494570602505",
+   "member": true,
+   "nonmember_k": false,
+   "nonmember_hi": false,
+   "same": true
+  },
+  {
+   "case": "insert 7 + 2^252, query 7",
+   "nonmember_7": false,
+   "expected": false
+  }
+ ],
+ "X1c": {
+  "genesis": "IMT depth 20 with 20 decoys (generators' genesis)",
+  "honest_insertions": 200,
+  "honest_satisfiable": 200,
+  "new_root_equals_js": 200,
+  "sorted_list_after_each": 200,
+  "final_leaves": 221,
+  "forgeries": {
+   "(i) low leaf not the predecessor": {
+    "n": 29,
+    "unsat": 29,
+    "at": {
+     "IMTNonMember L67": 15,
+     "IMTNonMember L59": 14
+    },
+    "sat_rows": []
+   },
+   "(iv) next_index = a used slot": {
+    "n": 29,
+    "unsat": 29,
+    "at": {
+     "RevokeTransition L67": 29
+    },
+    "sat_rows": []
+   },
+   "(iii') next_index = an empty slot != count (circuit only checks emptiness)": {
+    "n": 29,
+    "unsat": 0,
+    "at": {},
+    "sat_rows": [
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)",
+     "SAT; rejected on chain: Rev passes count as next_index (RV-C1)"
+    ]
+   },
+   "(vi) new leaf with wrong next pointer": {
+    "n": 29,
+    "unsat": 29,
+    "at": {
+     "RevokeTransition L71": 29
+    },
+    "sat_rows": []
+   },
+   "(vi') new leaf with wrong value": {
+    "n": 29,
+    "unsat": 29,
+    "at": {
+     "RevokeTransition L71": 29
+    },
+    "sat_rows": []
+   },
+   "(ii) duplicate key": {
+    "n": 28,
+    "unsat": 28,
+    "at": {
+     "IMTNonMember L67": 28
+    },
+    "sat_rows": []
+   },
+   "(v) low-leaf path from a stale tree, current old_root": {
+    "n": 28,
+    "unsat": 28,
+    "at": {
+     "IMTPath L39": 28
+    },
+    "sat_rows": []
+   },
+   "(v') stale old_root with its own consistent witness": {
+    "n": 28,
+    "unsat": 0,
+    "at": {},
+    "sat_rows": [
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)",
+     "SAT; rejected on chain: Rev passes its CURRENT root as old_root (RV-C1)"
+    ]
+   }
+  }
+ }
+}
