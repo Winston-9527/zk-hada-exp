@@ -166,3 +166,22 @@ RQ114 (V119 / V120, `docs/research/V120/rqs/RQ114_SOTA_BASELINE_COMPARISON/close
   end-to-end costs of aligned sub-tasks, not equal work.
 - zk-creds numbers are technical replicates of one witness.
 - B0 is our own implementation, not an official system. It is labelled as the same-stack plaintext lower bound.
+
+## Corrections 2026-10-12 (audit #58; appended, text above unchanged)
+Re-analysis without new measurements: `../T6b-reanalysis_20261012/` (pre-registered post hoc).
+- **B0 is a plaintext reference gate, not a proven lower bound.** It is self-written, with one cold SSTORE per hop (+37.8k per hop).
+- **The privacy-cost ratio depends on accounting.** Over {B0 first / second execution} × {with / without 21k intrinsic} × {law at popcount 0 /
+  measured receipt}:
+  - fresh tree **2.45 – 6.70**;
+  - T5 world size **3.25 – 8.63**.
+
+  The numbers above (2.45 – 4.66 / 3.25 – 5.96) are the lower end: B0's cold first execution, with intrinsic gas. "Shrinks with D and crosses near
+  D ≈ 15" is a property of B0's design and is dropped as a general claim.
+- **Deviation not listed before.** The pre-registration said "excludes intrinsic gas"; the analysis used receipt gasUsed (which includes it) on both
+  sides.
+- **"Fresh tree" v9 (560,628 at D = 4) is the law extrapolated to popcount 0.** The measured near-empty receipt is 564,147, ratio 2.47 instead of
+  2.45.
+- **The component test was unpaired, although it was pre-registered as paired.** The paired sign-flip test (by instance seed) gives the same
+  decisions, except v8 → v9 at D = 2: −7.0 ms, p_holm = 0.031. "v9 compression has no significant effect" becomes "at most −7 ms (D = 2,
+  significant); not significant at D = 1, 3, 4".
+- `analysis.json` rounds the B0 medians (115,200); the exact values are 115,215 / 153,062 / 190,883 / 228,705 (`b0_anvil.json`).

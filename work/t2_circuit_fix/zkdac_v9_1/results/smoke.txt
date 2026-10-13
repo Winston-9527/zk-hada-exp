@@ -1,0 +1,4 @@
+v9 D=1 valid -> ACCEPT | auditor recovers ent[0..D] from compressed ciphertext: true
+v9 D=2 valid -> ACCEPT | auditor recovers ent[0..D] from compressed ciphertext: true
+v9 D=3 valid -> ACCEPT | auditor recovers ent[0..D] from compressed ciphertext: true
+v9 D=4 valid -> ACCEPT | auditor recovers ent[0..D] from compressed ciphertext: true

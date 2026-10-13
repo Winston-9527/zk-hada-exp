@@ -86,3 +86,7 @@ One input note and two output notes, 4 lineage slots, revocation IMT depth 20, L
   root, so the replay in `test_gas_and_doubleSpend` is rejected as StaleNoteRoot, not by the nullifier. Nullifier blocking under a root window is untested
   here (it is tested for the v7 gate in #18).
 - ctx_hash is an argument of the prototype gate, not computed from the call.
+
+## Correction 2026-10-12 (audit #56)
+M6 was pre-registered for all interleavings of ≤ 6 operations; it ran ≤ 5 (`model.mjs:97`). This deviation was not listed. The result (986,650 states,
+0 violations; mutant caught) holds for ≤ 5 operations only.

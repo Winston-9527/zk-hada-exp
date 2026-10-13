@@ -109,3 +109,20 @@ Separate tests:
   actions is visible, but not who made them.
 - Accountability ciphertexts cover the chain keys, not the note.
 - No formal proof. Re-check ZKM (near neighbour) before submission.
+
+## Corrections 2026-10-12 (audits #56 / #59; appended, text above unchanged)
+- **Budget transfer constraints: 84,008, not 83,008.** The r1cs and the claim ledger both give 84,008.
+- **E2 a3 is not a "per-edge cap" counterexample.**
+  - v7's `cap` is a 32-bit permission bitmap, and neither the v7 circuit nor the v7R gate has any quantity limit. The last constructor argument
+    `10` in `e2_anvil.mjs:61` is the number of ciphertext words, not a cap. The "≤ 10 certificates" of the pre-registration had no implementation.
+  - a3 shows that **v7 has no quantity semantics at all.** Any per-delegate amount would also be accepted.
+  - It does not show the research-design statement (line 107) that local caps do not imply a sibling-total cap, because there were no local caps.
+    The v8 results (a1 100 / 100, a2) are unaffected.
+- **a2 wording.** "12 submitted, 4 succeeded" is 4 notes × 3 attempts on each, and exactly 1 per note succeeded, as pre-registered. The
+  design's case "32 delegates sharing one note" cannot be constructed in v8 (a note has one owner) and was not tested.
+- **Concurrency.** All transactions in a race come from one EOA with consecutive nonces, so the execution order is fixed and the first attempt per
+  note always wins. Random order, multiple senders, conflict retries and p95 / p99 (research design E2) were not done. Safety does not depend on
+  the order, because the nullifier set rejects every second spend whatever the order. This is disclosed, not re-run.
+- **Revocation freeze.** T1's pre-built proof was rejected with StaleRevokedRoot. Any proof built before *any* revocation is rejected the same way
+  after the window, and there was no unrevoked pre-built control. "The note cannot be transferred" was not tested on chain. The circuit-level
+  check is in T3 (A12, A18e) and in T5b (301 / 301 blocked agents rejected by the circuit).

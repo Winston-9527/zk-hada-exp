@@ -1,0 +1,103 @@
+{
+ "point": {
+  "q": "426689151589373885735293617118513702944822400038564501635810117676704313846",
+  "Ax": "19077274801383734293327285923905569802984960696458153033955984698745943866228",
+  "Ay": "6294019361550380265456797422861070665095185446742343124026850739665741929440",
+  "Qx": "17676519521571113689344746025088126656520087556226944712061408146010243350808",
+  "Qy": "17186548623209638106021544510463723643114017181602555158019285323915730123329",
+  "trial": 0
+ },
+ "a_on_curve_circomlibjs": false,
+ "D": 4,
+ "rows": [
+  {
+   "j": 0,
+   "ent_j_is_offcurve_point": true,
+   "v9": {
+    "sat": true
+   },
+   "v9_1": {
+    "sat": false,
+    "fail": "BabyCheck_335 L82"
+   },
+   "oracle": {
+    "accept": false,
+    "why": "bad signature at hop 0"
+   },
+   "opening_correct": [
+    false,
+    true,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "j": 1,
+   "ent_j_is_offcurve_point": true,
+   "v9": {
+    "sat": true
+   },
+   "v9_1": {
+    "sat": false,
+    "fail": "BabyCheck_335 L82"
+   },
+   "oracle": {
+    "accept": false,
+    "why": "bad signature at hop 1"
+   },
+   "opening_correct": [
+    true,
+    false,
+    true,
+    true,
+    true
+   ]
+  },
+  {
+   "j": 2,
+   "ent_j_is_offcurve_point": true,
+   "v9": {
+    "sat": true
+   },
+   "v9_1": {
+    "sat": false,
+    "fail": "BabyCheck_335 L82"
+   },
+   "oracle": {
+    "accept": false,
+    "why": "bad signature at hop 2"
+   },
+   "opening_correct": [
+    true,
+    true,
+    false,
+    true,
+    true
+   ]
+  },
+  {
+   "j": 3,
+   "ent_j_is_offcurve_point": true,
+   "v9": {
+    "sat": true
+   },
+   "v9_1": {
+    "sat": false,
+    "fail": "BabyCheck_335 L82"
+   },
+   "oracle": {
+    "accept": false,
+    "why": "bad signature at hop 3"
+   },
+   "opening_correct": [
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "v9_proof_verifies": true
+  }
+ ]
+}

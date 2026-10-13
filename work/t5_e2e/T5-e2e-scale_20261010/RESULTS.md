@@ -150,3 +150,23 @@ and the finality rule of the chain (not measured).
 ## Limits
 - One machine (Apple M5 Pro, 15 cores); snarkjs in node. Native provers (rapidsnark, etc.) would be faster; they were not tested.
 - anvil is a single local node: no network propagation, no competing traffic, and no fee market.
+
+## Corrections 2026-10-12 (audits #56 / #57; appended, text above unchanged)
+- **"0 descendants still able to act" did not involve the circuit.** For the 301 blocked agents, `prepare` threw NO_WITNESS, so the generator
+  refused to build a witness. The expected set (`blockedBy`) uses the same data, so the number was close to a tautology.
+  - Re-done with the circuit in `../T5b-revocation-circuit_20261012/`: 301 / 301 blocked agents are rejected by the circuit on v9 and v9.1 with the
+    predecessor-leaf witness (IMTNonMember L67) and with the own-leaf witness (L59). 64 / 64 unblocked controls are accepted.
+  - "0 non-descendants blocked" was always a circuit evaluation.
+  - Only certificate revocation was tested at scale, not key revocation.
+- **In-flight proofs.** The 32 pre-built descendant proofs were rejected with StaleRevokedRoot, for the same reason as the 32 unrelated ones: the
+  window expired. This says nothing about revocation itself. Inside Δ a descendant's old proof is still accepted, by design (V9 G-B7).
+- **Gas law: post-hoc fit with a limited range.** `529,576 + 27,089·popcount + 7,763·D` was fitted after the run on note indices 2,600–3,830, where
+  the tree depth is constant at 12. It has no tree-depth term and holds only in that range. The "fresh tree" value 560,628 is an extrapolation to
+  popcount 0; the measured near-empty receipt is 564,147. The ≈ 832k / 1.1M figures for 2^20 notes are extrapolations. "743k with 3,830 notes"
+  means the tree grew from 2,600 to 3,830 during the run.
+- **p95 CIs** (N = 30 steady, N = 10 cold): `../T5b-revocation-circuit_20261012/results/latency_p95_ci.json`. D = 4 steady p95 is 2,855
+  [2,752, 3,008] ms. p99 is not estimable; the T5 "p99" is the maximum.
+- **S1 timing** covers only paths read from the in-memory mirror (≈ 5 ms), not a real indexer.
+- **Evidence rule 2.** The smoke runs (deviation 1) took place after the pre-registration and before the scripts were committed, and they were
+  used to fix the harness. Their worlds were not kept, so this rule was broken. The fixes are documented in the scripts; the smoke outputs
+  cannot be recovered.
