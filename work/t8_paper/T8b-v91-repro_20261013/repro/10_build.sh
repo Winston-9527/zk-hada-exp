@@ -3,7 +3,10 @@
 # C1 constraints (+ v9.1 public inputs), C2 r1cs/wasm sha256 against the first-environment build. Same install list as T8 (attempt-2 fix included).
 source "$(dirname "$0")/common.sh"
 NPMC=${NPM_CACHE:-$OUT/npm-cache}; mkdir -p "$NPMC"
-for d in t2_circuit_fix/zkdac_v2 t2_circuit_fix/zkdac_v3 t2_circuit_fix/zkdac_v4 t2_circuit_fix/zkdac_v5 t2_circuit_fix/zkdac_v6 t2_circuit_fix/revocation_imt t2_circuit_fix/zkdac_v7 t3_attacks t4_registration t4_contracts; do log "npm ci $d"; (cd $W/$d && npm ci --cache "$NPMC" --no-audit --no-fund > "$OUT/npm_$(echo $d | tr / _).log" 2>&1); done
+for d in t2_circuit_fix/zkdac_v2 t2_circuit_fix/zkdac_v3 t2_circuit_fix/zkdac_v4 t2_circuit_fix/zkdac_v5 t2_circuit_fix/zkdac_v6 t2_circuit_fix/revocation_imt t2_circuit_fix/zkdac_v7 t3_attacks t4_registration t4_contracts; do log "npm ci $d"; ok=0
+  # attempt 2: npm ci of zkdac_v2 failed with ECONNRESET (network) -> npm fetch retries + up to 4 tries per package (lockfile unchanged)
+  for i in 1 2 3 4; do (cd $W/$d && npm ci --cache "$NPMC" --no-audit --no-fund --fetch-retries=5 --fetch-retry-mintimeout=20000 > "$OUT/npm_$(echo $d | tr / _).log" 2>&1) && { ok=1; break; }; log "npm ci $d retry $i"; sleep 20; done
+  [ $ok = 1 ] || { log "npm ci $d FAIL"; exit 1; }; done
 for v in zkdac_v8 zkdac_v9 zkdac_v9_1; do ln -sfn ../zkdac_v7/node_modules $W/t2_circuit_fix/$v/node_modules; done
 L7=$W/t2_circuit_fix/zkdac_v7
 FLAGS="-l circuits -l ../zkdac_v7/circuits -l node_modules -l node_modules/circomlib/circuits -l node_modules/@zk-kit/binary-merkle-root.circom/src"
