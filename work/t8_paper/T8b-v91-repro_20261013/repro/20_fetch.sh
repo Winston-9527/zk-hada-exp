@@ -5,7 +5,10 @@ source "$(dirname "$0")/common.sh"
 R=https://github.com/Winston-9527/zk-hada-exp/releases/download
 get() { local tag=$1 dir=$2; shift 2; mkdir -p "$dir"; for f in MANIFEST.sha256 "$@"; do local ok=0; for i in 1 2 3 4 5; do curl -fsSL -o "$dir/$f" "$R/$tag/$f" && { ok=1; break; }; log "retry $tag/$f $i"; sleep 20; done; [ $ok = 1 ] || { log "download FAIL $tag/$f"; exit 1; }; done
   (cd "$dir" && sha -c MANIFEST.sha256 > "$OUT/release_check_$tag.txt" 2>&1) && log "release $tag sha256 ok" || { log "release $tag FAIL"; exit 1; }; }
-if [ ! -f "$PTAU" ]; then log "download ptau"; mkdir -p "$(dirname "$PTAU")"; curl -fL -o "$PTAU" https://circom.info/powersOfTau28_hez_final_18.ptau || curl -fL -o "$PTAU" https://storage.googleapis.com/zkevm/ptau/powersOfTau28_hez_final_18.ptau; fi
+# attempt 1: circom.info dropped the TLS connection at 110 MB and the Google storage mirror returned 403 -> resume (-C -) with retries; blake2b decides
+if [ ! -f "$PTAU" ] || [ -f "$PTAU.partial" ]; then log "download ptau"; mkdir -p "$(dirname "$PTAU")"; touch "$PTAU.partial"
+  for i in 1 2 3 4 5 6 7 8 9 10; do curl -fsSL -C - -o "$PTAU" https://circom.info/powersOfTau28_hez_final_18.ptau && { rm -f "$PTAU.partial"; break; }; log "ptau download retry $i ($(stat -c %s "$PTAU" 2>/dev/null || stat -f %z "$PTAU") bytes so far)"; sleep 15; done
+  [ -f "$PTAU.partial" ] && { log "ptau download FAIL"; exit 1; }; fi
 b2=$(python3 -c "import hashlib,sys;h=hashlib.blake2b();f=open(sys.argv[1],'rb');[h.update(c) for c in iter(lambda:f.read(1<<20),b'')];print(h.hexdigest())" "$PTAU")
 [ "$b2" = "$(awk '{print $1}' $W/ptau/hermez/EXPECTED_BLAKE2B.txt)" ] && log "ptau blake2b ok" || { log "ptau blake2b FAIL"; exit 1; }
 D9=$OUT/release_v9; get v9-proving-material-20261010 $D9 reg20.zkey revoke_rt.zkey revoke_vk_rt.json v8_budget_mint.zkey v8_budget_transfer.zkey v8_vk_budget_mint.json v8_vk_budget_transfer.json v9_c1.zkey v9_c2.zkey v9_c3.zkey v9_c4.zkey v9_vk_c1.json v9_vk_c2.json v9_vk_c3.json v9_vk_c4.json vk_reg20.json
