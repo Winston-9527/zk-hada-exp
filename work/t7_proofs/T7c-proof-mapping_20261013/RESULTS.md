@@ -91,3 +91,6 @@ F-3..F-10 are documented design or scope points (D1 §8).
 - X3c cites existing tests (E7c B4, V91 history, REGt); no new contract test was needed. The contract-level revocation tests (`T7cRevocations.t.sol`) were added for X1c.
 - R1 operation mix: mint 20 %, transfer 25 %, execute 25 %, revoke 10 %, tick 20 %. The weights were not pre-registered; they were changed once, after the 5-sequence smoke run, to cover the revoked > Δ category.
 - In R1, an "unknown note" op is a note index ≥ size. Key revocation (key entries) is not generated, because the model has only lineage entries; it is covered by E3, T5b and T3 A18. Duplicate revocations are not generated: the model treats them as no-ops, while the circuit rejects them (X1c (ii)).
+
+## Revision 2026-10-13 (appended)
+F-2 was fixed by the user's decision in **v9.2** (`../../t2_circuit_fix/zkdac_v9_2/`): the constraint holder_sk ≠ 0 is added. The PoC shows F-2 on v9.1, and v9.2 closes it, both at witness level and on the gate (E7d). The text above describes v9.1 and is unchanged. For v9.2, clause EX-8 additionally reads "holder_sk ≠ 0".

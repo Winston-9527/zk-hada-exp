@@ -1,0 +1,1208 @@
+No files changed, compilation skipped
+
+Ran 11 tests for test/V92.t.sol:V92Test
+[PASS] test_GB2_amountMismatch() (gas: 30966811)
+[PASS] test_GB4_noteRootAfterWindow() (gas: 15585868)
+[PASS] test_GB5_mintNonOperator() (gas: 2741583)
+[PASS] test_GB7_revocationFreezesBudget() (gas: 47218467)
+[PASS] test_actionThenTransferOfSameNote() (gas: 39302241)
+[PASS] test_gas() (gas: 29341608)
+Logs:
+  v9 mint (excl. intrinsic and calldata) 300943
+  v9 transferBudget (2 note inserts) 473356
+  v9 execute D=2 budgeted (excl. intrinsic and calldata) 528611
+  v9 execute D=4 budgeted (excl. intrinsic and calldata) 480879
+
+[PASS] test_mintWrongAmount() (gas: 2779002)
+[PASS] test_sequence() (gas: 32311435)
+[PASS] test_v9_registerStateMatchesCircuit_permissionless_idempotent() (gas: 2222133)
+Logs:
+  v9 registerState, already registered 1841
+  v9 registerState, new combination (on-chain PoseidonT4) 106105
+
+[PASS] test_v9_replayOfExecutedProof() (gas: 9967788)
+[PASS] test_v9_unregisteredStateCombination() (gas: 6808859)
+Suite result: ok. 11 passed; 0 failed; 0 skipped; finished in 220.86ms (293.54ms CPU time)
+
+Ran 34 tests for test/V92Policy.t.sol:V92PolicyTest
+[PASS] test_A10_selectorBeforeVerify() (gas: 9967862)
+[PASS] test_A11a_amountAndQ() (gas: 7157087)
+[PASS] test_A11a_amountOnly() (gas: 6806462)
+[PASS] test_A11a_chainId() (gas: 7157313)
+[PASS] test_A11a_gateAddress() (gas: 11543056)
+[PASS] test_A11a_gateAddress_control() (gas: 11635881)
+[PASS] test_A11a_method() (gas: 7418981)
+[PASS] test_A11a_nonce() (gas: 7156966)
+[PASS] test_A11a_params() (gas: 7156979)
+[PASS] test_A11a_target() (gas: 7184090)
+[PASS] test_A11req() (gas: 7377176)
+[PASS] test_A14_now0_V9config() (gas: 7156938)
+[PASS] test_A14_skew60_edge_ok() (gas: 11636558)
+[PASS] test_A14_skew60_future() (gas: 11134926)
+[PASS] test_A14_skew60_tooOld() (gas: 11135090)
+[PASS] test_A17c_registryRejects() (gas: 6815461)
+[PASS] test_A21c_revokedRootRetired() (gas: 6814541)
+[PASS] test_A22h_otherTpk() (gas: 11467700)
+[PASS] test_A22i_identityTpkDeploys() (gas: 6213290)
+[PASS] test_GB2_amountMismatch() (gas: 30966878)
+[PASS] test_GB4_noteRootAfterWindow() (gas: 15585802)
+[PASS] test_GB5_mintNonOperator() (gas: 2741562)
+[PASS] test_GB7_revocationFreezesBudget() (gas: 47218423)
+[PASS] test_actionThenTransferOfSameNote() (gas: 39302263)
+[PASS] test_businessRevertRollsBack() (gas: 7798849)
+[PASS] test_frontRunnerCanSubmit() (gas: 7326656)
+[PASS] test_gas() (gas: 29341675)
+Logs:
+  v9 mint (excl. intrinsic and calldata) 300943
+  v9 transferBudget (2 note inserts) 473356
+  v9 execute D=2 budgeted (excl. intrinsic and calldata) 528611
+  v9 execute D=4 budgeted (excl. intrinsic and calldata) 480879
+
+[PASS] test_mintWrongAmount() (gas: 2779025)
+[PASS] test_reentrantReplay() (gas: 7456617)
+[PASS] test_sequence() (gas: 32311480)
+[PASS] test_staleIssuedRoot() (gas: 6841787)
+[PASS] test_v9_registerStateMatchesCircuit_permissionless_idempotent() (gas: 2222156)
+Logs:
+  v9 registerState, already registered 1841
+  v9 registerState, new combination (on-chain PoseidonT4) 106105
+
+[PASS] test_v9_replayOfExecutedProof() (gas: 9967722)
+[PASS] test_v9_unregisteredStateCombination() (gas: 6808859)
+Suite result: ok. 34 passed; 0 failed; 0 skipped; finished in 221.42ms (710.51ms CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchF2V91GateTest
+[PASS] test_F2_v91GateAccepts() (gas: 1508031)
+Logs:
+  E7C F2v91 D=2 i=0 identity-holder proof ACCEPTED by a v9.1 gate (anyone can act as O)
+  E7C F2v91 D=4 i=1 identity-holder proof ACCEPTED by a v9.1 gate (anyone can act as O)
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 607.32ms (6.92ms CPU time)
+
+Ran 2 tests for test/V92Batch.t.sol:V92BatchV9GateTest
+[PASS] test_G7_control_v91ProofsOnV9Gate() (gas: 1628852)
+Logs:
+  E7C G7ctl D=1 i=0 v9.1 proof rejected by the v9 gate
+  E7C G7ctl D=2 i=0 v9.1 proof rejected by the v9 gate
+  E7C G7ctl D=3 i=0 v9.1 proof rejected by the v9 gate
+  E7C G7ctl D=4 i=0 v9.1 proof rejected by the v9 gate
+
+[PASS] test_G7_v9GateAccepts() (gas: 2176972)
+Logs:
+  E7C G7v9 D=4 i=1 v9 off-curve proof ACCEPTED by the v9 gate
+  E7C G7v9 D=4 i=2 v9 off-curve proof ACCEPTED by the v9 gate
+  E7C G7v9 D=4 i=3 v9 off-curve proof ACCEPTED by the v9 gate
+
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 624.56ms (25.47ms CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchF2Test
+[PASS] test_F2_v92GateRejects() (gas: 965633)
+Logs:
+  E7C F2v92 D=2 i=0 v9.1 identity-holder proof rejected by the v9.2 gate
+  E7C F2v92 D=4 i=1 v9.1 identity-holder proof rejected by the v9.2 gate
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 644.33ms (5.62ms CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchRwin0Test
+[PASS] test_B5_revocationWindow() (gas: 30777989)
+Logs:
+  E7C B5rev0 D=1 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=1 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=1 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=1 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=1 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=1 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=1 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=1 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=1 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=1 i=9 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=2 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=2 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=2 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=2 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=2 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=2 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=2 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=2 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=2 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=2 i=9 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=3 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=3 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=3 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=3 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=3 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=3 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=3 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=3 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=3 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=3 i=9 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=4 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=4 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=4 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=4 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=4 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=4 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=4 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=4 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=4 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev0 D=4 i=9 accept at window, StaleRevokedRoot at window+1
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 709.62ms (163.24ms CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchRwin12Test
+[PASS] test_B5_revocationWindow() (gas: 30778136)
+Logs:
+  E7C B5rev12 D=1 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=1 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=1 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=1 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=1 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=1 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=1 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=1 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=1 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=1 i=9 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=2 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=2 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=2 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=2 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=2 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=2 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=2 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=2 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=2 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=2 i=9 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=3 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=3 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=3 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=3 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=3 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=3 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=3 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=3 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=3 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=3 i=9 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=4 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=4 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=4 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=4 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=4 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=4 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=4 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=4 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=4 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev12 D=4 i=9 accept at window, StaleRevokedRoot at window+1
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 734.40ms (169.67ms CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchSkew60Test
+[PASS] test_B5_clock() (gas: 32087781)
+Logs:
+  E7C B5clock D=1 i=0 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=1 i=1 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=1 i=2 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=1 i=3 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=1 i=4 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=1 i=5 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=1 i=6 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=1 i=7 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=1 i=8 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=1 i=9 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=2 i=0 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=2 i=1 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=2 i=2 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=2 i=3 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=2 i=4 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=2 i=5 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=2 i=6 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=2 i=7 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=2 i=8 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=2 i=9 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=3 i=0 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=3 i=1 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=3 i=2 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=3 i=3 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=3 i=4 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=3 i=5 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=3 i=6 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=3 i=7 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=3 i=8 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=3 i=9 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=4 i=0 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=4 i=1 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=4 i=2 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=4 i=3 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=4 i=4 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=4 i=5 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=4 i=6 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=4 i=7 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=4 i=8 accept at NOW+60, BadClock at NOW+61 and NOW-1
+  E7C B5clock D=4 i=9 accept at NOW+60, BadClock at NOW+61 and NOW-1
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 825.45ms (212.41ms CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchRwin60Test
+[PASS] test_B5_revocationWindow() (gas: 30778136)
+Logs:
+  E7C B5rev60 D=1 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=1 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=1 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=1 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=1 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=1 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=1 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=1 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=1 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=1 i=9 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=2 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=2 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=2 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=2 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=2 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=2 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=2 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=2 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=2 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=2 i=9 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=3 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=3 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=3 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=3 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=3 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=3 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=3 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=3 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=3 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=3 i=9 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=4 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=4 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=4 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=4 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=4 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=4 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=4 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=4 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=4 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev60 D=4 i=9 accept at window, StaleRevokedRoot at window+1
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 857.22ms (242.52ms CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchRwin240Test
+[PASS] test_B5_revocationWindow() (gas: 30778283)
+Logs:
+  E7C B5rev240 D=1 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=1 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=1 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=1 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=1 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=1 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=1 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=1 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=1 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=1 i=9 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=2 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=2 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=2 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=2 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=2 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=2 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=2 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=2 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=2 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=2 i=9 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=3 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=3 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=3 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=3 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=3 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=3 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=3 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=3 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=3 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=3 i=9 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=4 i=0 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=4 i=1 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=4 i=2 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=4 i=3 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=4 i=4 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=4 i=5 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=4 i=6 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=4 i=7 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=4 i=8 accept at window, StaleRevokedRoot at window+1
+  E7C B5rev240 D=4 i=9 accept at window, StaleRevokedRoot at window+1
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 875.00ms (246.86ms CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchOtherTpkTest
+[PASS] test_B3_otherTpk() (gas: 53448719)
+Logs:
+  E7C B3tpk D=1 i=0 rejected InvalidProof
+  E7C B3tpk D=1 i=1 rejected InvalidProof
+  E7C B3tpk D=1 i=2 rejected InvalidProof
+  E7C B3tpk D=1 i=3 rejected InvalidProof
+  E7C B3tpk D=1 i=4 rejected InvalidProof
+  E7C B3tpk D=1 i=5 rejected InvalidProof
+  E7C B3tpk D=1 i=6 rejected InvalidProof
+  E7C B3tpk D=1 i=7 rejected InvalidProof
+  E7C B3tpk D=1 i=8 rejected InvalidProof
+  E7C B3tpk D=1 i=9 rejected InvalidProof
+  E7C B3tpk D=1 i=10 rejected InvalidProof
+  E7C B3tpk D=1 i=11 rejected InvalidProof
+  E7C B3tpk D=1 i=12 rejected InvalidProof
+  E7C B3tpk D=1 i=13 rejected InvalidProof
+  E7C B3tpk D=1 i=14 rejected InvalidProof
+  E7C B3tpk D=1 i=15 rejected InvalidProof
+  E7C B3tpk D=1 i=16 rejected InvalidProof
+  E7C B3tpk D=1 i=17 rejected InvalidProof
+  E7C B3tpk D=1 i=18 rejected InvalidProof
+  E7C B3tpk D=1 i=19 rejected InvalidProof
+  E7C B3tpk D=1 i=20 rejected InvalidProof
+  E7C B3tpk D=1 i=21 rejected InvalidProof
+  E7C B3tpk D=1 i=22 rejected InvalidProof
+  E7C B3tpk D=1 i=23 rejected InvalidProof
+  E7C B3tpk D=1 i=24 rejected InvalidProof
+  E7C B3tpk D=1 i=25 rejected InvalidProof
+  E7C B3tpk D=1 i=26 rejected InvalidProof
+  E7C B3tpk D=1 i=27 rejected InvalidProof
+  E7C B3tpk D=1 i=28 rejected InvalidProof
+  E7C B3tpk D=1 i=29 rejected InvalidProof
+  E7C B3tpk D=2 i=0 rejected InvalidProof
+  E7C B3tpk D=2 i=1 rejected InvalidProof
+  E7C B3tpk D=2 i=2 rejected InvalidProof
+  E7C B3tpk D=2 i=3 rejected InvalidProof
+  E7C B3tpk D=2 i=4 rejected InvalidProof
+  E7C B3tpk D=2 i=5 rejected InvalidProof
+  E7C B3tpk D=2 i=6 rejected InvalidProof
+  E7C B3tpk D=2 i=7 rejected InvalidProof
+  E7C B3tpk D=2 i=8 rejected InvalidProof
+  E7C B3tpk D=2 i=9 rejected InvalidProof
+  E7C B3tpk D=2 i=10 rejected InvalidProof
+  E7C B3tpk D=2 i=11 rejected InvalidProof
+  E7C B3tpk D=2 i=12 rejected InvalidProof
+  E7C B3tpk D=2 i=13 rejected InvalidProof
+  E7C B3tpk D=2 i=14 rejected InvalidProof
+  E7C B3tpk D=2 i=15 rejected InvalidProof
+  E7C B3tpk D=2 i=16 rejected InvalidProof
+  E7C B3tpk D=2 i=17 rejected InvalidProof
+  E7C B3tpk D=2 i=18 rejected InvalidProof
+  E7C B3tpk D=2 i=19 rejected InvalidProof
+  E7C B3tpk D=2 i=20 rejected InvalidProof
+  E7C B3tpk D=2 i=21 rejected InvalidProof
+  E7C B3tpk D=2 i=22 rejected InvalidProof
+  E7C B3tpk D=2 i=23 rejected InvalidProof
+  E7C B3tpk D=2 i=24 rejected InvalidProof
+  E7C B3tpk D=2 i=25 rejected InvalidProof
+  E7C B3tpk D=2 i=26 rejected InvalidProof
+  E7C B3tpk D=2 i=27 rejected InvalidProof
+  E7C B3tpk D=2 i=28 rejected InvalidProof
+  E7C B3tpk D=2 i=29 rejected InvalidProof
+  E7C B3tpk D=3 i=0 rejected InvalidProof
+  E7C B3tpk D=3 i=1 rejected InvalidProof
+  E7C B3tpk D=3 i=2 rejected InvalidProof
+  E7C B3tpk D=3 i=3 rejected InvalidProof
+  E7C B3tpk D=3 i=4 rejected InvalidProof
+  E7C B3tpk D=3 i=5 rejected InvalidProof
+  E7C B3tpk D=3 i=6 rejected InvalidProof
+  E7C B3tpk D=3 i=7 rejected InvalidProof
+  E7C B3tpk D=3 i=8 rejected InvalidProof
+  E7C B3tpk D=3 i=9 rejected InvalidProof
+  E7C B3tpk D=3 i=10 rejected InvalidProof
+  E7C B3tpk D=3 i=11 rejected InvalidProof
+  E7C B3tpk D=3 i=12 rejected InvalidProof
+  E7C B3tpk D=3 i=13 rejected InvalidProof
+  E7C B3tpk D=3 i=14 rejected InvalidProof
+  E7C B3tpk D=3 i=15 rejected InvalidProof
+  E7C B3tpk D=3 i=16 rejected InvalidProof
+  E7C B3tpk D=3 i=17 rejected InvalidProof
+  E7C B3tpk D=3 i=18 rejected InvalidProof
+  E7C B3tpk D=3 i=19 rejected InvalidProof
+  E7C B3tpk D=3 i=20 rejected InvalidProof
+  E7C B3tpk D=3 i=21 rejected InvalidProof
+  E7C B3tpk D=3 i=22 rejected InvalidProof
+  E7C B3tpk D=3 i=23 rejected InvalidProof
+  E7C B3tpk D=3 i=24 rejected InvalidProof
+  E7C B3tpk D=3 i=25 rejected InvalidProof
+  E7C B3tpk D=3 i=26 rejected InvalidProof
+  E7C B3tpk D=3 i=27 rejected InvalidProof
+  E7C B3tpk D=3 i=28 rejected InvalidProof
+  E7C B3tpk D=3 i=29 rejected InvalidProof
+  E7C B3tpk D=4 i=0 rejected InvalidProof
+  E7C B3tpk D=4 i=1 rejected InvalidProof
+  E7C B3tpk D=4 i=2 rejected InvalidProof
+  E7C B3tpk D=4 i=3 rejected InvalidProof
+  E7C B3tpk D=4 i=4 rejected InvalidProof
+  E7C B3tpk D=4 i=5 rejected InvalidProof
+  E7C B3tpk D=4 i=6 rejected InvalidProof
+  E7C B3tpk D=4 i=7 rejected InvalidProof
+  E7C B3tpk D=4 i=8 rejected InvalidProof
+  E7C B3tpk D=4 i=9 rejected InvalidProof
+  E7C B3tpk D=4 i=10 rejected InvalidProof
+  E7C B3tpk D=4 i=11 rejected InvalidProof
+  E7C B3tpk D=4 i=12 rejected InvalidProof
+  E7C B3tpk D=4 i=13 rejected InvalidProof
+  E7C B3tpk D=4 i=14 rejected InvalidProof
+  E7C B3tpk D=4 i=15 rejected InvalidProof
+  E7C B3tpk D=4 i=16 rejected InvalidProof
+  E7C B3tpk D=4 i=17 rejected InvalidProof
+  E7C B3tpk D=4 i=18 rejected InvalidProof
+  E7C B3tpk D=4 i=19 rejected InvalidProof
+  E7C B3tpk D=4 i=20 rejected InvalidProof
+  E7C B3tpk D=4 i=21 rejected InvalidProof
+  E7C B3tpk D=4 i=22 rejected InvalidProof
+  E7C B3tpk D=4 i=23 rejected InvalidProof
+  E7C B3tpk D=4 i=24 rejected InvalidProof
+  E7C B3tpk D=4 i=25 rejected InvalidProof
+  E7C B3tpk D=4 i=26 rejected InvalidProof
+  E7C B3tpk D=4 i=27 rejected InvalidProof
+  E7C B3tpk D=4 i=28 rejected InvalidProof
+  E7C B3tpk D=4 i=29 rejected InvalidProof
+
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 984.91ms (431.34ms CPU time)
+
+Ran 20 tests for test/V92Batch.t.sol:V92BatchTest
+[PASS] test_B1_D1() (gas: 16693276)
+Logs:
+  E7C B1 D=1 i=0 accepted gas=669485
+  E7C B1 D=1 i=1 accepted gas=576207
+  E7C B1 D=1 i=2 accepted gas=603395
+  E7C B1 D=1 i=3 accepted gas=462637
+  E7C B1 D=1 i=4 accepted gas=453747
+  E7C B1 D=1 i=5 accepted gas=453747
+  E7C B1 D=1 i=6 accepted gas=483725
+  E7C B1 D=1 i=7 accepted gas=453747
+  E7C B1 D=1 i=8 accepted gas=483725
+  E7C B1 D=1 i=9 accepted gas=483725
+  E7C B1 D=1 i=10 accepted gas=513703
+  E7C B1 D=1 i=11 accepted gas=453747
+  E7C B1 D=1 i=12 accepted gas=483725
+  E7C B1 D=1 i=13 accepted gas=483725
+  E7C B1 D=1 i=14 accepted gas=513703
+  E7C B1 D=1 i=15 accepted gas=483725
+  E7C B1 D=1 i=16 accepted gas=513703
+  E7C B1 D=1 i=17 accepted gas=513703
+  E7C B1 D=1 i=18 accepted gas=543681
+  E7C B1 D=1 i=19 accepted gas=453747
+  E7C B1 D=1 i=20 accepted gas=483725
+  E7C B1 D=1 i=21 accepted gas=483725
+  E7C B1 D=1 i=22 accepted gas=513703
+  E7C B1 D=1 i=23 accepted gas=483725
+  E7C B1 D=1 i=24 accepted gas=513703
+  E7C B1 D=1 i=25 accepted gas=513703
+  E7C B1 D=1 i=26 accepted gas=543681
+  E7C B1 D=1 i=27 accepted gas=483725
+  E7C B1 D=1 i=28 accepted gas=513703
+  E7C B1 D=1 i=29 accepted gas=513703
+
+[PASS] test_B1_D2() (gas: 16956007)
+Logs:
+  E7C B1 D=2 i=0 accepted gas=676807
+  E7C B1 D=2 i=1 accepted gas=583529
+  E7C B1 D=2 i=2 accepted gas=610717
+  E7C B1 D=2 i=3 accepted gas=469959
+  E7C B1 D=2 i=4 accepted gas=461069
+  E7C B1 D=2 i=5 accepted gas=461069
+  E7C B1 D=2 i=6 accepted gas=491047
+  E7C B1 D=2 i=7 accepted gas=461069
+  E7C B1 D=2 i=8 accepted gas=491047
+  E7C B1 D=2 i=9 accepted gas=491047
+  E7C B1 D=2 i=10 accepted gas=521025
+  E7C B1 D=2 i=11 accepted gas=461069
+  E7C B1 D=2 i=12 accepted gas=491047
+  E7C B1 D=2 i=13 accepted gas=491047
+  E7C B1 D=2 i=14 accepted gas=521025
+  E7C B1 D=2 i=15 accepted gas=491047
+  E7C B1 D=2 i=16 accepted gas=521025
+  E7C B1 D=2 i=17 accepted gas=521025
+  E7C B1 D=2 i=18 accepted gas=551003
+  E7C B1 D=2 i=19 accepted gas=461069
+  E7C B1 D=2 i=20 accepted gas=491047
+  E7C B1 D=2 i=21 accepted gas=491047
+  E7C B1 D=2 i=22 accepted gas=521025
+  E7C B1 D=2 i=23 accepted gas=491047
+  E7C B1 D=2 i=24 accepted gas=521025
+  E7C B1 D=2 i=25 accepted gas=521025
+  E7C B1 D=2 i=26 accepted gas=551003
+  E7C B1 D=2 i=27 accepted gas=491047
+  E7C B1 D=2 i=28 accepted gas=521025
+  E7C B1 D=2 i=29 accepted gas=521025
+
+[PASS] test_B1_D3() (gas: 17219386)
+Logs:
+  E7C B1 D=3 i=0 accepted gas=684129
+  E7C B1 D=3 i=1 accepted gas=590851
+  E7C B1 D=3 i=2 accepted gas=618039
+  E7C B1 D=3 i=3 accepted gas=477281
+  E7C B1 D=3 i=4 accepted gas=468391
+  E7C B1 D=3 i=5 accepted gas=468391
+  E7C B1 D=3 i=6 accepted gas=498369
+  E7C B1 D=3 i=7 accepted gas=468391
+  E7C B1 D=3 i=8 accepted gas=498369
+  E7C B1 D=3 i=9 accepted gas=498369
+  E7C B1 D=3 i=10 accepted gas=528347
+  E7C B1 D=3 i=11 accepted gas=468391
+  E7C B1 D=3 i=12 accepted gas=498369
+  E7C B1 D=3 i=13 accepted gas=498369
+  E7C B1 D=3 i=14 accepted gas=528347
+  E7C B1 D=3 i=15 accepted gas=498369
+  E7C B1 D=3 i=16 accepted gas=528347
+  E7C B1 D=3 i=17 accepted gas=528347
+  E7C B1 D=3 i=18 accepted gas=558325
+  E7C B1 D=3 i=19 accepted gas=468391
+  E7C B1 D=3 i=20 accepted gas=498369
+  E7C B1 D=3 i=21 accepted gas=498369
+  E7C B1 D=3 i=22 accepted gas=528347
+  E7C B1 D=3 i=23 accepted gas=498369
+  E7C B1 D=3 i=24 accepted gas=528347
+  E7C B1 D=3 i=25 accepted gas=528347
+  E7C B1 D=3 i=26 accepted gas=558325
+  E7C B1 D=3 i=27 accepted gas=498369
+  E7C B1 D=3 i=28 accepted gas=528347
+  E7C B1 D=3 i=29 accepted gas=528347
+
+[PASS] test_B1_D4() (gas: 17478993)
+Logs:
+  E7C B1 D=4 i=0 accepted gas=691451
+  E7C B1 D=4 i=1 accepted gas=598173
+  E7C B1 D=4 i=2 accepted gas=625361
+  E7C B1 D=4 i=3 accepted gas=484603
+  E7C B1 D=4 i=4 accepted gas=475713
+  E7C B1 D=4 i=5 accepted gas=475713
+  E7C B1 D=4 i=6 accepted gas=505691
+  E7C B1 D=4 i=7 accepted gas=475713
+  E7C B1 D=4 i=8 accepted gas=505691
+  E7C B1 D=4 i=9 accepted gas=505691
+  E7C B1 D=4 i=10 accepted gas=535669
+  E7C B1 D=4 i=11 accepted gas=475713
+  E7C B1 D=4 i=12 accepted gas=505691
+  E7C B1 D=4 i=13 accepted gas=505691
+  E7C B1 D=4 i=14 accepted gas=535669
+  E7C B1 D=4 i=15 accepted gas=505691
+  E7C B1 D=4 i=16 accepted gas=535669
+  E7C B1 D=4 i=17 accepted gas=535669
+  E7C B1 D=4 i=18 accepted gas=565647
+  E7C B1 D=4 i=19 accepted gas=475713
+  E7C B1 D=4 i=20 accepted gas=505691
+  E7C B1 D=4 i=21 accepted gas=505691
+  E7C B1 D=4 i=22 accepted gas=535669
+  E7C B1 D=4 i=23 accepted gas=505691
+  E7C B1 D=4 i=24 accepted gas=535669
+  E7C B1 D=4 i=25 accepted gas=535669
+  E7C B1 D=4 i=26 accepted gas=565647
+  E7C B1 D=4 i=27 accepted gas=505691
+  E7C B1 D=4 i=28 accepted gas=535669
+  E7C B1 D=4 i=29 accepted gas=535669
+
+[PASS] test_B2_D1() (gas: 40606143)
+Logs:
+  E7C B2 D=1 i=0 rolled back, then accepted
+  E7C B2 D=1 i=1 rolled back, then accepted
+  E7C B2 D=1 i=2 rolled back, then accepted
+  E7C B2 D=1 i=3 rolled back, then accepted
+  E7C B2 D=1 i=4 rolled back, then accepted
+  E7C B2 D=1 i=5 rolled back, then accepted
+  E7C B2 D=1 i=6 rolled back, then accepted
+  E7C B2 D=1 i=7 rolled back, then accepted
+  E7C B2 D=1 i=8 rolled back, then accepted
+  E7C B2 D=1 i=9 rolled back, then accepted
+  E7C B2 D=1 i=10 rolled back, then accepted
+  E7C B2 D=1 i=11 rolled back, then accepted
+  E7C B2 D=1 i=12 rolled back, then accepted
+  E7C B2 D=1 i=13 rolled back, then accepted
+  E7C B2 D=1 i=14 rolled back, then accepted
+  E7C B2 D=1 i=15 rolled back, then accepted
+  E7C B2 D=1 i=16 rolled back, then accepted
+  E7C B2 D=1 i=17 rolled back, then accepted
+  E7C B2 D=1 i=18 rolled back, then accepted
+  E7C B2 D=1 i=19 rolled back, then accepted
+  E7C B2 D=1 i=20 rolled back, then accepted
+  E7C B2 D=1 i=21 rolled back, then accepted
+  E7C B2 D=1 i=22 rolled back, then accepted
+  E7C B2 D=1 i=23 rolled back, then accepted
+  E7C B2 D=1 i=24 rolled back, then accepted
+  E7C B2 D=1 i=25 rolled back, then accepted
+  E7C B2 D=1 i=26 rolled back, then accepted
+  E7C B2 D=1 i=27 rolled back, then accepted
+  E7C B2 D=1 i=28 rolled back, then accepted
+  E7C B2 D=1 i=29 rolled back, then accepted
+
+[PASS] test_B2_D2() (gas: 41070567)
+Logs:
+  E7C B2 D=2 i=0 rolled back, then accepted
+  E7C B2 D=2 i=1 rolled back, then accepted
+  E7C B2 D=2 i=2 rolled back, then accepted
+  E7C B2 D=2 i=3 rolled back, then accepted
+  E7C B2 D=2 i=4 rolled back, then accepted
+  E7C B2 D=2 i=5 rolled back, then accepted
+  E7C B2 D=2 i=6 rolled back, then accepted
+  E7C B2 D=2 i=7 rolled back, then accepted
+  E7C B2 D=2 i=8 rolled back, then accepted
+  E7C B2 D=2 i=9 rolled back, then accepted
+  E7C B2 D=2 i=10 rolled back, then accepted
+  E7C B2 D=2 i=11 rolled back, then accepted
+  E7C B2 D=2 i=12 rolled back, then accepted
+  E7C B2 D=2 i=13 rolled back, then accepted
+  E7C B2 D=2 i=14 rolled back, then accepted
+  E7C B2 D=2 i=15 rolled back, then accepted
+  E7C B2 D=2 i=16 rolled back, then accepted
+  E7C B2 D=2 i=17 rolled back, then accepted
+  E7C B2 D=2 i=18 rolled back, then accepted
+  E7C B2 D=2 i=19 rolled back, then accepted
+  E7C B2 D=2 i=20 rolled back, then accepted
+  E7C B2 D=2 i=21 rolled back, then accepted
+  E7C B2 D=2 i=22 rolled back, then accepted
+  E7C B2 D=2 i=23 rolled back, then accepted
+  E7C B2 D=2 i=24 rolled back, then accepted
+  E7C B2 D=2 i=25 rolled back, then accepted
+  E7C B2 D=2 i=26 rolled back, then accepted
+  E7C B2 D=2 i=27 rolled back, then accepted
+  E7C B2 D=2 i=28 rolled back, then accepted
+  E7C B2 D=2 i=29 rolled back, then accepted
+
+[PASS] test_B2_D3() (gas: 41535698)
+Logs:
+  E7C B2 D=3 i=0 rolled back, then accepted
+  E7C B2 D=3 i=1 rolled back, then accepted
+  E7C B2 D=3 i=2 rolled back, then accepted
+  E7C B2 D=3 i=3 rolled back, then accepted
+  E7C B2 D=3 i=4 rolled back, then accepted
+  E7C B2 D=3 i=5 rolled back, then accepted
+  E7C B2 D=3 i=6 rolled back, then accepted
+  E7C B2 D=3 i=7 rolled back, then accepted
+  E7C B2 D=3 i=8 rolled back, then accepted
+  E7C B2 D=3 i=9 rolled back, then accepted
+  E7C B2 D=3 i=10 rolled back, then accepted
+  E7C B2 D=3 i=11 rolled back, then accepted
+  E7C B2 D=3 i=12 rolled back, then accepted
+  E7C B2 D=3 i=13 rolled back, then accepted
+  E7C B2 D=3 i=14 rolled back, then accepted
+  E7C B2 D=3 i=15 rolled back, then accepted
+  E7C B2 D=3 i=16 rolled back, then accepted
+  E7C B2 D=3 i=17 rolled back, then accepted
+  E7C B2 D=3 i=18 rolled back, then accepted
+  E7C B2 D=3 i=19 rolled back, then accepted
+  E7C B2 D=3 i=20 rolled back, then accepted
+  E7C B2 D=3 i=21 rolled back, then accepted
+  E7C B2 D=3 i=22 rolled back, then accepted
+  E7C B2 D=3 i=23 rolled back, then accepted
+  E7C B2 D=3 i=24 rolled back, then accepted
+  E7C B2 D=3 i=25 rolled back, then accepted
+  E7C B2 D=3 i=26 rolled back, then accepted
+  E7C B2 D=3 i=27 rolled back, then accepted
+  E7C B2 D=3 i=28 rolled back, then accepted
+  E7C B2 D=3 i=29 rolled back, then accepted
+
+[PASS] test_B2_D4() (gas: 41997108)
+Logs:
+  E7C B2 D=4 i=0 rolled back, then accepted
+  E7C B2 D=4 i=1 rolled back, then accepted
+  E7C B2 D=4 i=2 rolled back, then accepted
+  E7C B2 D=4 i=3 rolled back, then accepted
+  E7C B2 D=4 i=4 rolled back, then accepted
+  E7C B2 D=4 i=5 rolled back, then accepted
+  E7C B2 D=4 i=6 rolled back, then accepted
+  E7C B2 D=4 i=7 rolled back, then accepted
+  E7C B2 D=4 i=8 rolled back, then accepted
+  E7C B2 D=4 i=9 rolled back, then accepted
+  E7C B2 D=4 i=10 rolled back, then accepted
+  E7C B2 D=4 i=11 rolled back, then accepted
+  E7C B2 D=4 i=12 rolled back, then accepted
+  E7C B2 D=4 i=13 rolled back, then accepted
+  E7C B2 D=4 i=14 rolled back, then accepted
+  E7C B2 D=4 i=15 rolled back, then accepted
+  E7C B2 D=4 i=16 rolled back, then accepted
+  E7C B2 D=4 i=17 rolled back, then accepted
+  E7C B2 D=4 i=18 rolled back, then accepted
+  E7C B2 D=4 i=19 rolled back, then accepted
+  E7C B2 D=4 i=20 rolled back, then accepted
+  E7C B2 D=4 i=21 rolled back, then accepted
+  E7C B2 D=4 i=22 rolled back, then accepted
+  E7C B2 D=4 i=23 rolled back, then accepted
+  E7C B2 D=4 i=24 rolled back, then accepted
+  E7C B2 D=4 i=25 rolled back, then accepted
+  E7C B2 D=4 i=26 rolled back, then accepted
+  E7C B2 D=4 i=27 rolled back, then accepted
+  E7C B2 D=4 i=28 rolled back, then accepted
+  E7C B2 D=4 i=29 rolled back, then accepted
+
+[PASS] test_B3_D1() (gas: 228113074)
+Logs:
+  E7C B3 D=1 i=0 rejected 12/12
+  E7C B3 D=1 i=1 rejected 12/12
+  E7C B3 D=1 i=2 rejected 12/12
+  E7C B3 D=1 i=3 rejected 12/12
+  E7C B3 D=1 i=4 rejected 12/12
+  E7C B3 D=1 i=5 rejected 12/12
+  E7C B3 D=1 i=6 rejected 12/12
+  E7C B3 D=1 i=7 rejected 12/12
+  E7C B3 D=1 i=8 rejected 12/12
+  E7C B3 D=1 i=9 rejected 12/12
+  E7C B3 D=1 i=10 rejected 12/12
+  E7C B3 D=1 i=11 rejected 12/12
+  E7C B3 D=1 i=12 rejected 12/12
+  E7C B3 D=1 i=13 rejected 12/12
+  E7C B3 D=1 i=14 rejected 12/12
+  E7C B3 D=1 i=15 rejected 12/12
+  E7C B3 D=1 i=16 rejected 12/12
+  E7C B3 D=1 i=17 rejected 12/12
+  E7C B3 D=1 i=18 rejected 12/12
+  E7C B3 D=1 i=19 rejected 12/12
+  E7C B3 D=1 i=20 rejected 12/12
+  E7C B3 D=1 i=21 rejected 12/12
+  E7C B3 D=1 i=22 rejected 12/12
+  E7C B3 D=1 i=23 rejected 12/12
+  E7C B3 D=1 i=24 rejected 12/12
+  E7C B3 D=1 i=25 rejected 12/12
+  E7C B3 D=1 i=26 rejected 12/12
+  E7C B3 D=1 i=27 rejected 12/12
+  E7C B3 D=1 i=28 rejected 12/12
+  E7C B3 D=1 i=29 rejected 12/12
+
+[PASS] test_B3_D2() (gas: 233783642)
+Logs:
+  E7C B3 D=2 i=0 rejected 12/12
+  E7C B3 D=2 i=1 rejected 12/12
+  E7C B3 D=2 i=2 rejected 12/12
+  E7C B3 D=2 i=3 rejected 12/12
+  E7C B3 D=2 i=4 rejected 12/12
+  E7C B3 D=2 i=5 rejected 12/12
+  E7C B3 D=2 i=6 rejected 12/12
+  E7C B3 D=2 i=7 rejected 12/12
+  E7C B3 D=2 i=8 rejected 12/12
+  E7C B3 D=2 i=9 rejected 12/12
+  E7C B3 D=2 i=10 rejected 12/12
+  E7C B3 D=2 i=11 rejected 12/12
+  E7C B3 D=2 i=12 rejected 12/12
+  E7C B3 D=2 i=13 rejected 12/12
+  E7C B3 D=2 i=14 rejected 12/12
+  E7C B3 D=2 i=15 rejected 12/12
+  E7C B3 D=2 i=16 rejected 12/12
+  E7C B3 D=2 i=17 rejected 12/12
+  E7C B3 D=2 i=18 rejected 12/12
+  E7C B3 D=2 i=19 rejected 12/12
+  E7C B3 D=2 i=20 rejected 12/12
+  E7C B3 D=2 i=21 rejected 12/12
+  E7C B3 D=2 i=22 rejected 12/12
+  E7C B3 D=2 i=23 rejected 12/12
+  E7C B3 D=2 i=24 rejected 12/12
+  E7C B3 D=2 i=25 rejected 12/12
+  E7C B3 D=2 i=26 rejected 12/12
+  E7C B3 D=2 i=27 rejected 12/12
+  E7C B3 D=2 i=28 rejected 12/12
+  E7C B3 D=2 i=29 rejected 12/12
+
+[PASS] test_B3_D3() (gas: 239549234)
+Logs:
+  E7C B3 D=3 i=0 rejected 12/12
+  E7C B3 D=3 i=1 rejected 12/12
+  E7C B3 D=3 i=2 rejected 12/12
+  E7C B3 D=3 i=3 rejected 12/12
+  E7C B3 D=3 i=4 rejected 12/12
+  E7C B3 D=3 i=5 rejected 12/12
+  E7C B3 D=3 i=6 rejected 12/12
+  E7C B3 D=3 i=7 rejected 12/12
+  E7C B3 D=3 i=8 rejected 12/12
+  E7C B3 D=3 i=9 rejected 12/12
+  E7C B3 D=3 i=10 rejected 12/12
+  E7C B3 D=3 i=11 rejected 12/12
+  E7C B3 D=3 i=12 rejected 12/12
+  E7C B3 D=3 i=13 rejected 12/12
+  E7C B3 D=3 i=14 rejected 12/12
+  E7C B3 D=3 i=15 rejected 12/12
+  E7C B3 D=3 i=16 rejected 12/12
+  E7C B3 D=3 i=17 rejected 12/12
+  E7C B3 D=3 i=18 rejected 12/12
+  E7C B3 D=3 i=19 rejected 12/12
+  E7C B3 D=3 i=20 rejected 12/12
+  E7C B3 D=3 i=21 rejected 12/12
+  E7C B3 D=3 i=22 rejected 12/12
+  E7C B3 D=3 i=23 rejected 12/12
+  E7C B3 D=3 i=24 rejected 12/12
+  E7C B3 D=3 i=25 rejected 12/12
+  E7C B3 D=3 i=26 rejected 12/12
+  E7C B3 D=3 i=27 rejected 12/12
+  E7C B3 D=3 i=28 rejected 12/12
+  E7C B3 D=3 i=29 rejected 12/12
+
+[PASS] test_B3_D4() (gas: 244919232)
+Logs:
+  E7C B3 D=4 i=0 rejected 12/12
+  E7C B3 D=4 i=1 rejected 12/12
+  E7C B3 D=4 i=2 rejected 12/12
+  E7C B3 D=4 i=3 rejected 12/12
+  E7C B3 D=4 i=4 rejected 12/12
+  E7C B3 D=4 i=5 rejected 12/12
+  E7C B3 D=4 i=6 rejected 12/12
+  E7C B3 D=4 i=7 rejected 12/12
+  E7C B3 D=4 i=8 rejected 12/12
+  E7C B3 D=4 i=9 rejected 12/12
+  E7C B3 D=4 i=10 rejected 12/12
+  E7C B3 D=4 i=11 rejected 12/12
+  E7C B3 D=4 i=12 rejected 12/12
+  E7C B3 D=4 i=13 rejected 12/12
+  E7C B3 D=4 i=14 rejected 12/12
+  E7C B3 D=4 i=15 rejected 12/12
+  E7C B3 D=4 i=16 rejected 12/12
+  E7C B3 D=4 i=17 rejected 12/12
+  E7C B3 D=4 i=18 rejected 12/12
+  E7C B3 D=4 i=19 rejected 12/12
+  E7C B3 D=4 i=20 rejected 12/12
+  E7C B3 D=4 i=21 rejected 12/12
+  E7C B3 D=4 i=22 rejected 12/12
+  E7C B3 D=4 i=23 rejected 12/12
+  E7C B3 D=4 i=24 rejected 12/12
+  E7C B3 D=4 i=25 rejected 12/12
+  E7C B3 D=4 i=26 rejected 12/12
+  E7C B3 D=4 i=27 rejected 12/12
+  E7C B3 D=4 i=28 rejected 12/12
+  E7C B3 D=4 i=29 rejected 12/12
+
+[PASS] test_B4_D1() (gas: 16594849)
+Logs:
+  E7C B4 D=1 i=0 replay rejected BudgetSpent
+  E7C B4 D=1 i=1 replay rejected BudgetSpent
+  E7C B4 D=1 i=2 replay rejected BudgetSpent
+  E7C B4 D=1 i=3 replay rejected BudgetSpent
+  E7C B4 D=1 i=4 replay rejected BudgetSpent
+  E7C B4 D=1 i=5 replay rejected BudgetSpent
+  E7C B4 D=1 i=6 replay rejected BudgetSpent
+  E7C B4 D=1 i=7 replay rejected BudgetSpent
+  E7C B4 D=1 i=8 replay rejected BudgetSpent
+  E7C B4 D=1 i=9 replay rejected BudgetSpent
+  E7C B4 D=1 i=10 replay rejected BudgetSpent
+  E7C B4 D=1 i=11 replay rejected BudgetSpent
+  E7C B4 D=1 i=12 replay rejected BudgetSpent
+  E7C B4 D=1 i=13 replay rejected BudgetSpent
+  E7C B4 D=1 i=14 replay rejected BudgetSpent
+  E7C B4 D=1 i=15 replay rejected BudgetSpent
+  E7C B4 D=1 i=16 replay rejected BudgetSpent
+  E7C B4 D=1 i=17 replay rejected BudgetSpent
+  E7C B4 D=1 i=18 replay rejected BudgetSpent
+  E7C B4 D=1 i=19 replay rejected BudgetSpent
+  E7C B4 D=1 i=20 replay rejected BudgetSpent
+  E7C B4 D=1 i=21 replay rejected BudgetSpent
+  E7C B4 D=1 i=22 replay rejected BudgetSpent
+  E7C B4 D=1 i=23 replay rejected BudgetSpent
+  E7C B4 D=1 i=24 replay rejected BudgetSpent
+  E7C B4 D=1 i=25 replay rejected BudgetSpent
+  E7C B4 D=1 i=26 replay rejected BudgetSpent
+  E7C B4 D=1 i=27 replay rejected BudgetSpent
+  E7C B4 D=1 i=28 replay rejected BudgetSpent
+  E7C B4 D=1 i=29 replay rejected BudgetSpent
+
+[PASS] test_B4_D2() (gas: 16849448)
+Logs:
+  E7C B4 D=2 i=0 replay rejected BudgetSpent
+  E7C B4 D=2 i=1 replay rejected BudgetSpent
+  E7C B4 D=2 i=2 replay rejected BudgetSpent
+  E7C B4 D=2 i=3 replay rejected BudgetSpent
+  E7C B4 D=2 i=4 replay rejected BudgetSpent
+  E7C B4 D=2 i=5 replay rejected BudgetSpent
+  E7C B4 D=2 i=6 replay rejected BudgetSpent
+  E7C B4 D=2 i=7 replay rejected BudgetSpent
+  E7C B4 D=2 i=8 replay rejected BudgetSpent
+  E7C B4 D=2 i=9 replay rejected BudgetSpent
+  E7C B4 D=2 i=10 replay rejected BudgetSpent
+  E7C B4 D=2 i=11 replay rejected BudgetSpent
+  E7C B4 D=2 i=12 replay rejected BudgetSpent
+  E7C B4 D=2 i=13 replay rejected BudgetSpent
+  E7C B4 D=2 i=14 replay rejected BudgetSpent
+  E7C B4 D=2 i=15 replay rejected BudgetSpent
+  E7C B4 D=2 i=16 replay rejected BudgetSpent
+  E7C B4 D=2 i=17 replay rejected BudgetSpent
+  E7C B4 D=2 i=18 replay rejected BudgetSpent
+  E7C B4 D=2 i=19 replay rejected BudgetSpent
+  E7C B4 D=2 i=20 replay rejected BudgetSpent
+  E7C B4 D=2 i=21 replay rejected BudgetSpent
+  E7C B4 D=2 i=22 replay rejected BudgetSpent
+  E7C B4 D=2 i=23 replay rejected BudgetSpent
+  E7C B4 D=2 i=24 replay rejected BudgetSpent
+  E7C B4 D=2 i=25 replay rejected BudgetSpent
+  E7C B4 D=2 i=26 replay rejected BudgetSpent
+  E7C B4 D=2 i=27 replay rejected BudgetSpent
+  E7C B4 D=2 i=28 replay rejected BudgetSpent
+  E7C B4 D=2 i=29 replay rejected BudgetSpent
+
+[PASS] test_B4_D3() (gas: 17104605)
+Logs:
+  E7C B4 D=3 i=0 replay rejected BudgetSpent
+  E7C B4 D=3 i=1 replay rejected BudgetSpent
+  E7C B4 D=3 i=2 replay rejected BudgetSpent
+  E7C B4 D=3 i=3 replay rejected BudgetSpent
+  E7C B4 D=3 i=4 replay rejected BudgetSpent
+  E7C B4 D=3 i=5 replay rejected BudgetSpent
+  E7C B4 D=3 i=6 replay rejected BudgetSpent
+  E7C B4 D=3 i=7 replay rejected BudgetSpent
+  E7C B4 D=3 i=8 replay rejected BudgetSpent
+  E7C B4 D=3 i=9 replay rejected BudgetSpent
+  E7C B4 D=3 i=10 replay rejected BudgetSpent
+  E7C B4 D=3 i=11 replay rejected BudgetSpent
+  E7C B4 D=3 i=12 replay rejected BudgetSpent
+  E7C B4 D=3 i=13 replay rejected BudgetSpent
+  E7C B4 D=3 i=14 replay rejected BudgetSpent
+  E7C B4 D=3 i=15 replay rejected BudgetSpent
+  E7C B4 D=3 i=16 replay rejected BudgetSpent
+  E7C B4 D=3 i=17 replay rejected BudgetSpent
+  E7C B4 D=3 i=18 replay rejected BudgetSpent
+  E7C B4 D=3 i=19 replay rejected BudgetSpent
+  E7C B4 D=3 i=20 replay rejected BudgetSpent
+  E7C B4 D=3 i=21 replay rejected BudgetSpent
+  E7C B4 D=3 i=22 replay rejected BudgetSpent
+  E7C B4 D=3 i=23 replay rejected BudgetSpent
+  E7C B4 D=3 i=24 replay rejected BudgetSpent
+  E7C B4 D=3 i=25 replay rejected BudgetSpent
+  E7C B4 D=3 i=26 replay rejected BudgetSpent
+  E7C B4 D=3 i=27 replay rejected BudgetSpent
+  E7C B4 D=3 i=28 replay rejected BudgetSpent
+  E7C B4 D=3 i=29 replay rejected BudgetSpent
+
+[PASS] test_B4_D4() (gas: 17356151)
+Logs:
+  E7C B4 D=4 i=0 replay rejected BudgetSpent
+  E7C B4 D=4 i=1 replay rejected BudgetSpent
+  E7C B4 D=4 i=2 replay rejected BudgetSpent
+  E7C B4 D=4 i=3 replay rejected BudgetSpent
+  E7C B4 D=4 i=4 replay rejected BudgetSpent
+  E7C B4 D=4 i=5 replay rejected BudgetSpent
+  E7C B4 D=4 i=6 replay rejected BudgetSpent
+  E7C B4 D=4 i=7 replay rejected BudgetSpent
+  E7C B4 D=4 i=8 replay rejected BudgetSpent
+  E7C B4 D=4 i=9 replay rejected BudgetSpent
+  E7C B4 D=4 i=10 replay rejected BudgetSpent
+  E7C B4 D=4 i=11 replay rejected BudgetSpent
+  E7C B4 D=4 i=12 replay rejected BudgetSpent
+  E7C B4 D=4 i=13 replay rejected BudgetSpent
+  E7C B4 D=4 i=14 replay rejected BudgetSpent
+  E7C B4 D=4 i=15 replay rejected BudgetSpent
+  E7C B4 D=4 i=16 replay rejected BudgetSpent
+  E7C B4 D=4 i=17 replay rejected BudgetSpent
+  E7C B4 D=4 i=18 replay rejected BudgetSpent
+  E7C B4 D=4 i=19 replay rejected BudgetSpent
+  E7C B4 D=4 i=20 replay rejected BudgetSpent
+  E7C B4 D=4 i=21 replay rejected BudgetSpent
+  E7C B4 D=4 i=22 replay rejected BudgetSpent
+  E7C B4 D=4 i=23 replay rejected BudgetSpent
+  E7C B4 D=4 i=24 replay rejected BudgetSpent
+  E7C B4 D=4 i=25 replay rejected BudgetSpent
+  E7C B4 D=4 i=26 replay rejected BudgetSpent
+  E7C B4 D=4 i=27 replay rejected BudgetSpent
+  E7C B4 D=4 i=28 replay rejected BudgetSpent
+  E7C B4 D=4 i=29 replay rejected BudgetSpent
+
+[PASS] test_B5_issuedWindow() (gas: 29950419)
+Logs:
+  E7C B5issued D=1 i=0 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=1 i=1 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=1 i=2 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=1 i=3 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=1 i=4 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=1 i=5 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=1 i=6 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=1 i=7 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=1 i=8 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=1 i=9 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=2 i=0 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=2 i=1 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=2 i=2 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=2 i=3 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=2 i=4 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=2 i=5 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=2 i=6 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=2 i=7 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=2 i=8 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=2 i=9 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=3 i=0 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=3 i=1 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=3 i=2 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=3 i=3 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=3 i=4 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=3 i=5 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=3 i=6 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=3 i=7 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=3 i=8 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=3 i=9 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=4 i=0 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=4 i=1 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=4 i=2 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=4 i=3 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=4 i=4 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=4 i=5 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=4 i=6 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=4 i=7 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=4 i=8 accept at window, StaleIssuedRoot at window+1
+  E7C B5issued D=4 i=9 accept at window, StaleIssuedRoot at window+1
+
+[PASS] test_B5_noteWindow() (gas: 26786042)
+Logs:
+  E7C B5note D=1 i=0 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=1 i=1 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=1 i=2 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=1 i=3 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=1 i=4 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=1 i=5 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=1 i=6 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=1 i=7 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=1 i=8 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=1 i=9 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=2 i=0 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=2 i=1 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=2 i=2 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=2 i=3 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=2 i=4 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=2 i=5 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=2 i=6 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=2 i=7 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=2 i=8 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=2 i=9 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=3 i=0 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=3 i=1 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=3 i=2 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=3 i=3 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=3 i=4 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=3 i=5 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=3 i=6 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=3 i=7 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=3 i=8 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=3 i=9 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=4 i=0 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=4 i=1 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=4 i=2 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=4 i=3 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=4 i=4 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=4 i=5 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=4 i=6 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=4 i=7 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=4 i=8 accept at window, StaleNoteRoot at window+1
+  E7C B5note D=4 i=9 accept at window, StaleNoteRoot at window+1
+
+[PASS] test_B6_frontRun() (gas: 73558658)
+Logs:
+  E7C B6 D=1 i=0 accepted from another sender
+  E7C B6 D=1 i=1 accepted from another sender
+  E7C B6 D=1 i=2 accepted from another sender
+  E7C B6 D=1 i=3 accepted from another sender
+  E7C B6 D=1 i=4 accepted from another sender
+  E7C B6 D=1 i=5 accepted from another sender
+  E7C B6 D=1 i=6 accepted from another sender
+  E7C B6 D=1 i=7 accepted from another sender
+  E7C B6 D=1 i=8 accepted from another sender
+  E7C B6 D=1 i=9 accepted from another sender
+  E7C B6 D=1 i=10 accepted from another sender
+  E7C B6 D=1 i=11 accepted from another sender
+  E7C B6 D=1 i=12 accepted from another sender
+  E7C B6 D=1 i=13 accepted from another sender
+  E7C B6 D=1 i=14 accepted from another sender
+  E7C B6 D=1 i=15 accepted from another sender
+  E7C B6 D=1 i=16 accepted from another sender
+  E7C B6 D=1 i=17 accepted from another sender
+  E7C B6 D=1 i=18 accepted from another sender
+  E7C B6 D=1 i=19 accepted from another sender
+  E7C B6 D=1 i=20 accepted from another sender
+  E7C B6 D=1 i=21 accepted from another sender
+  E7C B6 D=1 i=22 accepted from another sender
+  E7C B6 D=1 i=23 accepted from another sender
+  E7C B6 D=1 i=24 accepted from another sender
+  E7C B6 D=1 i=25 accepted from another sender
+  E7C B6 D=1 i=26 accepted from another sender
+  E7C B6 D=1 i=27 accepted from another sender
+  E7C B6 D=1 i=28 accepted from another sender
+  E7C B6 D=1 i=29 accepted from another sender
+  E7C B6 D=2 i=0 accepted from another sender
+  E7C B6 D=2 i=1 accepted from another sender
+  E7C B6 D=2 i=2 accepted from another sender
+  E7C B6 D=2 i=3 accepted from another sender
+  E7C B6 D=2 i=4 accepted from another sender
+  E7C B6 D=2 i=5 accepted from another sender
+  E7C B6 D=2 i=6 accepted from another sender
+  E7C B6 D=2 i=7 accepted from another sender
+  E7C B6 D=2 i=8 accepted from another sender
+  E7C B6 D=2 i=9 accepted from another sender
+  E7C B6 D=2 i=10 accepted from another sender
+  E7C B6 D=2 i=11 accepted from another sender
+  E7C B6 D=2 i=12 accepted from another sender
+  E7C B6 D=2 i=13 accepted from another sender
+  E7C B6 D=2 i=14 accepted from another sender
+  E7C B6 D=2 i=15 accepted from another sender
+  E7C B6 D=2 i=16 accepted from another sender
+  E7C B6 D=2 i=17 accepted from another sender
+  E7C B6 D=2 i=18 accepted from another sender
+  E7C B6 D=2 i=19 accepted from another sender
+  E7C B6 D=2 i=20 accepted from another sender
+  E7C B6 D=2 i=21 accepted from another sender
+  E7C B6 D=2 i=22 accepted from another sender
+  E7C B6 D=2 i=23 accepted from another sender
+  E7C B6 D=2 i=24 accepted from another sender
+  E7C B6 D=2 i=25 accepted from another sender
+  E7C B6 D=2 i=26 accepted from another sender
+  E7C B6 D=2 i=27 accepted from another sender
+  E7C B6 D=2 i=28 accepted from another sender
+  E7C B6 D=2 i=29 accepted from another sender
+  E7C B6 D=3 i=0 accepted from another sender
+  E7C B6 D=3 i=1 accepted from another sender
+  E7C B6 D=3 i=2 accepted from another sender
+  E7C B6 D=3 i=3 accepted from another sender
+  E7C B6 D=3 i=4 accepted from another sender
+  E7C B6 D=3 i=5 accepted from another sender
+  E7C B6 D=3 i=6 accepted from another sender
+  E7C B6 D=3 i=7 accepted from another sender
+  E7C B6 D=3 i=8 accepted from another sender
+  E7C B6 D=3 i=9 accepted from another sender
+  E7C B6 D=3 i=10 accepted from another sender
+  E7C B6 D=3 i=11 accepted from another sender
+  E7C B6 D=3 i=12 accepted from another sender
+  E7C B6 D=3 i=13 accepted from another sender
+  E7C B6 D=3 i=14 accepted from another sender
+  E7C B6 D=3 i=15 accepted from another sender
+  E7C B6 D=3 i=16 accepted from another sender
+  E7C B6 D=3 i=17 accepted from another sender
+  E7C B6 D=3 i=18 accepted from another sender
+  E7C B6 D=3 i=19 accepted from another sender
+  E7C B6 D=3 i=20 accepted from another sender
+  E7C B6 D=3 i=21 accepted from another sender
+  E7C B6 D=3 i=22 accepted from another sender
+  E7C B6 D=3 i=23 accepted from another sender
+  E7C B6 D=3 i=24 accepted from another sender
+  E7C B6 D=3 i=25 accepted from another sender
+  E7C B6 D=3 i=26 accepted from another sender
+  E7C B6 D=3 i=27 accepted from another sender
+  E7C B6 D=3 i=28 accepted from another sender
+  E7C B6 D=3 i=29 accepted from another sender
+  E7C B6 D=4 i=0 accepted from another sender
+  E7C B6 D=4 i=1 accepted from another sender
+  E7C B6 D=4 i=2 accepted from another sender
+  E7C B6 D=4 i=3 accepted from another sender
+  E7C B6 D=4 i=4 accepted from another sender
+  E7C B6 D=4 i=5 accepted from another sender
+  E7C B6 D=4 i=6 accepted from another sender
+  E7C B6 D=4 i=7 accepted from another sender
+  E7C B6 D=4 i=8 accepted from another sender
+  E7C B6 D=4 i=9 accepted from another sender
+  E7C B6 D=4 i=10 accepted from another sender
+  E7C B6 D=4 i=11 accepted from another sender
+  E7C B6 D=4 i=12 accepted from another sender
+  E7C B6 D=4 i=13 accepted from another sender
+  E7C B6 D=4 i=14 accepted from another sender
+  E7C B6 D=4 i=15 accepted from another sender
+  E7C B6 D=4 i=16 accepted from another sender
+  E7C B6 D=4 i=17 accepted from another sender
+  E7C B6 D=4 i=18 accepted from another sender
+  E7C B6 D=4 i=19 accepted from another sender
+  E7C B6 D=4 i=20 accepted from another sender
+  E7C B6 D=4 i=21 accepted from another sender
+  E7C B6 D=4 i=22 accepted from another sender
+  E7C B6 D=4 i=23 accepted from another sender
+  E7C B6 D=4 i=24 accepted from another sender
+  E7C B6 D=4 i=25 accepted from another sender
+  E7C B6 D=4 i=26 accepted from another sender
+  E7C B6 D=4 i=27 accepted from another sender
+  E7C B6 D=4 i=28 accepted from another sender
+  E7C B6 D=4 i=29 accepted from another sender
+
+[PASS] test_G7_v91GateRejects() (gas: 1396143)
+Logs:
+  E7C G7v91 D=4 i=1 v9 off-curve proof rejected InvalidProof
+  E7C G7v91 D=4 i=2 v9 off-curve proof rejected InvalidProof
+  E7C G7v91 D=4 i=3 v9 off-curve proof rejected InvalidProof
+
+Suite result: ok. 20 passed; 0 failed; 0 skipped; finished in 2.17s (8.64s CPU time)
+
+Ran 12 test suites in 2.18s (9.47s CPU time): 75 tests passed, 0 failed, 0 skipped (75 total tests)
