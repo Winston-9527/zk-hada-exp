@@ -1,0 +1,12 @@
+[32mtemplate instances[0m: 245
+non-linear constraints: 27631
+linear constraints: 24184
+public inputs: 4
+private inputs: 73
+public outputs: 0
+wires: 51789
+labels: 81672
+[32mWritten successfully:[0m build/revoke_transition.r1cs
+[32mWritten successfully:[0m build/revoke_transition.sym
+[32mWritten successfully:[0m build/revoke_transition_js/revoke_transition.wasm
+[32mEverything went okay[0m

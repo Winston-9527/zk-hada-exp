@@ -1,0 +1,45 @@
+[06:45:46] C0 ok: frozen circuit sources identical to v9.1-freeze-20261013
+[06:45:46] npm ci t2_circuit_fix/zkdac_v2
+[06:45:53] npm ci t2_circuit_fix/zkdac_v3
+[06:45:56] npm ci t2_circuit_fix/zkdac_v4
+[06:45:57] npm ci t2_circuit_fix/zkdac_v5
+[06:46:04] npm ci t2_circuit_fix/zkdac_v6
+[06:46:06] npm ci t2_circuit_fix/revocation_imt
+[06:46:07] npm ci t2_circuit_fix/zkdac_v7
+[06:46:09] npm ci t3_attacks
+[06:46:10] npm ci t4_registration
+[06:46:13] npm ci t4_contracts
+[06:46:15] circom zkdac_v9_1 c1
+[06:46:20] circom zkdac_v9_1 c2
+[06:46:25] circom zkdac_v9_1 c3
+[06:46:31] circom zkdac_v9_1 c4
+[06:46:37] circom zkdac_v9 c1
+[06:46:41] circom zkdac_v9 c2
+[06:46:45] circom zkdac_v9 c3
+[06:46:50] circom zkdac_v9 c4
+[06:46:56] circom v8 budget_transfer
+[06:47:00] circom v8 budget_mint
+[06:47:01] circom reg20
+[06:47:03] circom revoke
+[06:47:25] C2 ok (byte-identical to the first-environment build)
+[06:47:25] 10_build done fail=0
+[06:47:25] download ptau
+[06:48:18] ptau blake2b ok
+[06:51:12] retry v9-proving-material-20261010/v8_budget_transfer.zkey 1
+[06:53:10] retry v9-proving-material-20261010/v9_c3.zkey 1
+[06:54:03] release v9-proving-material-20261010 sha256 ok
+[06:55:41] retry v9.1-proving-material-20261013/v91_c1.zkey 1
+[06:58:08] retry v9.1-proving-material-20261013/v91_c2.zkey 1
+[06:59:50] retry v9.1-proving-material-20261013/v91_c3.zkey 1
+[07:01:07] release v9.1-proving-material-20261013 sha256 ok
+[07:01:08] verifier V91CD1 = release
+[07:01:08] verifier V91CD2 = release
+[07:01:08] verifier V91CD3 = release
+[07:01:08] verifier V91CD4 = release
+[07:05:08] dev ptau 2^17 sha256 ok
+[07:05:08] 20_fetch done
+[07:08:29] 30_keys done fail=0
+[07:17:41] C4 ok
+[07:17:47] v9.1 smoke ran
+[07:27:49] 50_core done fail=0
+[07:30:06] C6a ok; C6b proofs written to /home/siyuan/projects/zk-hada-exp/work/t8_paper/T8b-v91-repro_20261013/repro/out/cross

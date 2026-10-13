@@ -1,0 +1,12 @@
+[32mtemplate instances[0m: 244
+non-linear constraints: 10429
+linear constraints: 7007
+public inputs: 4
+private inputs: 27
+public outputs: 0
+wires: 17455
+labels: 29992
+[32mWritten successfully:[0m build/r20/main_reg_20.r1cs
+[32mWritten successfully:[0m build/r20/main_reg_20.sym
+[32mWritten successfully:[0m build/r20/main_reg_20_js/main_reg_20.wasm
+[32mEverything went okay[0m

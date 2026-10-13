@@ -1,0 +1,12 @@
+[32mtemplate instances[0m: 79
+non-linear constraints: 469
+linear constraints: 767
+public inputs: 2
+private inputs: 7
+public outputs: 0
+wires: 1244
+labels: 2048
+[32mWritten successfully:[0m build/budget_mint/budget_mint.r1cs
+[32mWritten successfully:[0m build/budget_mint/budget_mint.sym
+[32mWritten successfully:[0m build/budget_mint/budget_mint_js/budget_mint.wasm
+[32mEverything went okay[0m

@@ -16,4 +16,18 @@ Host `enine` (ssh alias RTX6000), Ubuntu 22.04.5, x86_64, 40 cores. Toolchain in
 | node-v24.14.1-linux-x64.tar.xz | nodejs.org (checked against SHASUMS256.txt: OK) | 84d38715d449447117d05c3e71acd78daa49d5b1bfa8aacf610303920c3322be |
 | circom (circom-linux-amd64 v2.2.3) | github.com/iden3/circom release v2.2.3 | 85342c7ff332d948df7c0c50ecf201e6129349aef550ce873f3c811b79fe53a3 |
 | foundry_v1.5.1_linux_amd64.tar.gz | github.com/foundry-rs/foundry release v1.5.1 | 73640b01bd9ed29fdb4965085099371f8cf0dbbec3e2086cf54564efc4dcfe88 |
-Commands and times of the run: appended below after the run.
+
+### Runs (each a fresh clone of the public repository into `~/projects/zk-hada-exp`, empty npm cache)
+```bash
+. ~/projects/zkhada-tools/env.sh; export NPM_CACHE=$HOME/projects/zkhada-npm-cache-attempt<n>
+bash work/t8_paper/T8b-v91-repro_20261013/repro/run_env2.sh > ~/projects/run_env2_attempt<n>.log 2>&1
+```
+| attempt | commit | UTC | outcome |
+|---|---|---|---|
+| 1 | f6364e0 | 06:05–06:14 | stopped in 20_fetch (ptau download; network) after C0, C1, C2 ok |
+| 2 | 3c668d1 | 06:14–06:15 | stopped in 10_build (npm ECONNRESET) |
+| 3 | f441c56 | 06:45–08:35 | complete: T8b 00–30 by 07:08, E7c 07:08–07:17 (fixtures 34 s + 488 s), 40–60 by 07:30, E6c 07:30–08:35 (fixtures 449 s, cases 3,468 s); `run_env2 done` |
+
+Copied back with scp / tar and checked against sha256 lists made on the server: `attempts/<n>/`, E7c `results/` and fixtures (`results/fixtures.sha256`), E6c `results/`.
+C6b: `node cross/verify.mjs attempts/3/cross/env2_proofs_d*.json` on the Mac -> `attempts/3/C6b_on_mac.txt`.
+Extra (not pre-registered): the V91 forge suites on the Mac with the second-environment fixtures -> E7c `results/forge_v91_on_mac_with_env2_fixtures.txt` (73 / 73).
