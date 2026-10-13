@@ -61,6 +61,16 @@ def featurize(F, I, J):
                          np.abs(np.mod(a, 60) - np.mod(b, 60)), np.abs(np.mod(a, 600) - np.mod(b, 600))], axis=1)
     return np.concatenate([per, dif, ar], axis=1).astype(float)
 
+# Amendment A2 (POST HOC, secondary; opt-in with E6D_FEATS=a2, default = A1 features unchanged): per non-constant position, the agreement of each of
+# the low 64 bits, [bit_k(a) == bit_k(b)], k = 0..63 (the pairwise analogue of E6b's single_features), appended after the A1 features; float32 (memory).
+FEATS = os.environ.get("E6D_FEATS", "a1")
+def bit_agreement(F, I, J):
+    x = np.ascontiguousarray(F["low"][I] ^ F["low"][J]).astype("<u8")
+    return 1 - np.unpackbits(x.view(np.uint8).reshape(len(I), -1), axis=1, bitorder="little").astype(np.float32)   # bit k of position p at p * 64 + k
+featurize_a1 = featurize
+if FEATS == "a2":
+    def featurize(F, I, J): return np.concatenate([featurize_a1(F, I, J).astype(np.float32), bit_agreement(F, I, J)], axis=1)
+
 # ---------------- pairs ----------------
 ROUND = None                                                            # set per world: round of each transcript (amendment A1 item 3)
 def sample_pairs(units_arr, agent_arr, round_arr, task, rng, n_each=N_EACH):
@@ -176,6 +186,15 @@ if __name__ == "__main__":
             for k in range(300):
                 ref = np.array(A.pair_features(W0[I[k]], W0[J[k]], F["nc"]), dtype=float); tot += 1; bad += int(not np.array_equal(X[k][:len(ref)], ref))   # E6b part = prefix
         print(json.dumps({"pairs_checked": tot, "mismatches": bad}))
+    elif mode == "check_a2":    # A2 features: A1 features are the prefix; the bit block equals a direct per-bit comparison
+        bad = tot = 0
+        for w in WORLDS:
+            rows = load(w); D = rows[0]["D"]; W0 = [base_words(t) for t in rows]; F = precompute(W0, D)
+            r = np.random.default_rng(100 + w); I = r.integers(0, len(rows), 300); J = r.integers(0, len(rows), 300); X = featurize(F, I, J); X1 = featurize_a1(F, I, J); k1 = X1.shape[1]
+            for k in range(300):
+                ref = np.array([int(((W0[I[k]][p] >> b) & 1) == ((W0[J[k]][p] >> b) & 1)) for p in F["nc"] for b in range(64)], dtype=np.float32)
+                tot += 1; bad += int(not (np.array_equal(X[k][:k1], X1[k].astype(np.float32)) and np.array_equal(X[k][k1:], ref)))
+        print(json.dumps({"feats": FEATS, "pairs_checked": tot, "mismatches": bad}))
     elif mode == "deterministic":
         print(json.dumps({f"w{w}": deterministic_world(w) for w in WORLDS}, indent=1))
     else:
@@ -196,4 +215,4 @@ if __name__ == "__main__":
                 ok = [e for e in EPS if any(comb[f"{c}_eps{e}"][f"{task}/{m}"]["detected"] and comb[f"{c}_eps{e}"][f"{task}/{m}"]["per_world_p_lt_0.01"] >= 7 for m in MODELS)]
                 mde[f"{c}/{task}"] = {"largest_eps_detected": max(ok) if ok else None, "agreement_1_minus_eps": (1 - max(ok)) if ok else None,
                                       "void": not any(comb[f"{c}_eps0.0"][f"{task}/{m}"]["detected"] for m in MODELS)}
-        print(json.dumps({"B": B, "link_decision": {k: v["detected"] for k, v in comb["fresh"].items()}, "combined": comb, "mde": mde, "per_world": per}, indent=1))
+        print(json.dumps({"B": B, "feats": FEATS, "link_decision": {k: v["detected"] for k, v in comb["fresh"].items()}, "combined": comb, "mde": mde, "per_world": per}, indent=1))

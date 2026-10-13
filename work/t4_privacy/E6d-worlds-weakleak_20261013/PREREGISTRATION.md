@@ -116,3 +116,27 @@ The changes were found by running the analysis code on **synthetic** worlds: the
    Reason: on the synthetic worlds, the E6b feature set (only bitwise and modular features) gave AUC 0.50 for the W2 timing control at ε = 0. A timing offset is invisible to those features by construction, and the void rule would then have voided the negative result because of a feature gap. With the added features the same synthetic control gives AUC ≈ 0.55. The E6b features are unchanged and form the prefix of the feature vector; equality with E6b's `pair_features` was checked on 2,400 pairs (`analyze_e6d.py check`).
 5. **Unchanged:** the worlds, the corpus, the tasks, the models, the split, the channels, the strengths, the Fisher / Holm decision rule, the MDE definition and the void rule.
    - The W2 control is weak by design: a 30 s offset under 60 s jitter gives a theoretical pair AUC of ≈ 0.57 at ε = 0. Whether W2 reaches the 7 / 8 per-world criterion is open.
+
+## Amendment A2 (2026-10-14; POST HOC, written AFTER the primary results `results/classifiers.json` (d625d36) were seen; committed before the A2 run)
+**Status.** Secondary analysis. It does not replace the primary result, the decision or the void flags in d625d36. Both are reported.
+
+**Why.** In the primary run, the W1 control (payload bit) was not detected at ε = 0 for C1 (mean test AUC 0.507–0.511), so the C1 negative result is **void** under the pre-registered rule.
+- Cause: the E6b pair features see a word only through its 64-bit Hamming distance, its low-16-bit equality and its residues mod 2, 3, 5, 7 of each side separately. One agreeing bit among 63 uniform bits moves the Hamming distance by ≈ 1/8 of its standard deviation. The bit-0 agreement itself is visible only as an interaction of two separate features.
+- So the pipeline missed a leak that a direct attacker sees. This is a feature-set gap, not a property of the transcripts.
+
+**Change (one, opt-in, `E6D_FEATS=a2`).** Append to every pair, for every non-constant position, the agreement of each of its low 64 bits, [bit_k(a) = bit_k(b)], k = 0..63. This is the pairwise analogue of E6b's `single_features` and is not specific to bit 0 or to the injected word.
+- Features checked: `analyze_e6d.py check_a2` (A1 features are the prefix; the bit block equals a direct comparison), 0 / 2,400 mismatches. That check reads only words, never labels or scores, and ran before this commit.
+- Everything else unchanged: the worlds, the split and pair seeds, the models, B = 1,000, Fisher / Holm, the MDE and void rules. Output: `results/a2/`.
+
+**Reference values, derived (not measured).** For the bit channels W1 and W3, two transcripts of one unit agree with probability 1/2 + (1 − 2ε)² / 2, and transcripts of different units with probability 1/2. The best AUC of any pair score is therefore 0.5 + (1 − 2ε)² / 4:
+
+| ε | 0 | 0.30 | 0.40 | 0.45 | 0.48 |
+|---|---|---|---|---|---|
+| maximum AUC (W1, W3) | 0.75 | 0.54 | 0.51 | 0.5025 | 0.5004 |
+
+The pre-declared expectation "ε = 0.30 detected everywhere" was therefore optimistic for the 7 / 8 per-world criterion with 1,792 + 1,792 test pairs. This is recorded here as an observation; the expectation is not changed.
+
+**A2 expectations.**
+- fresh: no link.
+- W1 at ε = 0: detected for C1 and C2, AUC ≈ 0.75, 8 / 8.
+- W2 and W3: as in the primary run (the bit block adds nothing for a 0 / 1 word or a time offset).
