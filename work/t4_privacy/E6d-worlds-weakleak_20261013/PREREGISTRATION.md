@@ -94,3 +94,25 @@ The issued, revoked and root roots are one snapshot per world. note_root changes
 - `RESULTS.md`, `RUN_RECORD.md`, `MANIFEST.sha256`.
 
 Failures are kept. Any change after this commit is recorded as an amendment, with the time and the reason, before the affected run.
+
+## Amendment A1 (2026-10-13T14:54Z; committed BEFORE any analysis of the real transcripts)
+**Context.** The real transcripts were being generated when this was written; the analysis had never read them, and only line counts had been checked.
+The changes were found by running the analysis code on **synthetic** worlds: the smoke transcripts with randomised words, kept in the scratchpad and not used as evidence.
+
+1. **Null distribution.** The pairs are sampled by label (balanced classes). Permuting the labels of a fixed, already scored pair set is therefore not an exact test.
+   - Instead, the observed statistic and every null draw run the *same* procedure: sample pairs under the (true, resp. unit-permuted) labels, then score them.
+   - To make this affordable, every eligible pair of test transcripts is scored once by the fixed model (all pairs; C1: different rounds, C2: different agents), and each draw looks the scores up. This is identical to re-scoring, because a fixed model gives a pair the same score.
+   - **B = 1,000** instead of 10,000, for cost (≈ 1 min per test). The per-world minimum p is 1/1001; the Fisher combination over 8 worlds still reaches far below 0.01.
+2. **D1 / D2 positions.** These now cover only the words that must never repeat: proof, ciphertext, budget_nf, cm_change.
+   - The L-words (now, ctx_hash, req_cap, tpk, state_root, note_root, q_spent, roots) now carry i.i.d. public action data and may repeat by design. In E6b they were constant, and therefore excluded automatically.
+3. **C1 pairs only from different rounds, in both classes.**
+   - Every agent acts once per round, so same-agent pairs are never in one round, while different-agent pairs would be in 1 / 16 of cases.
+   - Sampling negatives from the same round would let a classifier learn "same round ⇒ different agent", which is a scheduling artefact, not a leak.
+4. **Arithmetic features added** for small numeric words (all values < 2^53: now, q_spent, injected 0 / 1 words):
+   - |a − b|;
+   - a and b mod 60 and mod 600;
+   - |a mod 60 − b mod 60| and |a mod 600 − b mod 600|.
+
+   Reason: on the synthetic worlds, the E6b feature set (only bitwise and modular features) gave AUC 0.50 for the W2 timing control at ε = 0. A timing offset is invisible to those features by construction, and the void rule would then have voided the negative result because of a feature gap. With the added features the same synthetic control gives AUC ≈ 0.55. The E6b features are unchanged and form the prefix of the feature vector; equality with E6b's  was checked on 2,400 pairs ().
+5. **Unchanged:** the worlds, the corpus, the tasks, the models, the split, the channels, the strengths, the Fisher / Holm decision rule, the MDE definition and the void rule.
+   - The W2 control is weak by design: a 30 s offset under 60 s jitter gives a theoretical pair AUC of ≈ 0.57 at ε = 0. Whether W2 reaches the 7 / 8 per-world criterion is open.
