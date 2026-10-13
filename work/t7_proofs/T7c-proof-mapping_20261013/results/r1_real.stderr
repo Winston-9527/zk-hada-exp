@@ -1,0 +1,106 @@
+10:54:35 deployed real gate 0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82
+10:54:59 seq 1/50
+10:55:22 seq 2/50
+10:55:29 seq 3/50
+10:55:31 seq 4/50
+10:55:39 seq 5/50
+10:55:47 seq 6/50
+10:56:00 seq 7/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1308) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+10:56:25 seq 8/50
+10:56:33 seq 9/50
+10:56:50 seq 10/50
+10:56:55 seq 11/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+10:57:04 seq 12/50
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+10:57:40 seq 13/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+10:57:55 seq 14/50
+10:57:55 seq 15/50
+10:58:04 seq 16/50
+10:58:27 seq 17/50
+10:58:38 seq 18/50
+10:59:06 seq 19/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+10:59:19 seq 20/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+10:59:24 seq 21/50
+10:59:48 seq 22/50
+10:59:55 seq 23/50
+11:00:01 seq 24/50
+11:00:14 seq 25/50
+11:00:36 seq 26/50
+11:00:48 seq 27/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+11:00:59 seq 28/50
+11:01:11 seq 29/50
+11:01:24 seq 30/50
+11:01:43 seq 31/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+11:02:04 seq 32/50
+11:02:11 seq 33/50
+11:02:33 seq 34/50
+11:02:43 seq 35/50
+11:03:07 seq 36/50
+11:03:29 seq 37/50
+11:03:33 seq 38/50
+11:03:42 seq 39/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+11:04:02 seq 40/50
+11:04:10 seq 41/50
+11:04:24 seq 42/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+11:04:34 seq 43/50
+11:04:56 seq 44/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+11:05:12 seq 45/50
+11:05:19 seq 46/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+11:05:33 seq 47/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+11:05:36 seq 48/50
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:1308) Warning: Closing file descriptor 14 on garbage collection
+11:06:00 seq 49/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+11:06:09 seq 50/50

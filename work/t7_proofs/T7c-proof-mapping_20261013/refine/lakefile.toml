@@ -1,0 +1,17 @@
+name = "refine"
+version = "0.1.0"
+defaultTargets = ["Refine", "refine"]
+
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+
+[[lean_lib]]
+name = "BudgetSM"
+
+[[lean_lib]]
+name = "Refine"
+
+[[lean_exe]]
+name = "refine"
+root = "Main"

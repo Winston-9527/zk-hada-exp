@@ -1,0 +1,115 @@
+10:43:28 deployed real gate 0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:99697) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+10:43:36 seq 1/50
+10:43:44 seq 2/50
+10:43:45 seq 3/50
+10:43:46 seq 4/50
+10:43:46 seq 5/50
+10:43:51 seq 6/50
+10:43:54 seq 7/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+10:44:04 seq 8/50
+10:44:08 seq 9/50
+10:44:19 seq 10/50
+10:44:19 seq 11/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+10:44:28 seq 12/50
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+10:44:42 seq 13/50
+10:44:46 seq 14/50
+10:44:47 seq 15/50
+10:44:50 seq 16/50
+10:44:59 seq 17/50
+10:45:06 seq 18/50
+10:45:23 seq 19/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+10:45:31 seq 20/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+10:45:37 seq 21/50
+10:45:53 seq 22/50
+10:46:01 seq 23/50
+10:46:07 seq 24/50
+10:46:15 seq 25/50
+10:46:20 seq 26/50
+10:46:22 seq 27/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+10:46:30 seq 28/50
+10:46:35 seq 29/50
+10:46:43 seq 30/50
+10:46:59 seq 31/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+10:47:03 seq 32/50
+10:47:07 seq 33/50
+10:47:17 seq 34/50
+10:47:20 seq 35/50
+10:47:31 seq 36/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+10:47:43 seq 37/50
+10:47:46 seq 38/50
+10:47:51 seq 39/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+10:47:58 seq 40/50
+10:48:02 seq 41/50
+10:48:16 seq 42/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+10:48:23 seq 43/50
+10:48:39 seq 44/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+10:48:50 seq 45/50
+10:48:53 seq 46/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+10:49:02 seq 47/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+10:49:04 seq 48/50
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+(node:99697) Warning: Closing file descriptor 14 on garbage collection
+10:49:12 seq 49/50
+ERROR:  4 Error in template BudgetTransfer_327 line: 63
+
+10:49:18 seq 50/50
