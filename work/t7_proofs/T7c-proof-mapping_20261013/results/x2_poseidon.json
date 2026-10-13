@@ -1,0 +1,353 @@
+{
+ "X2a": {
+  "uses": [
+   {
+    "arity": 2,
+    "use": "Merkle node: issued tree (fixed depth 16)",
+    "inputs": "(left, right)",
+    "tag": null,
+    "ns": "issued tree",
+    "at": [
+     "t2_circuit_fix/zkdac_v9_1/circuits/zkdac_chain_v9.circom:52"
+    ]
+   },
+   {
+    "arity": 2,
+    "use": "Merkle node: IMT path (depth 20)",
+    "inputs": "(left, right)",
+    "tag": null,
+    "ns": "revocation IMT",
+    "at": [
+     "t2_circuit_fix/zkdac_v7/circuits/imt.circom:35",
+     "t2_circuit_fix/zkdac_v8/circuits/budget_transfer.circom:30",
+     "t4_obligations/E7-obligations_20261009/revoke/circuits/revoke_transition.circom:24"
+    ]
+   },
+   {
+    "arity": 2,
+    "use": "Merkle node: LeanIMT (note tree, registered-root tree, Semaphore group; variable depth)",
+    "inputs": "(left, right)",
+    "tag": null,
+    "ns": "note / root / group trees",
+    "at": [
+     "binary-merkle-root.circom:46",
+     "InternalLeanIMT.sol:67,169 (PoseidonT3)"
+    ]
+   },
+   {
+    "arity": 2,
+    "use": "Semaphore identity commitment (group-tree leaf)",
+    "inputs": "(A.x, A.y), A = s·B8",
+    "tag": null,
+    "ns": "group tree leaf",
+    "at": [
+     "t4_registration/circuits/register.circom:35"
+    ]
+   },
+   {
+    "arity": 3,
+    "use": "key entry (revocation IMT key)",
+    "inputs": "(KEY_TAG, A.x, A.y)",
+    "tag": "KEY_TAG 2053861995",
+    "ns": "revocation set",
+    "at": [
+     "t2_circuit_fix/zkdac_v9_1/circuits/zkdac_chain_v9.circom:166",
+     "t2_circuit_fix/zkdac_v8/circuits/budget_transfer.circom:75",
+     "t4_obligations/E7-obligations_20261009/revoke/circuits/revoke_transition.circom:46"
+    ]
+   },
+   {
+    "arity": 3,
+    "use": "budget nullifier",
+    "inputs": "(TAG_BNF, sk, cm)",
+    "tag": "TAG_BNF 2053857902",
+    "ns": "Gate.budgetSpent",
+    "at": [
+     "t2_circuit_fix/zkdac_v9_1/circuits/zkdac_chain_v9.circom:224",
+     "t2_circuit_fix/zkdac_v8/circuits/budget_transfer.circom:57"
+    ]
+   },
+   {
+    "arity": 3,
+    "use": "registration nullifier",
+    "inputs": "(TAG_REG, s, domain)",
+    "tag": "TAG_REG 2053858418",
+    "ns": "Reg.leafOfNullifier",
+    "at": [
+     "t4_registration/circuits/register.circom:46"
+    ]
+   },
+   {
+    "arity": 3,
+    "use": "state root",
+    "inputs": "(issued_root, revoked_root, root_root)",
+    "tag": null,
+    "ns": "public input only (Gate.stateOf value)",
+    "at": [
+     "t2_circuit_fix/zkdac_v9_1/circuits/zkdac_chain_v9.circom:207",
+     "ZkDacGateV9.sol:118 (PoseidonT4)"
+    ]
+   },
+   {
+    "arity": 3,
+    "use": "IMT leaf",
+    "inputs": "(value, next_index < 2^20, next_value)",
+    "tag": null,
+    "ns": "revocation IMT leaf",
+    "at": [
+     "t2_circuit_fix/zkdac_v7/circuits/imt.circom:69",
+     "t2_circuit_fix/zkdac_v8/circuits/budget_transfer.circom:25",
+     "t4_obligations/E7-obligations_20261009/revoke/circuits/revoke_transition.circom:61",
+     "t4_obligations/E7-obligations_20261009/revoke/circuits/revoke_transition.circom:68"
+    ]
+   },
+   {
+    "arity": 3,
+    "use": "keystream mask",
+    "inputs": "(K.x, K.y, j), j = 0..D+1",
+    "tag": null,
+    "ns": "not stored (added to ciphertext words)",
+    "at": [
+     "t2_circuit_fix/zkdac_v9_1/circuits/accountability_v9.circom:22",
+     "t2_circuit_fix/zkdac_v9_1/circuits/accountability_v9.circom:27"
+    ]
+   },
+   {
+    "arity": 5,
+    "use": "EdDSA-Poseidon challenge (circomlib)",
+    "inputs": "(R8.x, R8.y, A.x, A.y, M)",
+    "tag": null,
+    "ns": "signature",
+    "at": [
+     "eddsaposeidon.circom:55"
+    ]
+   },
+   {
+    "arity": 7,
+    "use": "certificate hash (hop i)",
+    "inputs": "(i, issuer.x, issuer.y, holder.x, holder.y, cap, expiry)",
+    "tag": "hop index i (0..D-1) in slot 0",
+    "ns": "issued tree, root tree, revocation set, note lineage",
+    "at": [
+     "t2_circuit_fix/zkdac_v9_1/circuits/zkdac_chain_v9.circom:119",
+     "t2_circuit_fix/zkdac_v8/circuits/budget_transfer.circom:87",
+     "t4_registration/circuits/register.circom:52",
+     "t4_obligations/E7-obligations_20261009/revoke/circuits/revoke_transition.circom:42"
+    ]
+   },
+   {
+    "arity": 8,
+    "use": "budget note commitment",
+    "inputs": "(own.x, own.y, q, lin[0..3], rho)",
+    "tag": null,
+    "ns": "note tree leaf",
+    "at": [
+     "t2_circuit_fix/zkdac_v9_1/circuits/zkdac_chain_v9.circom:216",
+     "t2_circuit_fix/zkdac_v9_1/circuits/zkdac_chain_v9.circom:228",
+     "t2_circuit_fix/zkdac_v8/circuits/budget_transfer.circom:44,95,98 (Poseidon(4+L), L=4)",
+     "t2_circuit_fix/zkdac_v8/circuits/budget_mint.circom:9"
+    ]
+   }
+  ],
+  "pairs_same_arity": [
+   {
+    "arity": 2,
+    "a": "Merkle node: issued tree (fixed depth 16)",
+    "b": "Merkle node: IMT path (depth 20)",
+    "separated_by": "different namespaces (outputs never compared)"
+   },
+   {
+    "arity": 2,
+    "a": "Merkle node: issued tree (fixed depth 16)",
+    "b": "Merkle node: LeanIMT (note tree, registered-root tree, Semaphore group; variable depth)",
+    "separated_by": "NONE (same namespace) -> argue"
+   },
+   {
+    "arity": 2,
+    "a": "Merkle node: issued tree (fixed depth 16)",
+    "b": "Semaphore identity commitment (group-tree leaf)",
+    "separated_by": "NONE (same namespace) -> argue"
+   },
+   {
+    "arity": 2,
+    "a": "Merkle node: IMT path (depth 20)",
+    "b": "Merkle node: LeanIMT (note tree, registered-root tree, Semaphore group; variable depth)",
+    "separated_by": "different namespaces (outputs never compared)"
+   },
+   {
+    "arity": 2,
+    "a": "Merkle node: IMT path (depth 20)",
+    "b": "Semaphore identity commitment (group-tree leaf)",
+    "separated_by": "different namespaces (outputs never compared)"
+   },
+   {
+    "arity": 2,
+    "a": "Merkle node: LeanIMT (note tree, registered-root tree, Semaphore group; variable depth)",
+    "b": "Semaphore identity commitment (group-tree leaf)",
+    "separated_by": "NONE (same namespace) -> argue"
+   },
+   {
+    "arity": 3,
+    "a": "key entry (revocation IMT key)",
+    "b": "budget nullifier",
+    "separated_by": "distinct constant tags"
+   },
+   {
+    "arity": 3,
+    "a": "key entry (revocation IMT key)",
+    "b": "registration nullifier",
+    "separated_by": "distinct constant tags"
+   },
+   {
+    "arity": 3,
+    "a": "key entry (revocation IMT key)",
+    "b": "state root",
+    "separated_by": "different namespaces (outputs never compared)"
+   },
+   {
+    "arity": 3,
+    "a": "key entry (revocation IMT key)",
+    "b": "IMT leaf",
+    "separated_by": "NONE (same namespace) -> argue"
+   },
+   {
+    "arity": 3,
+    "a": "key entry (revocation IMT key)",
+    "b": "keystream mask",
+    "separated_by": "different namespaces (outputs never compared)"
+   },
+   {
+    "arity": 3,
+    "a": "budget nullifier",
+    "b": "registration nullifier",
+    "separated_by": "distinct constant tags"
+   },
+   {
+    "arity": 3,
+    "a": "budget nullifier",
+    "b": "state root",
+    "separated_by": "different namespaces (outputs never compared)"
+   },
+   {
+    "arity": 3,
+    "a": "budget nullifier",
+    "b": "IMT leaf",
+    "separated_by": "different namespaces (outputs never compared)"
+   },
+   {
+    "arity": 3,
+    "a": "budget nullifier",
+    "b": "keystream mask",
+    "separated_by": "different namespaces (outputs never compared)"
+   },
+   {
+    "arity": 3,
+    "a": "registration nullifier",
+    "b": "state root",
+    "separated_by": "different namespaces (outputs never compared)"
+   },
+   {
+    "arity": 3,
+    "a": "registration nullifier",
+    "b": "IMT leaf",
+    "separated_by": "different namespaces (outputs never compared)"
+   },
+   {
+    "arity": 3,
+    "a": "registration nullifier",
+    "b": "keystream mask",
+    "separated_by": "different namespaces (outputs never compared)"
+   },
+   {
+    "arity": 3,
+    "a": "state root",
+    "b": "IMT leaf",
+    "separated_by": "different namespaces (outputs never compared)"
+   },
+   {
+    "arity": 3,
+    "a": "state root",
+    "b": "keystream mask",
+    "separated_by": "different namespaces (outputs never compared)"
+   },
+   {
+    "arity": 3,
+    "a": "IMT leaf",
+    "b": "keystream mask",
+    "separated_by": "different namespaces (outputs never compared)"
+   }
+  ],
+  "cross_arity": [
+   {
+    "set": "revocation IMT",
+    "members": "H_7 certificate hashes and H_3(KEY_TAG, ·) key entries (both truncated to 252 bits)",
+    "separated_by": "different Poseidon widths (t = 8 vs t = 4: different permutations and round constants); a collision across widths is assumed infeasible (Poseidon-CR, multi-width)"
+   },
+   {
+    "set": "group tree (LeanIMT)",
+    "members": "leaf H_2(A) vs internal node H_2(l, r) at private depth",
+    "separated_by": "structural: the leaf must be H_2 of a curve point with a known discrete log (RG-1); passing an internal node as a leaf needs (l, r) = s·B8"
+   },
+   {
+    "set": "note tree / root tree (LeanIMT, private depth)",
+    "members": "leaf H_8 / H_7 computed in-circuit vs internal node H_2",
+    "separated_by": "different widths: an internal node would have to be an H_8 (H_7) output of opened fields"
+   }
+  ],
+  "grep_check": [
+   {
+    "file": "t2_circuit_fix/zkdac_v9_1/circuits/zkdac_chain_v9.circom",
+    "poseidon_in_source": 7,
+    "in_inventory": 7
+   },
+   {
+    "file": "t2_circuit_fix/zkdac_v9_1/circuits/accountability_v9.circom",
+    "poseidon_in_source": 2,
+    "in_inventory": 2
+   },
+   {
+    "file": "t2_circuit_fix/zkdac_v7/circuits/imt.circom",
+    "poseidon_in_source": 2,
+    "in_inventory": 2
+   },
+   {
+    "file": "t2_circuit_fix/zkdac_v8/circuits/budget_transfer.circom",
+    "poseidon_in_source": 8,
+    "in_inventory": 8
+   },
+   {
+    "file": "t2_circuit_fix/zkdac_v8/circuits/budget_mint.circom",
+    "poseidon_in_source": 1,
+    "in_inventory": 1
+   },
+   {
+    "file": "t4_registration/circuits/register.circom",
+    "poseidon_in_source": 3,
+    "in_inventory": 3
+   },
+   {
+    "file": "t4_obligations/E7-obligations_20261009/revoke/circuits/revoke_transition.circom",
+    "poseidon_in_source": 5,
+    "in_inventory": 5
+   }
+  ]
+ },
+ "X2b": {
+  "inputs_per_arity": 1000,
+  "arities": [
+   2,
+   3,
+   7,
+   8
+  ],
+  "comparisons": 4000,
+  "circ_vs_circomlibjs": "4000/4000",
+  "circomlibjs_vs_lite": "4000/4000",
+  "solidity": "forge test --match-contract T7cPoseidonKat (results/x2_solidity.txt)"
+ },
+ "X2c": {
+  "fresh_K": 1000,
+  "masks_per_K": "D + 2 = 6 (j = 0..5)",
+  "K_with_a_repeated_mask": 0
+ }
+}
