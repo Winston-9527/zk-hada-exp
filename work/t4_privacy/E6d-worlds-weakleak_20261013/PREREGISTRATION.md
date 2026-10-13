@@ -113,6 +113,6 @@ The changes were found by running the analysis code on **synthetic** worlds: the
    - a and b mod 60 and mod 600;
    - |a mod 60 − b mod 60| and |a mod 600 − b mod 600|.
 
-   Reason: on the synthetic worlds, the E6b feature set (only bitwise and modular features) gave AUC 0.50 for the W2 timing control at ε = 0. A timing offset is invisible to those features by construction, and the void rule would then have voided the negative result because of a feature gap. With the added features the same synthetic control gives AUC ≈ 0.55. The E6b features are unchanged and form the prefix of the feature vector; equality with E6b's  was checked on 2,400 pairs ().
+   Reason: on the synthetic worlds, the E6b feature set (only bitwise and modular features) gave AUC 0.50 for the W2 timing control at ε = 0. A timing offset is invisible to those features by construction, and the void rule would then have voided the negative result because of a feature gap. With the added features the same synthetic control gives AUC ≈ 0.55. The E6b features are unchanged and form the prefix of the feature vector; equality with E6b's `pair_features` was checked on 2,400 pairs (`analyze_e6d.py check`).
 5. **Unchanged:** the worlds, the corpus, the tasks, the models, the split, the channels, the strengths, the Fisher / Holm decision rule, the MDE definition and the void rule.
    - The W2 control is weak by design: a 30 s offset under 60 s jitter gives a theoretical pair AUC of ≈ 0.57 at ε = 0. Whether W2 reaches the 7 / 8 per-world criterion is open.
