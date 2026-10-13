@@ -1,0 +1,82 @@
+{
+ "w1": {
+  "D": 2,
+  "transcripts": 1024,
+  "D1_positions": 18,
+  "D1_shared_values": 0,
+  "D2_equal_ciphertext_differences": 0,
+  "D2_budget_nf_equal_cm_change": 0,
+  "distinct_budget_nf": 1024,
+  "identical_transcripts": 0
+ },
+ "w2": {
+  "D": 2,
+  "transcripts": 1024,
+  "D1_positions": 18,
+  "D1_shared_values": 0,
+  "D2_equal_ciphertext_differences": 0,
+  "D2_budget_nf_equal_cm_change": 0,
+  "distinct_budget_nf": 1024,
+  "identical_transcripts": 0
+ },
+ "w3": {
+  "D": 3,
+  "transcripts": 1024,
+  "D1_positions": 19,
+  "D1_shared_values": 0,
+  "D2_equal_ciphertext_differences": 0,
+  "D2_budget_nf_equal_cm_change": 0,
+  "distinct_budget_nf": 1024,
+  "identical_transcripts": 0
+ },
+ "w4": {
+  "D": 3,
+  "transcripts": 1024,
+  "D1_positions": 19,
+  "D1_shared_values": 0,
+  "D2_equal_ciphertext_differences": 0,
+  "D2_budget_nf_equal_cm_change": 0,
+  "distinct_budget_nf": 1024,
+  "identical_transcripts": 0
+ },
+ "w5": {
+  "D": 3,
+  "transcripts": 1024,
+  "D1_positions": 19,
+  "D1_shared_values": 0,
+  "D2_equal_ciphertext_differences": 0,
+  "D2_budget_nf_equal_cm_change": 0,
+  "distinct_budget_nf": 1024,
+  "identical_transcripts": 0
+ },
+ "w6": {
+  "D": 4,
+  "transcripts": 1024,
+  "D1_positions": 20,
+  "D1_shared_values": 0,
+  "D2_equal_ciphertext_differences": 0,
+  "D2_budget_nf_equal_cm_change": 0,
+  "distinct_budget_nf": 1024,
+  "identical_transcripts": 0
+ },
+ "w7": {
+  "D": 4,
+  "transcripts": 1024,
+  "D1_positions": 20,
+  "D1_shared_values": 0,
+  "D2_equal_ciphertext_differences": 0,
+  "D2_budget_nf_equal_cm_change": 0,
+  "distinct_budget_nf": 1024,
+  "identical_transcripts": 0
+ },
+ "w8": {
+  "D": 4,
+  "transcripts": 1024,
+  "D1_positions": 20,
+  "D1_shared_values": 0,
+  "D2_equal_ciphertext_differences": 0,
+  "D2_budget_nf_equal_cm_change": 0,
+  "distinct_budget_nf": 1024,
+  "identical_transcripts": 0
+ }
+}

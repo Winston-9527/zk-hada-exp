@@ -1,0 +1,8 @@
+w1 exit 0
+w2 exit 0
+w5 exit 0
+w3 exit 0
+w4 exit 0
+w6 exit 0
+w7 exit 0
+w8 exit 0
