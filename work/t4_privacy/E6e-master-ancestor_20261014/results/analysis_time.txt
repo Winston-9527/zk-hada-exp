@@ -1,0 +1,5 @@
+analysis start 08:51:35
+d3 exit 0 08:51:37
+m2 exit 0 08:53:23
+m3 exit 0 08:53:49
+m1 exit 0 09:02:13

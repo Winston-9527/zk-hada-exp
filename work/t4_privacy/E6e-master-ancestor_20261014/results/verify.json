@@ -1,0 +1,10 @@
+{
+ "world_M.jsonl": {
+  "D": 3,
+  "transcripts": 4096,
+  "valid": 4096,
+  "agents": 512,
+  "parents": 128,
+  "masters": 32
+ }
+}
