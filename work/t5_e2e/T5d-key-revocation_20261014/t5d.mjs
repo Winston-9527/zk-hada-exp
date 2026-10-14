@@ -46,7 +46,9 @@ const revKeys = shuffle(distinct, rRev).slice(0, Math.round(R_ / 100 * distinct.
 const revKeySet = new Set(revKeys); const targets = new Set(creds.filter((c) => delegKeys(c).some((k) => revKeySet.has(k))).map((c) => c.id));
 log("reusers", nReuse, "distinct keys", distinct.length, "revoked keys", revKeys.length, "targets", targets.size, "creds", Math.round((Date.now() - wall0) / 1000), "s");
 // edges per method: E-oracle = every certificate whose holder is a revoked key; E-local = the lowest-id holder's certificate only
-const edgesOracle = revKeys.flatMap((k) => holderOf.get(k)); const edgesLocal = revKeys.map((k) => Math.min(...holderOf.get(k)));
+const edgesOracleAll = revKeys.flatMap((k) => holderOf.get(k)); const edgesLocal = revKeys.map((k) => Math.min(...holderOf.get(k)));
+// A2: two edges can carry the SAME certificate (issuer key and holder key both shared, same hop, cap and expiry); each distinct certificate is revoked once
+const seenCert = new Set(); const edgesOracle = edgesOracleAll.filter((id) => { const x = creds[id].cert[creds[id].D - 1]; if (seenCert.has(x)) return false; seenCert.add(x); return true; });
 
 // ---------------- chain (shared deployment; methods restored from a snapshot) ----------------
 const imt0 = await L7.IMT.create(20); for (let k = 0; k < 20; k++) imt0.insert(L8.rnd250("t5d-decoy-" + k));
@@ -154,6 +156,6 @@ const methods = []; for (const m of ["K", "E-oracle", "E-local"]) methods.push(a
 try { fs.unlinkSync(tmp); } catch {}
 const multi = [...holderOf.values()].filter((v) => v.length > 1).length;
 console.log(JSON.stringify({ world: TAG, share: S_, rate: R_, seed: SEED, reusers: nReuse, distinct_keys: distinct.length, shared_keys: multi, revoked_keys: revKeys.length,
-  revoked_shared_keys: revKeys.filter((k) => holderOf.get(k).length > 1).length, targets: targets.size, edges_oracle: edgesOracle.length, edges_local: edgesLocal.length,
+  revoked_shared_keys: revKeys.filter((k) => holderOf.get(k).length > 1).length, targets: targets.size, edges_oracle: edgesOracle.length, edges_oracle_duplicate_certs: edgesOracleAll.length - edgesOracle.length, edges_local: edgesLocal.length,
   methods, smoke: SMOKE || null, wall_s: Math.round((Date.now() - wall0) / 1000), host: os.hostname() }));
 anvil.kill(); process.exit(0);

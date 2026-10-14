@@ -59,3 +59,9 @@ Failures are kept. A smoke run on the Mac (not evidence) precedes the server run
 - Reason: RTX6000 is saturated by E2b, and the harness is mostly single-threaded JS.
 - No reported quantity depends on the machine: gas, counts and satisfiability. `revoke_prove_ms_mean` is recorded but not reported as a result.
 - Runs: 3 concurrent worlds (`run_mac.sh`). The protocol is otherwise unchanged.
+
+## Amendment A2 (2026-10-14T15:15Z, after 11 of 12 worlds; harness fix, failed world rerun)
+- **What happened.** World s30-r10-1 failed in method E-oracle. A revoke_transition witness was unsatisfiable at IMTNonMember L67, because one certificate was being revoked a second time.
+- **Cause.** With key sharing, two edges can carry the **same certificate**: issuer key and holder key both shared, with the same hop, cap and expiry. E-oracle listed both edges, and therefore revoked that certificate twice.
+- **Fix.** E-oracle revokes each **distinct** certificate once. The number of removed duplicates is reported as `edges_oracle_duplicate_certs`.
+- **Scope.** The 11 completed worlds are unaffected: a duplicate would have failed them in the same way. Only s30-r10-1 is rerun; its failed attempt is kept (`results/worlds/s30-r10-1.failed.json`, `.err` → `attempt1_*`).
