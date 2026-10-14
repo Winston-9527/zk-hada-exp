@@ -1,0 +1,4 @@
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Constraints: 60629 [32;22m[INFO]  [39;1msnarkJS[0m: # of Public Inputs: 17 
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Constraints: 105434 [32;22m[INFO]  [39;1msnarkJS[0m: # of Public Inputs: 18 
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Constraints: 150239 [32;22m[INFO]  [39;1msnarkJS[0m: # of Public Inputs: 19 
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Constraints: 195044 [32;22m[INFO]  [39;1msnarkJS[0m: # of Public Inputs: 20 

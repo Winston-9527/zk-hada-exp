@@ -1,0 +1,81 @@
+ERROR:  4 Error in template ZkDacChainV9_422 line: 204
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:8253) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+ERROR:  4 Error in template ZkDacChainV9_422 line: 200
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_422 line: 201
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_78 line: 38
+Error in template BabyPbk_342 line: 97
+Error in template ZkDacChainV9_422 line: 193
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_78 line: 38
+Error in template BabyPbk_342 line: 97
+Error in template ZkDacChainV9_422 line: 194
+
+{"D":1,"holder_is_identity":true,"v9_1":{"sat":true},"v9_2":{"sat":false,"fail":"ZkDacChainV9 L204"},"v9_1_proof_verifies":true,"holder_sk = l":{"v9_1":{"sat":false,"fail":"ZkDacChainV9 L200"},"v9_2":{"sat":false,"fail":"ZkDacChainV9 L201"}},"holder_sk = p - 1":{"v9_1":{"sat":false,"fail":"Num2Bits L38"},"v9_2":{"sat":false,"fail":"Num2Bits L38"}}}
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 204
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 200
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 201
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_78 line: 38
+Error in template BabyPbk_345 line: 97
+Error in template ZkDacChainV9_423 line: 193
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_78 line: 38
+Error in template BabyPbk_345 line: 97
+Error in template ZkDacChainV9_423 line: 194
+
+{"D":2,"holder_is_identity":true,"v9_1":{"sat":true},"v9_2":{"sat":false,"fail":"ZkDacChainV9 L204"},"v9_1_proof_verifies":true,"holder_sk = l":{"v9_1":{"sat":false,"fail":"ZkDacChainV9 L200"},"v9_2":{"sat":false,"fail":"ZkDacChainV9 L201"}},"holder_sk = p - 1":{"v9_1":{"sat":false,"fail":"Num2Bits L38"},"v9_2":{"sat":false,"fail":"Num2Bits L38"}}}
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 204
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 200
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 201
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_78 line: 38
+Error in template BabyPbk_345 line: 97
+Error in template ZkDacChainV9_423 line: 193
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_78 line: 38
+Error in template BabyPbk_345 line: 97
+Error in template ZkDacChainV9_423 line: 194
+
+{"D":3,"holder_is_identity":true,"v9_1":{"sat":true},"v9_2":{"sat":false,"fail":"ZkDacChainV9 L204"},"v9_1_proof_verifies":true,"holder_sk = l":{"v9_1":{"sat":false,"fail":"ZkDacChainV9 L200"},"v9_2":{"sat":false,"fail":"ZkDacChainV9 L201"}},"holder_sk = p - 1":{"v9_1":{"sat":false,"fail":"Num2Bits L38"},"v9_2":{"sat":false,"fail":"Num2Bits L38"}}}
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 204
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 200
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 201
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_78 line: 38
+Error in template BabyPbk_345 line: 97
+Error in template ZkDacChainV9_423 line: 193
+
+(node:8253) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template Num2Bits_78 line: 38
+Error in template BabyPbk_345 line: 97
+Error in template ZkDacChainV9_423 line: 194
+
+{"D":4,"holder_is_identity":true,"v9_1":{"sat":true},"v9_2":{"sat":false,"fail":"ZkDacChainV9 L204"},"v9_1_proof_verifies":true,"holder_sk = l":{"v9_1":{"sat":false,"fail":"ZkDacChainV9 L200"},"v9_2":{"sat":false,"fail":"ZkDacChainV9 L201"}},"holder_sk = p - 1":{"v9_1":{"sat":false,"fail":"Num2Bits L38"},"v9_2":{"sat":false,"fail":"Num2Bits L38"}}}
