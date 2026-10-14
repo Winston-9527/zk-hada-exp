@@ -111,3 +111,9 @@ Found while writing the harness and in the smoke run (r = 10 %, Δ = 0, 12 epoch
    - The first 10 sampled honest attempts that were accepted get check (d).
    - Only sampled transactions carry the real ciphertext; the others carry placeholder ciphertext words. The verifier is mocked, and the gate checks only their length and range.
 5. **Smoke result (development only):** H1 = 0 and H2 = 0; adversarial attempts: 1,523, accepted 0; fresh witness constructible: 0; checks (b) 30 / 30, (c) 30 / 30, (d) 10 / 10 valid with matching public signals, (e) 120 / 120.
+
+## Amendment A2 (2026-10-14T12:35Z, before any reported run; wording only)
+- The t_p values 0.787 / 1.377 / 2.240 / 2.585 s are the **run-1 means** of v9.1 row 6, not medians.
+- Run 2 gives 2.311 / 2.543 s for D = 3 / 4; D = 1 and 2 are equal in both runs.
+- They stay the logical-clock parameters, unchanged from the smoke run. The T8c item A paired benchmark shows v9.2 within the run-to-run variation of v9.1.
+- The "about 0.3 s per real witness" in A1 is an RTX6000 smoke observation. It is used only as a rationale for sampling, not as a result.
