@@ -53,3 +53,9 @@ Partial knowledge between E-oracle and E-local; revocation of master keys (ent[1
 - `RESULTS.md`, `RUN_RECORD.md`, `MANIFEST.sha256`.
 
 Failures are kept. A smoke run on the Mac (not evidence) precedes the server run. Changes after this commit are amendments, recorded before the affected run.
+
+## Amendment A1 (2026-10-14T13:35Z, before any reported run): machine
+- All 12 worlds run on the **Mac M5 Pro**, by the user's decision of 2026-10-14. The pre-registration said the full run would follow the Mac smoke on the server.
+- Reason: RTX6000 is saturated by E2b, and the harness is mostly single-threaded JS.
+- No reported quantity depends on the machine: gas, counts and satisfiability. `revoke_prove_ms_mean` is recorded but not reported as a result.
+- Runs: 3 concurrent worlds (`run_mac.sh`). The protocol is otherwise unchanged.
