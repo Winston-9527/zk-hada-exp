@@ -1,0 +1,58 @@
+{
+ "world_w1.jsonl": {
+  "D": 2,
+  "transcripts": 1024,
+  "valid": 1024,
+  "agents": 64,
+  "parents": 8
+ },
+ "world_w2.jsonl": {
+  "D": 2,
+  "transcripts": 1024,
+  "valid": 1024,
+  "agents": 64,
+  "parents": 16
+ },
+ "world_w3.jsonl": {
+  "D": 3,
+  "transcripts": 1024,
+  "valid": 1024,
+  "agents": 64,
+  "parents": 8
+ },
+ "world_w4.jsonl": {
+  "D": 3,
+  "transcripts": 1024,
+  "valid": 1024,
+  "agents": 64,
+  "parents": 16
+ },
+ "world_w5.jsonl": {
+  "D": 3,
+  "transcripts": 1024,
+  "valid": 1024,
+  "agents": 64,
+  "parents": 8
+ },
+ "world_w6.jsonl": {
+  "D": 4,
+  "transcripts": 1024,
+  "valid": 1024,
+  "agents": 64,
+  "parents": 8
+ },
+ "world_w7.jsonl": {
+  "D": 4,
+  "transcripts": 1024,
+  "valid": 1024,
+  "agents": 64,
+  "parents": 16
+ },
+ "world_w8.jsonl": {
+  "D": 4,
+  "transcripts": 1024,
+  "valid": 1024,
+  "agents": 64,
+  "parents": 8
+ }
+}
