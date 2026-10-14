@@ -35,7 +35,7 @@
   - E-oracle needs 0–75 % more transactions and gas; the excess grows with key sharing (30 %: +42–45 % at r = 10 %).
   - Both methods block the same set of agents: coverage 1, false accept 0, collateral 0.
 - **E-oracle assumes the revoker knows every edge of the key.**
-  - With local knowledge (E-local), 3–24 % of the targets are not blocked and keep acting.
+  - With local knowledge (E-local), 0–24 % of the targets are not blocked (0 only where no revoked key was shared) and keep acting.
   - At 30 % sharing and r = 10 %, that is 36–60 agents per world.
   - Key revocation needs no such enumeration. This is the measured form of the B6 "enumerate descendants" argument.
 - One world (s30-r10-1) contains a certificate shared by two edges. That happens when the issuer key and the holder key are both shared. E-oracle revokes it once (amendment A2).
@@ -44,7 +44,7 @@
 - Key revocation at scale works as designed. Revoking one key blocks every chain that contains it, at the circuit and gate levels, without listing the chains, and does not block anyone else.
 - Its advantage over edge revocation is twofold:
   - fewer transactions when keys are shared;
-  - no need to know every edge that uses the key. Partial knowledge leaves 3–24 % of the compromised branches active.
+  - no need to know every edge that uses the key. Partial knowledge leaves up to 24 % of the compromised branches active.
 - Not covered:
   - master keys (ent[1]), which the circuit does not key-check (pre-registered limit);
   - partial knowledge between E-local and E-oracle.
