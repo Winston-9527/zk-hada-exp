@@ -91,3 +91,8 @@ Failures are kept. Any change after this commit is recorded as an amendment, wit
 - v9.2 instead of v9.1, because v9.2 is the merged version.
 - A logical clock with fixed t_p instead of wall-clock interval mining and per-sender processes. Reason: the second environment would otherwise change the results through its proving speed.
 - The 10 notes of B are minted directly instead of split from one note by transfers. The resulting state is the same: notes of 10 owned by A.
+
+## Amendment A1 (2026-10-14T12:35Z, during the run; wording only, no effect on any run)
+- The T8c timing-source audit (`work/t8_paper/T8c-v92-addenda_20261014/TIMING_SOURCE_AUDIT.md`) found that "Mac M5 Pro median for v9.1 D = 2, run 2" is mislabelled. The value 1.377 s is the **mean** of v9.1 D = 2 in row 6, and it is identical in run 1 and run 2.
+- v9.2 itself was benchmarked in T8c item A on the same Mac, paired with v9.1. Its D = 2 mean is 1.48 / 1.53 s (v9.1 the same day: 1.45 / 1.49 s), so v9.2 is not measurably slower than v9.1. The absolute level differs by about 5 % between days.
+- t_p = 1.377 s stays the parameter of the logical clock. All seconds that E2b reports are logical-clock seconds under this parameter.
