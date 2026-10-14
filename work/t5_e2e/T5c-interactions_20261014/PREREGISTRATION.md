@@ -117,3 +117,9 @@ Found while writing the harness and in the smoke run (r = 10 %, Δ = 0, 12 epoch
 - Run 2 gives 2.311 / 2.543 s for D = 3 / 4; D = 1 and 2 are equal in both runs.
 - They stay the logical-clock parameters, unchanged from the smoke run. The T8c item A paired benchmark shows v9.2 within the run-to-run variation of v9.1.
 - The "about 0.3 s per real witness" in A1 is an RTX6000 smoke observation. It is used only as a rationale for sampling, not as a result.
+
+## Amendment A3 (2026-10-14T13:35Z, before any reported I1 run): machine
+- I1 runs on the **Mac M5 Pro**, not on RTX6000, by the user's decision of 2026-10-14.
+- Reason: the server is saturated by E2b (16 concurrent provers, load ≈ 260). The I1 harness is mostly single-threaded JS. The server smoke (r = 10 %, Δ = 1, 12 epochs) needed about 11 min to reach block 75; the Mac needs about 2 min. The server smoke was stopped and is not evidence.
+- No result depends on the machine: the logical clock and t_p are parameters. The creds cache `build/creds.json` (sha256 c5bf1100ea99c205…) is the deterministic T5 tree built on the Mac.
+- Runs: 6 concurrent (`run_mac.sh`). The protocol is otherwise unchanged.
