@@ -92,3 +92,22 @@ Committed and pushed BEFORE the harness is run on anything but a smoke cell.
 - `RESULTS.md`, `RUN_RECORD.md`, `MANIFEST.sha256`.
 
 Failures are kept. Any change after this commit is recorded as an amendment, with the time and the reason, before the affected run.
+
+## Amendment A1 (2026-10-14, before any run that is reported)
+Found while writing the harness and in the smoke run (r = 10 %, Δ = 0, 12 epochs, Mac). The smoke output is in the scratchpad and is **not evidence**.
+
+1. **Check (b) is sampled.**
+   - Every adversarial old-root attempt gets the JS-level witness construction: non-membership of every lineage certificate in the chosen IMT snapshot.
+   - The **real** v9.2 witness calculation is run on a seeded sample of 30 adversarial attempts per run, not on every attempt.
+   - Reason: in the smoke run there were 1,523 adversarial attempts in 12 epochs, at about 0.3 s per real witness, on a server that is fully loaded by E2b. T7c R1 found the JS predicate equal to the real circuit in 283 / 283 cases.
+2. **Block gas limit 300M** instead of 60M.
+   - The first smoke hung: one setup batch of 200 mints exceeded 60M, and the harness waited for receipts that were never mined.
+   - Setup batches now mine spill-over blocks.
+   - In the simulation, any transaction that misses its block aborts the run, so capacity can never enter silently.
+3. **Ordering inside a block:** the revocation transactions of a block (and their `registerState`) come first, then the agents' transactions in a seeded random order.
+4. **Samples:**
+   - Honest attempts are sampled with p ≈ 4 × 30 / (1,230 × 30), up to 60 kept.
+   - The first 30 sampled honest attempts get check (c).
+   - The first 10 sampled honest attempts that were accepted get check (d).
+   - Only sampled transactions carry the real ciphertext; the others carry placeholder ciphertext words. The verifier is mocked, and the gate checks only their length and range.
+5. **Smoke result (development only):** H1 = 0 and H2 = 0; adversarial attempts: 1,523, accepted 0; fresh witness constructible: 0; checks (b) 30 / 30, (c) 30 / 30, (d) 10 / 10 valid with matching public signals, (e) 120 / 120.
