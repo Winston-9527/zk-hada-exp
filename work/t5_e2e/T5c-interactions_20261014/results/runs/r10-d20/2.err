@@ -1,0 +1,9 @@
+13:57:09 r10-d20-s2 setup done 20 s
+13:59:21 r10-d20-s2 block 75 attempts 6150 revoked 0
+14:01:32 r10-d20-s2 block 150 attempts 12300 revoked 120
+14:03:24 r10-d20-s2 block 225 attempts 18450 revoked 120
+14:05:21 r10-d20-s2 block 300 attempts 24600 revoked 120
+14:07:01 r10-d20-s2 block 375 attempts 30750 revoked 120
+14:09:08 r10-d20-s2 block 450 attempts 36900 revoked 120
+14:09:11 r10-d20-s2 simulation done 742 s; checks
+14:10:11 r10-d20-s2 done H1 0 H2 0 free acc 31110 / 31110 wall 802 s

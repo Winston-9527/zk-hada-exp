@@ -1,0 +1,9 @@
+13:47:50 r10-d5-s2 setup done 20 s
+13:49:47 r10-d5-s2 block 75 attempts 6150 revoked 0
+13:52:55 r10-d5-s2 block 150 attempts 12300 revoked 120
+13:55:00 r10-d5-s2 block 225 attempts 18450 revoked 120
+13:57:42 r10-d5-s2 block 300 attempts 24600 revoked 120
+14:00:44 r10-d5-s2 block 375 attempts 30750 revoked 120
+14:03:26 r10-d5-s2 block 450 attempts 36900 revoked 120
+14:03:28 r10-d5-s2 simulation done 958 s; checks
+14:04:51 r10-d5-s2 done H1 0 H2 0 free acc 28620 / 28620 wall 1041 s

@@ -1,0 +1,9 @@
+14:42:46 r0-d5-s0 setup done 32 s
+14:45:23 r0-d5-s0 block 75 attempts 6150 revoked 0
+14:47:10 r0-d5-s0 block 150 attempts 12300 revoked 0
+14:48:56 r0-d5-s0 block 225 attempts 18450 revoked 0
+14:51:19 r0-d5-s0 block 300 attempts 24600 revoked 0
+14:53:30 r0-d5-s0 block 375 attempts 30750 revoked 0
+14:55:03 r0-d5-s0 block 450 attempts 36900 revoked 0
+14:55:05 r0-d5-s0 simulation done 771 s; checks
+14:55:59 r0-d5-s0 done H1 0 H2 0 free acc 36900 / 36900 wall 825 s
