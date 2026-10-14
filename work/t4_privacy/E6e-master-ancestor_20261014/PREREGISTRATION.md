@@ -150,3 +150,24 @@ Under h = truth, m_j = Poseidon(K, j). Under a wrong h, m_j is shifted by a know
 - `results/d3_dictionary.json`;
 - `results/m1.json`, `results/m2.json`, `results/m3.json`;
 - `RESULTS.md`, `RUN_RECORD.md`, `MANIFEST.sha256`.
+
+## Amendment A1 (2026-10-14, before any analysis of the real transcripts)
+**Context.** World M was being proved when this was written. The analysis has read no real transcript.
+- `results/knowledge.json` exists, written by the witness phase. It has not been analysed.
+- The details below were fixed while developing `analyze_e6e.py` on **synthetic** worlds with random words and the same structure. Those worlds are kept in the scratchpad and are not evidence.
+
+1. **C1 null.** The agent labels are permuted *within each round*. Every pool agent acts exactly once per round, so this keeps the one-action-per-round structure. A transcript-level permutation across rounds would not keep it.
+2. **D3.** The dictionary is the union of all adversaries' knowledge. This is a superset of every single adversary's knowledge, so a count of 0 implies 0 for each adversary. Residuals (ii) are checked against every candidate y at every position:
+   - 32 / 32 / 128 / 512 candidates at positions 0..3;
+   - 2,883,584 residuals in total.
+3. **M2a hypotheses.** A hypothesis is represented by its own chain positions only: 0..1 for a master, 0..2 for a parent. A master's or a parent's knowledge of its descendants' keys is used in M2b, not in M2a.
+4. **M2 AUC.** AUC is computed by ranks. This is identical to `roc_auc_score`, and the scores are ranked once. The B null draws use the same permutation stream for the three models.
+5. **Detection with small B is impossible by construction.** With B = 200, the minimum p of 1 / 201 cannot pass Holm at 12 or 18 cells. This is why B = 5,000 was pre-registered.
+6. **Synthetic checks** (development only):
+   - K1 at λ = 1 gave AUC 0.73–0.77 (derived 0.75);
+   - W3 at ε = 0.2 gave 0.60 (derived 0.59);
+   - K2 at λ = 0.1 gave 0.55–0.57;
+   - fresh synthetic gave AUC 0.48–0.52.
+
+   One fresh synthetic cell had p = 0.01 and one had p = 0.02, both at B = 200. A second synthetic seed gave no p below 0.19 in the fresh M2a / M2b cells checked. This is consistent with chance; it was not tuned.
+7. **Unchanged:** the world, the tasks, the features, the models, the splits, the families, the decision rules, the controls, B and the void rules.
