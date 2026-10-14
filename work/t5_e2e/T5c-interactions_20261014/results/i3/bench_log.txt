@@ -1,0 +1,8 @@
+run 1 v9_2 start 13:10:19 busy_node: 3 load: { 7.26 7.18 5.94 }
+run 1 v9_2 end 13:11:53 exit 0 load: { 10.95 8.29 6.48 }
+run 2 v9_2_noacc start 13:11:53 busy_node: 3 load: { 10.95 8.29 6.48 }
+run 2 v9_2_noacc end 13:13:23 exit 0 load: { 15.83 10.42 7.47 }
+run 3 v9_2 start 13:13:23 busy_node: 3 load: { 15.83 10.42 7.47 }
+run 3 v9_2 end 13:14:56 exit 0 load: { 13.54 10.84 7.91 }
+run 4 v9_2_noacc start 13:14:56 busy_node: 3 load: { 13.54 10.84 7.91 }
+run 4 v9_2_noacc end 13:16:26 exit 0 load: { 13.56 11.38 8.40 }

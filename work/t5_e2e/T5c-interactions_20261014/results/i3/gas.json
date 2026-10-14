@@ -1,0 +1,94 @@
+{
+ "machine": "Apple M5 Pro",
+ "prefilled_notes": 100,
+ "rows": [
+  {
+   "D": 1,
+   "acc": "on",
+   "public_inputs": 17,
+   "verifier_verified": true,
+   "verifier_tx_gas": 327998,
+   "execute_status": 1,
+   "execute_gas": 588842,
+   "execute_calldata_bytes": 1060,
+   "change_note_index": 104
+  },
+  {
+   "D": 1,
+   "acc": "off",
+   "public_inputs": 8,
+   "verifier_verified": true,
+   "verifier_tx_gas": 263567,
+   "execute_status": 1,
+   "execute_gas": 515969,
+   "execute_calldata_bytes": 804,
+   "change_note_index": 104
+  },
+  {
+   "D": 2,
+   "acc": "on",
+   "public_inputs": 18,
+   "verifier_verified": true,
+   "verifier_tx_gas": 335169,
+   "execute_status": 1,
+   "execute_gas": 623684,
+   "execute_calldata_bytes": 1092,
+   "change_note_index": 105
+  },
+  {
+   "D": 2,
+   "acc": "off",
+   "public_inputs": 8,
+   "verifier_verified": true,
+   "verifier_tx_gas": 263591,
+   "execute_status": 1,
+   "execute_gas": 543065,
+   "execute_calldata_bytes": 804,
+   "change_note_index": 105
+  },
+  {
+   "D": 3,
+   "acc": "on",
+   "public_inputs": 19,
+   "verifier_verified": true,
+   "verifier_tx_gas": 342328,
+   "execute_status": 1,
+   "execute_gas": 631436,
+   "execute_calldata_bytes": 1124,
+   "change_note_index": 106
+  },
+  {
+   "D": 3,
+   "acc": "off",
+   "public_inputs": 8,
+   "verifier_verified": true,
+   "verifier_tx_gas": 263591,
+   "execute_status": 1,
+   "execute_gas": 543065,
+   "execute_calldata_bytes": 804,
+   "change_note_index": 106
+  },
+  {
+   "D": 4,
+   "acc": "on",
+   "public_inputs": 20,
+   "verifier_verified": true,
+   "verifier_tx_gas": 349487,
+   "execute_status": 1,
+   "execute_gas": 666266,
+   "execute_calldata_bytes": 1156,
+   "change_note_index": 107
+  },
+  {
+   "D": 4,
+   "acc": "off",
+   "public_inputs": 8,
+   "verifier_verified": true,
+   "verifier_tx_gas": 263543,
+   "execute_status": 1,
+   "execute_gas": 570117,
+   "execute_calldata_bytes": 804,
+   "change_note_index": 107
+  }
+ ]
+}

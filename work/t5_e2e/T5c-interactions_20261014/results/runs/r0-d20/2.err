@@ -1,0 +1,9 @@
+14:51:23 r0-d20-s2 setup done 29 s
+14:53:25 r0-d20-s2 block 75 attempts 6150 revoked 0
+14:54:55 r0-d20-s2 block 150 attempts 12300 revoked 0
+14:56:37 r0-d20-s2 block 225 attempts 18450 revoked 0
+14:58:28 r0-d20-s2 block 300 attempts 24600 revoked 0
+14:59:59 r0-d20-s2 block 375 attempts 30750 revoked 0
+15:01:41 r0-d20-s2 block 450 attempts 36900 revoked 0
+15:01:43 r0-d20-s2 simulation done 649 s; checks
+15:02:30 r0-d20-s2 done H1 0 H2 0 free acc 36900 / 36900 wall 696 s

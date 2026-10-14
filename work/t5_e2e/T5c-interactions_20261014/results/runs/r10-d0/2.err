@@ -1,0 +1,9 @@
+13:31:01 r10-d0-s2 setup done 17 s
+13:32:25 r10-d0-s2 block 75 attempts 6150 revoked 0
+13:40:03 r10-d0-s2 block 150 attempts 20510 revoked 120
+13:44:27 r10-d0-s2 block 225 attempts 26672 revoked 120
+13:47:43 r10-d0-s2 block 300 attempts 32822 revoked 120
+13:51:09 r10-d0-s2 block 375 attempts 38972 revoked 120
+13:54:31 r10-d0-s2 block 450 attempts 45122 revoked 120
+13:54:33 r10-d0-s2 simulation done 1429 s; checks
+13:55:41 r10-d0-s2 done H1 0 H2 0 free acc 18617 / 19740 wall 1497 s
