@@ -1,0 +1,4 @@
+v92_c1.zkey: OK
+v92_c2.zkey: OK
+v92_c3.zkey: OK
+v92_c4.zkey: OK
