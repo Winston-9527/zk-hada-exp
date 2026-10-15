@@ -1,0 +1,25 @@
+run1 d2 h10 start 07:51:52 busy: 0 load: { 11.26 9.51 6.36 }
+  exit 0
+run1 d2 h20 start 07:52:12 busy: 0 load: { 9.73 9.27 6.34 }
+  exit 0
+run1 d2 h24 start 07:52:34 busy: 0 load: { 10.76 9.51 6.51 }
+  exit 0
+run1 d4 h10 start 07:52:59 busy: 0 load: { 10.43 9.59 6.63 }
+  exit 0
+run1 d4 h20 start 07:53:33 busy: 0 load: { 11.89 10.01 6.90 }
+  exit 0
+run1 d4 h24 start 07:54:12 busy: 0 load: { 12.14 10.36 7.15 }
+  exit 0
+run2 d2 h10 start 07:54:54 busy: 0 load: { 12.12 10.60 7.41 }
+  exit 0
+run2 d2 h20 start 07:55:13 busy: 0 load: { 12.06 10.69 7.52 }
+  exit 0
+run2 d2 h24 start 07:55:37 busy: 0 load: { 11.56 10.67 7.58 }
+  exit 0
+run2 d4 h10 start 07:56:01 busy: 0 load: { 9.41 10.25 7.52 }
+  exit 0
+run2 d4 h20 start 07:56:32 busy: 0 load: { 11.32 10.65 7.76 }
+  exit 0
+run2 d4 h24 start 07:57:08 busy: 0 load: { 12.95 11.10 8.05 }
+  exit 0
+done
