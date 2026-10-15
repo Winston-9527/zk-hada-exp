@@ -1,0 +1,18 @@
+/home/siyuan/projects/zk-hada-exp/work/t4_contracts/node_modules/@ethersproject/logger/lib/index.js:238
+        var error = new Error(message);
+                    ^
+
+Error: could not detect network (event="noNetwork", code=NETWORK_ERROR, version=providers/5.7.2)
+    at Logger.makeError (/home/siyuan/projects/zk-hada-exp/work/t4_contracts/node_modules/@ethersproject/logger/lib/index.js:238:21)
+    at Logger.throwError (/home/siyuan/projects/zk-hada-exp/work/t4_contracts/node_modules/@ethersproject/logger/lib/index.js:247:20)
+    at JsonRpcProvider.<anonymous> (/home/siyuan/projects/zk-hada-exp/work/t4_contracts/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:609:54)
+    at step (/home/siyuan/projects/zk-hada-exp/work/t4_contracts/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:48:23)
+    at Object.throw (/home/siyuan/projects/zk-hada-exp/work/t4_contracts/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:29:53)
+    at rejected (/home/siyuan/projects/zk-hada-exp/work/t4_contracts/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:21:65)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5) {
+  reason: 'could not detect network',
+  code: 'NETWORK_ERROR',
+  event: 'noNetwork'
+}
+
+Node.js v24.14.1
