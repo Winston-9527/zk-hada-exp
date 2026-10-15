@@ -1,0 +1,34 @@
+07:30:59 A2-19 setup done 32 s
+07:31:07 A2-19 20 pay  accepted
+07:31:14 A2-19 27 pay  accepted
+ERROR:  4 Error in template CapSubset_344 line: 65
+Error in template ZkDacChainV9_423 line: 208
+
+07:31:15 A2-19 32 attack approve_without_cap blocked circuit CapSubset L65
+(node:1883985) Warning: Closing file descriptor 23 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1883985) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+07:31:22 A2-19 36 pay  accepted
+07:31:31 A2-19 48 pay  accepted
+07:31:40 A2-19 55 pay  accepted
+07:31:48 A2-19 58 approve  accepted
+ERROR:  4 Error in template Num2Bits_321 line: 38
+Error in template ZkDacChainV9_423 line: 230
+
+07:31:49 A2-19 60 attack over_budget blocked circuit Num2Bits L38
+(node:1883985) Warning: Closing file descriptor 23 on garbage collection
+07:31:58 A2-19 66 pay  accepted
+07:32:06 A2-19 76 pay  accepted
+07:32:22 A2-19 86 pay  accepted
+07:32:22 A2-19 90 attack replay blocked gate ZkDacGateV9.BudgetSpent
+07:32:30 A2-19 97 pay  accepted
+07:32:36 A2-19 109 pay  accepted
+07:32:43 A2-19 117 pay  accepted
+07:32:50 A2-19 128 pay  accepted
+07:32:57 A2-19 137 pay  accepted
+07:33:00 A2-19 139 revoke  
+07:33:08 A2-19 144 pay  accepted
+07:33:16 A2-19 168 pay  accepted
+07:33:23 A2-19 175 pay  accepted
+07:33:31 A2-19 199 attack after_revocation blocked gate ZkDacGateV9.StaleRevokedRoot
+07:33:31 A2-19 done settled 17 / 17 attacks blocked 4 / 4 hard {"all_attacks_blocked":true,"token_conservation":true,"spend_le_budget":true}

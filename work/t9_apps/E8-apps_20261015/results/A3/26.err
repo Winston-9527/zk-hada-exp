@@ -1,0 +1,13 @@
+07:13:06 A3-26 setup done: sub-agents 5 B 162 42 s
+07:15:38 A3-26 100 offline  
+07:17:03 A3-26 160 attack category_outside_cap blocked construction note: Cannot read properties of null (reading 'q')
+07:17:28 A3-26 170 attack over_budget blocked construction note: Cannot read properties of null (reading 'q')
+ERROR:  4 Error in template ZkDacChainV9_423 line: 227
+
+07:17:29 A3-26 180 attack other_agents_note blocked circuit ZkDacChainV9 L227
+(node:1811742) Warning: Closing file descriptor 23 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1811742) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+07:17:32 A3-26 190 revoke  
+07:18:35 A3-26 260 attack after_revocation blocked untestable attacker note has no funds left
+07:18:35 A3-26 done items 23 / 24 spent 128 / 162 success false attacks blocked 4 / 4 {"all_attacks_blocked":true,"spend_le_B":true}
