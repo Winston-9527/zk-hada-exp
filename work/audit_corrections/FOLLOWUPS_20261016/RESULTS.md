@@ -11,8 +11,9 @@
   - The CI is neither a test nor corrected for 12 cells. One nominal 95 % interval out of 12 excluding 0.5 is compatible with chance.
   - It is the largest fresh effect in M2 and is reported as such.
 - **Controls** (`m2_ci.json`):
-  - K1 at λ = 1: CIs from [0.629, 0.792] (M2a-M rf, only 16 test masters) to [0.753, 0.788];
-  - K1 at λ = 0.5: lower bounds ≥ 0.552 for logreg and rf;
+  - K1 at λ = 1: logreg / rf AUC 0.75–0.77, CI lower bounds 0.629 (M2a-M logreg, the widest interval) to 0.753. k-NN AUC 0.53–0.56, lower bounds 0.513–0.537;
+  - K1 at λ = 0.5: logreg / rf lower bounds ≥ 0.552;
+  - K1 at λ = 0.2: the CIs of M2b-P logreg [0.508, 0.536] and M2b-M logreg [0.505, 0.533] exclude 0.5, consistent with their small p;
   - K2: lower bounds ≥ 0.524.
 - **M3 fresh:** all 6 CIs contain 0.5.
 - This closes the deviation recorded in E6e's Corrections (audit #78 F7).
