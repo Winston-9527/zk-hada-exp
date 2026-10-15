@@ -1,0 +1,26 @@
+ERROR:  4 Error in template BabyCheck_335 line: 82
+Error in template AccHybridCompressed_342 line: 21
+Error in template ZkDacChainV9_423 line: 181
+
+(node:79150) Warning: Closing file descriptor 11 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:79150) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+{"j":0,"ent_j_is_offcurve_point":true,"v9":{"sat":true},"v9_1":{"sat":false,"fail":"BabyCheck_335 L82"},"oracle":{"accept":false,"why":"bad signature at hop 0"},"opening_correct":[false,true,true,true,true]}
+ERROR:  4 Error in template BabyCheck_335 line: 82
+Error in template AccHybridCompressed_342 line: 21
+Error in template ZkDacChainV9_423 line: 181
+
+{"j":1,"ent_j_is_offcurve_point":true,"v9":{"sat":true},"v9_1":{"sat":false,"fail":"BabyCheck_335 L82"},"oracle":{"accept":false,"why":"bad signature at hop 1"},"opening_correct":[true,false,true,true,true]}
+(node:79150) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template BabyCheck_335 line: 82
+Error in template AccHybridCompressed_342 line: 21
+Error in template ZkDacChainV9_423 line: 181
+
+{"j":2,"ent_j_is_offcurve_point":true,"v9":{"sat":true},"v9_1":{"sat":false,"fail":"BabyCheck_335 L82"},"oracle":{"accept":false,"why":"bad signature at hop 2"},"opening_correct":[true,true,false,true,true]}
+(node:79150) Warning: Closing file descriptor 11 on garbage collection
+ERROR:  4 Error in template BabyCheck_335 line: 82
+Error in template AccHybridCompressed_342 line: 21
+Error in template ZkDacChainV9_423 line: 181
+
+(node:79150) Warning: Closing file descriptor 11 on garbage collection
+{"j":3,"ent_j_is_offcurve_point":true,"v9":{"sat":true},"v9_1":{"sat":false,"fail":"BabyCheck_335 L82"},"oracle":{"accept":false,"why":"bad signature at hop 3"},"opening_correct":[true,true,true,false,true],"v9_proof_verifies":true}

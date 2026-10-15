@@ -1,0 +1,167 @@
+Linux enine 6.8.0-138-generic #138~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:43:15 UTC  x86_64 x86_64 x86_64 GNU/Linux
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+NAME="Ubuntu"
+CPU(s):                                  40
+Model name:                              Intel(R) Xeon(R) w7-3445
+node v24.14.1
+npm 11.11.0
+circom compiler 2.2.3
+forge Version: 1.5.1-v1.5.1
+anvil Version: 1.5.1-v1.5.1
+Python 3.10.12
+bf9112eb83a827dc9f9c8d19bb7bddcbf00f7b2fedae18fdcaee05406981f20a  /home/siyuan/projects/zkhada-tools/node-v24.14.1-linux-x64/bin/node
+85342c7ff332d948df7c0c50ecf201e6129349aef550ce873f3c811b79fe53a3  /home/siyuan/projects/zkhada-tools/bin/circom
+a39fc1913b53dde6a35b603756f65d799e13817ef694107ec0d3704c20435cce  /home/siyuan/projects/zkhada-tools/bin/forge
+b47362d2159aa0f2f575320e5e529bb5a91093cb62dc6bd30c0022018aa9f738  /home/siyuan/projects/zkhada-tools/bin/anvil
+git HEAD f441c5675b93158c62e6b320237b785b4e4aebcf
+freeze tag 3b21b8c0041fa1e70dac6d27b42d097c39d3222f
+[06:45:46] C0 ok: frozen circuit sources identical to v9.1-freeze-20261013
+[06:45:46] npm ci t2_circuit_fix/zkdac_v2
+[06:45:53] npm ci t2_circuit_fix/zkdac_v3
+[06:45:56] npm ci t2_circuit_fix/zkdac_v4
+[06:45:57] npm ci t2_circuit_fix/zkdac_v5
+[06:46:04] npm ci t2_circuit_fix/zkdac_v6
+[06:46:06] npm ci t2_circuit_fix/revocation_imt
+[06:46:07] npm ci t2_circuit_fix/zkdac_v7
+[06:46:09] npm ci t3_attacks
+[06:46:10] npm ci t4_registration
+[06:46:13] npm ci t4_contracts
+[06:46:15] circom zkdac_v9_1 c1
+[06:46:20] circom zkdac_v9_1 c2
+[06:46:25] circom zkdac_v9_1 c3
+[06:46:31] circom zkdac_v9_1 c4
+[06:46:37] circom zkdac_v9 c1
+[06:46:41] circom zkdac_v9 c2
+[06:46:45] circom zkdac_v9 c3
+[06:46:50] circom zkdac_v9 c4
+[06:46:56] circom v8 budget_transfer
+[06:47:00] circom v8 budget_mint
+[06:47:01] circom reg20
+[06:47:03] circom revoke
+C1 ok t2_circuit_fix/zkdac_v9/build/c1/main_c_d1.r1cs 60622 constraints, 17 public inputs
+C1 ok t2_circuit_fix/zkdac_v9/build/c2/main_c_d2.r1cs 105424 constraints, 18 public inputs
+C1 ok t2_circuit_fix/zkdac_v9/build/c3/main_c_d3.r1cs 150226 constraints, 19 public inputs
+C1 ok t2_circuit_fix/zkdac_v9/build/c4/main_c_d4.r1cs 195028 constraints, 20 public inputs
+C1 ok t2_circuit_fix/zkdac_v8/build/budget_transfer/budget_transfer.r1cs 84008 constraints, 5 public inputs
+C1 ok t2_circuit_fix/zkdac_v8/build/budget_mint/budget_mint.r1cs 1236 constraints, 2 public inputs
+C1 ok t4_registration/build/r20/main_reg_20.r1cs 17436 constraints, 4 public inputs
+C1 ok t4_obligations/E7-obligations_20261009/revoke/build/revoke_transition.r1cs 51815 constraints, 4 public inputs
+C1 ok t2_circuit_fix/zkdac_v9_1/build/c1/main_c_d1.r1cs 60628 constraints, 17 public inputs
+C1 ok t2_circuit_fix/zkdac_v9_1/build/c2/main_c_d2.r1cs 105433 constraints, 18 public inputs
+C1 ok t2_circuit_fix/zkdac_v9_1/build/c3/main_c_d3.r1cs 150238 constraints, 19 public inputs
+C1 ok t2_circuit_fix/zkdac_v9_1/build/c4/main_c_d4.r1cs 195043 constraints, 20 public inputs
+C1 ok v9.1 D=1 public inputs 17
+C1 ok v9.1 D=2 public inputs 18
+C1 ok v9.1 D=3 public inputs 19
+C1 ok v9.1 D=4 public inputs 20
+[06:47:25] C2 ok (byte-identical to the first-environment build)
+[06:47:25] 10_build done fail=0
+[06:47:25] download ptau
+[06:48:18] ptau blake2b ok
+curl: (56) OpenSSL SSL_read: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+[06:51:12] retry v9-proving-material-20261010/v8_budget_transfer.zkey 1
+curl: (56) OpenSSL SSL_read: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+[06:53:10] retry v9-proving-material-20261010/v9_c3.zkey 1
+[06:54:03] release v9-proving-material-20261010 sha256 ok
+curl: (56) OpenSSL SSL_read: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+[06:55:41] retry v9.1-proving-material-20261013/v91_c1.zkey 1
+curl: (56) OpenSSL SSL_read: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+[06:58:08] retry v9.1-proving-material-20261013/v91_c2.zkey 1
+curl: (56) OpenSSL SSL_read: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+[06:59:50] retry v9.1-proving-material-20261013/v91_c3.zkey 1
+[07:01:07] release v9.1-proving-material-20261013 sha256 ok
+[07:01:08] verifier V91CD1 = release
+[07:01:08] verifier V91CD2 = release
+[07:01:08] verifier V91CD3 = release
+[07:01:08] verifier V91CD4 = release
+curl: (56) OpenSSL SSL_read: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+curl: (56) OpenSSL SSL_read: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+[07:05:08] dev ptau 2^17 sha256 ok
+[07:05:08] 20_fetch done
+C3 zkey ok v91_c1
+C3 vk ok v91_c1
+C3 zkey ok v91_c2
+C3 vk ok v91_c2
+C3 zkey ok v91_c3
+C3 vk ok v91_c3
+C3 zkey ok v91_c4
+C3 vk ok v91_c4
+C3 zkey ok v9_c1
+C3 vk ok v9_c1
+C3 zkey ok v9_c2
+C3 vk ok v9_c2
+C3 zkey ok v9_c3
+C3 vk ok v9_c3
+C3 zkey ok v9_c4
+C3 vk ok v9_c4
+C3 zkey ok budget_transfer
+C3 vk ok budget_transfer
+C3 zkey ok budget_mint
+C3 vk ok budget_mint
+C3 zkey ok reg20
+C3 vk ok reg20
+C3 zkey ok revoke
+C3 vk ok revoke
+[07:08:29] 30_keys done fail=0
+Note: switching to 'f3dae6e6ee381f25eb6a246f7da9b85c91a68219'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+   "v9.1": {
+    "sat": false,
+    "fail": "BabyCheck L82"
+   },
+   "v9": {
+    "sat": true
+   },
+   "stage": null,
+   "v9_proof": true
+  },
+  {
+   "j": 3,
+   "v9.1": {
+    "sat": false,
+    "fail": "BabyCheck L82"
+   },
+   "v9": {
+    "sat": true
+   },
+   "stage": null,
+   "v9_proof": true
+  }
+ ],
+ "n_per_D": 30
+}
+Ran 28 test suites in 3.05s (16.99s CPU time): 288 tests passed, 0 failed, 0 skipped (288 total tests)
+[07:17:41] C4 ok
+[07:17:47] v9.1 smoke ran
+C5 ok v9.1 smoke D=1..4 accepted and opened
+C5 ok T3 v9.1 summary
+C5 ok T3 v9.1 agree_reject_by_level
+C5 ok T3 v9.1 per-row (id, name, D, class, failure location)
+C5 ok exhaustive diff v9.1 D=4
+C5 ok E6 totals
+C5 ok E6 per-row pass/observed
+[07:27:49] 50_core done fail=0
+C6 ok mac_proofs_d1.json: proofs made on siyuandeMacBook-Pro.local (darwin arm64) verified on enine (linux x64): 10/10
+C6 ok mac_proofs_d2.json: proofs made on siyuandeMacBook-Pro.local (darwin arm64) verified on enine (linux x64): 10/10
+C6 ok mac_proofs_d3.json: proofs made on siyuandeMacBook-Pro.local (darwin arm64) verified on enine (linux x64): 10/10
+C6 ok mac_proofs_d4.json: proofs made on siyuandeMacBook-Pro.local (darwin arm64) verified on enine (linux x64): 10/10
+C6 ok env2_proofs_d1.json: proofs made on enine (linux x64) verified on enine (linux x64): 10/10
+C6 ok env2_proofs_d2.json: proofs made on enine (linux x64) verified on enine (linux x64): 10/10
+C6 ok env2_proofs_d3.json: proofs made on enine (linux x64) verified on enine (linux x64): 10/10
+C6 ok env2_proofs_d4.json: proofs made on enine (linux x64) verified on enine (linux x64): 10/10
+[07:30:06] C6a ok; C6b proofs written to /home/siyuan/projects/zk-hada-exp/work/t8_paper/T8b-v91-repro_20261013/repro/out/cross

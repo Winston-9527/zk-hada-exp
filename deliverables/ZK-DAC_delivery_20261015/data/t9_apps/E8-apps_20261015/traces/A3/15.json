@@ -1,0 +1,210 @@
+{
+ "app": "A3",
+ "seed": 15,
+ "n": 5,
+ "caps": [
+  3,
+  5,
+  5,
+  2,
+  4
+ ],
+ "items": [
+  {
+   "id": 1000,
+   "cat": 1,
+   "price": 2
+  },
+  {
+   "id": 1001,
+   "cat": 0,
+   "price": 6
+  },
+  {
+   "id": 1002,
+   "cat": 0,
+   "price": 5
+  },
+  {
+   "id": 1003,
+   "cat": 0,
+   "price": 7
+  },
+  {
+   "id": 1004,
+   "cat": 0,
+   "price": 8
+  },
+  {
+   "id": 1005,
+   "cat": 2,
+   "price": 9
+  },
+  {
+   "id": 1006,
+   "cat": 0,
+   "price": 7
+  },
+  {
+   "id": 1007,
+   "cat": 1,
+   "price": 7
+  },
+  {
+   "id": 1008,
+   "cat": 0,
+   "price": 9
+  },
+  {
+   "id": 1009,
+   "cat": 1,
+   "price": 3
+  },
+  {
+   "id": 1010,
+   "cat": 0,
+   "price": 4
+  },
+  {
+   "id": 1011,
+   "cat": 1,
+   "price": 3
+  },
+  {
+   "id": 1012,
+   "cat": 1,
+   "price": 4
+  },
+  {
+   "id": 1013,
+   "cat": 0,
+   "price": 2
+  },
+  {
+   "id": 1014,
+   "cat": 1,
+   "price": 5
+  },
+  {
+   "id": 1015,
+   "cat": 2,
+   "price": 8
+  },
+  {
+   "id": 1016,
+   "cat": 2,
+   "price": 4
+  },
+  {
+   "id": 1017,
+   "cat": 0,
+   "price": 1
+  },
+  {
+   "id": 1018,
+   "cat": 0,
+   "price": 3
+  },
+  {
+   "id": 1019,
+   "cat": 0,
+   "price": 2
+  },
+  {
+   "id": 1020,
+   "cat": 2,
+   "price": 5
+  },
+  {
+   "id": 1021,
+   "cat": 2,
+   "price": 1
+  },
+  {
+   "id": 1022,
+   "cat": 0,
+   "price": 1
+  },
+  {
+   "id": 1023,
+   "cat": 1,
+   "price": 5
+  }
+ ],
+ "assign": [
+  3,
+  1,
+  0,
+  0,
+  2,
+  4,
+  0,
+  3,
+  2,
+  0,
+  0,
+  0,
+  0,
+  0,
+  0,
+  2,
+  1,
+  1,
+  2,
+  1,
+  4,
+  4,
+  1,
+  3
+ ],
+ "B": 139,
+ "offline": 4,
+ "misbehaving": 0,
+ "transient": [
+  1017,
+  1011
+ ],
+ "events": [
+  {
+   "t": 100,
+   "type": "offline",
+   "agent": 4
+  },
+  {
+   "t": 160,
+   "type": "attack",
+   "kind": "category_outside_cap",
+   "agent": 0,
+   "cat": 2,
+   "price": 3
+  },
+  {
+   "t": 170,
+   "type": "attack",
+   "kind": "over_budget",
+   "agent": 0,
+   "price": 139
+  },
+  {
+   "t": 180,
+   "type": "attack",
+   "kind": "other_agents_note",
+   "agent": 0,
+   "victim": 1,
+   "price": 2
+  },
+  {
+   "t": 190,
+   "type": "revoke",
+   "agent": 0
+  },
+  {
+   "t": 260,
+   "type": "attack",
+   "kind": "after_revocation",
+   "agent": 0,
+   "cat": 0,
+   "price": 2
+  }
+ ]
+}

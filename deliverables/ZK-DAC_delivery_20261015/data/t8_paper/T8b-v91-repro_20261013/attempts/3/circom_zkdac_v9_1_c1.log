@@ -1,0 +1,12 @@
+[32mtemplate instances[0m: 423
+non-linear constraints: 38756
+linear constraints: 21872
+public inputs: 17
+private inputs: 182 (107 belong to witness)
+public outputs: 0
+wires: 60640
+labels: 113582
+[32mWritten successfully:[0m build/c1/main_c_d1.r1cs
+[32mWritten successfully:[0m build/c1/main_c_d1.sym
+[32mWritten successfully:[0m build/c1/main_c_d1_js/main_c_d1.wasm
+[32mEverything went okay[0m

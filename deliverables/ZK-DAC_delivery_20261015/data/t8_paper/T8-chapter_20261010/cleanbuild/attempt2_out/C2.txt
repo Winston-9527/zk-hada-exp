@@ -1,0 +1,16 @@
+t2_circuit_fix/zkdac_v9/build/c1/main_c_d1.r1cs: OK
+t2_circuit_fix/zkdac_v9/build/c1/main_c_d1_js/main_c_d1.wasm: OK
+t2_circuit_fix/zkdac_v9/build/c2/main_c_d2.r1cs: OK
+t2_circuit_fix/zkdac_v9/build/c2/main_c_d2_js/main_c_d2.wasm: OK
+t2_circuit_fix/zkdac_v9/build/c3/main_c_d3.r1cs: OK
+t2_circuit_fix/zkdac_v9/build/c3/main_c_d3_js/main_c_d3.wasm: OK
+t2_circuit_fix/zkdac_v9/build/c4/main_c_d4.r1cs: OK
+t2_circuit_fix/zkdac_v9/build/c4/main_c_d4_js/main_c_d4.wasm: OK
+t2_circuit_fix/zkdac_v8/build/budget_transfer/budget_transfer.r1cs: OK
+t2_circuit_fix/zkdac_v8/build/budget_transfer/budget_transfer_js/budget_transfer.wasm: OK
+t2_circuit_fix/zkdac_v8/build/budget_mint/budget_mint.r1cs: OK
+t2_circuit_fix/zkdac_v8/build/budget_mint/budget_mint_js/budget_mint.wasm: OK
+t4_registration/build/r20/main_reg_20.r1cs: OK
+t4_registration/build/r20/main_reg_20_js/main_reg_20.wasm: OK
+t4_obligations/E7-obligations_20261009/revoke/build/revoke_transition.r1cs: OK
+t4_obligations/E7-obligations_20261009/revoke/build/revoke_transition_js/revoke_transition.wasm: OK

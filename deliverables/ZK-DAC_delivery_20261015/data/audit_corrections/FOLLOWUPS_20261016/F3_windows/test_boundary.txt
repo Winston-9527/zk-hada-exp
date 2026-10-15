@@ -1,0 +1,19 @@
+No files changed, compilation skipped
+
+Ran 13 tests for test/T7cWindowBoundary.t.sol:T7cWindowBoundaryTest
+[PASS] test_F3_issuedRootBoundary() (gas: 9501573)
+[PASS] test_F3_noteRootBoundary() (gas: 19032725)
+[PASS] test_GB2_amountMismatch() (gas: 30966834)
+[PASS] test_GB4_noteRootAfterWindow() (gas: 15585868)
+[PASS] test_GB5_mintNonOperator() (gas: 2741606)
+[PASS] test_GB7_revocationFreezesBudget() (gas: 47218379)
+[PASS] test_actionThenTransferOfSameNote() (gas: 39302219)
+[PASS] test_gas() (gas: 29341608)
+[PASS] test_mintWrongAmount() (gas: 2779002)
+[PASS] test_sequence() (gas: 32311435)
+[PASS] test_v9_registerStateMatchesCircuit_permissionless_idempotent() (gas: 2222178)
+[PASS] test_v9_replayOfExecutedProof() (gas: 9967788)
+[PASS] test_v9_unregisteredStateCombination() (gas: 6808837)
+Suite result: ok. 13 passed; 0 failed; 0 skipped; finished in 56.20ms (264.87ms CPU time)
+
+Ran 1 test suite in 113.61ms (56.20ms CPU time): 13 tests passed, 0 failed, 0 skipped (13 total tests)

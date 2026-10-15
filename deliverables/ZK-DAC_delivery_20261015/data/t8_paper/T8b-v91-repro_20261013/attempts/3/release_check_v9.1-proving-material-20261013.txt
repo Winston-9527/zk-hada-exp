@@ -1,0 +1,12 @@
+Groth16VerifierV91CD1.sol: OK
+Groth16VerifierV91CD2.sol: OK
+Groth16VerifierV91CD3.sol: OK
+Groth16VerifierV91CD4.sol: OK
+v91_c1.zkey: OK
+v91_c2.zkey: OK
+v91_c3.zkey: OK
+v91_c4.zkey: OK
+v91_vk_c1.json: OK
+v91_vk_c2.json: OK
+v91_vk_c3.json: OK
+v91_vk_c4.json: OK

@@ -1,0 +1,114 @@
+No files changed, compilation skipped
+
+Ran 11 tests for test/V92.t.sol:V92Test
+[PASS] test_GB2_amountMismatch() (gas: 30966811)
+[PASS] test_GB4_noteRootAfterWindow() (gas: 15585868)
+[PASS] test_GB5_mintNonOperator() (gas: 2741583)
+[PASS] test_GB7_revocationFreezesBudget() (gas: 47218467)
+[PASS] test_actionThenTransferOfSameNote() (gas: 39302241)
+[PASS] test_gas() (gas: 29341608)
+[PASS] test_mintWrongAmount() (gas: 2779002)
+[PASS] test_sequence() (gas: 32311435)
+[PASS] test_v9_registerStateMatchesCircuit_permissionless_idempotent() (gas: 2222133)
+[PASS] test_v9_replayOfExecutedProof() (gas: 9967788)
+[PASS] test_v9_unregisteredStateCombination() (gas: 6808859)
+Suite result: ok. 11 passed; 0 failed; 0 skipped; finished in 5.59s (11.84s CPU time)
+
+Ran 34 tests for test/V92Policy.t.sol:V92PolicyTest
+[PASS] test_A10_selectorBeforeVerify() (gas: 9967862)
+[PASS] test_A11a_amountAndQ() (gas: 7157087)
+[PASS] test_A11a_amountOnly() (gas: 6806462)
+[PASS] test_A11a_chainId() (gas: 7157313)
+[PASS] test_A11a_gateAddress() (gas: 11543056)
+[PASS] test_A11a_gateAddress_control() (gas: 11635881)
+[PASS] test_A11a_method() (gas: 7418981)
+[PASS] test_A11a_nonce() (gas: 7156966)
+[PASS] test_A11a_params() (gas: 7156979)
+[PASS] test_A11a_target() (gas: 7184090)
+[PASS] test_A11req() (gas: 7377176)
+[PASS] test_A14_now0_V9config() (gas: 7156938)
+[PASS] test_A14_skew60_edge_ok() (gas: 11636558)
+[PASS] test_A14_skew60_future() (gas: 11134926)
+[PASS] test_A14_skew60_tooOld() (gas: 11135090)
+[PASS] test_A17c_registryRejects() (gas: 6815461)
+[PASS] test_A21c_revokedRootRetired() (gas: 6814541)
+[PASS] test_A22h_otherTpk() (gas: 11467700)
+[PASS] test_A22i_identityTpkDeploys() (gas: 6213290)
+[PASS] test_GB2_amountMismatch() (gas: 30966878)
+[PASS] test_GB4_noteRootAfterWindow() (gas: 15585802)
+[PASS] test_GB5_mintNonOperator() (gas: 2741562)
+[PASS] test_GB7_revocationFreezesBudget() (gas: 47218423)
+[PASS] test_actionThenTransferOfSameNote() (gas: 39302263)
+[PASS] test_businessRevertRollsBack() (gas: 7798849)
+[PASS] test_frontRunnerCanSubmit() (gas: 7326656)
+[PASS] test_gas() (gas: 29341675)
+[PASS] test_mintWrongAmount() (gas: 2779025)
+[PASS] test_reentrantReplay() (gas: 7456617)
+[PASS] test_sequence() (gas: 32311480)
+[PASS] test_staleIssuedRoot() (gas: 6841787)
+[PASS] test_v9_registerStateMatchesCircuit_permissionless_idempotent() (gas: 2222156)
+[PASS] test_v9_replayOfExecutedProof() (gas: 9967722)
+[PASS] test_v9_unregisteredStateCombination() (gas: 6808859)
+Suite result: ok. 34 passed; 0 failed; 0 skipped; finished in 9.02s (97.49s CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchRwin240Test
+[PASS] test_B5_revocationWindow() (gas: 30778283)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 10.54s (614.68ms CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchRwin0Test
+[PASS] test_B5_revocationWindow() (gas: 30777989)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 11.10s (1.44s CPU time)
+
+Ran 2 tests for test/V92Batch.t.sol:V92BatchV9GateTest
+[PASS] test_G7_control_v91ProofsOnV9Gate() (gas: 1628852)
+[PASS] test_G7_v9GateAccepts() (gas: 2176972)
+Suite result: ok. 2 passed; 0 failed; 0 skipped; finished in 11.33s (275.42ms CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchRwin12Test
+[PASS] test_B5_revocationWindow() (gas: 30778136)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 12.44s (881.88ms CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchF2V91GateTest
+[PASS] test_F2_v91GateAccepts() (gas: 1508031)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 12.84s (18.32ms CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchRwin60Test
+[PASS] test_B5_revocationWindow() (gas: 30778136)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 13.48s (1.61s CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchOtherTpkTest
+[PASS] test_B3_otherTpk() (gas: 53448719)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 14.26s (3.61s CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchSkew60Test
+[PASS] test_B5_clock() (gas: 32087781)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 19.62s (8.20s CPU time)
+
+Ran 1 test for test/V92Batch.t.sol:V92BatchF2Test
+[PASS] test_F2_v92GateRejects() (gas: 965633)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 19.75s (14.84ms CPU time)
+
+Ran 20 tests for test/V92Batch.t.sol:V92BatchTest
+[PASS] test_B1_D1() (gas: 16693276)
+[PASS] test_B1_D2() (gas: 16956007)
+[PASS] test_B1_D3() (gas: 17219386)
+[PASS] test_B1_D4() (gas: 17478993)
+[PASS] test_B2_D1() (gas: 40606143)
+[PASS] test_B2_D2() (gas: 41070567)
+[PASS] test_B2_D3() (gas: 41535698)
+[PASS] test_B2_D4() (gas: 41997108)
+[PASS] test_B3_D1() (gas: 228113074)
+[PASS] test_B3_D2() (gas: 233783642)
+[PASS] test_B3_D3() (gas: 239549234)
+[PASS] test_B3_D4() (gas: 244919232)
+[PASS] test_B4_D1() (gas: 16594849)
+[PASS] test_B4_D2() (gas: 16849448)
+[PASS] test_B4_D3() (gas: 17104605)
+[PASS] test_B4_D4() (gas: 17356151)
+[PASS] test_B5_issuedWindow() (gas: 29950419)
+[PASS] test_B5_noteWindow() (gas: 26786042)
+[PASS] test_B6_frontRun() (gas: 73558658)
+[PASS] test_G7_v91GateRejects() (gas: 1396143)
+Suite result: ok. 20 passed; 0 failed; 0 skipped; finished in 32.75s (173.09s CPU time)
+
+Ran 12 test suites in 32.84s (172.71s CPU time): 75 tests passed, 0 failed, 0 skipped (75 total tests)

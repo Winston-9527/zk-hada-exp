@@ -1,0 +1,30 @@
+08:02:20 N1024 creds 1024 by D 2/14/112/896
+08:02:32 N1024 setup done 66 s
+08:02:33 N1024 action 0 D 1 status 1 gas 609650
+08:02:35 N1024 action 1 D 2 status 1 gas 590212
+08:02:37 N1024 action 2 D 3 status 1 gas 597940
+08:02:40 N1024 action 3 D 4 status 1 gas 632794
+08:02:41 N1024 action 4 D 1 status 1 gas 582424
+08:02:43 N1024 action 5 D 2 status 1 gas 617290
+08:02:45 N1024 action 6 D 3 status 1 gas 625018
+08:02:48 N1024 action 7 D 4 status 1 gas 659872
+08:02:49 N1024 action 8 D 1 status 1 gas 582448
+08:02:51 N1024 action 9 D 2 status 1 gas 617242
+       86.17 real       569.78 user        17.54 sys
+          4462542848  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             7440331  page reclaims
+                 851  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+               17356  messages sent
+               17559  messages received
+                   2  signals received
+                2379  voluntary context switches
+              502374  involuntary context switches
+       1344857565142  instructions retired
+        620665957391  cycles elapsed
+          4392468312  peak memory footprint

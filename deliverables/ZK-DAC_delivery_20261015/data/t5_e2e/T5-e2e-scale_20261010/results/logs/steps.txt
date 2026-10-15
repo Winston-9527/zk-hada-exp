@@ -1,0 +1,50 @@
+start 2026-10-10T02:36:32Z anvil anvil Version: 1.5.1-Homebrew
+world_build exit 0 03:13:12
+issuance_bench exit 0 03:13:14
+steady 1 exit 0 03:14:53
+steady 2 exit 0 03:16:28
+steady 3 exit 0 03:18:04
+cold 0 exit 0 03:18:08
+cold 1 exit 0 03:18:13
+cold 2 exit 0 03:18:17
+cold 3 exit 0 03:18:22
+cold 4 exit 0 03:18:27
+cold 5 exit 0 03:18:32
+cold 6 exit 0 03:18:37
+cold 7 exit 0 03:18:43
+cold 8 exit 0 03:18:49
+cold 9 exit 0 03:18:54
+cold 10 exit 0 03:18:59
+cold 11 exit 0 03:19:03
+cold 12 exit 0 03:19:07
+cold 13 exit 0 03:19:11
+cold 14 exit 0 03:19:15
+cold 15 exit 0 03:19:19
+cold 16 exit 0 03:19:24
+cold 17 exit 0 03:19:28
+cold 18 exit 0 03:19:32
+cold 19 exit 0 03:19:38
+cold 20 exit 0 03:19:41
+cold 21 exit 0 03:19:45
+cold 22 exit 0 03:19:51
+cold 23 exit 0 03:19:56
+cold 24 exit 0 03:20:00
+cold 25 exit 0 03:20:05
+cold 26 exit 0 03:20:11
+cold 27 exit 0 03:20:15
+cold 28 exit 0 03:20:20
+cold 29 exit 0 03:20:24
+cold 30 exit 0 03:20:30
+cold 31 exit 0 03:20:35
+cold 32 exit 0 03:20:40
+cold 33 exit 0 03:20:44
+cold 34 exit 0 03:20:49
+cold 35 exit 0 03:20:53
+cold 36 exit 0 03:20:57
+cold 37 exit 0 03:21:01
+cold 38 exit 0 03:21:07
+cold 39 exit 0 03:21:12
+e4b_epoch1 exit 0 04:15:49
+e4b_revoke_1 exit 0 04:25:07
+e4b_revoke_10 exit 0 04:34:59
+end 2026-10-10T04:34:59Z

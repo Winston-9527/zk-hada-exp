@@ -1,0 +1,19 @@
+04:15:52 rate 1%: revoke 12 edges (total 12); blocked agents 0 -> 84; sample 32 desc + 32 free
+      557.78 real      2336.83 user        85.98 sys
+          4631773184  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+            30832935  page reclaims
+                 176  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+               12358  messages sent
+               12358  messages received
+                   0  signals received
+                6612  voluntary context switches
+             3232545  involuntary context switches
+      25525226659808  instructions retired
+      10313856041694  cycles elapsed
+          4615933624  peak memory footprint

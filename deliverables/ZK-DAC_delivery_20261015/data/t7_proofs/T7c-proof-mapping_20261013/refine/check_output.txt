@@ -1,0 +1,3 @@
+'BudgetSM.exec_sound' depends on axioms: [propext, Quot.sound]
+'BudgetSM.exec_run_reachable' depends on axioms: [propext, Quot.sound]
+'BudgetSM.exec_run_conservation' depends on axioms: [propext, Classical.choice, Quot.sound]

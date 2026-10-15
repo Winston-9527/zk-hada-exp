@@ -1,0 +1,2 @@
+gas ~ popcount + D | coef [np.float64(496267.4), np.float64(33849.8), np.float64(4883.3)] | R2 0.977235 | max|res| 19323 | n 36 (first action of each run excluded: cold target storage)
+gas ~ popcount + D + bit_length(index) | coef [np.float64(463747.4), np.float64(27079.5), np.float64(7753.3), np.float64(5162.0)] | R2 1.0 | max|res| 32 | n 36 (first action of each run excluded: cold target storage)

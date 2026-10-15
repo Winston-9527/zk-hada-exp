@@ -1,0 +1,12 @@
+[32mtemplate instances[0m: 328
+non-linear constraints: 45455
+linear constraints: 38553
+public inputs: 5
+private inputs: 255
+public outputs: 0
+wires: 84097
+labels: 129985
+[32mWritten successfully:[0m build/budget_transfer/budget_transfer.r1cs
+[32mWritten successfully:[0m build/budget_transfer/budget_transfer.sym
+[32mWritten successfully:[0m build/budget_transfer/budget_transfer_js/budget_transfer.wasm
+[32mEverything went okay[0m

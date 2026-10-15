@@ -1,0 +1,22 @@
+[13:19:01] T8c C: worktree f103c32 host enine
+[13:20:02] C1 ok c1 60629 constraints, 17 public inputs
+[13:21:23] C1 ok c2 105434 constraints, 18 public inputs
+[13:22:52] C1 ok c3 150239 constraints, 19 public inputs
+[13:24:41] C1 ok c4 195044 constraints, 20 public inputs
+[13:24:43] C2 ok: r1cs and wasm byte-identical to the Mac build
+[13:27:55] C3 zkey ok c1
+[13:28:01] C3 vk ok c1
+[13:32:48] C3 zkey ok c2
+[13:33:04] C3 vk ok c2
+[13:39:02] C3 zkey ok c3
+[13:39:18] C3 vk ok c3
+[13:44:36] C3 zkey ok c4
+[13:44:46] C3 vk ok c4
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 19.62s (8.20s CPU time)
+Suite result: ok. 1 passed; 0 failed; 0 skipped; finished in 19.75s (14.84ms CPU time)
+Suite result: ok. 20 passed; 0 failed; 0 skipped; finished in 32.75s (173.09s CPU time)
+Ran 12 test suites in 32.84s (172.71s CPU time): 75 tests passed, 0 failed, 0 skipped (75 total tests)
+Ran 42 test suites in 44.92s (483.82s CPU time): 367 tests passed, 0 failed, 0 skipped (367 total tests)
+[14:35:37] C5 generated 40 proofs on env2
+[14:35:52] C5 Mac proofs on env2: {"proofs_from":"siyuandeMacBook-Pro.local","proofs_machine":"Apple M5 Pro x15","verified_on":"enine","verifier_machine":"Intel(R) Xeon(R) w7-3445","by_D":{"1":{"n":10,"valid":10},"2":{"n":10,"valid":10},"3":{"n":10,"valid":10},"4":{"n":10,"valid":10}}}
+[14:35:52] T8c C done

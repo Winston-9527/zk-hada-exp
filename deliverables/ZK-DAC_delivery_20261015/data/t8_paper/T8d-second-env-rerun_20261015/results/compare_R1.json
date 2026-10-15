@@ -1,0 +1,59 @@
+{
+ "R1": {
+  "v9_1": {
+   "rows_env1": 174,
+   "rows_env2": 174,
+   "row_field_differences": [],
+   "summary_equal": true,
+   "summary": {
+    "AGREE_ACCEPT": 28,
+    "AGREE_REJECT": 118,
+    "BAD_WITNESS_ONLY": 7,
+    "FALSE_ACCEPT": 21
+   },
+   "exhaustive_equal": {
+    "total": true,
+    "agree": true,
+    "disagreements_by_field": true,
+    "statement_level_disagreements": true
+   },
+   "exhaustive_env2": {
+    "total": 534,
+    "agree": 89,
+    "statement_level_disagreements": [
+     "now (circuit accept, oracle reject)",
+     "act_req_cap (circuit accept, oracle reject)",
+     "ctx_hash (circuit accept, oracle reject)"
+    ]
+   }
+  },
+  "v9_2": {
+   "rows_env1": 174,
+   "rows_env2": 174,
+   "row_field_differences": [],
+   "summary_equal": true,
+   "summary": {
+    "AGREE_ACCEPT": 28,
+    "AGREE_REJECT": 118,
+    "BAD_WITNESS_ONLY": 7,
+    "FALSE_ACCEPT": 21
+   },
+   "exhaustive_equal": {
+    "total": true,
+    "agree": true,
+    "disagreements_by_field": true,
+    "statement_level_disagreements": true
+   },
+   "exhaustive_env2": {
+    "total": 534,
+    "agree": 89,
+    "statement_level_disagreements": [
+     "now (circuit accept, oracle reject)",
+     "act_req_cap (circuit accept, oracle reject)",
+     "ctx_hash (circuit accept, oracle reject)"
+    ]
+   }
+  }
+ },
+ "R3": null
+}

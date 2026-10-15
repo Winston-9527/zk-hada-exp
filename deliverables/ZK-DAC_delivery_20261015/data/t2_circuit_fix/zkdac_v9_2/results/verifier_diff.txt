@@ -1,0 +1,4 @@
+D=1 verifier identical to v9.1 modulo digits
+D=2 verifier identical to v9.1 modulo digits
+D=3 verifier identical to v9.1 modulo digits
+D=4 verifier identical to v9.1 modulo digits

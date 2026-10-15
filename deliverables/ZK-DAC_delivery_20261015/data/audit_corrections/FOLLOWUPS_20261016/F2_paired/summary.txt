@@ -1,0 +1,5 @@
+verified 32 / 32 blocks of 10
+D=1 v9.1 runs [815, 793, 829, 799] sd 17 | v9.2 runs [799, 796, 793, 798] sd 3 | mean diff v9.2-v9.1 -12.2 ms (-1.51 %) | adjacent-pair diffs (AB,BA,BA,AB) [-16.2, 3.9, -36.3, -0.3]
+D=2 v9.1 runs [1454, 1423, 1470, 1424] sd 23 | v9.2 runs [1414, 1410, 1410, 1416] sd 3 | mean diff v9.2-v9.1 -30.0 ms (-2.08 %) | adjacent-pair diffs (AB,BA,BA,AB) [-39.6, -12.6, -59.8, -8.2]
+D=3 v9.1 runs [2351, 2289, 2322, 2310] sd 26 | v9.2 runs [2311, 2298, 2289, 2290] sd 10 | mean diff v9.2-v9.1 -20.8 ms (-0.90 %) | adjacent-pair diffs (AB,BA,BA,AB) [-39.4, 9.2, -33.1, -19.9]
+D=4 v9.1 runs [2605, 2579, 2597, 2582] sd 12 | v9.2 runs [2586, 2581, 2584, 2624] sd 20 | mean diff v9.2-v9.1 +3.0 ms (+0.12 %) | adjacent-pair diffs (AB,BA,BA,AB) [-19.5, 2.1, -12.7, 42.1]

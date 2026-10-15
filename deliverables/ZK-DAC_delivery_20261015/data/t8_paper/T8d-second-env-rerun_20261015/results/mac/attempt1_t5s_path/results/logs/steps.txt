@@ -1,0 +1,2 @@
+start 2026-10-15T04:33:24Z host siyuandeMacBook-Pro.local anvil anvil Version: 1.5.1-Homebrew
+world_build exit 1 04:33:24

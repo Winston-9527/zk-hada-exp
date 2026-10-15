@@ -1,0 +1,10 @@
+[08:07:59] commit 909ce9a host enine node v24.14.1 anvil anvil Version: 1.5.1-v1.5.1
+[08:08:08] v9.2 c2 constraints 105434 ok
+[08:08:17] release v92_c2.zkey sha256 ok
+[08:08:37] zkey verify c2 ok
+[08:08:37] vk c2 = committed
+[08:08:47] forge build ok
+[08:08:47] artifact Groth16VerifierV92CD2 ok
+[08:08:47] artifact ZkDacGateV9 ok
+[08:08:47] artifact T7cSumTarget ok
+[08:08:47] setup done

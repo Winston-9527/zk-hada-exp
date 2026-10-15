@@ -1,0 +1,218 @@
+{
+ "date": "2026-10-09T04:47:49.671Z",
+ "machine": "Apple M5 Pro x15",
+ "node": "v24.14.1",
+ "note": "ms; single-threaded JS (circomlibjs babyJub, not constant-time)",
+ "P1": {
+  "C_D1_t3n5": {
+   "exact": "30/30",
+   "action_proof_verify_ms": {
+    "n": 30,
+    "mean": 7.46,
+    "sd": 15.4,
+    "median": 4.61,
+    "p95": 5.38
+   },
+   "member_share_ms": {
+    "n": 90,
+    "mean": 25.69,
+    "sd": 0.34,
+    "median": 25.68,
+    "p95": 26.25
+   },
+   "dleq_verify_per_ciphertext_ms": {
+    "n": 30,
+    "mean": 38.44,
+    "sd": 0.33,
+    "median": 38.48,
+    "p95": 38.97
+   },
+   "combine_and_decrypt_ms": {
+    "n": 30,
+    "mean": 141.31,
+    "sd": 2.04,
+    "median": 140.94,
+    "p95": 145.75
+   }
+  },
+  "C_D2_t3n5": {
+   "exact": "30/30",
+   "action_proof_verify_ms": {
+    "n": 30,
+    "mean": 4.45,
+    "sd": 0.14,
+    "median": 4.42,
+    "p95": 4.83
+   },
+   "member_share_ms": {
+    "n": 90,
+    "mean": 25.72,
+    "sd": 0.69,
+    "median": 25.6,
+    "p95": 26.22
+   },
+   "dleq_verify_per_ciphertext_ms": {
+    "n": 30,
+    "mean": 38.45,
+    "sd": 0.39,
+    "median": 38.42,
+    "p95": 39.11
+   },
+   "combine_and_decrypt_ms": {
+    "n": 30,
+    "mean": 141.23,
+    "sd": 1.42,
+    "median": 141.1,
+    "p95": 142.74
+   }
+  },
+  "C_D3_t3n5": {
+   "exact": "30/30",
+   "action_proof_verify_ms": {
+    "n": 30,
+    "mean": 4.57,
+    "sd": 0.18,
+    "median": 4.53,
+    "p95": 5.03
+   },
+   "member_share_ms": {
+    "n": 90,
+    "mean": 26.12,
+    "sd": 1.32,
+    "median": 25.87,
+    "p95": 27.4
+   },
+   "dleq_verify_per_ciphertext_ms": {
+    "n": 30,
+    "mean": 39.27,
+    "sd": 1.78,
+    "median": 38.6,
+    "p95": 42.56
+   },
+   "combine_and_decrypt_ms": {
+    "n": 30,
+    "mean": 143.15,
+    "sd": 3.69,
+    "median": 141.56,
+    "p95": 151.57
+   }
+  },
+  "C_D4_t3n5": {
+   "exact": "30/30",
+   "action_proof_verify_ms": {
+    "n": 30,
+    "mean": 4.46,
+    "sd": 0.1,
+    "median": 4.45,
+    "p95": 4.69
+   },
+   "member_share_ms": {
+    "n": 90,
+    "mean": 25.63,
+    "sd": 0.56,
+    "median": 25.56,
+    "p95": 26.29
+   },
+   "dleq_verify_per_ciphertext_ms": {
+    "n": 30,
+    "mean": 38.38,
+    "sd": 0.43,
+    "median": 38.38,
+    "p95": 39.07
+   },
+   "combine_and_decrypt_ms": {
+    "n": 30,
+    "mean": 141.38,
+    "sd": 1.3,
+    "median": 141.11,
+    "p95": 143.47
+   }
+  },
+  "A_D4_t3n5": {
+   "exact": "10/10",
+   "action_proof_verify_ms": {
+    "n": 10,
+    "mean": 4.52,
+    "sd": 0.19,
+    "median": 4.48,
+    "p95": 4.85
+   },
+   "member_share_ms": {
+    "n": 30,
+    "mean": 128.39,
+    "sd": 1.2,
+    "median": 128.34,
+    "p95": 130.94
+   },
+   "dleq_verify_per_ciphertext_ms": {
+    "n": 10,
+    "mean": 38.48,
+    "sd": 0.57,
+    "median": 38.46,
+    "p95": 39.59
+   },
+   "combine_and_decrypt_ms": {
+    "n": 10,
+    "mean": 708.6,
+    "sd": 11.51,
+    "median": 705.02,
+    "p95": 739.21
+   }
+  },
+  "C_D4_t2n3": {
+   "exact": "30/30",
+   "member_share_ms": {
+    "n": 60,
+    "mean": 25.63,
+    "sd": 0.33,
+    "median": 25.61,
+    "p95": 26.12
+   },
+   "dleq_verify_per_ciphertext_ms": {
+    "n": 30,
+    "mean": 38.39,
+    "sd": 0.48,
+    "median": 38.31,
+    "p95": 39.4
+   },
+   "combine_and_decrypt_ms": {
+    "n": 30,
+    "mean": 96.64,
+    "sd": 0.74,
+    "median": 96.6,
+    "p95": 98.16
+   }
+  },
+  "C_D4_t5n9": {
+   "exact": "30/30",
+   "member_share_ms": {
+    "n": 150,
+    "mean": 25.66,
+    "sd": 1.13,
+    "median": 25.5,
+    "p95": 26.22
+   },
+   "dleq_verify_per_ciphertext_ms": {
+    "n": 30,
+    "mean": 38.47,
+    "sd": 0.58,
+    "median": 38.42,
+    "p95": 39.63
+   },
+   "combine_and_decrypt_ms": {
+    "n": 30,
+    "mean": 239.44,
+    "sd": 4.89,
+    "median": 237.7,
+    "p95": 251.31
+   }
+  }
+ },
+ "P2": {
+  "bytes_per_share_per_ciphertext": 133,
+  "form": "commitment form (A1, A2, z); the (ch, z) form would be 1+4+32+64 = 101 B",
+  "mode_C_t3": 399,
+  "mode_A_D4_t3": 1995,
+  "mode_C_t5": 665
+ }
+}

@@ -1,0 +1,2 @@
+.venv/bin/python analyze.py classify 100 > results/classifiers.json 2>   8318.65s user 809.83s system 631% cpu 24:05.02 total
+exit 0

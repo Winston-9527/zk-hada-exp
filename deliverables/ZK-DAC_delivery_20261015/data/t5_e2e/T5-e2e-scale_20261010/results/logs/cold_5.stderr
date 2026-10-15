@@ -1,0 +1,19 @@
+03:18:32 cold slot 5 D=3 local 2618.72 prove 2376.45
+        5.28 real        21.05 user         0.95 sys
+          3557179392  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+              415534  page reclaims
+                  88  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  38  messages sent
+                  38  messages received
+                   0  signals received
+                   0  voluntary context switches
+               33213  involuntary context switches
+        210904468109  instructions retired
+         93829844225  cycles elapsed
+          3422282656  peak memory footprint

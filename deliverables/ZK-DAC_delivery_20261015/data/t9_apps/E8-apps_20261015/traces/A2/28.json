@@ -1,0 +1,173 @@
+{
+ "app": "A2",
+ "seed": 28,
+ "caps": [
+  3,
+  1,
+  1
+ ],
+ "budget": [
+  60,
+  60,
+  60
+ ],
+ "underfundedIndex": 6,
+ "events": [
+  {
+   "t": 20,
+   "type": "pay",
+   "agent": 0,
+   "amount": 2,
+   "recipient": 2
+  },
+  {
+   "t": 29,
+   "type": "pay",
+   "agent": 1,
+   "amount": 1,
+   "recipient": 2
+  },
+  {
+   "t": 32,
+   "type": "attack",
+   "kind": "approve_without_cap",
+   "agent": 1,
+   "amount": 5,
+   "recipient": 9
+  },
+  {
+   "t": 36,
+   "type": "pay",
+   "agent": 2,
+   "amount": 1,
+   "recipient": 2
+  },
+  {
+   "t": 47,
+   "type": "pay",
+   "agent": 0,
+   "amount": 1,
+   "recipient": 1
+  },
+  {
+   "t": 50,
+   "type": "attack",
+   "kind": "over_budget",
+   "agent": 1,
+   "amount": 61,
+   "recipient": 3
+  },
+  {
+   "t": 58,
+   "type": "pay",
+   "agent": 1,
+   "amount": 1,
+   "recipient": 4
+  },
+  {
+   "t": 61,
+   "type": "approve",
+   "agent": 0,
+   "amount": 5,
+   "recipient": 9
+  },
+  {
+   "t": 64,
+   "type": "pay",
+   "agent": 2,
+   "amount": 3,
+   "recipient": 3
+  },
+  {
+   "t": 72,
+   "type": "pay",
+   "agent": 0,
+   "amount": 4,
+   "recipient": 5,
+   "underfunded": true
+  },
+  {
+   "t": 80,
+   "type": "pay",
+   "agent": 1,
+   "amount": 6,
+   "recipient": 1
+  },
+  {
+   "t": 84,
+   "type": "attack",
+   "kind": "replay",
+   "agent": 1,
+   "of": 7
+  },
+  {
+   "t": 87,
+   "type": "pay",
+   "agent": 2,
+   "amount": 5,
+   "recipient": 2
+  },
+  {
+   "t": 98,
+   "type": "pay",
+   "agent": 0,
+   "amount": 4,
+   "recipient": 4
+  },
+  {
+   "t": 107,
+   "type": "pay",
+   "agent": 1,
+   "amount": 5,
+   "recipient": 4
+  },
+  {
+   "t": 115,
+   "type": "pay",
+   "agent": 2,
+   "amount": 5,
+   "recipient": 5
+  },
+  {
+   "t": 126,
+   "type": "pay",
+   "agent": 0,
+   "amount": 3,
+   "recipient": 2
+  },
+  {
+   "t": 128,
+   "type": "revoke",
+   "agent": 2
+  },
+  {
+   "t": 133,
+   "type": "pay",
+   "agent": 1,
+   "amount": 6,
+   "recipient": 3
+  },
+  {
+   "t": 151,
+   "type": "pay",
+   "agent": 0,
+   "amount": 1,
+   "recipient": 5
+  },
+  {
+   "t": 162,
+   "type": "pay",
+   "agent": 1,
+   "amount": 2,
+   "recipient": 1
+  },
+  {
+   "t": 188,
+   "type": "attack",
+   "kind": "after_revocation",
+   "agent": 2,
+   "amount": 2,
+   "recipient": 4
+  }
+ ]
+}

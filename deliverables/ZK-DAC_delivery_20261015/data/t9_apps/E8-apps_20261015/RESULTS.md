@@ -1,0 +1,96 @@
+# E8 — three application workloads (WP12): results
+
+- **Pre-registration:** `PREREGISTRATION.md` (ae40152). Traces committed in e2022d0 before any run. Amendment A1 (bee141e) after the Mac smoke runs.
+- **Runs:** RTX6000, 90 = 3 applications × 30 seeds, all exit 0. `results/summary.json` is written by `summarize.py`.
+- **Latency:** dedicated uncontended Mac runs (`results/latency_mac/`).
+- **Traces are deterministic and self-generated.** This is not an authoritative benchmark, and no real LLM agent was used (user decision).
+- **Boundary.** The authorization layer is real: v9.2 proofs, gate, revocation, registry and budget circuits. The applications are local stand-ins: an HTTP gateway, a test ERC-20 and a simulated procurement. No claim is made about prompt injection.
+
+## Authorization safety: every known over-authorization attempt was blocked (369 / 369)
+| application | attempt | n | blocked | blocking layer (reason) |
+|---|---|---|---|---|
+| A1 | tool without its cap bit (`admin`) | 30 | 30 | circuit (CapSubset) |
+| A1 | call beyond budget | 30 | 30 | circuit (Num2Bits: negative change) |
+| A1 | tool removed by a permission change, with the new certificate | 30 | 30 | circuit (CapSubset) |
+| A1 | call after revocation, with a stale revocation view | 30 | 30 | gate (StaleRevokedRoot) |
+| A1 | call after certificate expiry | 30 | 30 | circuit (LeqU64: now ≤ expiry) |
+| A2 | `approve` without its cap bit | 30 | 30 | circuit (CapSubset) |
+| A2 | payment beyond budget | 30 | 30 | circuit (Num2Bits) |
+| A2 | replay of an accepted proof | 30 | 30 | gate (BudgetSpent) |
+| A2 | payment after revocation, with a stale view | 30 | 30 | gate (StaleRevokedRoot) |
+| A3 | category outside the sub-agent's cap | 30 | 30 | circuit (CapSubset) 27; no note to spend 3 |
+| A3 | purchase beyond budget | 30 | 30 | circuit (Num2Bits) 27; no note 3 |
+| A3 | spending another sub-agent's note | 30 | 30 | circuit (note membership, ZkDacChainV9 L227) |
+| A3 | purchase after revocation, with a stale view | 9 | 9 | gate (StaleRevokedRoot) |
+
+- In A1, the permission-change attack was also tried with the **old, revoked certificate** and its old note, under a stale revocation view. It was blocked at the gate (StaleRevokedRoot) in every run.
+- The A1 gateway refused to serve every request id that had no reservation on chain.
+- **Coverage gaps** (amendment A1, disclosed):
+  - A3 "after revocation" was **untestable in 21 / 30 runs**: by t = 260 the revoked sub-agent's note had no funds left. Revocation blocking is covered by A1 (30 / 30) and A2 (30 / 30).
+  - In 3 A3 seeds, the misbehaving sub-agent had been assigned no items and therefore held no note. Its category and budget attacks were refused for lack of a note, not by the circuit.
+
+## A1 — service access (tool gateway; reservation / commit / fail)
+- **Calls (legitimate, intended):** 619. Reserved on chain: 619, so no legitimate call was refused.
+- **Commit:** 528, **85.3 %** (95 % CI 82.3–88.0 %).
+- **Fail:** 53. The gateway failure was injected with p = 0.10.
+- **Uncertain:** 38 (6.1 %). The gateway crashed after serving and before commit, injected with p = 0.05. Each such reservation stays open on chain. This is the measured non-atomicity of off-chain effects, made explicit by the reservation semantics.
+- **Became unauthorized:** 39 calls planned before a permission change (agent 0 lost `fetch`) were refused at the circuit, as they must be. They are classified apart.
+- **Concurrency:** in all 30 runs, two calls on one note in one block gave one acceptance and one BudgetSpent, and the retry on the change note succeeded.
+- **Permission change cost:** the budget left on the old certificate is stranded, 15.8 units on average (of 20). The new certificate needs a fresh delegation.
+
+## A2 — sandbox assets (ERC-20 vault, atomic)
+- **Payments and approvals:** 510 / 510 settled (95 % CI 99.3–100 %). Token conservation holds in every run: recipients' balances = the vault's `paid` = the accepted amounts. Spend ≤ budget for every agent.
+- **Atomicity (30 / 30 runs).** In the underfunded payment, the vault's transfer reverted, and the whole execute rolled back:
+  - the budget nullifier stayed unspent (30 / 30);
+  - no token moved (30 / 30);
+  - after the treasury topped up the vault, the retry with the same note succeeded (30 / 30).
+
+## A3 — multi-agent orchestration (bounded procurement)
+- **Task success** (all 24 items, spend ≤ B, allowed categories only): **25 / 30** (83 %, 95 % CI 65–94 %).
+- Spend ≤ B in every run. Transient target errors: 59, all retried successfully. No purchase stuck for another reason.
+- **All 5 failures** had 1–5 items that could not be reassigned (12 in total; 19–23 of 24 items bought).
+  - The cause is **stranded budget**: what was delegated to the offline or revoked sub-agent cannot be reclaimed. Notes belong to their holder, and there is no claw-back.
+  - Stranded budget averaged 12.2 units over all runs, and 6–40 units in the failed runs. P's 25 % slack (33.2 units on average) was not enough when two sub-agents failed.
+- **Design consequence:** bounded tasks must provision slack for the failure of sub-agents that hold budget, or delegate in smaller increments. This is a property of non-custodial budget notes, not an authorization failure.
+
+## Latency, nine E4 stages (Mac M5 Pro, uncontended, seed 0; median ms)
+| stage | A1 (D = 2) | A2 (D = 2) | A3 (D = 3) |
+|---|---|---|---|
+| S1 credential issuance (key + certificate + signature + instance) | — | ≈ 300 per credential | — |
+| S2 revocation-path fetch | 0.3 | 0.3 | 0.4 |
+| S3 witness assembly | 23 | 23 | 23 |
+| S4 witness calculation | 167 | 165 | 208 |
+| S5 proving | **1,403** | **1,418** | **2,325** |
+| S6 off-chain verification | 5 | 5 | 5 |
+| S7 submission | 11 | 11 | 11 |
+| S8 inclusion (anvil, not a real chain's finality) | 8 | 8 | 8 |
+| S9 action execution (read back) | 2 | 2 | — |
+
+- Proving dominates (88 % at D = 2, 91 % at D = 3 of the local path S2–S6), as in T5.
+- S8 is local anvil inclusion: a real chain adds its block time and finality rule.
+- **Gaps:** S1 was recorded only in A2's output, and S9 is missing in A3's harness. Both are disclosed, not reconstructed.
+
+## What this means for the paper (research design E8)
+1. Across three workloads and 30 seeds each, the authorization layer blocked every one of the 369 known over-authorization attempts. The blocking happened at the circuit for cap, budget and expiry, and at the gate for replay and revocation beyond Δ.
+2. Off-chain effects are not atomic with the on-chain spend. With reservation, commit and fail, 6.1 % of the calls ended uncertain under the injected crash rate, and they stay visible on chain.
+3. On-chain effects are atomic: proof, spend and transfer commit or roll back together.
+4. Non-custodial budgets strand on failed sub-agents. That limits the task success of bounded orchestration (83 %) unless slack is provisioned.
+
+## Corrections after audit #77 (2026-10-15; no new experiment, recomputed from the committed outputs by `summarize_v2.py` → `results/summary_v2.json`)
+- **A3 failure attribution was wrong (MAJOR, confirmed).**
+  - The 12 unassignable items split as follows:
+    - **planner budget exhausted: 2** (seeds 0, 26);
+    - **no capable live sub-agent: 10** (seeds 3, 11, 29). `reassign()` recorded no `why` for these.
+  - Seed 29 had 29 units left at the planner when its 2 items became unassignable.
+  - So **3 of the 5 failed runs failed for lack of capability redundancy, not for stranded budget.** The generator guarantees only 2 capable sub-agents per category, and both injected faults can hit the same category.
+  - **Revised design consequence:** bounded orchestration needs **capability redundancy** for the failures it must tolerate, and slack for budget stranded at failed sub-agents. The earlier text ("must provision slack") named only the second.
+- **Stranded budget** counted only each sub-agent's main note. Per-item notes reassigned to a sub-agent that later failed add 3 / 8 / 6 units in seeds 3 / 11 / 29. **Mean 12.7, not 12.2.**
+- **369 / 369 is not the number of protocol blocks.** 6 A3 attempts (category and budget attacks where the attacker held no note) failed inside the harness on a JS error and were counted as blocked. Under amendment A1's rule they are untestable, like the 21 revocation attempts.
+  - **Blocked by the circuit or the gate: 363** (A1 150, A2 120, A3 93). A3's cap and budget attacks are 27 / 27 each.
+  - **No attempt was accepted.**
+- **Seed 29's revocation attack was testable.** The revoked S3 still held a per-item note of value 5. It was recorded as untestable because only the main note was checked. So 21 revocation attempts were not tested, and 1 of them (seed 29) was misclassified: it was testable. None of the untestable cases hides an acceptance.
+- **The A1 gateway binds neither the tool nor single use** (`a1.mjs:18-20`, reproduced by the audit). A reservation for `search` can be redeemed as `admin`, repeatedly, and an uncertain reservation's id is public in its event. **"admin blocked 30 / 30" holds at the authorization layer only.** A deployed gateway must bind (id, tool) and serve once. A1 is an authorization-layer stand-in, not end-to-end access control.
+- **`spend_le_budget` cannot fail by construction** in A1 (bound 40 vs at most 9 calls per agent) and in A2 (the generator caps spend at 51 < 60). The evidence for budget enforcement is the over-budget attacks (A1 30, A2 30, A3 27), all refused by the circuit.
+- **`reason()` layer attribution** (`e8lib.mjs`) labels every non-gate address as "target": verifiers, Poseidon libraries, precompiles. At low gas limits it misattributes (the audit reproduced OOG cases). The selector map can also mislabel shared error names: the gate's `UnknownMethod` shows up as `E8Vault.UnknownMethod`.
+  - With E8's 1.5M gas limit, the only reverts that occurred were StaleRevokedRoot, BudgetSpent and A2's token revert, so the reported layers are right.
+  - The method is not reusable as is.

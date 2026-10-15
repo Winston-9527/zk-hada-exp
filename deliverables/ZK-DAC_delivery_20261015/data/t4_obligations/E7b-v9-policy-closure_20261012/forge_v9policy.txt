@@ -1,0 +1,50 @@
+No files changed, compilation skipped
+
+Ran 34 tests for test/V9Policy.t.sol:V9PolicyTest
+[PASS] test_A10_selectorBeforeVerify() (gas: 9967862)
+[PASS] test_A11a_amountAndQ() (gas: 7157087)
+[PASS] test_A11a_amountOnly() (gas: 6806462)
+[PASS] test_A11a_chainId() (gas: 7157313)
+[PASS] test_A11a_gateAddress() (gas: 11542656)
+[PASS] test_A11a_gateAddress_control() (gas: 11635481)
+[PASS] test_A11a_method() (gas: 7418981)
+[PASS] test_A11a_nonce() (gas: 7156966)
+[PASS] test_A11a_params() (gas: 7156979)
+[PASS] test_A11a_target() (gas: 7184090)
+[PASS] test_A11req() (gas: 7377176)
+[PASS] test_A14_now0_V9config() (gas: 7156938)
+[PASS] test_A14_skew60_edge_ok() (gas: 11636158)
+[PASS] test_A14_skew60_future() (gas: 11134526)
+[PASS] test_A14_skew60_tooOld() (gas: 11134690)
+[PASS] test_A17c_registryRejects() (gas: 6815461)
+[PASS] test_A21c_revokedRootRetired() (gas: 6814541)
+[PASS] test_A22h_otherTpk() (gas: 11467300)
+[PASS] test_A22i_identityTpkDeploys() (gas: 6212890)
+[PASS] test_GB2_amountMismatch() (gas: 30966878)
+[PASS] test_GB4_noteRootAfterWindow() (gas: 15585802)
+[PASS] test_GB5_mintNonOperator() (gas: 2741562)
+[PASS] test_GB7_revocationFreezesBudget() (gas: 47218423)
+[PASS] test_actionThenTransferOfSameNote() (gas: 39302263)
+[PASS] test_businessRevertRollsBack() (gas: 7798849)
+[PASS] test_frontRunnerCanSubmit() (gas: 7326656)
+[PASS] test_gas() (gas: 29341675)
+Logs:
+  v9 mint (excl. intrinsic and calldata) 300943
+  v9 transferBudget (2 note inserts) 473356
+  v9 execute D=2 budgeted (excl. intrinsic and calldata) 528611
+  v9 execute D=4 budgeted (excl. intrinsic and calldata) 480879
+
+[PASS] test_mintWrongAmount() (gas: 2779025)
+[PASS] test_reentrantReplay() (gas: 7456617)
+[PASS] test_sequence() (gas: 32311480)
+[PASS] test_staleIssuedRoot() (gas: 6841787)
+[PASS] test_v9_registerStateMatchesCircuit_permissionless_idempotent() (gas: 2222156)
+Logs:
+  v9 registerState, already registered 1841
+  v9 registerState, new combination (on-chain PoseidonT4) 106105
+
+[PASS] test_v9_replayOfExecutedProof() (gas: 9967722)
+[PASS] test_v9_unregisteredStateCombination() (gas: 6808859)
+Suite result: ok. 34 passed; 0 failed; 0 skipped; finished in 60.60ms (450.55ms CPU time)
+
+Ran 1 test suite in 139.17ms (60.60ms CPU time): 34 tests passed, 0 failed, 0 skipped (34 total tests)
