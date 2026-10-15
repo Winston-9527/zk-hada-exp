@@ -1,0 +1,4 @@
+build/
+**/build/**/*.zkey
+**/build/**/*_js/
+**/build/**/*.r1cs
