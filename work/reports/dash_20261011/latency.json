@@ -1,0 +1,50 @@
+[
+ {
+  "D": 1,
+  "fetch_assembly_ms": 37.0,
+  "witness_ms": 131.8,
+  "prove_ms": 747.2,
+  "verify_submit_inclusion_ms": 205.0,
+  "local_mean_ms": 916,
+  "local_p95_ms": 927.2,
+  "cold_local_mean_ms": 1016.1,
+  "n_steady": 30,
+  "n_cold": 10
+ },
+ {
+  "D": 2,
+  "fetch_assembly_ms": 36.6,
+  "witness_ms": 167.3,
+  "prove_ms": 1350.5,
+  "verify_submit_inclusion_ms": 206.1,
+  "local_mean_ms": 1554.4,
+  "local_p95_ms": 1577.7,
+  "cold_local_mean_ms": 1661.5,
+  "n_steady": 30,
+  "n_cold": 10
+ },
+ {
+  "D": 3,
+  "fetch_assembly_ms": 37.2,
+  "witness_ms": 202.1,
+  "prove_ms": 2175.5,
+  "verify_submit_inclusion_ms": 205.9,
+  "local_mean_ms": 2414.8,
+  "local_p95_ms": 2448.7,
+  "cold_local_mean_ms": 2552.1,
+  "n_steady": 30,
+  "n_cold": 10
+ },
+ {
+  "D": 4,
+  "fetch_assembly_ms": 37.3,
+  "witness_ms": 239.7,
+  "prove_ms": 2462.8,
+  "verify_submit_inclusion_ms": 210.1,
+  "local_mean_ms": 2739.8,
+  "local_p95_ms": 2855.3,
+  "cold_local_mean_ms": 2878.9,
+  "n_steady": 30,
+  "n_cold": 10
+ }
+]

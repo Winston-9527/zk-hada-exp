@@ -1,0 +1,62 @@
+[
+ {
+  "popcount": 2,
+  "gas_mean_d4": 614835,
+  "actions": 1,
+  "law_d4": 614806
+ },
+ {
+  "popcount": 3,
+  "gas_mean_d4": 641923,
+  "actions": 11,
+  "law_d4": 641895
+ },
+ {
+  "popcount": 4,
+  "gas_mean_d4": 668993,
+  "actions": 52,
+  "law_d4": 668984
+ },
+ {
+  "popcount": 5,
+  "gas_mean_d4": 696069,
+  "actions": 140,
+  "law_d4": 696073
+ },
+ {
+  "popcount": 6,
+  "gas_mean_d4": 723159,
+  "actions": 238,
+  "law_d4": 723162
+ },
+ {
+  "popcount": 7,
+  "gas_mean_d4": 750246,
+  "actions": 267,
+  "law_d4": 750251
+ },
+ {
+  "popcount": 8,
+  "gas_mean_d4": 777336,
+  "actions": 199,
+  "law_d4": 777340
+ },
+ {
+  "popcount": 9,
+  "gas_mean_d4": 804425,
+  "actions": 92,
+  "law_d4": 804429
+ },
+ {
+  "popcount": 10,
+  "gas_mean_d4": 831519,
+  "actions": 22,
+  "law_d4": 831518
+ },
+ {
+  "popcount": 11,
+  "gas_mean_d4": 858599,
+  "actions": 2,
+  "law_d4": 858607
+ }
+]

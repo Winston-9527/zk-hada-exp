@@ -1,0 +1,20 @@
+[
+ {
+  "race": "v7 门：逐边限额，64 笔每笔 10",
+  "budget": 100,
+  "offered": 640,
+  "accepted": 640
+ },
+ {
+  "race": "v8 门：32 个代理争抢同一预算",
+  "budget": 100,
+  "offered": 320,
+  "accepted": 100
+ },
+ {
+  "race": "v8 门：同一 note 版本上的 12 笔",
+  "budget": 100,
+  "offered": 120,
+  "accepted": 40
+ }
+]

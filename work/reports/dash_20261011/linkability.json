@@ -1,0 +1,167 @@
+[
+ {
+  "test": "同一智能体",
+  "model": "逻辑回归",
+  "auc": 0.527,
+  "ci_low": 0.494,
+  "ci_high": 0.562,
+  "within_fold_auc": 0.529,
+  "perm_p": 0.3564,
+  "control": false,
+  "verdict": "未检测到链接"
+ },
+ {
+  "test": "同一智能体",
+  "model": "随机森林",
+  "auc": 0.522,
+  "ci_low": 0.486,
+  "ci_high": 0.556,
+  "within_fold_auc": 0.52,
+  "perm_p": 0.3069,
+  "control": false,
+  "verdict": "未检测到链接"
+ },
+ {
+  "test": "同一智能体",
+  "model": "k 近邻",
+  "auc": 0.515,
+  "ci_low": 0.481,
+  "ci_high": 0.55,
+  "within_fold_auc": 0.51,
+  "perm_p": 0.3069,
+  "control": false,
+  "verdict": "未检测到链接"
+ },
+ {
+  "test": "兄弟（同父）",
+  "model": "逻辑回归",
+  "auc": 0.471,
+  "ci_low": 0.428,
+  "ci_high": 0.513,
+  "within_fold_auc": 0.489,
+  "perm_p": 0.802,
+  "control": false,
+  "verdict": "未检测到链接"
+ },
+ {
+  "test": "兄弟（同父）",
+  "model": "随机森林",
+  "auc": 0.421,
+  "ci_low": 0.384,
+  "ci_high": 0.46,
+  "within_fold_auc": 0.496,
+  "perm_p": 1.0,
+  "control": false,
+  "verdict": "未检测到链接"
+ },
+ {
+  "test": "兄弟（同父）",
+  "model": "k 近邻",
+  "auc": 0.499,
+  "ci_low": 0.458,
+  "ci_high": 0.538,
+  "within_fold_auc": 0.519,
+  "perm_p": 0.4158,
+  "control": false,
+  "verdict": "未检测到链接"
+ },
+ {
+  "test": "所属 master",
+  "model": "逻辑回归",
+  "auc": 0.29,
+  "ci_low": 0.246,
+  "ci_high": 0.335,
+  "within_fold_auc": 0.52,
+  "perm_p": 0.7228,
+  "control": false,
+  "verdict": "未检测到链接"
+ },
+ {
+  "test": "所属 master",
+  "model": "随机森林",
+  "auc": 0.043,
+  "ci_low": 0.03,
+  "ci_high": 0.058,
+  "within_fold_auc": 0.484,
+  "perm_p": 0.7129,
+  "control": false,
+  "verdict": "未检测到链接"
+ },
+ {
+  "test": "所属 master",
+  "model": "k 近邻",
+  "auc": 0.149,
+  "ci_low": 0.118,
+  "ci_high": 0.182,
+  "within_fold_auc": 0.494,
+  "perm_p": 0.6634,
+  "control": false,
+  "verdict": "未检测到链接"
+ },
+ {
+  "test": "对照 P1：复用密文随机数",
+  "model": "逻辑回归",
+  "auc": 1.0,
+  "ci_low": 1.0,
+  "ci_high": 1.0,
+  "within_fold_auc": 1.0,
+  "perm_p": 0.0099,
+  "control": true,
+  "verdict": "检出"
+ },
+ {
+  "test": "对照 P1：复用密文随机数",
+  "model": "随机森林",
+  "auc": 1.0,
+  "ci_low": 1.0,
+  "ci_high": 1.0,
+  "within_fold_auc": 1.0,
+  "perm_p": 0.0099,
+  "control": true,
+  "verdict": "检出"
+ },
+ {
+  "test": "对照 P1：复用密文随机数",
+  "model": "k 近邻",
+  "auc": 1.0,
+  "ci_low": 1.0,
+  "ci_high": 1.0,
+  "within_fold_auc": 1.0,
+  "perm_p": 0.0099,
+  "control": true,
+  "verdict": "检出"
+ },
+ {
+  "test": "对照 P2：公开谱系标签",
+  "model": "逻辑回归",
+  "auc": 1.0,
+  "ci_low": 1.0,
+  "ci_high": 1.0,
+  "within_fold_auc": 1.0,
+  "perm_p": 0.0099,
+  "control": true,
+  "verdict": "检出"
+ },
+ {
+  "test": "对照 P2：公开谱系标签",
+  "model": "随机森林",
+  "auc": 1.0,
+  "ci_low": 1.0,
+  "ci_high": 1.0,
+  "within_fold_auc": 1.0,
+  "perm_p": 0.0099,
+  "control": true,
+  "verdict": "检出"
+ },
+ {
+  "test": "对照 P2：公开谱系标签",
+  "model": "k 近邻",
+  "auc": 0.976,
+  "ci_low": 0.966,
+  "ci_high": 0.983,
+  "within_fold_auc": 0.974,
+  "perm_p": 0.0099,
+  "control": true,
+  "verdict": "检出"
+ }
+]

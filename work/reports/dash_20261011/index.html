@@ -1,0 +1,344 @@
+<style>
+.zr { --zr-accent: var(--cds-chart-status-critical); font-family: var(--font-anthropic-sans); display: grid; gap: var(--cds-gap-xl); max-width: 1180px; margin-inline: auto; }
+.zr h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+.zr h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; text-wrap: balance; }
+.zr h3 { font-size: var(--cds-font-size-body); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.zr p { margin: 0; max-width: 68ch; line-height: 1.55; }
+.zr .muted { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.zr .head { display: grid; gap: var(--cds-gap-sm); }
+.zr .section { display: grid; gap: var(--cds-gap-md); }
+.zr .grid { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); }
+.zr .tiles { display: grid; gap: var(--cds-gap-md); grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); }
+.zr .card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-sm); align-content: start; min-width: 0; }
+.zr .tile .big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; line-height: 1.1; }
+.zr .tile .unit { font-size: var(--cds-font-size-body); color: var(--color-fg-muted); margin-inline-start: .25em; }
+.zr .pill { display: inline-flex; align-items: center; gap: .35em; font-size: var(--cds-font-size-caption); width: fit-content; }
+.zr .pill::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: currentColor; }
+.zr .ok { color: var(--color-ok); } .zr .bad { color: var(--color-bad); } .zr .warn { color: var(--color-warn); }
+.zr .chart { position: relative; min-height: 240px; }
+.zr .chart svg { display: block; overflow: visible; }
+.zr .tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; z-index: 2; }
+.zr .tip .t1 { color: var(--cds-text-secondary); }
+.zr .tablebox { overflow-x: auto; max-height: 34rem; overflow-y: auto; }
+.zr table { border-collapse: collapse; width: 100%; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+.zr th, .zr td { text-align: left; padding: .45rem .6rem; border-bottom: 1px solid var(--color-border-line); vertical-align: top; }
+.zr th { position: sticky; top: 0; background: var(--color-panel); font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); white-space: nowrap; }
+.zr td.num, .zr th.num { text-align: right; white-space: nowrap; }
+.zr td.path { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .92em; color: var(--color-fg-muted); word-break: break-all; }
+.zr .legend { display: flex; flex-wrap: wrap; gap: var(--cds-gap-sm) var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+.zr .legend span { display: inline-flex; align-items: center; gap: .35em; }
+.zr .legend i { width: .7rem; height: .7rem; border-radius: 2px; display: inline-block; }
+.zr .legend i.line { height: 2px; border-radius: 0; }
+.zr [data-dash-source-state=empty] { color: transparent; }
+.zr [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+.zr .fail { display: flex; align-items: center; justify-content: center; gap: .4em; min-height: 120px; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.zr .fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+.zr b { font-weight: var(--cds-font-weight-medium); }
+</style>
+
+<div class="zr">
+  <header class="head" id="top">
+    <h1>ZK-DAC 阶段报告 · 2026-10-11</h1>
+    <p id="takeaway">研究设计中的四条主线（隐藏谱系授权、逐跳撤销、预算守恒、门限追责）都有实证支撑，实验 E0–E8 全部有结果。
+      撤销率 10% 时，仍能行动的后代 <b data-source="revocation" data-field="descendants_still_able" data-row="1" class="dash-skeleton">—</b> 个，被误挡的无关智能体 <b data-source="revocation" data-field="unaffected_blocked" data-row="1" class="dash-skeleton">—</b> 个；
+      v9 transcript 的可链接性检验均未检出链接，两个阳性对照全部检出。安全证明仍是纸面草稿，需按 v9 更新。</p>
+    <p class="muted">乙方 · 主电路 v9 · 机器 Apple M5 Pro · 每个数字可点开查看来源，来源为实验仓库中的结果文件（路径见各数据集说明）。测试通过不等于安全证明。</p>
+  </header>
+
+  <section class="section" id="targets">
+    <h2>工程目标（研究设计第 300 行，运行前固定）</h2>
+    <div class="tiles">
+      <div class="card tile"><span class="muted">D=4 本地授权计算 p95，稳态</span>
+        <div><span class="big dash-skeleton" data-source="targets" data-field="measured" data-row="0">—</span><span class="unit">s</span></div>
+        <span class="muted">目标 ≤ <span data-source="targets" data-field="threshold" data-row="0">—</span> s</span><span class="pill" data-pass="0"></span></div>
+      <div class="card tile"><span class="muted">D=4 本地授权计算 p95，冷启动进程</span>
+        <div><span class="big dash-skeleton" data-source="targets" data-field="measured" data-row="1">—</span><span class="unit">s</span></div>
+        <span class="muted">目标 ≤ <span data-source="targets" data-field="threshold" data-row="1">—</span> s</span><span class="pill" data-pass="1"></span></div>
+      <div class="card tile"><span class="muted">峰值内存，全部进程</span>
+        <div><span class="big dash-skeleton" data-source="targets" data-field="measured" data-row="2">—</span><span class="unit">GiB</span></div>
+        <span class="muted">目标 ≤ <span data-source="targets" data-field="threshold" data-row="2">—</span> GiB</span><span class="pill" data-pass="2"></span></div>
+      <div class="card tile"><span class="muted">验证器单独 gas，D=4</span>
+        <div><span class="big dash-skeleton" data-source="targets" data-field="measured" data-row="3">—</span></div>
+        <span class="muted">目标 ≤ <span data-source="targets" data-field="threshold" data-row="3">—</span></span><span class="pill" data-pass="3"></span></div>
+    </div>
+  </section>
+
+  <section class="section" id="matrix">
+    <h2>实验矩阵 E0–E8</h2>
+    <div class="card"><div class="tablebox">
+      <table data-source="experiments" data-row-key="exp" id="tbl-exp">
+        <thead><tr><th data-field="exp">实验</th><th data-field="status">状态</th><th data-field="result">主要结果</th><th data-field="evidence">证据目录</th></tr></thead><tbody></tbody>
+      </table></div></div>
+  </section>
+
+  <section class="section" id="cost">
+    <h2>成本：延迟、gas、各组件</h2>
+    <div class="grid">
+      <div class="card"><h3 id="h-lat">单次动作各阶段耗时（稳态均值）</h3>
+        <p class="muted">每个深度一组全新动作（每个动作新密钥、新随机数）；菱形是全新进程中的本地计算。证明占大头。</p>
+        <div class="legend" id="lg-lat"></div>
+        <div class="chart dash-skeleton" id="ch-lat" data-source="latency"></div></div>
+      <div class="card"><h3 id="h-gas">执行 gas 与 note 插入位置（D=4）</h3>
+        <p class="muted">完整交易 gas 由新 note 插入位置二进制中 1 的个数决定，与深度关系很小。参考线：明文下界 B0 与验证器单独成本。</p>
+        <div class="legend" id="lg-gas"></div>
+        <div class="chart dash-skeleton" id="ch-gas" data-source="gas_popcount gas_by_depth"></div></div>
+    </div>
+    <div class="grid">
+      <div class="card"><h3 id="h-comp">各版本证明耗时（均值 ± SD）</h3>
+        <p class="muted">v6 链 + 撤销；v7 加追责；v8 加预算 note；v9 压缩公开输入。D=3 时追责越过 2^17 FFT 规模。</p>
+        <div class="legend" id="lg-comp"></div>
+        <div class="chart dash-skeleton" id="ch-comp" data-source="components"></div></div>
+      <div class="card"><h3>按深度的 gas 与隐私成本</h3>
+        <p class="muted">B0 是同栈明文实现（ECDSA 证书链，同样的策略与账本）；倍数 = v9 ÷ B0。</p>
+        <div class="tablebox"><table data-source="gas_by_depth" data-row-key="D" id="tbl-gas">
+          <thead><tr><th data-field="D">D</th><th class="num" data-field="b0_plaintext_median">B0 明文</th><th class="num" data-field="v9_fresh_tree">v9 空树</th><th class="num" data-field="v9_t5_world_mean">v9 T5 世界</th><th class="num" data-field="verifier_only">验证器单独</th><th class="num" data-source="privacy_ratio" data-field="ratio_fresh">倍数（空树）</th><th class="num" data-source="privacy_ratio" data-field="ratio_world">倍数（T5 世界）</th></tr></thead><tbody></tbody>
+        </table></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="budget">
+    <h2>预算守恒（H3）</h2>
+    <div class="grid">
+      <div class="card"><h3 id="h-bud">同一区块内的并发花费</h3>
+        <p class="muted">真实交易，每轮竞争的所有交易在同一个区块。虚线是授予的预算。只靠逐边限额时超额；预算 note 守住上限。</p>
+        <div class="legend" id="lg-bud"></div>
+        <div class="chart dash-skeleton" id="ch-bud" data-source="budget_races"></div></div>
+      <div class="card"><h3>规模化撤销（T5 共享世界）</h3>
+        <p class="muted">对世界中全部智能体做见证层检查；在途证明在撤销窗口过后提交；无关智能体重做一次证明后被接受。</p>
+        <div class="tablebox"><table data-source="revocation" data-row-key="rate_pct" id="tbl-rev">
+          <thead><tr><th class="num" data-field="rate_pct">撤销率 %</th><th class="num" data-field="edges_revoked">撤销边数</th><th class="num" data-field="agents_blocked_expected">应挡住</th><th class="num" data-field="descendants_still_able">后代仍可行动</th><th class="num" data-field="unaffected_blocked">无关者被挡</th><th class="num" data-field="inflight_rejected">在途证明被拒</th><th class="num" data-field="rebuilt_accepted">重做后接受</th><th class="num" data-field="revoke_gas_mean">撤销 gas</th></tr></thead><tbody></tbody>
+        </table></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="security">
+    <h2>关系一致性与隐私</h2>
+    <div class="grid">
+      <div class="card"><h3 id="h-conf">攻击套件分类（T3 v9）</h3>
+        <p class="muted">独立 oracle 与电路逐行对照。"由合约负责"的行都有合约测试拦住。</p>
+        <div class="chart dash-skeleton" id="ch-conf" data-source="conformance" style="min-height:200px"></div></div>
+      <div class="card"><h3 id="h-link">可链接性检验（AUC 与 95% 置信区间）</h3>
+        <p class="muted">带真实证明的 v9 transcript，按智能体分组交叉验证。判定阈值是置信区间下界大于 0.55；低于 0.5 的值是分组交叉验证的已知假象，与置换零分布一致。</p>
+        <div class="legend" id="lg-link"></div>
+        <div class="chart dash-skeleton" id="ch-link" data-source="linkability" style="min-height:380px"></div></div>
+    </div>
+  </section>
+
+  <section class="section" id="baselines">
+    <h2>与近邻系统对比</h2>
+    <div class="card"><p class="muted">官方实现在本机原生运行；没有公开代码的只做协议层对比。各系统功能不同，时间不是同等工作量的比较。</p>
+      <div class="tablebox"><table data-source="baselines" data-row-key="system" id="tbl-base">
+        <thead><tr><th data-field="system">系统</th><th data-field="kind">来源</th><th class="num" data-field="D">D</th><th class="num" data-field="show_or_prove_ms">出示/证明 ms</th><th class="num" data-field="verify_ms">验证 ms</th><th data-field="hidden_lineage">隐藏谱系</th><th data-field="per_hop_revocation">逐跳撤销</th><th data-field="budget">预算守恒</th><th data-field="accountability">追责</th><th data-field="onchain">链上验证</th></tr></thead><tbody></tbody>
+      </table></div></div>
+  </section>
+
+  <section class="section" id="issues">
+    <h2>已发现的问题与负结果（累计）</h2>
+    <div class="card"><div class="tablebox">
+      <table data-source="issues" data-row-key="n" id="tbl-iss">
+        <thead><tr><th class="num" data-field="n">#</th><th data-field="issue">问题</th><th data-field="status">状态</th></tr></thead><tbody></tbody>
+      </table></div>
+      <p class="muted">未做：mainnet-fork、DKG、phase 2 仪式、被腐化祖先的关联实验。论文对齐清单见实验仓库的 T9 对齐 issue。</p></div>
+  </section>
+</div>
+
+<script>
+(function () {
+  const fmt = { int: d3.format(','), ms: d3.format(',.0f'), ms1: d3.format(',.1f'), s2: d3.format('.2f'), auc: d3.format('.3f'), gib: d3.format('.2f') };
+  const C = dash.colors;
+  window.zr = { fmt };
+  // shared tooltip
+  function tipIn(box) { let t = box.querySelector('.tip'); if (!t) { t = document.createElement('div'); t.className = 'tip'; t.hidden = true; box.appendChild(t); } return t; }
+  function showTip(box, ev, lines) {
+    const t = tipIn(box); t.replaceChildren(); lines.forEach((l, i) => { const d = document.createElement('div'); if (i === 0) d.className = 't1'; d.textContent = l; t.appendChild(d); });
+    t.hidden = false; const r = box.getBoundingClientRect(); let x = ev.clientX - r.left + 12, y = ev.clientY - r.top + 12;
+    const w = t.offsetWidth, h = t.offsetHeight; if (x + w > r.width) x = Math.max(0, ev.clientX - r.left - w - 12); if (y + h > r.height) y = Math.max(0, ev.clientY - r.top - h - 12);
+    t.style.left = x + 'px'; t.style.top = y + 'px';
+  }
+  function hideTip(box) { const t = box.querySelector('.tip'); if (t) t.hidden = true; }
+  window.zr.showTip = showTip; window.zr.hideTip = hideTip;
+  function failed(el) { el.classList.remove('dash-skeleton'); el.replaceChildren(); const d = document.createElement('div'); d.className = 'fail'; d.textContent = 'Failed to load'; el.appendChild(d); }
+  window.zr.failed = failed;
+  function legend(id, items) {
+    const el = document.getElementById(id); el.replaceChildren();
+    items.forEach(([name, color, line]) => { const s = document.createElement('span'); const i = document.createElement('i'); if (line) i.className = 'line'; i.style.background = color; s.appendChild(i); s.append(name); el.appendChild(s); });
+  }
+  window.zr.legend = legend;
+  function axisStyle(g) { g.attr('font-size', null).attr('font-family', null); g.selectAll('text').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)'); g.selectAll('line').attr('stroke', 'var(--cds-chart-grid)'); g.select('.domain').attr('stroke', 'var(--cds-chart-axis)'); }
+  window.zr.axisStyle = axisStyle;
+  function fillTable(id, ds, cols) {
+    const tb = document.querySelector('#' + id + ' tbody'); tb.replaceChildren();
+    const d = dash.data(ds); if (d.status !== 'ok') return;
+    d.data.forEach(r => { const tr = document.createElement('tr'); cols.forEach(([f, f2, cls]) => { const td = document.createElement('td'); if (cls) td.className = cls; const v = r[f]; td.textContent = v === null || v === undefined ? '—' : (f2 ? f2(v) : String(v)); tr.appendChild(td); }); tb.appendChild(tr); });
+  }
+  window.zr.fillTable = fillTable;
+
+  // privacy ratio = v9 / B0 per depth
+  dash.calc('privacy_ratio', { inputs: ['gas_by_depth'], title: 'v9 与明文 B0 的 gas 倍数',
+    description: '每个深度 D：v9 执行 gas 除以明文下界 B0 首次执行 gas 的中位数（空树与 T5 世界两种 note 树规模）。',
+    fn: (gas_by_depth) => gas_by_depth.map(r => ({ D: r.D, ratio_fresh: Math.round(r.v9_fresh_tree / r.b0_plaintext_median * 100) / 100, ratio_world: Math.round(r.v9_t5_world_mean / r.b0_plaintext_median * 100) / 100 })) });
+
+  dash.onData(() => {
+    // targets
+    const tg = dash.data('targets');
+    document.querySelectorAll('[data-source="targets"]').forEach(el => {
+      if (tg.status !== 'ok') { el.textContent = '—'; return; }
+      const r = tg.data[+el.dataset.row]; const v = r[el.dataset.field];
+      el.textContent = r.unit === 'gas' ? fmt.int(v) : (r.unit === 'GiB' ? fmt.gib(v) : fmt.s2(v)); el.classList.remove('dash-skeleton');
+    });
+    document.querySelectorAll('.pill[data-pass]').forEach(el => {
+      if (tg.status !== 'ok') { el.textContent = ''; el.className = 'pill'; return; }
+      const ok = tg.data[+el.dataset.pass].pass; el.textContent = ok ? '达到' : '未达到'; el.className = 'pill ' + (ok ? 'ok' : 'bad');
+    });
+    // takeaway marks
+    const rv = dash.data('revocation');
+    document.querySelectorAll('#takeaway [data-source="revocation"]').forEach(el => { if (rv.status === 'ok') { el.textContent = fmt.int(rv.data[+el.dataset.row][el.dataset.field]); el.classList.remove('dash-skeleton'); } else el.textContent = '—'; });
+    // tables
+    fillTable('tbl-exp', 'experiments', [['exp'], ['status'], ['result'], ['evidence', null, 'path']]);
+    const pr = dash.data('privacy_ratio'); const gb = dash.data('gas_by_depth');
+    { const tb = document.querySelector('#tbl-gas tbody'); tb.replaceChildren();
+      if (gb.status === 'ok') gb.data.forEach(r => { const q = pr.status === 'ok' ? pr.data.find(x => x.D === r.D) : null; const tr = document.createElement('tr');
+        [String(r.D), fmt.int(r.b0_plaintext_median), fmt.int(r.v9_fresh_tree), fmt.int(r.v9_t5_world_mean), fmt.int(r.verifier_only), q ? q.ratio_fresh.toFixed(2) + '×' : '—', q ? q.ratio_world.toFixed(2) + '×' : '—']
+          .forEach((t, i) => { const td = document.createElement('td'); if (i) td.className = 'num'; td.textContent = t; tr.appendChild(td); }); tb.appendChild(tr); }); }
+    fillTable('tbl-rev', 'revocation', [['rate_pct', null, 'num'], ['edges_revoked', fmt.int, 'num'], ['agents_blocked_expected', fmt.int, 'num'], ['descendants_still_able', fmt.int, 'num'], ['unaffected_blocked', fmt.int, 'num'], ['inflight_rejected', fmt.int, 'num'], ['rebuilt_accepted', fmt.int, 'num'], ['revoke_gas_mean', fmt.int, 'num']]);
+    fillTable('tbl-base', 'baselines', [['system'], ['kind'], ['D', null, 'num'], ['show_or_prove_ms', v => v < 1 ? fmt.auc(v) : fmt.ms1(v), 'num'], ['verify_ms', v => v < 1 ? fmt.auc(v) : fmt.ms1(v), 'num'], ['hidden_lineage'], ['per_hop_revocation'], ['budget'], ['accountability'], ['onchain']]);
+    fillTable('tbl-iss', 'issues', [['n', null, 'num'], ['issue'], ['status']]);
+  });
+})();
+</script>
+
+<script>
+(function () {
+  const { fmt, showTip, hideTip, failed, legend, axisStyle } = window.zr; const C = dash.colors;
+  // ---------- latency stacked bars ----------
+  const stages = [['fetch_assembly_ms', '取路径 + 组装'], ['witness_ms', '见证计算'], ['prove_ms', '证明'], ['verify_submit_inclusion_ms', '验证 + 提交 + 上链']];
+  legend('lg-lat', stages.map(([, n], i) => [n, C[i]]).concat([['冷启动进程本地计算', 'var(--color-fg)']]));
+  dash.onData(() => {
+    const box = document.getElementById('ch-lat'); const d = dash.data('latency');
+    if (d.status === 'error' || d.status === 'connect') return failed(box);
+    if (d.status !== 'ok') { box.replaceChildren(); box.classList.add('dash-skeleton'); return; }
+    box.classList.remove('dash-skeleton'); box.replaceChildren();
+    const rows = d.data, W = Math.max(280, box.clientWidth), H = 240, m = { t: 22, r: 8, b: 30, l: 44 };
+    const x = d3.scaleBand(rows.map(r => r.D), [m.l, W - m.r]).padding(0.35);
+    const tot = r => stages.reduce((a, [k]) => a + r[k], 0);
+    const y = d3.scaleLinear([0, d3.max(rows, r => Math.max(tot(r), r.cold_local_mean_ms)) * 1.12], [H - m.b, m.t]).nice();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickFormat(v => d3.format('.1f')(v / 1000) + ' s').tickSize(-(W - m.l - m.r))).call(axisStyle).call(g => g.select('.domain').remove());
+    svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).tickFormat(v => 'D=' + v).tickSize(0)).call(axisStyle).call(g => g.selectAll('text').attr('dy', '1.1em'));
+    rows.forEach(r => { let acc = 0;
+      stages.forEach(([k, n], i) => { const y0 = y(acc), y1 = y(acc + r[k]); acc += r[k];
+        svg.append('rect').attr('x', x(r.D)).attr('width', x.bandwidth()).attr('y', y1).attr('height', Math.max(0, y0 - y1 - 1)).attr('fill', C[i])
+          .on('mousemove', ev => showTip(box, ev, ['D=' + r.D + ' · ' + n, fmt.ms1(r[k]) + ' ms'])).on('mouseleave', () => hideTip(box)); });
+      svg.append('text').attr('x', x(r.D) + x.bandwidth() / 2).attr('y', y(tot(r)) - 6).attr('text-anchor', 'middle').attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text(d3.format('.2f')(tot(r) / 1000) + ' s');
+      svg.append('path').attr('d', d3.symbol(d3.symbolDiamond, 48)()).attr('transform', `translate(${x(r.D) + x.bandwidth() + 9},${y(r.cold_local_mean_ms)})`).attr('fill', 'var(--color-fg)')
+        .on('mousemove', ev => showTip(box, ev, ['D=' + r.D + ' · 冷启动进程', '本地计算 ' + fmt.ms1(r.cold_local_mean_ms) + ' ms', '稳态 p95 ' + fmt.ms1(r.local_p95_ms) + ' ms'])).on('mouseleave', () => hideTip(box));
+    });
+  });
+
+  // ---------- gas vs popcount ----------
+  legend('lg-gas', [['v9 实测（D=4，每个 popcount 的均值）', C[0]], ['拟合律', C[0], true], ['B0 明文（D=4）', C[1], true], ['验证器单独（D=4）', C[2], true]]);
+  dash.onData(() => {
+    const box = document.getElementById('ch-gas'); const p = dash.data('gas_popcount'), g = dash.data('gas_by_depth');
+    if ([p, g].some(s => s.status === 'error' || s.status === 'connect')) return failed(box);
+    if (p.status !== 'ok' || g.status !== 'ok') { box.replaceChildren(); box.classList.add('dash-skeleton'); return; }
+    box.classList.remove('dash-skeleton'); box.replaceChildren();
+    const rows = p.data, ref = g.data.find(r => r.D === 4), W = Math.max(280, box.clientWidth), H = 240, m = { t: 14, r: 12, b: 34, l: 50 };
+    const x = d3.scaleLinear([d3.min(rows, r => r.popcount) - 0.5, d3.max(rows, r => r.popcount) + 0.5], [m.l, W - m.r]);
+    const y = d3.scaleLinear([0, d3.max(rows, r => Math.max(r.gas_mean_d4, r.law_d4)) * 1.08], [H - m.b, m.t]).nice();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickFormat(v => d3.format(',')(v / 1000) + 'k').tickSize(-(W - m.l - m.r))).call(axisStyle).call(g => g.select('.domain').remove());
+    svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(Math.min(10, rows.length)).tickFormat(d3.format('d'))).call(axisStyle);
+    svg.append('text').attr('x', W - m.r).attr('y', H - 2).attr('text-anchor', 'end').attr('fill', 'var(--color-fg-muted)').style('font-size', 'var(--cds-font-size-caption)').text('插入位置中 1 的个数');
+    [[ref.b0_plaintext_median, C[1], 'B0 明文 D=4'], [ref.verifier_only, C[2], '验证器单独 D=4']].forEach(([v, c, n]) =>
+      svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(v)).attr('y2', y(v)).attr('stroke', c).attr('stroke-width', 2).attr('stroke-dasharray', '5 4')
+        .on('mousemove', ev => showTip(box, ev, [n, fmt.int(v) + ' gas'])).on('mouseleave', () => hideTip(box)));
+    svg.append('path').datum(rows).attr('fill', 'none').attr('stroke', C[0]).attr('stroke-width', 2).attr('stroke-dasharray', '2 3').attr('stroke-linecap', 'round').attr('d', d3.line(r => x(r.popcount), r => y(r.law_d4)));
+    svg.selectAll('circle.pt').data(rows).join('circle').attr('class', 'pt').attr('cx', r => x(r.popcount)).attr('cy', r => y(r.gas_mean_d4)).attr('r', 4.5).attr('fill', C[0]).attr('stroke', 'var(--color-panel)').attr('stroke-width', 2)
+      .on('mousemove', (ev, r) => showTip(box, ev, ['popcount ' + r.popcount + ' · ' + fmt.int(r.actions) + ' 笔', '实测均值 ' + fmt.int(r.gas_mean_d4) + ' gas', '拟合律 ' + fmt.int(r.law_d4) + ' gas'])).on('mouseleave', () => hideTip(box));
+  });
+
+  // ---------- components grouped bars ----------
+  const vers = ['v6', 'v7', 'v8', 'v9'];
+  legend('lg-comp', [['v6 链 + 撤销', C[0]], ['v7 + 追责', C[1]], ['v8 + 预算 note', C[2]], ['v9 压缩输入', C[3]]]);
+  dash.onData(() => {
+    const box = document.getElementById('ch-comp'); const d = dash.data('components');
+    if (d.status === 'error' || d.status === 'connect') return failed(box);
+    if (d.status !== 'ok') { box.replaceChildren(); box.classList.add('dash-skeleton'); return; }
+    box.classList.remove('dash-skeleton'); box.replaceChildren();
+    const rows = d.data, Ds = [...new Set(rows.map(r => r.D))], W = Math.max(280, box.clientWidth), H = 240, m = { t: 12, r: 8, b: 30, l: 44 };
+    const x0 = d3.scaleBand(Ds, [m.l, W - m.r]).padding(0.22), x1 = d3.scaleBand(vers, [0, x0.bandwidth()]).padding(0.12);
+    const y = d3.scaleLinear([0, d3.max(rows, r => r.prove_mean_ms + r.prove_sd_ms) * 1.08], [H - m.b, m.t]).nice();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    svg.append('g').attr('transform', `translate(${m.l},0)`).call(d3.axisLeft(y).ticks(5).tickFormat(v => d3.format('.1f')(v / 1000) + ' s').tickSize(-(W - m.l - m.r))).call(axisStyle).call(g => g.select('.domain').remove());
+    svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x0).tickFormat(v => 'D=' + v).tickSize(0)).call(axisStyle).call(g => g.selectAll('text').attr('dy', '1.1em'));
+    rows.forEach(r => { const xx = x0(r.D) + x1(r.version), i = vers.indexOf(r.version);
+      svg.append('rect').attr('x', xx).attr('width', x1.bandwidth()).attr('y', y(r.prove_mean_ms)).attr('height', y(0) - y(r.prove_mean_ms)).attr('rx', 2).attr('fill', C[i])
+        .on('mousemove', ev => showTip(box, ev, ['D=' + r.D + ' · ' + r.version, fmt.ms1(r.prove_mean_ms) + ' ± ' + fmt.ms1(r.prove_sd_ms) + ' ms', fmt.int(r.constraints) + ' 约束 · N=' + r.n])).on('mouseleave', () => hideTip(box));
+      const cx = xx + x1.bandwidth() / 2;
+      svg.append('line').attr('x1', cx).attr('x2', cx).attr('y1', y(r.prove_mean_ms - r.prove_sd_ms)).attr('y2', y(r.prove_mean_ms + r.prove_sd_ms)).attr('stroke', 'var(--color-fg)').attr('stroke-width', 1);
+    });
+  });
+
+  // ---------- budget races ----------
+  legend('lg-bud', [['提交的总额', 'var(--cds-chart-muted)'], ['被接受的总额', C[0]], ['超过预算的部分', 'var(--cds-chart-status-critical)'], ['授予的预算', 'var(--cds-chart-reference)', true]]);
+  dash.onData(() => {
+    const box = document.getElementById('ch-bud'); const d = dash.data('budget_races');
+    if (d.status === 'error' || d.status === 'connect') return failed(box);
+    if (d.status !== 'ok') { box.replaceChildren(); box.classList.add('dash-skeleton'); return; }
+    box.classList.remove('dash-skeleton'); box.replaceChildren();
+    const rows = d.data, W = Math.max(280, box.clientWidth), rowH = 62, H = rows.length * rowH + 30, m = { t: 6, r: 56, b: 24, l: 8 };
+    const x = d3.scaleLinear([0, d3.max(rows, r => Math.max(r.offered, r.accepted, r.budget))], [m.l, W - m.r]).nice();
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(5).tickFormat(d3.format(',')).tickSize(-(H - m.b - m.t))).call(axisStyle).call(g => g.select('.domain').remove());
+    rows.forEach((r, i) => { const y0 = m.t + i * rowH;
+      svg.append('text').attr('x', m.l).attr('y', y0 + 12).attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text(r.race);
+      svg.append('rect').attr('x', x(0)).attr('y', y0 + 20).attr('width', x(r.offered) - x(0)).attr('height', 12).attr('rx', 3).attr('fill', 'var(--cds-chart-muted)')
+        .on('mousemove', ev => showTip(box, ev, [r.race, '提交 ' + fmt.int(r.offered)])).on('mouseleave', () => hideTip(box));
+      const acc = Math.min(r.accepted, r.budget), over = Math.max(0, r.accepted - r.budget);
+      svg.append('rect').attr('x', x(0)).attr('y', y0 + 36).attr('width', x(acc) - x(0)).attr('height', 12).attr('rx', 3).attr('fill', C[0])
+        .on('mousemove', ev => showTip(box, ev, [r.race, '接受 ' + fmt.int(r.accepted) + ' / 预算 ' + fmt.int(r.budget)])).on('mouseleave', () => hideTip(box));
+      if (over) svg.append('rect').attr('x', x(r.budget)).attr('y', y0 + 36).attr('width', x(r.accepted) - x(r.budget)).attr('height', 12).attr('rx', 3).attr('fill', 'var(--cds-chart-status-critical)')
+        .on('mousemove', ev => showTip(box, ev, [r.race, '超出预算 ' + fmt.int(over)])).on('mouseleave', () => hideTip(box));
+      svg.append('text').attr('x', x(r.accepted) + 6).attr('y', y0 + 46).attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text(fmt.int(r.accepted));
+      svg.append('line').attr('x1', x(r.budget)).attr('x2', x(r.budget)).attr('y1', y0 + 16).attr('y2', y0 + 52).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-width', 2).attr('stroke-dasharray', '3 3');
+    });
+  });
+
+  // ---------- conformance bars ----------
+  dash.onData(() => {
+    const box = document.getElementById('ch-conf'); const d = dash.data('conformance');
+    if (d.status === 'error' || d.status === 'connect') return failed(box);
+    if (d.status !== 'ok') { box.replaceChildren(); box.classList.add('dash-skeleton'); return; }
+    box.classList.remove('dash-skeleton'); box.replaceChildren();
+    const rows = d.data, W = Math.max(280, box.clientWidth), rowH = 34, H = rows.length * rowH + 8, lab = Math.min(210, W * 0.48), m = { r: 40 };
+    const x = d3.scaleLinear([0, d3.max(rows, r => r.rows)], [lab, W - m.r]);
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    rows.forEach((r, i) => { const y0 = 4 + i * rowH; const gap = /缺口/.test(r.class);
+      svg.append('text').attr('x', lab - 8).attr('y', y0 + 16).attr('text-anchor', 'end').attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text(r.class);
+      svg.append('rect').attr('x', lab).attr('y', y0 + 5).attr('width', Math.max(2, x(r.rows) - lab)).attr('height', 16).attr('rx', 3).attr('fill', gap && r.rows > 0 ? 'var(--cds-chart-status-critical)' : (i === 0 ? C[0] : 'var(--cds-chart-muted)'))
+        .on('mousemove', ev => showTip(box, ev, [r.class, fmt.int(r.rows) + ' 行'])).on('mouseleave', () => hideTip(box));
+      svg.append('text').attr('x', Math.max(lab + 2, x(r.rows)) + 6).attr('y', y0 + 17).attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text(fmt.int(r.rows));
+    });
+  });
+
+  // ---------- linkability intervals ----------
+  legend('lg-link', [['v9 检验', C[0]], ['阳性对照', C[1]], ['0.5 随机水平 / 0.55 判定阈值', 'var(--cds-chart-reference)', true]]);
+  dash.onData(() => {
+    const box = document.getElementById('ch-link'); const d = dash.data('linkability');
+    if (d.status === 'error' || d.status === 'connect') return failed(box);
+    if (d.status !== 'ok') { box.replaceChildren(); box.classList.add('dash-skeleton'); return; }
+    box.classList.remove('dash-skeleton'); box.replaceChildren();
+    const rows = d.data, W = Math.max(280, box.clientWidth), rowH = 22, lab = Math.min(230, W * 0.52), m = { t: 8, r: 14, b: 28 }, H = rows.length * rowH + m.t + m.b;
+    const x = d3.scaleLinear([0, 1], [lab, W - m.r]);
+    const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+    svg.append('g').attr('transform', `translate(0,${H - m.b})`).call(d3.axisBottom(x).ticks(5).tickSize(-(H - m.b - m.t))).call(axisStyle).call(g => g.select('.domain').remove());
+    [0.5, 0.55].forEach(v => svg.append('line').attr('x1', x(v)).attr('x2', x(v)).attr('y1', m.t).attr('y2', H - m.b).attr('stroke', 'var(--cds-chart-reference)').attr('stroke-width', 1.5).attr('stroke-dasharray', v === 0.5 ? '2 3' : '6 3'));
+    rows.forEach((r, i) => { const yc = m.t + i * rowH + rowH / 2, c = r.control ? C[1] : C[0];
+      svg.append('text').attr('x', lab - 8).attr('y', yc + 4).attr('text-anchor', 'end').attr('fill', 'var(--color-fg)').style('font-size', 'var(--cds-font-size-caption)').text(r.test + ' · ' + r.model);
+      svg.append('line').attr('x1', x(r.ci_low)).attr('x2', x(r.ci_high)).attr('y1', yc).attr('y2', yc).attr('stroke', c).attr('stroke-width', 2).attr('stroke-linecap', 'round');
+      svg.append('circle').attr('cx', x(r.auc)).attr('cy', yc).attr('r', 4.5).attr('fill', c).attr('stroke', 'var(--color-panel)').attr('stroke-width', 2)
+        .on('mousemove', ev => showTip(box, ev, [r.test + ' · ' + r.model, 'AUC ' + fmt.auc(r.auc) + '  [' + fmt.auc(r.ci_low) + ', ' + fmt.auc(r.ci_high) + ']', '折内 AUC ' + fmt.auc(r.within_fold_auc) + ' · 置换 p ' + d3.format('.4f')(r.perm_p), r.verdict])).on('mouseleave', () => hideTip(box));
+    });
+  });
+})();
+</script>

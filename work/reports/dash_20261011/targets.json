@@ -1,0 +1,30 @@
+[
+ {
+  "target": "D=4 本地授权计算 p95（稳态）",
+  "measured": 2.8553,
+  "threshold": 10,
+  "unit": "s",
+  "pass": true
+ },
+ {
+  "target": "D=4 本地授权计算 p95（冷启动进程）",
+  "measured": 2.9351,
+  "threshold": 10,
+  "unit": "s",
+  "pass": true
+ },
+ {
+  "target": "峰值内存（全部进程）",
+  "measured": 4.51,
+  "threshold": 8,
+  "unit": "GiB",
+  "pass": true
+ },
+ {
+  "target": "验证器单独 gas（D=4）",
+  "measured": 315215,
+  "threshold": 500000,
+  "unit": "gas",
+  "pass": true
+ }
+]

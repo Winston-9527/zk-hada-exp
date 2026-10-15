@@ -1,0 +1,86 @@
+[
+ {
+  "system": "ZK-DAC v9",
+  "kind": "本系统",
+  "D": 4,
+  "show_or_prove_ms": 2739.8,
+  "verify_ms": 5.2,
+  "hidden_lineage": "是",
+  "per_hop_revocation": "是",
+  "budget": "是",
+  "accountability": "门限强制打开",
+  "onchain": "是"
+ },
+ {
+  "system": "go-ucan",
+  "kind": "官方实现",
+  "D": 4,
+  "show_or_prove_ms": 0.02041,
+  "verify_ms": 0.1844,
+  "hidden_lineage": "否",
+  "per_hop_revocation": "代码未实现",
+  "budget": "否",
+  "accountability": "谱系公开",
+  "onchain": "否"
+ },
+ {
+  "system": "DAC-EQS",
+  "kind": "官方实现",
+  "D": 1,
+  "show_or_prove_ms": 2.735,
+  "verify_ms": 16.24,
+  "hidden_lineage": "是",
+  "per_hop_revocation": "否",
+  "budget": "否",
+  "accountability": "否",
+  "onchain": "否"
+ },
+ {
+  "system": "zk-creds",
+  "kind": "官方实现",
+  "D": null,
+  "show_or_prove_ms": 259.6,
+  "verify_ms": 0.675,
+  "hidden_lineage": "是",
+  "per_hop_revocation": "否",
+  "budget": "否",
+  "accountability": "否",
+  "onchain": "部分"
+ },
+ {
+  "system": "ZKM 0.1.0-draft",
+  "kind": "仅规范（代码 404）",
+  "D": null,
+  "show_or_prove_ms": null,
+  "verify_ms": null,
+  "hidden_lineage": "是",
+  "per_hop_revocation": "否（推迟到 v2）",
+  "budget": "是",
+  "accountability": "仅自愿披露",
+  "onchain": "是"
+ },
+ {
+  "system": "ZK-ACE",
+  "kind": "仅论文",
+  "D": null,
+  "show_or_prove_ms": null,
+  "verify_ms": null,
+  "hidden_lineage": "身份隐藏",
+  "per_hop_revocation": "否（无委托）",
+  "budget": "否",
+  "accountability": "否",
+  "onchain": "未报告"
+ },
+ {
+  "system": "ZEBRA",
+  "kind": "仅摘要",
+  "D": null,
+  "show_or_prove_ms": null,
+  "verify_ms": null,
+  "hidden_lineage": "是",
+  "per_hop_revocation": "未核实",
+  "budget": "否",
+  "accountability": "可审计（机制未核实）",
+  "onchain": "是"
+ }
+]

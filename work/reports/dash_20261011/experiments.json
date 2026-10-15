@@ -1,0 +1,56 @@
+[
+ {
+  "exp": "E0 源与语义闭合",
+  "status": "按止损规则处理",
+  "result": "历史数字无出处，从可信最小关系重建 v2→v9",
+  "evidence": "work/t1/"
+ },
+ {
+  "exp": "E1 攻击与差分",
+  "status": "完成",
+  "result": "T3 v9 共 170 行，POLICY 与按设计行之外无误接受，完备性缺口 0",
+  "evidence": "work/t3_attacks/v9/"
+ },
+ {
+  "exp": "E2 并发守恒",
+  "status": "完成",
+  "result": "逐边限额被超额花费；note 方案守住预算",
+  "evidence": "work/t5_e2/E2-budget_20261009/"
+ },
+ {
+  "exp": "E3 撤销与新鲜度",
+  "status": "完成",
+  "result": "逐跳撤销精确挡住后代，兄弟不受影响",
+  "evidence": "work/t4_revocation/E3-revocation_20261009/"
+ },
+ {
+  "exp": "E4 端到端与规模",
+  "status": "完成",
+  "result": "生命周期分解、D=1..4 曲线、1,230 个智能体并发",
+  "evidence": "work/t5_e2e/T5-e2e-scale_20261010/"
+ },
+ {
+  "exp": "E5 公平基线",
+  "status": "完成",
+  "result": "官方实现原生运行；无近邻具备完整组合",
+  "evidence": "work/t6_baselines/T6-baselines_20261010/"
+ },
+ {
+  "exp": "E6 隐私与 opening",
+  "status": "完成",
+  "result": "门限打开 65/65；v9 可链接性未检出，对照全检出",
+  "evidence": "work/t4_privacy/E6b-linkability-v9_20261010/"
+ },
+ {
+  "exp": "E7 状态与执行",
+  "status": "完成（mainnet-fork 除外）",
+  "result": "授权单调撤销；geth/anvil 真实收据与 gas 分解",
+  "evidence": "work/t4_obligations/E7-obligations_20261009/"
+ },
+ {
+  "exp": "E8 应用与独立复现",
+  "status": "完成",
+  "result": "实验章节、数字台账、clean build C1–C5 通过",
+  "evidence": "work/t8_paper/T8-chapter_20261010/"
+ }
+]
