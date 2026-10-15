@@ -1,0 +1,12 @@
+# T8e — run record
+- **S1.**
+  - `circom` compile of `s1/circuits/*.circom` (compile RSS in `s1/results/compile_rss.txt`).
+  - `bash s1/setup.sh` (ptau 2^18; times and sizes in `s1/results/setup.txt`).
+  - Smoke runs with N = 1 at (2, 10), (4, 24) and (2, 20); the first loop passed a single shell word, which is fixed.
+  - Benchmark loop in `s1/results/bench_log.txt` (07:51–08:0x UTC, two runs).
+- **S2.** `circom` compile of the D = 8 variant and its D = 4 control; `snarkjs r1cs info` → `s2/results/r1cs_info.txt`. No setup (amendment A1).
+- **S3.**
+  - Smoke N = 32 (not evidence).
+  - Full run: `N=<n> /usr/bin/time -l node s3/s3.mjs` for N = 32, 128, 1,024 and 10,000, sequentially, 08:00:34–08:14:31 UTC (`s3/results/run_log.txt`; peak RSS in each `.stderr`).
+  - Gas fit: inline Python → `s3/results/gas_fit.txt`.
+- Build products (zkeys, wasm, r1cs, credential caches with secret keys) are in `build/` and are not committed.
