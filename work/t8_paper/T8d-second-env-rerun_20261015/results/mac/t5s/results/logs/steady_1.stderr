@@ -1,0 +1,42 @@
+04:40:06 warmup D 2 1783.22
+04:40:08 warmup D 1 980.8
+04:40:10 warmup D 3 2598.49
+04:40:13 warmup D 4 2981.25
+04:40:14 block 1 #0 D=1 local 999.04 prove 832.29 gas 627951
+04:40:17 block 1 #1 D=3 local 2657.04 prove 2416.35 gas 670533
+04:40:19 block 1 #2 D=1 local 953.75 prove 794.47 gas 655029
+04:40:21 block 1 #3 D=2 local 1672.33 prove 1477.24 gas 689881
+04:40:23 block 1 #4 D=3 local 2645.1 prove 2412.72 gas 670521
+04:40:26 block 1 #5 D=3 local 2604.37 prove 2374.67 gas 697621
+04:40:28 block 1 #6 D=2 local 1693.78 prove 1495.53 gas 689821
+04:40:32 block 1 #7 D=4 local 2957.37 prove 2691.9 gas 732401
+04:40:33 block 1 #8 D=2 local 1651.64 prove 1457.42 gas 635691
+04:40:36 block 1 #9 D=3 local 2616 prove 2380.44 gas 670521
+04:40:38 block 1 #10 D=2 local 1642.1 prove 1451.19 gas 662721
+04:40:41 block 1 #11 D=3 local 2638.3 prove 2405.9 gas 697597
+04:40:43 block 1 #12 D=2 local 1651.05 prove 1450.76 gas 662745
+04:40:44 block 1 #13 D=1 local 952.25 prove 797.09 gas 682093
+04:40:47 block 1 #14 D=4 local 2970.62 prove 2700.15 gas 705361
+04:40:48 block 1 #15 D=1 local 968.14 prove 805.46 gas 709193
+04:40:51 block 1 #16 D=4 local 2914.12 prove 2644.11 gas 678261
+04:40:53 block 1 #17 D=2 local 1690.5 prove 1495.64 gas 689881
+04:40:56 block 1 #18 D=4 local 2931.04 prove 2662.65 gas 705313
+04:41:00 block 1 #19 D=4 local 2922.92 prove 2651.01 gas 732461
+04:41:01 block 1 #20 D=1 local 967.73 prove 808.21 gas 682093
+04:41:02 block 1 #21 D=1 local 966.52 prove 806.79 gas 709157
+04:41:05 block 1 #22 D=3 local 2560.84 prove 2336.48 gas 724685
+04:41:08 block 1 #23 D=3 local 2606.88 prove 2377.17 gas 751785
+04:41:11 block 1 #24 D=4 local 2901.39 prove 2633.31 gas 597039
+04:41:14 block 1 #25 D=4 local 2931.29 prove 2664.12 gas 624093
+04:41:17 block 1 #26 D=4 local 2903.78 prove 2629.87 gas 624033
+04:41:18 block 1 #27 D=1 local 949.53 prove 785.48 gas 627951
+04:41:20 block 1 #28 D=2 local 1661.51 prove 1469.17 gas 608577
+04:41:22 block 1 #29 D=2 local 1695.74 prove 1497.75 gas 635691
+04:41:25 block 1 #30 D=4 local 2875.46 prove 2609.48 gas 651195
+04:41:27 block 1 #31 D=2 local 1667.24 prove 1469.02 gas 662721
+04:41:29 block 1 #32 D=3 local 2556.17 prove 2318.29 gas 616365
+04:41:32 block 1 #33 D=3 local 2576.57 prove 2339.23 gas 643443
+04:41:35 block 1 #34 D=4 local 2925.69 prove 2646.9 gas 651159
+04:41:38 block 1 #35 D=3 local 2540.96 prove 2308.9 gas 670545
+04:41:39 block 1 #36 D=1 local 976.73 prove 816.99 gas 627903
+04:41:41 block 1 #37 D=2 local 1657.22 prove 1461.3 gas 662757

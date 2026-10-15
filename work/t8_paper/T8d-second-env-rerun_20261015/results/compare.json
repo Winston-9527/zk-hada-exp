@@ -1,0 +1,225 @@
+{
+ "R1": {
+  "v9_1": {
+   "rows_env1": 174,
+   "rows_env2": 174,
+   "row_field_differences": [],
+   "summary_equal": true,
+   "summary": {
+    "AGREE_ACCEPT": 28,
+    "AGREE_REJECT": 118,
+    "BAD_WITNESS_ONLY": 7,
+    "FALSE_ACCEPT": 21
+   },
+   "exhaustive_equal": {
+    "total": true,
+    "agree": true,
+    "disagreements_by_field": true,
+    "statement_level_disagreements": true
+   },
+   "exhaustive_env2": {
+    "total": 534,
+    "agree": 89,
+    "statement_level_disagreements": [
+     "now (circuit accept, oracle reject)",
+     "act_req_cap (circuit accept, oracle reject)",
+     "ctx_hash (circuit accept, oracle reject)"
+    ]
+   }
+  },
+  "v9_2": {
+   "rows_env1": 174,
+   "rows_env2": 174,
+   "row_field_differences": [],
+   "summary_equal": true,
+   "summary": {
+    "AGREE_ACCEPT": 28,
+    "AGREE_REJECT": 118,
+    "BAD_WITNESS_ONLY": 7,
+    "FALSE_ACCEPT": 21
+   },
+   "exhaustive_equal": {
+    "total": true,
+    "agree": true,
+    "disagreements_by_field": true,
+    "statement_level_disagreements": true
+   },
+   "exhaustive_env2": {
+    "total": 534,
+    "agree": 89,
+    "statement_level_disagreements": [
+     "now (circuit accept, oracle reject)",
+     "act_req_cap (circuit accept, oracle reject)",
+     "ctx_hash (circuit accept, oracle reject)"
+    ]
+   }
+  }
+ },
+ "R3": {
+  "differences": [
+   {
+    "path": ".epoch1.S0.noteRoot",
+    "mac": "19637235721381986130398301651611775139062239766804743526396586877054961641992",
+    "env2": "8908498295052703835653297525618029048247234145449433328032610244705976705935"
+   },
+   {
+    "path": ".epoch1.S0.ts",
+    "mac": "1792039446",
+    "env2": "1792042045"
+   },
+   {
+    "path": ".epoch1.blocks[0].gasUsed",
+    "mac": "29455617",
+    "env2": "29455593"
+   },
+   {
+    "path": ".epoch1.blocks[0].ts",
+    "mac": "1792039458",
+    "env2": "1792042057"
+   },
+   {
+    "path": ".epoch1.blocks[1].gasUsed",
+    "mac": "29188829",
+    "env2": "29189021"
+   },
+   {
+    "path": ".epoch1.blocks[1].ts",
+    "mac": "1792039470",
+    "env2": "1792042069"
+   },
+   {
+    "path": ".epoch1.blocks[2].gasUsed",
+    "mac": "29414832",
+    "env2": "29414880"
+   },
+   {
+    "path": ".epoch1.blocks[2].ts",
+    "mac": "1792039482",
+    "env2": "1792042081"
+   },
+   {
+    "path": ".epoch1.blocks[3].gasUsed",
+    "mac": "29216485",
+    "env2": "29216425"
+   },
+   {
+    "path": ".epoch1.blocks[3].ts",
+    "mac": "1792039494",
+    "env2": "1792042093"
+   },
+   {
+    "path": ".epoch1.blocks[4].gasUsed",
+    "mac": "6334231",
+    "env2": "6334255"
+   },
+   {
+    "path": ".epoch1.blocks[4].ts",
+    "mac": "1792039506",
+    "env2": "1792042105"
+   },
+   {
+    "path": ".epoch1.empty_block_after.ts",
+    "mac": "1792039518",
+    "env2": "1792042117"
+   },
+   {
+    "path": ".epoch1.note_root_R0_retired_at",
+    "mac": "1792039458",
+    "env2": "1792042057"
+   },
+   {
+    "path": ".revoke_1.new_revoked_root",
+    "mac": "13996375601254200958183120573457220094288952394674408180930428783476347565628",
+    "env2": "15328119419004146684129006499281617546787153294671841428734037526780494046399"
+   },
+   {
+    "path": ".revoke_1.rebuilt.free_rebuilt.wall_ms",
+    "mac": "92642",
+    "env2": "100838"
+   },
+   {
+    "path": ".revoke_1.rebuilt.registerState_new_combination.ms",
+    "mac": "13.816708000013023",
+    "env2": "63.3006549999991"
+   },
+   {
+    "path": ".revoke_1.revocation.gas",
+    "mac": "[273556, 273544]",
+    "env2": "[273532, 273556]"
+   },
+   {
+    "path": ".revoke_1.revocation.prove_ms",
+    "mac": "[828.3, 845.8]",
+    "env2": "[1026.2, 988]"
+   },
+   {
+    "path": ".revoke_1.witness_level_all_agents.wall_ms",
+    "mac": "44566",
+    "env2": "78541"
+   },
+   {
+    "path": ".revoke_10.new_revoked_root",
+    "mac": "3653220712980903644478558081431631121738589707024924190116790822211631767848",
+    "env2": "1688614076277625173266293146659292279799218256313432516564284733338320652841"
+   },
+   {
+    "path": ".revoke_10.pre_revoked_root",
+    "mac": "13996375601254200958183120573457220094288952394674408180930428783476347565628",
+    "env2": "15328119419004146684129006499281617546787153294671841428734037526780494046399"
+   },
+   {
+    "path": ".revoke_10.rebuilt.free_rebuilt.wall_ms",
+    "mac": "90704",
+    "env2": "102304"
+   },
+   {
+    "path": ".revoke_10.rebuilt.registerState_new_combination.ms",
+    "mac": "11.065417000005255",
+    "env2": "61.59331199998269"
+   },
+   {
+    "path": ".revoke_10.revocation.gas",
+    "mac": "[273544, 273544, 273532, 273556, 273556, 273520, 273532, 273544, 273520, 273556, 273556, 273484, 273556, 273532, 273544]",
+    "env2": "[273544, 273544, 273532, 273544, 273544, 273544, 273520, 273532, 273532, 273532, 273544, 273544, 273544, 273520, 273520]"
+   },
+   {
+    "path": ".revoke_10.revocation.prove_ms",
+    "mac": "[849.5, 854.8, 866.5, 853.2, 822.2, 856.8, 819.6, 853.9, 853, 863.9, 840.1, 832.1, 834.3, 876.4, 843.1]",
+    "env2": "[990.8, 971.2, 960.2, 948.3, 960.5, 983.9, 955.4, 987.9, 978.7, 998.2, 972.3, 959.5, 975.7, 964.7, 986.2]"
+   },
+   {
+    "path": ".revoke_10.witness_level_all_agents.wall_ms",
+    "mac": "38688",
+    "env2": "68180"
+   },
+   {
+    "path": ".steady",
+    "mac": "[(0, 1, 1, None, 627903), (0, 1, 1, None, 627927), (1, 1, 1, None, 655017), (1, 1, 1, None, 655029), (2, 1, 1, None, 627951), (3, 1, 1, None, 709193), (4, 1, 1, None, 654993), (4, 1, 1, None, 709157),",
+    "env2": "[(0, 1, 1, None, 627927), (0, 1, 1, None, 627927), (1, 1, 1, None, 655029), (1, 1, 1, None, 655029), (2, 1, 1, None, 627939), (3, 1, 1, None, 709193), (4, 1, 1, None, 655005), (4, 1, 1, None, 709169),"
+   },
+   {
+    "path": ".world_build.gas.mint",
+    "mac": "[320425, 363239, 351413, 358423, 356575, 363585, 363561, 390645]",
+    "env2": "[320437, 363263, 351401, 358423, 356563, 363585, 363585, 390669]"
+   },
+   {
+    "path": ".world_build.gas.register",
+    "mac": "[362597, 405390, 393552, 400674, 398714, 405836, 405836, 432878]",
+    "env2": "[362585, 405402, 393564, 400638, 398702, 405824, 405836, 432878]"
+   },
+   {
+    "path": ".world_build.gas.transferBudget",
+    "mac": "[514635, 551614, 551626, 608677, 520047, 557074, 557050, 614125, 557074, 614077, 614149, 671224, 525459, 562450, 562498, 619549, 562462, 619525, 619549, 676636, 562486, 619549, 619537, 676600, 619549,",
+    "env2": "[514623, 551650, 551638, 608701, 520059, 557014, 557074, 614125, 557074, 614137, 614137, 671212, 525471, 562486, 562450, 619549, 562486, 619549, 619573, 676648, 562498, 619549, 619549, 676600, 619561,"
+   }
+  ],
+  "n_differences": 31,
+  "compared_sections": [
+   "world_build",
+   "steady",
+   "epoch1",
+   "revoke_1",
+   "revoke_10"
+  ]
+ }
+}
