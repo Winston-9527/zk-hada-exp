@@ -36,6 +36,13 @@
 | 实验数据 | main @ `eae5864` |
 | 补做实验 F1–F3 | 分支 `audit-followups-20261016` @ `2061c37`（PR #83，打包时**尚未合并**） |
 | 报告 | 分支 `delivery-report-20261016` @ `9baf40c`（PR #84，打包时**尚未合并**） |
+| 本交付包 | 分支 `delivery-package-20261016`，文件夹 `deliverables/ZK-DAC_delivery_20261015/`（PR #85） |
+
+只取本文件夹：
+```bash
+git clone --depth 1 --branch delivery-package-20261016 --filter=blob:none --sparse https://github.com/Winston-9527/zk-hada-exp.git
+cd zk-hada-exp && git sparse-checkout set deliverables
+```
 
 完整仓库：https://github.com/Winston-9527/zk-hada-exp 。第二环境的复现说明在 `data/t8_paper/T8b-v91-repro_20261013/repro/README.md`。
 
