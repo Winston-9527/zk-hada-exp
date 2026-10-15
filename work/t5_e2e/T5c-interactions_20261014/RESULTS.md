@@ -78,3 +78,34 @@ Notes:
   - Attempt 1 (`results/i3/attempt1_cold_target/`) charged the target's first-call storage writes to the first execute. It is kept.
 - **Accountability costs grow by about 7.7k gas per hop**, from one more ciphertext word and public input. The prover cost is 3–8 %.
 - **Integrity of the ablation** (`results/i3/mutation_smoke.json`): for D = 1..4, honest witnesses are satisfiable. holder_sk = 0, a wrong certificate and a wrong note root are unsatisfiable at the same templates as in v9.2, with line numbers shifted by exactly the 13 removed lines.
+
+## I2 — fan-out × concurrency (added 2026-10-15; `PREREGISTRATION_I2.md`, 1e72830; amendment A1 ef51d60)
+RTX6000, 36 runs (12 cells × 3 seeds), real proofs and verifiers, 30M gas, 12 s blocks. All runs exited 0. Statistics: `analyze_i2.py` → `results/i2/stats.json`.
+
+- **All 1,104 actions were accepted; no rejection.**
+
+| f \ k | 1 | 8 | 32 | 128 |
+|---|---|---|---|---|
+| **blocks to include all k** | 1 | 1 | 1 | 3 (mean latency 1.94 blocks) |
+| execute gas (mean) | 608k / 640k / 650k | 608k / 608k / 619k | 624k | 659k |
+| whole-tree gas, f = 1 / 8 / 32 (M) | 6.9 / 51.9 / 224.1 | 10.5 / 10.5 / 41.6 | 20.5 / 20.6 / 20.5 | 85.7 / 86.0 / 86.0 |
+| per-chain tree gas, f = 1 / 8 / 32 (M) | 6.94 / 6.49 / 7.00 | 10.53 / 1.32 / 1.30 | 20.51 / 2.57 / **0.64** | 85.75 / 10.75 / 2.69 |
+
+**Interaction f × k** (Freedman–Lane, Holm over 3):
+
+| response | interaction share of SS | Holm p |
+|---|---|---|
+| execute gas | 0.15 | 3e−4 |
+| per-chain tree gas | 0.42 | 3e−4 |
+| inclusion latency | 0 | 1 |
+
+**Reading.**
+- **Latency depends on k only.** A 30M block holds ≈ 43–45 D = 3 actions, so 128 concurrent actions need 3 blocks whatever the fan-out. This matches the expectation after amendment A1.
+- **Tree cost.**
+  - The fixed part is 1.44M gas: registration, mint, M → P delegation, issued-root update, registerState, setMethod.
+  - Every additional note costs one split, 0.55–0.75M depending on the note index.
+  - Hence the whole-tree cost is set by the number of notes provisioned for concurrency. The per-chain share falls with f, because the fixed costs and the concurrency are spread over more children; k = 32 gives 20.5M → 2.6M → 0.64M per chain.
+- **Execute gas** varies only through the note-tree size (T5's index effect), hence the interaction.
+- **Caveat (design property, disclosed).** Actions go round-robin within a round, so for k < f only children 0..k−1 act. Yet every child is provisioned n_c = ceil(k / f) × R notes, as pre-registered.
+  - The k < f cells (k = 1 with f = 8 or 32; k = 8 with f = 32) therefore include unused notes in their tree cost, and their per-chain tree cost is an over-provisioned upper bound.
+  - The cells with k ≥ f give the clean comparison.
