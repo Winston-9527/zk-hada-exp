@@ -94,3 +94,8 @@ The features are M2's plus the verifier's view: method, target, amount, params, 
   - The λ = 0.1 explanation "at the edge of the null's 99 % quantile" is wrong. With 18 Holm-corrected cells and B = 5,000, a cell needs raw p ≤ 5.6 × 10⁻⁴, at most 1 null exceedance. The effective threshold is close to the null maximum, ≈ 0.533–0.540.
   - The final statement, "≈ 0.54–0.55 reliably detected", is consistent with that threshold.
 - The pair-scoring construction inherited from E6d (canonical pair order, see E6d Corrections) also applies to M1. The test remains valid.
+
+## Follow-up 2026-10-16: M2 / M3 CIs added
+The missing pre-registered CIs are in `work/audit_corrections/FOLLOWUPS_20261016/F1_e6e_ci/`. AUC and p reproduce exactly, 78 / 78 cells.
+- Fresh M2: 11 of 12 CIs contain 0.5. The exception is M2b-M rf, 0.516 with CI [0.503, 0.530] and Holm p 0.115, so it is not detected under the pre-registered rule.
+- Fresh M3: all CIs contain 0.5.

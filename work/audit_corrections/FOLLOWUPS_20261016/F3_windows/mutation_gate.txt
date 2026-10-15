@@ -1,0 +1,44 @@
+Compiling 76 files with Solc 0.8.28
+Solc 0.8.28 finished in 2.34s
+Compiler run successful!
+
+Ran 13 tests for test/T7cWindowBoundary.t.sol:T7cWindowBoundaryTest
+[FAIL: StaleIssuedRoot()] test_F3_issuedRootBoundary() (gas: 6841722)
+[FAIL: StaleNoteRoot()] test_F3_noteRootBoundary() (gas: 15585872)
+[PASS] test_GB2_amountMismatch() (gas: 30966828)
+[PASS] test_GB4_noteRootAfterWindow() (gas: 15585862)
+[PASS] test_GB5_mintNonOperator() (gas: 2741606)
+[PASS] test_GB7_revocationFreezesBudget() (gas: 47218373)
+[PASS] test_actionThenTransferOfSameNote() (gas: 39302210)
+[PASS] test_gas() (gas: 29341602)
+[PASS] test_mintWrongAmount() (gas: 2779002)
+[PASS] test_sequence() (gas: 32311429)
+[PASS] test_v9_registerStateMatchesCircuit_permissionless_idempotent() (gas: 2222178)
+[PASS] test_v9_replayOfExecutedProof() (gas: 9967785)
+[PASS] test_v9_unregisteredStateCombination() (gas: 6808837)
+Suite result: FAILED. 11 passed; 2 failed; 0 skipped; finished in 59.66ms (254.47ms CPU time)
+
+Ran 11 tests for test/V92.t.sol:V92Test
+[PASS] test_GB2_amountMismatch() (gas: 30966805)
+[PASS] test_GB4_noteRootAfterWindow() (gas: 15585862)
+[PASS] test_GB5_mintNonOperator() (gas: 2741583)
+[PASS] test_GB7_revocationFreezesBudget() (gas: 47218461)
+[PASS] test_actionThenTransferOfSameNote() (gas: 39302232)
+[PASS] test_gas() (gas: 29341602)
+[PASS] test_mintWrongAmount() (gas: 2779002)
+[PASS] test_sequence() (gas: 32311429)
+[PASS] test_v9_registerStateMatchesCircuit_permissionless_idempotent() (gas: 2222133)
+[PASS] test_v9_replayOfExecutedProof() (gas: 9967785)
+[PASS] test_v9_unregisteredStateCombination() (gas: 6808859)
+Suite result: ok. 11 passed; 0 failed; 0 skipped; finished in 69.60ms (243.69ms CPU time)
+
+Ran 2 test suites in 123.88ms (129.25ms CPU time): 22 tests passed, 2 failed, 0 skipped (24 total tests)
+
+Failing tests:
+Encountered 2 failing tests in test/T7cWindowBoundary.t.sol:T7cWindowBoundaryTest
+[FAIL: StaleIssuedRoot()] test_F3_issuedRootBoundary() (gas: 6841722)
+[FAIL: StaleNoteRoot()] test_F3_noteRootBoundary() (gas: 15585872)
+
+Encountered a total of 2 failing tests, 22 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 2 failed tests

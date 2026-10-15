@@ -1,0 +1,241 @@
+{
+ "B": 5000,
+ "variants": {
+  "fresh": {
+   "M2a-P/logreg": {
+    "auc": 0.4972189191787962,
+    "p": 0.668866226754649,
+    "null_mean": 0.4999418400953687,
+    "null_q99": 0.5147821478616623,
+    "n_test_rows": 131072,
+    "n_train_rows": 22048,
+    "n_features": 588,
+    "ci95_cluster": [
+     0.4799908753747368,
+     0.5150819177627283
+    ],
+    "ci_resamples_used": 2000,
+    "ci_unit": "parent (transcript unit x hypothesis unit)",
+    "holm_p": 1,
+    "detected": false
+   },
+   "M2a-P/rf": {
+    "auc": 0.5081173143689595,
+    "p": 0.09438112377524495,
+    "null_mean": 0.5000327967023093,
+    "null_q99": 0.5144068280288151,
+    "n_test_rows": 131072,
+    "n_train_rows": 22048,
+    "n_features": 588,
+    "ci95_cluster": [
+     0.49009306790618723,
+     0.5259845287934495
+    ],
+    "ci_resamples_used": 2000,
+    "ci_unit": "parent (transcript unit x hypothesis unit)",
+    "holm_p": 0.5662867426514697,
+    "detected": false
+   },
+   "M2a-P/knn": {
+    "auc": 0.4997174929058741,
+    "p": 0.501499700059988,
+    "null_mean": 0.4998494846063946,
+    "null_q99": 0.5145303950990949,
+    "n_test_rows": 131072,
+    "n_train_rows": 22048,
+    "n_features": 588,
+    "ci95_cluster": [
+     0.47870358799566337,
+     0.5196229317716093
+    ],
+    "ci_resamples_used": 2000,
+    "ci_unit": "parent (transcript unit x hypothesis unit)",
+    "holm_p": 1,
+    "detected": false
+   },
+   "M2b-P/logreg": {
+    "auc": 0.5014057954152426,
+    "p": 0.43071385722855426,
+    "null_mean": 0.5000987182617187,
+    "null_q99": 0.515617589155833,
+    "n_test_rows": 8192,
+    "n_train_rows": 8192,
+    "n_features": 978,
+    "top1": 0.25537109375,
+    "top1_chance": 0.25,
+    "ci95_cluster": [
+     0.4878133157889048,
+     0.5152068694432576
+    ],
+    "ci_resamples_used": 2000,
+    "ci_unit": "parent (subtree)",
+    "holm_p": 1,
+    "detected": false
+   },
+   "M2b-P/rf": {
+    "auc": 0.5026956001917521,
+    "p": 0.35392921415716855,
+    "null_mean": 0.4999362764596939,
+    "null_q99": 0.5174936763445537,
+    "n_test_rows": 8192,
+    "n_train_rows": 8192,
+    "n_features": 978,
+    "top1": 0.2490234375,
+    "top1_chance": 0.25,
+    "ci95_cluster": [
+     0.48759084244569145,
+     0.5181215157111485
+    ],
+    "ci_resamples_used": 2000,
+    "ci_unit": "parent (subtree)",
+    "holm_p": 1,
+    "detected": false
+   },
+   "M2b-P/knn": {
+    "auc": 0.4907695452372233,
+    "p": 0.8956208758248351,
+    "null_mean": 0.49995451390743256,
+    "null_q99": 0.5176722586154937,
+    "n_test_rows": 8192,
+    "n_train_rows": 8192,
+    "n_features": 978,
+    "top1": 0.24609375,
+    "top1_chance": 0.25,
+    "ci95_cluster": [
+     0.4771462013324102,
+     0.5044637620449066
+    ],
+    "ci_resamples_used": 2000,
+    "ci_unit": "parent (subtree)",
+    "holm_p": 1,
+    "detected": false
+   }
+  },
+  "K1_lam1": {
+   "M2a-P/logreg": {
+    "auc": 0.7474451216440352,
+    "p": 0.0001999600079984003,
+    "null_mean": 0.49975168321170504,
+    "null_q99": 0.5744147475182064,
+    "n_test_rows": 131072,
+    "n_train_rows": 22048,
+    "n_features": 588,
+    "ci95_cluster": [
+     0.7240832003123205,
+     0.7616249633377117
+    ],
+    "ci_resamples_used": 2000,
+    "ci_unit": "parent (transcript unit x hypothesis unit)",
+    "holm_p": 0.0011997600479904018,
+    "detected": true
+   },
+   "M2a-P/rf": {
+    "auc": 0.7410838263375419,
+    "p": 0.0001999600079984003,
+    "null_mean": 0.4997072743022252,
+    "null_q99": 0.5746938878013974,
+    "n_test_rows": 131072,
+    "n_train_rows": 22048,
+    "n_features": 588,
+    "ci95_cluster": [
+     0.7172473340811703,
+     0.7545515925788551
+    ],
+    "ci_resamples_used": 2000,
+    "ci_unit": "parent (transcript unit x hypothesis unit)",
+    "holm_p": 0.0011997600479904018,
+    "detected": true
+   },
+   "M2a-P/knn": {
+    "auc": 0.5394827259911431,
+    "p": 0.0001999600079984003,
+    "null_mean": 0.5000650438868811,
+    "null_q99": 0.5177625051566533,
+    "n_test_rows": 131072,
+    "n_train_rows": 22048,
+    "n_features": 588,
+    "ci95_cluster": [
+     0.5194563394426123,
+     0.5613608699537544
+    ],
+    "ci_resamples_used": 2000,
+    "ci_unit": "parent (transcript unit x hypothesis unit)",
+    "holm_p": 0.0011997600479904018,
+    "detected": true
+   },
+   "M2b-P/logreg": {
+    "auc": 0.7667105197906494,
+    "p": 0.0001999600079984003,
+    "null_mean": 0.5002947263081869,
+    "null_q99": 0.5484205770492554,
+    "n_test_rows": 8192,
+    "n_train_rows": 8192,
+    "n_features": 978,
+    "top1": 0.49169921875,
+    "top1_chance": 0.25,
+    "ci95_cluster": [
+     0.7455603957176209,
+     0.7849755903085073
+    ],
+    "ci_resamples_used": 2000,
+    "ci_unit": "parent (subtree)",
+    "holm_p": 0.0011997600479904018,
+    "detected": true
+   },
+   "M2b-P/rf": {
+    "auc": 0.7678141196568807,
+    "p": 0.0001999600079984003,
+    "null_mean": 0.5002514734188716,
+    "null_q99": 0.5479744009176891,
+    "n_test_rows": 8192,
+    "n_train_rows": 8192,
+    "n_features": 978,
+    "top1": 0.4990234375,
+    "top1_chance": 0.25,
+    "ci95_cluster": [
+     0.7498881826798122,
+     0.7843959987163543
+    ],
+    "ci_resamples_used": 2000,
+    "ci_unit": "parent (subtree)",
+    "holm_p": 0.0011997600479904018,
+    "detected": true
+   },
+   "M2b-P/knn": {
+    "auc": 0.5449271202087402,
+    "p": 0.0001999600079984003,
+    "null_mean": 0.5001709009806314,
+    "null_q99": 0.5189616517225901,
+    "n_test_rows": 8192,
+    "n_train_rows": 8192,
+    "n_features": 978,
+    "top1": 0.28662109375,
+    "top1_chance": 0.25,
+    "ci95_cluster": [
+     0.5307793507973353,
+     0.5590564648310343
+    ],
+    "ci_resamples_used": 2000,
+    "ci_unit": "parent (subtree)",
+    "holm_p": 0.0011997600479904018,
+    "detected": true
+   }
+  }
+ },
+ "link_decision": {
+  "M2a-P/logreg": false,
+  "M2a-P/rf": false,
+  "M2a-P/knn": false,
+  "M2b-P/logreg": false,
+  "M2b-P/rf": false,
+  "M2b-P/knn": false
+ },
+ "void": {
+  "M2a-P": false,
+  "M2b-P": false
+ },
+ "reproduction_check": {
+  "cells": 12,
+  "auc_p_mismatches": []
+ }
+}

@@ -113,3 +113,8 @@ F-2 was fixed by the user's decision in **v9.2** (`../../t2_circuit_fix/zkdac_v9
   - PLAN:75's "is c ∈ lineage reachable" was not reported.
   - GAMES:121 "accepted transactions are Steps" needs the premise "under A-CR and a trusted operator".
 - **`MANIFEST.sha256` was stale** after the 2026-10-13 revision of this file (#81 F5). It is regenerated in this commit.
+
+## Follow-up 2026-10-16: window boundaries
+- The revoked-root window boundary is tested at gate level with a real proof (`V92.t.sol:test_GB7`), and a `<=` → `<` mutation of `ZkDacRevocations` is caught.
+- The gate's note-root and issued-root windows now have accept-at-boundary tests (`T7cWindowBoundary.t.sol`). These catch the `_rootOk` mutation, which the earlier suite missed.
+- Details: `work/audit_corrections/FOLLOWUPS_20261016/F3_windows/`.
