@@ -1,0 +1,46 @@
+{
+ "date": "2026-10-09T04:47:47.593Z",
+ "chains": 20,
+ "actions_per_chain": 10,
+ "D": 4,
+ "mode": "C",
+ "U1_fresh": {
+  "actions": 200,
+  "words_per_action": 14,
+  "equal_word_across_actions": 0,
+  "equal_within_action_difference_across_actions": 0,
+  "identical_actions": 0
+ },
+ "U1_neg_deterministic_accSeed": {
+  "actions": 200,
+  "words_per_action": 14,
+  "equal_word_across_actions": 2520,
+  "equal_within_action_difference_across_actions": 8100,
+  "identical_actions": 180
+ },
+ "U2_fresh": {
+  "same_chain_pairs": 900,
+  "diff_chain_pairs": 900,
+  "feature": "sum over 14 words of Hamming distance of the low 64 bits (smaller => predicted same chain)",
+  "auc": 0.4817,
+  "ci95": [
+   0.454,
+   0.5096
+  ],
+  "mean_dist_same": 449.09,
+  "mean_dist_diff": 448.12
+ },
+ "U2_neg_deterministic_accSeed": {
+  "same_chain_pairs": 900,
+  "diff_chain_pairs": 900,
+  "feature": "sum over 14 words of Hamming distance of the low 64 bits (smaller => predicted same chain)",
+  "auc": 1,
+  "ci95": [
+   1,
+   1
+  ],
+  "mean_dist_same": 0,
+  "mean_dist_diff": 445.96
+ },
+ "note": "bootstrap resamples pairs, which share actions (not independent); CI is indicative. AUC ~ 0.5 is evidence of no gross linkage for this feature only, not IND-CPA."
+}

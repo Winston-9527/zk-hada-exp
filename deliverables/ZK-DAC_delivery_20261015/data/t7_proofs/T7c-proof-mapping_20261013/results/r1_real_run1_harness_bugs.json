@@ -1,0 +1,1482 @@
+{
+ "mode": "real",
+ "seed": "r1-real",
+ "sequences": 50,
+ "delta_ticks": 2,
+ "tick_seconds": 1000,
+ "revocation_window_s": 2500,
+ "steps": 644,
+ "steps_agree": 280,
+ "sequences_with_mismatch": 41,
+ "client_mirror_root_mismatches": 0,
+ "by_op": {
+  "mint / mint": {
+   "n": 164,
+   "model_ok": 164,
+   "impl_ok": 164,
+   "agree": 103
+  },
+  "revoke / revoke": {
+   "n": 62,
+   "model_ok": 62,
+   "impl_ok": 62,
+   "agree": 35
+  },
+  "execute / revoked ≤ Δ (still live)": {
+   "n": 19,
+   "model_ok": 11,
+   "impl_ok": 0,
+   "agree": 0
+  },
+  "split / revoked ≤ Δ (still live)": {
+   "n": 17,
+   "model_ok": 5,
+   "impl_ok": 17,
+   "agree": 4
+  },
+  "execute / spent note": {
+   "n": 28,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 13
+  },
+  "tick / tick": {
+   "n": 120,
+   "model_ok": 120,
+   "impl_ok": 120,
+   "agree": 53
+  },
+  "delegate / revoked ≤ Δ (still live)": {
+   "n": 8,
+   "model_ok": 3,
+   "impl_ok": 8,
+   "agree": 1
+  },
+  "split / bad amount": {
+   "n": 11,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 5
+  },
+  "execute / valid": {
+   "n": 71,
+   "model_ok": 40,
+   "impl_ok": 0,
+   "agree": 0
+  },
+  "execute / unknown note": {
+   "n": 4,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 0
+  },
+  "execute / bad amount": {
+   "n": 23,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 15
+  },
+  "delegate / spent note": {
+   "n": 7,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 3
+  },
+  "delegate / valid": {
+   "n": 25,
+   "model_ok": 19,
+   "impl_ok": 25,
+   "agree": 14
+  },
+  "split / valid": {
+   "n": 49,
+   "model_ok": 29,
+   "impl_ok": 49,
+   "agree": 24
+  },
+  "split / spent note": {
+   "n": 15,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 5
+  },
+  "execute / revoked > Δ": {
+   "n": 3,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 0
+  },
+  "split / revoked > Δ": {
+   "n": 2,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 0
+  },
+  "split / unknown note": {
+   "n": 10,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 3
+  },
+  "delegate / bad amount": {
+   "n": 6,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 2
+  }
+ },
+ "predicate_vs_real_witness": {
+  "agree": 168,
+  "disagree": [
+   {
+    "s": 2,
+    "mop": "execute 0 17 14",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 4,
+    "mop": "execute 0 13 18",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 9,
+    "mop": "execute 2 4 27",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 13,
+    "mop": "execute 1 0 0",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 1,
+    "mop": "execute 0 25 71",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 3,
+    "mop": "execute 0 49 47",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 11,
+    "mop": "execute 2 14 14",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 14,
+    "mop": "execute 6 1 4",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 2,
+    "mop": "execute 1 9 30",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 3,
+    "mop": "execute 0 64 26",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 5,
+    "mop": "execute 1 29 10",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 1,
+    "mop": "execute 0 5 18",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 1,
+    "mop": "execute 0 1 4",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 3,
+    "mop": "execute 1 1 0",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 1,
+    "mop": "execute 0 24 41",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 1,
+    "mop": "execute 0 55 4",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 4,
+    "mop": "execute 1 3 11",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 5,
+    "mop": "execute 1 0 14",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 5,
+    "mop": "execute 0 5 9",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 7,
+    "mop": "execute 0 13 1",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 9,
+    "mop": "execute 0 12 2",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 13,
+    "mop": "execute 1 2 12",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 3,
+    "mop": "execute 1 2 1",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 8,
+    "mop": "execute 2 30 2",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 14,
+    "mop": "execute 1 3 1",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 18,
+    "mop": "execute 3 49 27",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 2,
+    "mop": "execute 1 89 6",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 5,
+    "mop": "execute 1 21 74",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 2,
+    "mop": "execute 1 4 6",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 4,
+    "mop": "execute 1 8 2",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 12,
+    "mop": "execute 6 0 1",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 15,
+    "mop": "execute 0 3 18",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 17,
+    "mop": "execute 3 1 6",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 4,
+    "mop": "execute 2 11 47",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 5,
+    "mop": "execute 3 16 18",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 6,
+    "mop": "execute 0 2 33",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 9,
+    "mop": "execute 0 24 0",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 10,
+    "mop": "execute 3 10 26",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 13,
+    "mop": "execute 2 58 7",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 14,
+    "mop": "execute 5 5 65",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 18,
+    "mop": "execute 1 0 23",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 11,
+    "mop": "execute 1 1 1",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 7,
+    "mop": "execute 4 5 19",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 8,
+    "mop": "execute 1 1 3",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 9,
+    "mop": "execute 1 4 0",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 10,
+    "mop": "execute 3 22 59",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 18,
+    "mop": "execute 5 22 21",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 3,
+    "mop": "execute 0 44 48",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 14,
+    "mop": "execute 5 0 0",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 11,
+    "mop": "execute 9 1 6",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 13,
+    "mop": "execute 2 15 1",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 3,
+    "mop": "execute 1 3 0",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 6,
+    "mop": "execute 4 2 36",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 8,
+    "mop": "execute 3 74 7",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 10,
+    "mop": "execute 0 2 5",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 12,
+    "mop": "execute 4 27 11",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 17,
+    "mop": "execute 5 4 4",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 18,
+    "mop": "execute 3 47 34",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 5,
+    "mop": "execute 0 30 14",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 7,
+    "mop": "execute 0 21 23",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 10,
+    "mop": "execute 0 12 32",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 9,
+    "mop": "execute 0 6 1",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 3,
+    "mop": "execute 0 33 34",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 4,
+    "mop": "execute 0 3 64",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 1,
+    "mop": "execute 0 40 21",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 3,
+    "mop": "execute 0 42 19",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 2,
+    "mop": "execute 0 61 15",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 3,
+    "mop": "execute 0 21 55",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 13,
+    "mop": "execute 5 0 0",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 3,
+    "mop": "execute 2 2 2",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 5,
+    "mop": "execute 2 2 2",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 11,
+    "mop": "execute 3 9 30",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 14,
+    "mop": "execute 4 39 29",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 19,
+    "mop": "execute 5 44 36",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 6,
+    "mop": "execute 0 2 12",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 8,
+    "mop": "execute 5 0 2",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 1,
+    "mop": "execute 0 62 6",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 2,
+    "mop": "execute 0 24 44",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 3,
+    "mop": "execute 0 8 60",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 8,
+    "mop": "execute 2 27 41",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 5,
+    "mop": "execute 0 61 7",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 6,
+    "mop": "execute 3 22 22",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 1,
+    "mop": "execute 0 1 2",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 4,
+    "mop": "execute 2 2 1",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 5,
+    "mop": "execute 3 1 1",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 6,
+    "mop": "execute 2 2 1",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 8,
+    "mop": "execute 1 0 0",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 3,
+    "mop": "execute 0 70 15",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 6,
+    "mop": "execute 3 1 8",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 7,
+    "mop": "execute 2 42 4",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 15,
+    "mop": "execute 8 0 6",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 1,
+    "mop": "execute 0 91 3",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 3,
+    "mop": "execute 2 23 64",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 4,
+    "mop": "execute 2 42 45",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 6,
+    "mop": "execute 3 13 54",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 9,
+    "mop": "execute 0 41 12",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 13,
+    "mop": "execute 2 13 4",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 19,
+    "mop": "execute 5 10 8",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 5,
+    "mop": "execute 2 48 41",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 1,
+    "mop": "execute 0 22 40",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 4,
+    "mop": "execute 0 72 15",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 9,
+    "mop": "execute 4 11 13",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 15,
+    "mop": "execute 7 9 4",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 9,
+    "mop": "execute 2 3 5",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 10,
+    "mop": "execute 3 45 0",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 5,
+    "mop": "execute 0 13 9",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 4,
+    "mop": "execute 2 8 10",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 5,
+    "mop": "execute 1 0 1",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 9,
+    "mop": "execute 2 16 2",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 4,
+    "mop": "execute 2 1 15",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 5,
+    "mop": "execute 2 6 10",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 7,
+    "mop": "execute 2 9 7",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 11,
+    "mop": "execute 3 1 1",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 13,
+    "mop": "execute 0 5 43",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 5,
+    "mop": "execute 1 38 4",
+    "pred": true,
+    "sat": false
+   },
+   {
+    "s": 7,
+    "mop": "execute 2 2 14",
+    "pred": true,
+    "sat": false
+   }
+  ]
+ },
+ "wall_s": 350,
+ "host": "siyuandeMacBook-Pro.local",
+ "mismatches": [
+  {
+   "seq": 0,
+   "step": 2,
+   "op": "execute 0 17 14",
+   "model": {
+    "ok": true,
+    "size": 2,
+    "minted": 31,
+    "used": 17,
+    "now": 0,
+    "spent": "10",
+    "revoked": "0@0"
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 1,
+    "minted": 31,
+    "used": 0,
+    "now": 0,
+    "spent": "0",
+    "revoked": "0@0",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 31 0 1 2",
+    "revoke 0",
+    "execute 0 17 14"
+   ]
+  },
+  {
+   "seq": 1,
+   "step": 1,
+   "op": "execute 0 25 71",
+   "model": {
+    "ok": true,
+    "size": 2,
+    "minted": 96,
+    "used": 25,
+    "now": 0,
+    "spent": "10",
+    "revoked": ""
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 1,
+    "minted": 96,
+    "used": 0,
+    "now": 0,
+    "spent": "0",
+    "revoked": "",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 96 0 1 2",
+    "execute 0 25 71"
+   ]
+  },
+  {
+   "seq": 2,
+   "step": 2,
+   "op": "execute 1 9 30",
+   "model": {
+    "ok": true,
+    "size": 3,
+    "minted": 129,
+    "used": 9,
+    "now": 0,
+    "spent": "010",
+    "revoked": ""
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 2,
+    "minted": 129,
+    "used": 0,
+    "now": 0,
+    "spent": "00",
+    "revoked": "",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 90 0 1 2 3",
+    "mint 39 0",
+    "execute 1 9 30"
+   ]
+  },
+  {
+   "seq": 3,
+   "step": 1,
+   "op": "execute 0 5 18",
+   "model": {
+    "ok": true,
+    "size": 2,
+    "minted": 23,
+    "used": 5,
+    "now": 0,
+    "spent": "10",
+    "revoked": ""
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 1,
+    "minted": 23,
+    "used": 0,
+    "now": 0,
+    "spent": "0",
+    "revoked": "",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 23 0",
+    "execute 0 5 18"
+   ]
+  },
+  {
+   "seq": 4,
+   "step": 1,
+   "op": "execute 0 1 4",
+   "model": {
+    "ok": true,
+    "size": 2,
+    "minted": 5,
+    "used": 1,
+    "now": 0,
+    "spent": "10",
+    "revoked": ""
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 1,
+    "minted": 5,
+    "used": 0,
+    "now": 0,
+    "spent": "0",
+    "revoked": "",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 5 0 1 2 3",
+    "execute 0 1 4"
+   ]
+  },
+  {
+   "seq": 5,
+   "step": 1,
+   "op": "execute 0 24 41",
+   "model": {
+    "ok": true,
+    "size": 2,
+    "minted": 65,
+    "used": 24,
+    "now": 0,
+    "spent": "10",
+    "revoked": ""
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 1,
+    "minted": 65,
+    "used": 0,
+    "now": 0,
+    "spent": "0",
+    "revoked": "",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 65 0 1",
+    "execute 0 24 41"
+   ]
+  },
+  {
+   "seq": 6,
+   "step": 1,
+   "op": "execute 0 55 4",
+   "model": {
+    "ok": true,
+    "size": 2,
+    "minted": 59,
+    "used": 55,
+    "now": 0,
+    "spent": "10",
+    "revoked": ""
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 1,
+    "minted": 59,
+    "used": 0,
+    "now": 0,
+    "spent": "0",
+    "revoked": "",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 59 0 4 5",
+    "execute 0 55 4"
+   ]
+  },
+  {
+   "seq": 7,
+   "step": 5,
+   "op": "execute 0 5 9",
+   "model": {
+    "ok": true,
+    "size": 2,
+    "minted": 14,
+    "used": 5,
+    "now": 1,
+    "spent": "10",
+    "revoked": "1@0,4@1"
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 1,
+    "minted": 14,
+    "used": 0,
+    "now": 1,
+    "spent": "0",
+    "revoked": "1@0,4@1",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 14 0 4 5",
+    "revoke 1",
+    "tick",
+    "split 0 13 2",
+    "revoke 4",
+    "execute 0 5 9"
+   ]
+  },
+  {
+   "seq": 8,
+   "step": 3,
+   "op": "execute 1 2 1",
+   "model": {
+    "ok": true,
+    "size": 3,
+    "minted": 89,
+    "used": 2,
+    "now": 0,
+    "spent": "010",
+    "revoked": "0@0"
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 2,
+    "minted": 89,
+    "used": 0,
+    "now": 0,
+    "spent": "00",
+    "revoked": "0@0",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 86 0 4",
+    "mint 3 0 4 5",
+    "revoke 0",
+    "execute 1 2 1"
+   ]
+  },
+  {
+   "seq": 9,
+   "step": 8,
+   "op": "execute 2 30 2",
+   "model": {
+    "ok": true,
+    "size": 5,
+    "minted": 112,
+    "used": 30,
+    "now": 3,
+    "spent": "10100",
+    "revoked": "2@2"
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 4,
+    "minted": 112,
+    "used": 0,
+    "now": 3,
+    "spent": "1000",
+    "revoked": "2@2",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 36 0 1",
+    "execute 0 37 0",
+    "tick",
+    "tick",
+    "split 0 4 32",
+    "revoke 2",
+    "mint 76 0 1",
+    "tick",
+    "execute 2 30 2"
+   ]
+  },
+  {
+   "seq": 10,
+   "step": 2,
+   "op": "execute 1 89 6",
+   "model": {
+    "ok": true,
+    "size": 3,
+    "minted": 109,
+    "used": 89,
+    "now": 0,
+    "spent": "010",
+    "revoked": ""
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 2,
+    "minted": 109,
+    "used": 0,
+    "now": 0,
+    "spent": "00",
+    "revoked": "",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 14 0 4",
+    "mint 95 0 4",
+    "execute 1 89 6"
+   ]
+  },
+  {
+   "seq": 12,
+   "step": 2,
+   "op": "execute 1 4 6",
+   "model": {
+    "ok": true,
+    "size": 4,
+    "minted": 21,
+    "used": 4,
+    "now": 0,
+    "spent": "1100",
+    "revoked": ""
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 3,
+    "minted": 21,
+    "used": 0,
+    "now": 0,
+    "spent": "100",
+    "revoked": "",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 21 0 1 2",
+    "delegate 0 3 10 11",
+    "execute 1 4 6"
+   ]
+  },
+  {
+   "seq": 13,
+   "step": 4,
+   "op": "execute 2 11 47",
+   "model": {
+    "ok": true,
+    "size": 5,
+    "minted": 103,
+    "used": 11,
+    "now": 0,
+    "spent": "10100",
+    "revoked": ""
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 4,
+    "minted": 103,
+    "used": 0,
+    "now": 0,
+    "spent": "1000",
+    "revoked": "",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 63 0 1 2",
+    "delegate 0 3 5 58",
+    "mint 40 0 1 2 3",
+    "execute 2 59 0",
+    "execute 2 11 47"
+   ]
+  },
+  {
+   "seq": 15,
+   "step": 5,
+   "op": "execute 3 16 18",
+   "model": {
+    "ok": true,
+    "size": 5,
+    "minted": 80,
+    "used": 16,
+    "now": 1,
+    "spent": "01010",
+    "revoked": "4@0"
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 4,
+    "minted": 80,
+    "used": 0,
+    "now": 1,
+    "spent": "0100",
+    "revoked": "4@0",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 35 0",
+    "mint 45 0 1 2",
+    "revoke 4",
+    "tick",
+    "delegate 1 3 11 34",
+    "execute 3 16 18"
+   ]
+  },
+  {
+   "seq": 16,
+   "step": 9,
+   "op": "execute 0 24 0",
+   "model": {
+    "ok": true,
+    "size": 6,
+    "minted": 238,
+    "used": 24,
+    "now": 3,
+    "spent": "100000",
+    "revoked": "2@3"
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 5,
+    "minted": 238,
+    "used": 0,
+    "now": 3,
+    "spent": "00000",
+    "revoked": "2@3",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 24 0 1 2",
+    "mint 23 0 4 5",
+    "mint 65 0 1 2",
+    "tick",
+    "tick",
+    "mint 36 0 1",
+    "tick",
+    "revoke 2",
+    "mint 90 0 4",
+    "execute 0 24 0"
+   ]
+  },
+  {
+   "seq": 17,
+   "step": 11,
+   "op": "execute 1 1 1",
+   "model": {
+    "ok": true,
+    "size": 4,
+    "minted": 22,
+    "used": 1,
+    "now": 3,
+    "spent": "1100",
+    "revoked": "1@2,4@1"
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 3,
+    "minted": 22,
+    "used": 0,
+    "now": 3,
+    "spent": "100",
+    "revoked": "1@2,4@1",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 22 0 1 2",
+    "execute 0 26 0",
+    "split 3 3 7",
+    "delegate 0 3 2 20",
+    "delegate 0 3 10 12",
+    "tick",
+    "revoke 4",
+    "tick",
+    "execute 2 22 0",
+    "revoke 1",
+    "tick",
+    "execute 1 1 1"
+   ]
+  },
+  {
+   "seq": 18,
+   "step": 7,
+   "op": "execute 4 5 19",
+   "model": {
+    "ok": true,
+    "size": 6,
+    "minted": 53,
+    "used": 5,
+    "now": 3,
+    "spent": "101010",
+    "revoked": ""
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 5,
+    "minted": 53,
+    "used": 0,
+    "now": 3,
+    "spent": "10100",
+    "revoked": "",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 53 0 4 5",
+    "tick",
+    "tick",
+    "split 0 4 49",
+    "tick",
+    "execute 0 57 0",
+    "split 2 25 24",
+    "execute 4 5 19"
+   ]
+  },
+  {
+   "seq": 19,
+   "step": 10,
+   "op": "execute 3 22 59",
+   "model": {
+    "ok": true,
+    "size": 7,
+    "minted": 251,
+    "used": 22,
+    "now": 4,
+    "spent": "1001000",
+    "revoked": "4@3"
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 6,
+    "minted": 251,
+    "used": 0,
+    "now": 4,
+    "spent": "100000",
+    "revoked": "4@3",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 41 0 1 2 3",
+    "tick",
+    "tick",
+    "tick",
+    "revoke 4",
+    "split 0 5 36",
+    "mint 81 0 4",
+    "mint 86 0 4",
+    "mint 43 0 4",
+    "tick",
+    "execute 3 22 59"
+   ]
+  },
+  {
+   "seq": 24,
+   "step": 11,
+   "op": "execute 9 1 6",
+   "model": {
+    "ok": true,
+    "size": 12,
+    "minted": 192,
+    "used": 1,
+    "now": 2,
+    "spent": "101010000100",
+    "revoked": "3@1"
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 11,
+    "minted": 192,
+    "used": 0,
+    "now": 2,
+    "spent": "10101000000",
+    "revoked": "3@1",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 33 0 1",
+    "tick",
+    "split 0 17 16",
+    "split 2 8 8",
+    "mint 38 0 4 5",
+    "mint 21 0 1",
+    "revoke 3",
+    "mint 84 0 1",
+    "split 4 1 7",
+    "tick",
+    "mint 16 0 1 2",
+    "execute 9 1 6"
+   ]
+  },
+  {
+   "seq": 25,
+   "step": 3,
+   "op": "execute 1 3 0",
+   "model": {
+    "ok": true,
+    "size": 4,
+    "minted": 7,
+    "used": 3,
+    "now": 1,
+    "spent": "1100",
+    "revoked": ""
+   },
+   "impl": {
+    "accepted": false,
+    "why": "no witness",
+    "size": 3,
+    "minted": 7,
+    "used": 0,
+    "now": 1,
+    "spent": "100",
+    "revoked": "",
+    "rootMirror": true
+   },
+   "prefix": [
+    "mint 7 0 1",
+    "tick",
+    "split 0 3 4",
+    "execute 1 3 0"
+   ]
+  }
+ ]
+}

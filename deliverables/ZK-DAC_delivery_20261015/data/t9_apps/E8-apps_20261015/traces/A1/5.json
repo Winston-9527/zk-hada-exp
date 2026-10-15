@@ -1,0 +1,226 @@
+{
+ "app": "A1",
+ "seed": 5,
+ "caps": [
+  7,
+  3,
+  5
+ ],
+ "tools": [
+  "search",
+  "fetch",
+  "compute"
+ ],
+ "budget": 20,
+ "expiry": {
+  "agent": 2,
+  "at": 300
+ },
+ "events": [
+  {
+   "t": 20,
+   "type": "call",
+   "agent": 0,
+   "tool": "fetch",
+   "outcome": "commit"
+  },
+  {
+   "t": 32,
+   "type": "call",
+   "agent": 1,
+   "tool": "search",
+   "outcome": "commit"
+  },
+  {
+   "t": 38,
+   "type": "attack",
+   "kind": "tool_without_cap",
+   "agent": 0,
+   "tool": "admin"
+  },
+  {
+   "t": 47,
+   "type": "call",
+   "agent": 2,
+   "tool": "search",
+   "outcome": "commit"
+  },
+  {
+   "t": 60,
+   "type": "call",
+   "agent": 0,
+   "tool": "compute",
+   "outcome": "commit"
+  },
+  {
+   "t": 71,
+   "type": "call",
+   "agent": 1,
+   "tool": "search",
+   "outcome": "commit"
+  },
+  {
+   "t": 80,
+   "type": "concurrent",
+   "agent": 2,
+   "tools": [
+    "search",
+    "compute"
+   ],
+   "outcome": "commit"
+  },
+  {
+   "t": 87,
+   "type": "call",
+   "agent": 2,
+   "tool": "search",
+   "outcome": "commit"
+  },
+  {
+   "t": 95,
+   "type": "call",
+   "agent": 0,
+   "tool": "search",
+   "outcome": "commit"
+  },
+  {
+   "t": 103,
+   "type": "call",
+   "agent": 1,
+   "tool": "fetch",
+   "outcome": "commit"
+  },
+  {
+   "t": 114,
+   "type": "call",
+   "agent": 2,
+   "tool": "compute",
+   "outcome": "commit"
+  },
+  {
+   "t": 114,
+   "type": "attack",
+   "kind": "over_budget",
+   "agent": 0,
+   "tool": "search",
+   "amount": 25
+  },
+  {
+   "t": 130,
+   "type": "call",
+   "agent": 0,
+   "tool": "compute",
+   "outcome": "commit"
+  },
+  {
+   "t": 144,
+   "type": "call",
+   "agent": 1,
+   "tool": "fetch",
+   "outcome": "commit"
+  },
+  {
+   "t": 147,
+   "type": "permchange",
+   "agent": 0,
+   "caps": 5
+  },
+  {
+   "t": 160,
+   "type": "call",
+   "agent": 2,
+   "tool": "compute",
+   "outcome": "crash"
+  },
+  {
+   "t": 170,
+   "type": "call",
+   "agent": 0,
+   "tool": "search",
+   "outcome": "commit"
+  },
+  {
+   "t": 182,
+   "type": "call",
+   "agent": 1,
+   "tool": "search",
+   "outcome": "commit"
+  },
+  {
+   "t": 187,
+   "type": "call",
+   "agent": 0,
+   "tool": "search",
+   "outcome": "commit",
+   "note": "after permission change"
+  },
+  {
+   "t": 192,
+   "type": "call",
+   "agent": 2,
+   "tool": "search",
+   "outcome": "fail"
+  },
+  {
+   "t": 197,
+   "type": "attack",
+   "kind": "tool_removed_by_permchange",
+   "agent": 0,
+   "tool": "fetch"
+  },
+  {
+   "t": 200,
+   "type": "call",
+   "agent": 0,
+   "tool": "compute",
+   "outcome": "commit"
+  },
+  {
+   "t": 213,
+   "type": "revoke",
+   "agent": 1
+  },
+  {
+   "t": 225,
+   "type": "call",
+   "agent": 2,
+   "tool": "compute",
+   "outcome": "commit"
+  },
+  {
+   "t": 237,
+   "type": "call",
+   "agent": 0,
+   "tool": "search",
+   "outcome": "fail"
+  },
+  {
+   "t": 260,
+   "type": "call",
+   "agent": 2,
+   "tool": "compute",
+   "outcome": "commit"
+  },
+  {
+   "t": 273,
+   "type": "attack",
+   "kind": "after_revocation",
+   "agent": 1,
+   "tool": "search"
+  },
+  {
+   "t": 276,
+   "type": "call",
+   "agent": 0,
+   "tool": "compute",
+   "outcome": "crash"
+  },
+  {
+   "t": 320,
+   "type": "attack",
+   "kind": "after_expiry",
+   "agent": 2,
+   "tool": "search"
+  }
+ ]
+}

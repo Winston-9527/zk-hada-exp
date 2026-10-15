@@ -1,0 +1,30 @@
+08:01:04 N128 creds 128 by D 1/2/14/111
+08:01:06 N128 setup done 9 s
+08:01:07 N128 action 0 D 1 status 1 gas 594152
+08:01:08 N128 action 1 D 2 status 1 gas 574714
+08:01:11 N128 action 2 D 3 status 1 gas 582442
+08:01:14 N128 action 3 D 4 status 1 gas 617308
+08:01:15 N128 action 4 D 1 status 1 gas 566950
+08:01:16 N128 action 5 D 2 status 1 gas 601768
+08:01:19 N128 action 6 D 3 status 1 gas 609544
+08:01:22 N128 action 7 D 4 status 1 gas 644386
+08:01:23 N128 action 8 D 1 status 1 gas 566974
+08:01:25 N128 action 9 D 2 status 1 gas 601768
+       29.69 real       195.24 user         7.89 sys
+          4514840576  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             2978237  page reclaims
+                 866  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                2712  messages sent
+                2843  messages received
+                   2  signals received
+                2363  voluntary context switches
+              245725  involuntary context switches
+       1236969907675  instructions retired
+        591328119527  cycles elapsed
+          4048959568  peak memory footprint

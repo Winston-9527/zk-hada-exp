@@ -1,0 +1,3 @@
+[PASS] test_kat() (gas: 117277173)
+  T7C X2b PoseidonT3 agree 1000 of 1000
+  T7C X2b PoseidonT4 agree 1000 of 1000

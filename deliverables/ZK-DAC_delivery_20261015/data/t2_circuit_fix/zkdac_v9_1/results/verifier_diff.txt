@@ -1,0 +1,4 @@
+D=1 verifier identical modulo constants
+D=2 verifier identical modulo constants
+D=3 verifier identical modulo constants
+D=4 verifier identical modulo constants

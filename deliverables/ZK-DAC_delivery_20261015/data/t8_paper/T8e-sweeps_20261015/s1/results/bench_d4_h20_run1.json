@@ -1,0 +1,1 @@
+{"circuit":"main_d4_h20","D":4,"h":20,"machine":"Apple M5 Pro x15","runs":10,"verified":"10/10","public_inputs":20,"witness_ms":{"mean":253.1,"sd":14.9,"median":245.9},"prove_ms":{"mean":3036.4,"sd":128.4,"median":2972.4},"verify_ms":{"mean":6,"sd":0.5,"median":5.9}}

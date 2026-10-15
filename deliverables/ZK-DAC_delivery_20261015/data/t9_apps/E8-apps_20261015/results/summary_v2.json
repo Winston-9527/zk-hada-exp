@@ -1,0 +1,333 @@
+{
+ "A3": {
+  "runs": [
+   {
+    "seed": 0,
+    "task_success": false,
+    "items": 23,
+    "unassignable": {
+     "planner budget exhausted": 1
+    },
+    "stranded_v1": 36,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 1,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 14,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 2,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 0,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 3,
+    "task_success": false,
+    "items": 21,
+    "unassignable": {
+     "no capable live sub-agent": 3
+    },
+    "stranded_v1": 35,
+    "stranded_item_notes": 3
+   },
+   {
+    "seed": 4,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 0,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 5,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 24,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 6,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 0,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 7,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 22,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 8,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 33,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 9,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 4,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 10,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 0,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 11,
+    "task_success": false,
+    "items": 19,
+    "unassignable": {
+     "no capable live sub-agent": 5
+    },
+    "stranded_v1": 40,
+    "stranded_item_notes": 8
+   },
+   {
+    "seed": 12,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 0,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 13,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 31,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 14,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 0,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 15,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 11,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 16,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 0,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 17,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 0,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 18,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 21,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 19,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 9,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 20,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 0,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 21,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 12,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 22,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 15,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 23,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 14,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 24,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 4,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 25,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 0,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 26,
+    "task_success": false,
+    "items": 23,
+    "unassignable": {
+     "planner budget exhausted": 1
+    },
+    "stranded_v1": 34,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 27,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 0,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 28,
+    "task_success": true,
+    "items": 24,
+    "unassignable": {},
+    "stranded_v1": 0,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 29,
+    "task_success": false,
+    "items": 22,
+    "unassignable": {
+     "no capable live sub-agent": 2
+    },
+    "stranded_v1": 6,
+    "stranded_item_notes": 6
+   }
+  ],
+  "unassignable_by_cause": {
+   "planner budget exhausted": 2,
+   "no capable live sub-agent": 10
+  },
+  "stranded_v1_total": 365,
+  "stranded_v2_total": 382,
+  "stranded_v1_mean": 12.17,
+  "stranded_v2_mean": 12.73,
+  "failed_runs": [
+   {
+    "seed": 0,
+    "task_success": false,
+    "items": 23,
+    "unassignable": {
+     "planner budget exhausted": 1
+    },
+    "stranded_v1": 36,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 3,
+    "task_success": false,
+    "items": 21,
+    "unassignable": {
+     "no capable live sub-agent": 3
+    },
+    "stranded_v1": 35,
+    "stranded_item_notes": 3
+   },
+   {
+    "seed": 11,
+    "task_success": false,
+    "items": 19,
+    "unassignable": {
+     "no capable live sub-agent": 5
+    },
+    "stranded_v1": 40,
+    "stranded_item_notes": 8
+   },
+   {
+    "seed": 26,
+    "task_success": false,
+    "items": 23,
+    "unassignable": {
+     "planner budget exhausted": 1
+    },
+    "stranded_v1": 34,
+    "stranded_item_notes": 0
+   },
+   {
+    "seed": 29,
+    "task_success": false,
+    "items": 22,
+    "unassignable": {
+     "no capable live sub-agent": 2
+    },
+    "stranded_v1": 6,
+    "stranded_item_notes": 6
+   }
+  ]
+ },
+ "attacks": {
+  "A1": {
+   "blocked_circuit": 120,
+   "blocked_gate": 30
+  },
+  "A2": {
+   "blocked_circuit": 60,
+   "blocked_gate": 60
+  },
+  "A3": {
+   "blocked_circuit": 84,
+   "blocked_gate": 9,
+   "untestable": 21,
+   "harness_error_no_note": 6
+  },
+  "blocked_by_circuit_or_gate_total": 363
+ }
+}

@@ -1,0 +1,8 @@
+c1 zkey verify OK
+c1 setup 23s
+c2 zkey verify OK
+c2 setup 30s
+c3 zkey verify OK
+c3 setup 46s
+c4 zkey verify OK
+c4 setup 53s

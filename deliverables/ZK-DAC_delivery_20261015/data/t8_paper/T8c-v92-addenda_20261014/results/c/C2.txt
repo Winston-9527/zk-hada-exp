@@ -1,0 +1,8 @@
+build/c1/main_c_d1.r1cs: OK
+build/c2/main_c_d2.r1cs: OK
+build/c3/main_c_d3.r1cs: OK
+build/c4/main_c_d4.r1cs: OK
+build/c1/main_c_d1_js/main_c_d1.wasm: OK
+build/c2/main_c_d2_js/main_c_d2.wasm: OK
+build/c3/main_c_d3_js/main_c_d3.wasm: OK
+build/c4/main_c_d4_js/main_c_d4.wasm: OK

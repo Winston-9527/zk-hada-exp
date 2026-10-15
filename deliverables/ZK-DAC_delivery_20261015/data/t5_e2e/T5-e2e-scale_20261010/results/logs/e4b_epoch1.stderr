@@ -1,0 +1,38 @@
+03:21:14 S0 {
+  block: 1456,
+  ts: 1791602472,
+  noteRoot: '19306045795358439806578908609483596507461451314010218612551254949379547608502',
+  noteLeaves: 2600,
+  gasLimit: '30000000'
+}
+03:23:49 proofs 100 elapsed s 155
+03:27:51 proofs 200 elapsed s 397
+03:32:20 proofs 300 elapsed s 666
+03:36:52 proofs 400 elapsed s 938
+03:41:23 proofs 500 elapsed s 1209
+03:45:54 proofs 600 elapsed s 1480
+03:50:28 proofs 700 elapsed s 1754
+03:55:01 proofs 800 elapsed s 2026
+03:59:38 proofs 900 elapsed s 2304
+04:04:10 proofs 1000 elapsed s 2575
+04:08:42 proofs 1100 elapsed s 2847
+04:13:10 proofs 1200 elapsed s 3115
+04:15:43 submitted 1230
+     3277.48 real     23460.22 user       716.35 sys
+          4841013248  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+           336191011  page reclaims
+                  88  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+               22421  messages sent
+               22421  messages received
+                   0  signals received
+                  58  voluntary context switches
+            20874596  involuntary context switches
+     217243440142117  instructions retired
+     103128230479728  cycles elapsed
+          4670908664  peak memory footprint

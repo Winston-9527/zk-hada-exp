@@ -1,0 +1,17 @@
+{
+ "transcripts": 4096,
+ "agents_in_knowledge": 512,
+ "dictionary_values_incl_negations": 8536,
+ "candidate_y_per_position": [
+  32,
+  32,
+  128,
+  512
+ ],
+ "i_transcript_word_in_dictionary": 0,
+ "ii_residual_zero": 0,
+ "ii_residual_in_dictionary": 0,
+ "ii_residuals_checked": 2883584,
+ "iii_equal_masks_true_chain": 0,
+ "iv_nf_or_cm_change_in_dictionary": 0
+}

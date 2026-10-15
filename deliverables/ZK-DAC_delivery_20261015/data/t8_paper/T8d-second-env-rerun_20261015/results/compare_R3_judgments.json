@@ -1,0 +1,305 @@
+{
+ "world": {
+  "agents_by_D": [
+   [
+    8,
+    14,
+    32,
+    128
+   ],
+   [
+    8,
+    14,
+    32,
+    128
+   ]
+  ],
+  "agents": [
+   182,
+   182
+  ],
+  "transfers": [
+   174,
+   174
+  ],
+  "note_leaves": [
+   356,
+   356
+  ],
+  "issued_leaves": [
+   174,
+   174
+  ],
+  "final_block": [
+   208,
+   208
+  ]
+ },
+ "world_tx_counts": {
+  "updateIssuedRoot": [
+   1,
+   1
+  ],
+  "register": [
+   8,
+   8
+  ],
+  "registerState_new": [
+   1,
+   1
+  ],
+  "mint": [
+   8,
+   8
+  ],
+  "transferBudget": [
+   174,
+   174
+  ]
+ },
+ "steady_equal": true,
+ "steady_n": 94,
+ "steady_ok": 94,
+ "epoch1": {
+  "agents": [
+   182,
+   182
+  ],
+  "proofs_built": [
+   182,
+   182
+  ],
+  "accepted": [
+   182,
+   182
+  ],
+  "failed_by_reason": [
+   {},
+   {}
+  ],
+  "blocks_used": [
+   5,
+   5
+  ]
+ },
+ "epoch1_txs_per_block": [
+  [
+   43,
+   43,
+   44,
+   43,
+   9
+  ],
+  [
+   43,
+   43,
+   44,
+   43,
+   9
+  ]
+ ],
+ "revoke_1": {
+  "revoked_now": [
+   2,
+   2
+  ],
+  "revoked_total": [
+   2,
+   2
+  ],
+  "revoked_by_hop": [
+   {
+    "1": 0,
+    "2": 0,
+    "3": 2
+   },
+   {
+    "1": 0,
+    "2": 0,
+    "3": 2
+   }
+  ],
+  "blocked_expected_after": [
+   2,
+   2
+  ],
+  "newly_blocked": [
+   2,
+   2
+  ],
+  "inflight": [
+   {
+    "descendant_prebuilt": {
+     "n": 2,
+     "StaleRevokedRoot": 2,
+     "accepted": 0
+    },
+    "free_prebuilt": {
+     "n": 32,
+     "StaleRevokedRoot": 32,
+     "accepted": 0
+    }
+   },
+   {
+    "descendant_prebuilt": {
+     "n": 2,
+     "StaleRevokedRoot": 2,
+     "accepted": 0
+    },
+    "free_prebuilt": {
+     "n": 32,
+     "StaleRevokedRoot": 32,
+     "accepted": 0
+    }
+   }
+  ],
+  "rebuilt": [
+   {
+    "n": 32,
+    "accepted": 32
+   },
+   {
+    "n": 32,
+    "accepted": 32
+   }
+  ],
+  "descendant_fresh": [
+   {
+    "n": 2,
+    "NO_WITNESS": 2
+   },
+   {
+    "n": 2,
+    "NO_WITNESS": 2
+   }
+  ],
+  "witness_level": [
+   {
+    "agents": 182,
+    "false_accept": 0,
+    "collateral_denial": 0,
+    "blocked_ok": 2,
+    "free_ok": 180,
+    "errors": [],
+    "ids_false_accept": [],
+    "ids_collateral_denial": []
+   },
+   {
+    "agents": 182,
+    "false_accept": 0,
+    "collateral_denial": 0,
+    "blocked_ok": 2,
+    "free_ok": 180,
+    "errors": [],
+    "ids_false_accept": [],
+    "ids_collateral_denial": []
+   }
+  ]
+ },
+ "revoke_10": {
+  "revoked_now": [
+   15,
+   15
+  ],
+  "revoked_total": [
+   17,
+   17
+  ],
+  "revoked_by_hop": [
+   {
+    "1": 1,
+    "2": 2,
+    "3": 12
+   },
+   {
+    "1": 1,
+    "2": 2,
+    "3": 12
+   }
+  ],
+  "blocked_expected_after": [
+   24,
+   24
+  ],
+  "newly_blocked": [
+   22,
+   22
+  ],
+  "inflight": [
+   {
+    "descendant_prebuilt": {
+     "n": 22,
+     "StaleRevokedRoot": 22,
+     "accepted": 0
+    },
+    "free_prebuilt": {
+     "n": 32,
+     "StaleRevokedRoot": 32,
+     "accepted": 0
+    }
+   },
+   {
+    "descendant_prebuilt": {
+     "n": 22,
+     "StaleRevokedRoot": 22,
+     "accepted": 0
+    },
+    "free_prebuilt": {
+     "n": 32,
+     "StaleRevokedRoot": 32,
+     "accepted": 0
+    }
+   }
+  ],
+  "rebuilt": [
+   {
+    "n": 32,
+    "accepted": 32
+   },
+   {
+    "n": 32,
+    "accepted": 32
+   }
+  ],
+  "descendant_fresh": [
+   {
+    "n": 22,
+    "NO_WITNESS": 22
+   },
+   {
+    "n": 22,
+    "NO_WITNESS": 22
+   }
+  ],
+  "witness_level": [
+   {
+    "agents": 182,
+    "false_accept": 0,
+    "collateral_denial": 0,
+    "blocked_ok": 24,
+    "free_ok": 158,
+    "errors": [],
+    "ids_false_accept": [],
+    "ids_collateral_denial": []
+   },
+   {
+    "agents": 182,
+    "false_accept": 0,
+    "collateral_denial": 0,
+    "blocked_ok": 24,
+    "free_ok": 158,
+    "errors": [],
+    "ids_false_accept": [],
+    "ids_collateral_denial": []
+   }
+  ]
+ },
+ "all_judgments_equal": true,
+ "gas_abs_diff": {
+  "setup_max": 60,
+  "steady_actions_max": 84,
+  "epoch1_block_max": 192,
+  "revoke_tx_max": 60,
+  "note": "calldata gas: 4 per zero byte vs 16 per non-zero byte; proofs, ciphertexts and fresh note randomness differ between runs"
+ }
+}

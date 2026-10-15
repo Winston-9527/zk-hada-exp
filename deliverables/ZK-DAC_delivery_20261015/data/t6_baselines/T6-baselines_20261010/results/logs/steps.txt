@@ -1,0 +1,9 @@
+start 2026-10-10T10:54:26Z
+ucan_bench.json exit 0 10:54:27
+dac_bench.json exit 0 10:54:29
+zkcreds_expiry exit 0 10:57:41
+b0_anvil.json exit 0 10:57:44
+comp_bench 1 exit 0 11:03:22
+comp_bench 2 exit 0 11:08:57
+comp_bench 3 exit 0 11:14:32
+end 2026-10-10T11:14:32Z

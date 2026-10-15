@@ -1,0 +1,3 @@
+Suite result: ok. 8 passed; 0 failed; 0 skipped; finished in 117.87ms (207.92ms CPU time)
+
+Ran 16 test suites in 189.59ms (1.25s CPU time): 178 tests passed, 0 failed, 0 skipped (178 total tests)

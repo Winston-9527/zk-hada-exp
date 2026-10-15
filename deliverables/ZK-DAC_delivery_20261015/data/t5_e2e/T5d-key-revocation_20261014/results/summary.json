@@ -1,0 +1,189 @@
+{
+ "worlds": 12,
+ "hard": {
+  "false_accept_K_and_E_oracle": 0,
+  "collateral_denial_all_methods": 0,
+  "substitute_witness_accepts_K_E": 0,
+  "circuit_checked_targets": 6279,
+  "controls_accept": 2304,
+  "pre_revocation_txs_rejected": 44280
+ },
+ "cells": {
+  "s10-r1": {
+   "targets": [
+    46,
+    32.14
+   ],
+   "revoked_keys": 11,
+   "revoked_shared_keys": [
+    1,
+    1.0
+   ],
+   "txs_K": [
+    11,
+    0.0
+   ],
+   "txs_E_oracle": [
+    12.33,
+    1.53
+   ],
+   "tx_ratio_E_over_K": [
+    1.273,
+    1.091,
+    1.0
+   ],
+   "gas_K": [
+    3008928,
+    24.98
+   ],
+   "gas_E_oracle": [
+    3373665.33,
+    417883.33
+   ],
+   "coverage_E_local": [
+    0.9,
+    0.988,
+    1.0
+   ],
+   "E_local_uncovered_targets_acting": [
+    3,
+    1,
+    0
+   ],
+   "gas_per_revoke_tx": 273540
+  },
+  "s10-r10": {
+   "targets": [
+    302.33,
+    36.96
+   ],
+   "revoked_keys": 108,
+   "revoked_shared_keys": [
+    12.33,
+    2.52
+   ],
+   "txs_K": [
+    108,
+    0.0
+   ],
+   "txs_E_oracle": [
+    121.67,
+    2.52
+   ],
+   "tx_ratio_E_over_K": [
+    1.148,
+    1.13,
+    1.102
+   ],
+   "gas_K": [
+    29542132,
+    138.56
+   ],
+   "gas_E_oracle": [
+    33280542.67,
+    688364.25
+   ],
+   "coverage_E_local": [
+    0.933,
+    0.965,
+    0.939
+   ],
+   "E_local_uncovered_targets_acting": [
+    19,
+    12,
+    17
+   ],
+   "gas_per_revoke_tx": 273538
+  },
+  "s30-r1": {
+   "targets": [
+    46.33,
+    40.08
+   ],
+   "revoked_keys": 8,
+   "revoked_shared_keys": [
+    3.33,
+    2.08
+   ],
+   "txs_K": [
+    8,
+    0.0
+   ],
+   "txs_E_oracle": [
+    11.67,
+    2.52
+   ],
+   "tx_ratio_E_over_K": [
+    1.5,
+    1.125,
+    1.75
+   ],
+   "gas_K": [
+    2188260,
+    18.33
+   ],
+   "gas_E_oracle": [
+    3191298.67,
+    688427.81
+   ],
+   "coverage_E_local": [
+    0.957,
+    0.941,
+    0.8
+   ],
+   "E_local_uncovered_targets_acting": [
+    4,
+    1,
+    6
+   ],
+   "gas_per_revoke_tx": 273538
+  },
+  "s30-r10": {
+   "targets": [
+    303,
+    48.54
+   ],
+   "revoked_keys": 84,
+   "revoked_shared_keys": [
+    33,
+    1.73
+   ],
+   "txs_K": [
+    84,
+    0.0
+   ],
+   "txs_E_oracle": [
+    121,
+    1.73
+   ],
+   "tx_ratio_E_over_K": [
+    1.452,
+    1.452,
+    1.417
+   ],
+   "gas_K": [
+    22977324,
+    84.0
+   ],
+   "gas_E_oracle": [
+    33098008,
+    473698.59
+   ],
+   "coverage_E_local": [
+    0.88,
+    0.759,
+    0.886
+   ],
+   "E_local_uncovered_targets_acting": [
+    41,
+    60,
+    36
+   ],
+   "gas_per_revoke_tx": 273538
+  }
+ },
+ "tx_ratio_E_over_K_all": [
+  1.0,
+  1.75
+ ]
+}

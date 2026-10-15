@@ -1,0 +1,136 @@
+{
+ "identity_point": [
+  "0",
+  "1"
+ ],
+ "rows": [
+  {
+   "D": 1,
+   "holder_is_identity": true,
+   "v9_1": {
+    "sat": true
+   },
+   "v9_2": {
+    "sat": false,
+    "fail": "ZkDacChainV9 L204"
+   },
+   "v9_1_proof_verifies": true,
+   "holder_sk = l": {
+    "v9_1": {
+     "sat": false,
+     "fail": "ZkDacChainV9 L200"
+    },
+    "v9_2": {
+     "sat": false,
+     "fail": "ZkDacChainV9 L201"
+    }
+   },
+   "holder_sk = p - 1": {
+    "v9_1": {
+     "sat": false,
+     "fail": "Num2Bits L38"
+    },
+    "v9_2": {
+     "sat": false,
+     "fail": "Num2Bits L38"
+    }
+   }
+  },
+  {
+   "D": 2,
+   "holder_is_identity": true,
+   "v9_1": {
+    "sat": true
+   },
+   "v9_2": {
+    "sat": false,
+    "fail": "ZkDacChainV9 L204"
+   },
+   "v9_1_proof_verifies": true,
+   "holder_sk = l": {
+    "v9_1": {
+     "sat": false,
+     "fail": "ZkDacChainV9 L200"
+    },
+    "v9_2": {
+     "sat": false,
+     "fail": "ZkDacChainV9 L201"
+    }
+   },
+   "holder_sk = p - 1": {
+    "v9_1": {
+     "sat": false,
+     "fail": "Num2Bits L38"
+    },
+    "v9_2": {
+     "sat": false,
+     "fail": "Num2Bits L38"
+    }
+   }
+  },
+  {
+   "D": 3,
+   "holder_is_identity": true,
+   "v9_1": {
+    "sat": true
+   },
+   "v9_2": {
+    "sat": false,
+    "fail": "ZkDacChainV9 L204"
+   },
+   "v9_1_proof_verifies": true,
+   "holder_sk = l": {
+    "v9_1": {
+     "sat": false,
+     "fail": "ZkDacChainV9 L200"
+    },
+    "v9_2": {
+     "sat": false,
+     "fail": "ZkDacChainV9 L201"
+    }
+   },
+   "holder_sk = p - 1": {
+    "v9_1": {
+     "sat": false,
+     "fail": "Num2Bits L38"
+    },
+    "v9_2": {
+     "sat": false,
+     "fail": "Num2Bits L38"
+    }
+   }
+  },
+  {
+   "D": 4,
+   "holder_is_identity": true,
+   "v9_1": {
+    "sat": true
+   },
+   "v9_2": {
+    "sat": false,
+    "fail": "ZkDacChainV9 L204"
+   },
+   "v9_1_proof_verifies": true,
+   "holder_sk = l": {
+    "v9_1": {
+     "sat": false,
+     "fail": "ZkDacChainV9 L200"
+    },
+    "v9_2": {
+     "sat": false,
+     "fail": "ZkDacChainV9 L201"
+    }
+   },
+   "holder_sk = p - 1": {
+    "v9_1": {
+     "sat": false,
+     "fail": "Num2Bits L38"
+    },
+    "v9_2": {
+     "sat": false,
+     "fail": "Num2Bits L38"
+    }
+   }
+  }
+ ]
+}

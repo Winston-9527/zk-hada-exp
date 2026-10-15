@@ -1,0 +1,170 @@
+{
+ "today": [
+  {
+   "case": "t = 0",
+   "deal": {
+    "dealt": true,
+    "t": 0,
+    "n": 5,
+    "commitments": 0,
+    "members": 5,
+    "tpkValid": false
+   }
+  },
+  {
+   "case": "t > n",
+   "deal": {
+    "dealt": true,
+    "t": 6,
+    "n": 5,
+    "commitments": 6,
+    "members": 5,
+    "tpkValid": true
+   }
+  },
+  {
+   "case": "n = 0",
+   "deal": {
+    "dealt": true,
+    "t": 3,
+    "n": 0,
+    "commitments": 3,
+    "members": 0,
+    "tpkValid": true
+   }
+  },
+  {
+   "case": "t < 0",
+   "deal": {
+    "dealt": true,
+    "t": -1,
+    "n": 5,
+    "commitments": 0,
+    "members": 5,
+    "tpkValid": false
+   }
+  },
+  {
+   "case": "combine with t > n",
+   "result": "INSUFFICIENT",
+   "note": "no shares can ever reach t: opening impossible, not detected at setup"
+  }
+ ],
+ "validator": [
+  {
+   "case": "honest (2,3)",
+   "expected": "valid",
+   "got": "valid",
+   "why": [],
+   "pass": true
+  },
+  {
+   "case": "honest (3,5)",
+   "expected": "valid",
+   "got": "valid",
+   "why": [],
+   "pass": true
+  },
+  {
+   "case": "honest (5,9)",
+   "expected": "valid",
+   "got": "valid",
+   "why": [],
+   "pass": true
+  },
+  {
+   "case": "t = 0",
+   "expected": "invalid",
+   "got": "invalid",
+   "why": [
+    "t < 1",
+    "Feldman vector length != t"
+   ],
+   "pass": true
+  },
+  {
+   "case": "t > n (t = 6, n = 5)",
+   "expected": "invalid",
+   "got": "invalid",
+   "why": [
+    "t > n",
+    "Feldman vector length != t"
+   ],
+   "pass": true
+  },
+  {
+   "case": "n = 0",
+   "expected": "invalid",
+   "got": "invalid",
+   "why": [
+    "n < 1",
+    "t > n"
+   ],
+   "pass": true
+  },
+  {
+   "case": "Feldman vector too short",
+   "expected": "invalid",
+   "got": "invalid",
+   "why": [
+    "Feldman vector length != t",
+    "Y_1 != Feldman evaluation"
+   ],
+   "pass": true
+  },
+  {
+   "case": "Feldman vector too long",
+   "expected": "invalid",
+   "got": "invalid",
+   "why": [
+    "Feldman vector length != t",
+    "Y_1 != Feldman evaluation"
+   ],
+   "pass": true
+  },
+  {
+   "case": "duplicate member (Y_2 = Y_1)",
+   "expected": "invalid",
+   "got": "invalid",
+   "why": [
+    "Y_2 != Feldman evaluation",
+    "duplicate member keys"
+   ],
+   "pass": true
+  },
+  {
+   "case": "tpk = identity",
+   "expected": "invalid",
+   "got": "invalid",
+   "why": [
+    "tpk != A_0"
+   ],
+   "pass": true
+  },
+  {
+   "case": "tpk = valid point != A_0",
+   "expected": "invalid",
+   "got": "invalid",
+   "why": [
+    "tpk != A_0"
+   ],
+   "pass": true
+  },
+  {
+   "case": "A_1 small-order",
+   "expected": "invalid",
+   "got": "invalid",
+   "why": [
+    "commitment 1 not a valid subgroup point",
+    "Y_1 != Feldman evaluation"
+   ],
+   "pass": true
+  }
+ ],
+ "summary": {
+  "validator_cases": 12,
+  "validator_pass": 12,
+  "gate_checks_tpk_on_chain": false,
+  "note": "the gate stores tpk immutably without checks (T3 A22i; Gate 77-78): validCommittee is an off-chain deployment check"
+ }
+}

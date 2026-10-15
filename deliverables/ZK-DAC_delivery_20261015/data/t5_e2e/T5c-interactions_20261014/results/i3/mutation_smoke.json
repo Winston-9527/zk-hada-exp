@@ -1,0 +1,98 @@
+[
+ {
+  "D": 1,
+  "mutation": "honest",
+  "v92": "SAT",
+  "noacc": "SAT"
+ },
+ {
+  "D": 1,
+  "mutation": "holder_sk = 0",
+  "v92": "UNSAT ZkDacChainV9 L195",
+  "noacc": "UNSAT ZkDacChainV9NoAcc L182"
+ },
+ {
+  "D": 1,
+  "mutation": "expiry[0] + 1",
+  "v92": "UNSAT ForceEqualIfEnabled L56",
+  "noacc": "UNSAT ForceEqualIfEnabled L56"
+ },
+ {
+  "D": 1,
+  "mutation": "note_root + 1",
+  "v92": "UNSAT ZkDacChainV9 L227",
+  "noacc": "UNSAT ZkDacChainV9NoAcc L214"
+ },
+ {
+  "D": 2,
+  "mutation": "honest",
+  "v92": "SAT",
+  "noacc": "SAT"
+ },
+ {
+  "D": 2,
+  "mutation": "holder_sk = 0",
+  "v92": "UNSAT ZkDacChainV9 L195",
+  "noacc": "UNSAT ZkDacChainV9NoAcc L182"
+ },
+ {
+  "D": 2,
+  "mutation": "expiry[0] + 1",
+  "v92": "UNSAT ForceEqualIfEnabled L56",
+  "noacc": "UNSAT ForceEqualIfEnabled L56"
+ },
+ {
+  "D": 2,
+  "mutation": "note_root + 1",
+  "v92": "UNSAT ZkDacChainV9 L227",
+  "noacc": "UNSAT ZkDacChainV9NoAcc L214"
+ },
+ {
+  "D": 3,
+  "mutation": "honest",
+  "v92": "SAT",
+  "noacc": "SAT"
+ },
+ {
+  "D": 3,
+  "mutation": "holder_sk = 0",
+  "v92": "UNSAT ZkDacChainV9 L195",
+  "noacc": "UNSAT ZkDacChainV9NoAcc L182"
+ },
+ {
+  "D": 3,
+  "mutation": "expiry[0] + 1",
+  "v92": "UNSAT ForceEqualIfEnabled L56",
+  "noacc": "UNSAT ForceEqualIfEnabled L56"
+ },
+ {
+  "D": 3,
+  "mutation": "note_root + 1",
+  "v92": "UNSAT ZkDacChainV9 L227",
+  "noacc": "UNSAT ZkDacChainV9NoAcc L214"
+ },
+ {
+  "D": 4,
+  "mutation": "honest",
+  "v92": "SAT",
+  "noacc": "SAT"
+ },
+ {
+  "D": 4,
+  "mutation": "holder_sk = 0",
+  "v92": "UNSAT ZkDacChainV9 L195",
+  "noacc": "UNSAT ZkDacChainV9NoAcc L182"
+ },
+ {
+  "D": 4,
+  "mutation": "expiry[0] + 1",
+  "v92": "UNSAT ForceEqualIfEnabled L56",
+  "noacc": "UNSAT ForceEqualIfEnabled L56"
+ },
+ {
+  "D": 4,
+  "mutation": "note_root + 1",
+  "v92": "UNSAT ZkDacChainV9 L227",
+  "noacc": "UNSAT ZkDacChainV9NoAcc L214"
+ }
+]

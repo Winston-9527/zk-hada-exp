@@ -1,0 +1,5 @@
+C5 ok T3 v9 summary
+C5 ok T3 v9 per-row classes
+C5 ok exhaustive diff D=4
+C5 ok E6 totals
+C5 ok E6 per-row pass/observed

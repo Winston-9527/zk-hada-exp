@@ -1,0 +1,73 @@
+Gnuplot not found, using plotters backend
+Benchmarking Expiry show: proving tree
+Benchmarking Expiry show: proving tree: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 24.3s, or reduce sample count to 20.
+Benchmarking Expiry show: proving tree: Collecting 100 samples in estimated 24.272 s (100 iterations)
+Benchmarking Expiry show: proving tree: Analyzing
+Expiry show: proving tree
+                        time:   [243.41 ms 244.06 ms 244.78 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+
+Benchmarking Expiry show: proving forest
+Benchmarking Expiry show: proving forest: Warming up for 3.0000 s
+Benchmarking Expiry show: proving forest: Collecting 100 samples in estimated 5.2027 s (300 iterations)
+Benchmarking Expiry show: proving forest: Analyzing
+Expiry show: proving forest
+                        time:   [17.224 ms 17.274 ms 17.326 ms]
+
+Benchmarking Expiry show: proving expiry
+Benchmarking Expiry show: proving expiry: Warming up for 3.0000 s
+Benchmarking Expiry show: proving expiry: Collecting 100 samples in estimated 6.5009 s (200 iterations)
+Benchmarking Expiry show: proving expiry: Analyzing
+Expiry show: proving expiry
+                        time:   [32.228 ms 32.368 ms 32.541 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high severe
+
+Benchmarking Expiry show: proving monolithic
+Benchmarking Expiry show: proving monolithic: Warming up for 3.0000 s
+
+Warning: Unable to complete 100 samples in 5.0s. You may wish to increase target time to 26.2s, or reduce sample count to 10.
+Benchmarking Expiry show: proving monolithic: Collecting 100 samples in estimated 26.184 s (100 iterations)
+Benchmarking Expiry show: proving monolithic: Analyzing
+Expiry show: proving monolithic
+                        time:   [258.59 ms 259.63 ms 260.82 ms]
+Found 9 outliers among 100 measurements (9.00%)
+  3 (3.00%) low mild
+  1 (1.00%) high mild
+  5 (5.00%) high severe
+
+Benchmarking Expiry show: verifying monolithic
+Benchmarking Expiry show: verifying monolithic: Warming up for 3.0000 s
+Benchmarking Expiry show: verifying monolithic: Collecting 100 samples in estimated 6.8829 s (10k iterations)
+Benchmarking Expiry show: verifying monolithic: Analyzing
+Expiry show: verifying monolithic
+                        time:   [671.19 µs 672.78 µs 674.92 µs]
+Found 4 outliers among 100 measurements (4.00%)
+  1 (1.00%) high mild
+  3 (3.00%) high severe
+
+Benchmarking Expiry show: proving linkage
+Benchmarking Expiry show: proving linkage: Warming up for 3.0000 s
+Benchmarking Expiry show: proving linkage: Collecting 100 samples in estimated 5.5392 s (1000 iterations)
+Benchmarking Expiry show: proving linkage: Analyzing
+Expiry show: proving linkage
+                        time:   [5.4672 ms 5.4719 ms 5.4781 ms]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+
+Benchmarking Expiry show: verifying linkage
+Benchmarking Expiry show: verifying linkage: Warming up for 3.0000 s
+Benchmarking Expiry show: verifying linkage: Collecting 100 samples in estimated 5.1060 s (1500 iterations)
+Benchmarking Expiry show: verifying linkage: Analyzing
+Expiry show: verifying linkage
+                        time:   [3.3142 ms 3.3217 ms 3.3306 ms]
+Found 5 outliers among 100 measurements (5.00%)
+  1 (1.00%) high mild
+  4 (4.00%) high severe
+

@@ -1,0 +1,141 @@
+{
+ "mode": "real",
+ "seed": "r1-real",
+ "sequences": 50,
+ "delta_ticks": 2,
+ "tick_seconds": 1000,
+ "revocation_window_s": 2500,
+ "steps": 644,
+ "steps_agree": 644,
+ "sequences_with_mismatch": 0,
+ "client_mirror_root_mismatches": 0,
+ "by_op": {
+  "mint / mint": {
+   "n": 159,
+   "model_ok": 159,
+   "impl_ok": 159,
+   "agree": 159
+  },
+  "revoke / revoke": {
+   "n": 64,
+   "model_ok": 64,
+   "impl_ok": 64,
+   "agree": 64
+  },
+  "execute / revoked ≤ Δ (still live)": {
+   "n": 17,
+   "model_ok": 17,
+   "impl_ok": 17,
+   "agree": 17
+  },
+  "split / spent note": {
+   "n": 29,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 29
+  },
+  "execute / spent note": {
+   "n": 39,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 39
+  },
+  "tick / tick": {
+   "n": 124,
+   "model_ok": 124,
+   "impl_ok": 124,
+   "agree": 124
+  },
+  "delegate / revoked ≤ Δ (still live)": {
+   "n": 7,
+   "model_ok": 7,
+   "impl_ok": 7,
+   "agree": 7
+  },
+  "split / revoked > Δ": {
+   "n": 3,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 3
+  },
+  "delegate / revoked > Δ": {
+   "n": 1,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 1
+  },
+  "execute / valid": {
+   "n": 65,
+   "model_ok": 65,
+   "impl_ok": 65,
+   "agree": 65
+  },
+  "execute / unknown note": {
+   "n": 4,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 4
+  },
+  "execute / bad amount": {
+   "n": 21,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 21
+  },
+  "delegate / spent note": {
+   "n": 15,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 15
+  },
+  "split / revoked ≤ Δ (still live)": {
+   "n": 15,
+   "model_ok": 15,
+   "impl_ok": 15,
+   "agree": 15
+  },
+  "delegate / valid": {
+   "n": 20,
+   "model_ok": 20,
+   "impl_ok": 20,
+   "agree": 20
+  },
+  "split / bad amount": {
+   "n": 8,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 8
+  },
+  "split / valid": {
+   "n": 37,
+   "model_ok": 37,
+   "impl_ok": 37,
+   "agree": 37
+  },
+  "split / unknown note": {
+   "n": 10,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 10
+  },
+  "execute / revoked > Δ": {
+   "n": 2,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 2
+  },
+  "delegate / bad amount": {
+   "n": 4,
+   "model_ok": 0,
+   "impl_ok": 0,
+   "agree": 4
+  }
+ },
+ "predicate_vs_real_witness": {
+  "agree": 283,
+  "disagree": []
+ },
+ "wall_s": 694,
+ "host": "siyuandeMacBook-Pro.local",
+ "mismatches": []
+}

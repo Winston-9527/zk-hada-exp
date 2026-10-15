@@ -1,0 +1,41 @@
+{
+ "date": "2026-10-09T05:19:48.711Z",
+ "L1": {
+  "actions": 46,
+  "public_words": 994,
+  "revocation_entries": 23,
+  "exact_or_truncated_matches": 0
+ },
+ "L2": {
+  "opened_chains": [
+   "H>M>S3>S31>S311",
+   "H>M>S1>S11>S111",
+   "H'>M'>T1"
+  ],
+  "keys_known": 11,
+  "revoked_key_entries_linked": [
+   "S3"
+  ],
+  "note": "the auditor learns that key S3, seen in an opened action, is revoked; nothing about cert entries without cap/expiry (L3)"
+ },
+ "L3": {
+  "demo": {
+   "edge": "S2->S21 (hop 2)",
+   "prior": "cap ⊆ 0x3F (64 values), expiry ∈ [1000, 10000]",
+   "hashes_tried": 137016,
+   "found": {
+    "cap": 15,
+    "expiry": 3000
+   },
+   "ms": 34943,
+   "poseidon7_per_s_single_thread_js": 3921
+  },
+  "cost_single_thread_years": {
+   "cap 32 bits unknown, expiry to the second within 1 year": 1095347.211988106,
+   "cap 32 bits unknown, expiry to the day within 1 year": 12.667988985287028,
+   "cap ⊆ known 8-bit parent cap, expiry to the second within 1 year": 0.06528778147626554,
+   "cap ⊆ known 8-bit parent cap, expiry to the hour within 1 year": 0.00001813411572943421
+  },
+  "note": "certificate entries carry no salt: anyone who knows both keys of an edge and has a narrow prior on (cap, expiry) can recognise its revocation"
+ }
+}

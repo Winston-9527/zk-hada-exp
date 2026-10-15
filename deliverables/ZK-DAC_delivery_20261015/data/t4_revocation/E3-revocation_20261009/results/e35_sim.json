@@ -1,0 +1,91 @@
+{
+ "date": "2026-10-09T05:19:32.782Z",
+ "N": 100000,
+ "model": "prove N(2.445, 0.019) s; inclusion U(0,12)+12 s; updates Poisson(λ); memoryless => first update after s ~ Exp(λ)",
+ "cells": [
+  {
+   "update_rate": "1/hour",
+   "delta_s": 0,
+   "honest_rejected": 0.00566,
+   "analytic": 0.00566,
+   "revoked_holder_exposure_s": 0
+  },
+  {
+   "update_rate": "1/hour",
+   "delta_s": 12,
+   "honest_rejected": 0.00248,
+   "analytic": 0.00235,
+   "revoked_holder_exposure_s": 12
+  },
+  {
+   "update_rate": "1/hour",
+   "delta_s": 60,
+   "honest_rejected": 0,
+   "analytic": 0,
+   "revoked_holder_exposure_s": 60
+  },
+  {
+   "update_rate": "1/hour",
+   "delta_s": 240,
+   "honest_rejected": 0,
+   "analytic": 0,
+   "revoked_holder_exposure_s": 240
+  },
+  {
+   "update_rate": "1/min",
+   "delta_s": 0,
+   "honest_rejected": 0.28763,
+   "analytic": 0.28753,
+   "revoked_holder_exposure_s": 0
+  },
+  {
+   "update_rate": "1/min",
+   "delta_s": 12,
+   "honest_rejected": 0.12986,
+   "analytic": 0.13001,
+   "revoked_holder_exposure_s": 12
+  },
+  {
+   "update_rate": "1/min",
+   "delta_s": 60,
+   "honest_rejected": 0,
+   "analytic": 0,
+   "revoked_holder_exposure_s": 60
+  },
+  {
+   "update_rate": "1/min",
+   "delta_s": 240,
+   "honest_rejected": 0,
+   "analytic": 0,
+   "revoked_holder_exposure_s": 240
+  },
+  {
+   "update_rate": "1/12s",
+   "delta_s": 0,
+   "honest_rejected": 0.81032,
+   "analytic": 0.81006,
+   "revoked_holder_exposure_s": 0
+  },
+  {
+   "update_rate": "1/12s",
+   "delta_s": 12,
+   "honest_rejected": 0.4856,
+   "analytic": 0.48463,
+   "revoked_holder_exposure_s": 12
+  },
+  {
+   "update_rate": "1/12s",
+   "delta_s": 60,
+   "honest_rejected": 0,
+   "analytic": 0,
+   "revoked_holder_exposure_s": 60
+  },
+  {
+   "update_rate": "1/12s",
+   "delta_s": 240,
+   "honest_rejected": 0,
+   "analytic": 0,
+   "revoked_holder_exposure_s": 240
+  }
+ ]
+}

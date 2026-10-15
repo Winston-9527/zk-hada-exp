@@ -1,0 +1,307 @@
+{
+ "total": 43,
+ "failed": 20,
+ "rows": [
+  {
+   "id": "ctl",
+   "name": "honest action D=2",
+   "expected": "SAT",
+   "got": "SAT",
+   "pass": true
+  },
+  {
+   "id": "ctl",
+   "name": "honest action D=4",
+   "expected": "SAT",
+   "got": "SAT",
+   "pass": true
+  },
+  {
+   "id": "X3a",
+   "name": "D=2 holder_sk + l (same public key, aliased scalar)",
+   "expected": "UNSAT at ZkDacChainV9 L200",
+   "got": "UNSAT at ZkDacChainV9 L200",
+   "pass": true
+  },
+  {
+   "id": "X3b",
+   "name": "D=2 same note, another secret (second nullifier for one note)",
+   "expected": "UNSAT at ZkDacChainV9 L194",
+   "got": "UNSAT at ZkDacChainV9 L194",
+   "pass": true
+  },
+  {
+   "id": "X3b",
+   "name": "D=2 nullifier of another note with this note's witness",
+   "expected": "UNSAT at ZkDacChainV9 L225",
+   "got": "UNSAT at ZkDacChainV9 L225",
+   "pass": true
+  },
+  {
+   "id": "X3a",
+   "name": "D=2 input note not in the tree (rho changed)",
+   "expected": "UNSAT at BinaryMerkleRoot",
+   "got": "UNSAT at ZkDacChainV9 L223",
+   "pass": false
+  },
+  {
+   "id": "X3b",
+   "name": "D=2 q_spent = q_in + 1, q_change = p - 1 (field wrap)",
+   "expected": "UNSAT at Num2Bits",
+   "got": "UNSAT at Num2Bits L38",
+   "pass": true
+  },
+  {
+   "id": "X3a",
+   "name": "D=4 holder_sk + l (same public key, aliased scalar)",
+   "expected": "UNSAT at ZkDacChainV9 L200",
+   "got": "UNSAT at Num2Bits L38",
+   "pass": false
+  },
+  {
+   "id": "X3b",
+   "name": "D=4 same note, another secret (second nullifier for one note)",
+   "expected": "UNSAT at ZkDacChainV9 L194",
+   "got": "UNSAT at ZkDacChainV9 L194",
+   "pass": true
+  },
+  {
+   "id": "X3b",
+   "name": "D=4 nullifier of another note with this note's witness",
+   "expected": "UNSAT at ZkDacChainV9 L225",
+   "got": "UNSAT at ZkDacChainV9 L225",
+   "pass": true
+  },
+  {
+   "id": "X3a",
+   "name": "D=4 input note not in the tree (rho changed)",
+   "expected": "UNSAT at BinaryMerkleRoot",
+   "got": "UNSAT at ZkDacChainV9 L223",
+   "pass": false
+  },
+  {
+   "id": "X3b",
+   "name": "D=4 q_spent = q_in + 1, q_change = p - 1 (field wrap)",
+   "expected": "UNSAT at Num2Bits",
+   "got": "UNSAT at Num2Bits L38",
+   "pass": true
+  },
+  {
+   "id": "ctl",
+   "name": "honest transfer (split)",
+   "expected": "SAT",
+   "got": "SAT",
+   "pass": true
+  },
+  {
+   "id": "X3a",
+   "name": "transfer sk + l",
+   "expected": "UNSAT at BudgetTransfer L56",
+   "got": "UNSAT at BudgetTransfer L56",
+   "pass": true
+  },
+  {
+   "id": "X3b",
+   "name": "transfer: nullifier of another note",
+   "expected": "UNSAT at BudgetTransfer L58",
+   "got": "UNSAT at BudgetTransfer L58",
+   "pass": true
+  },
+  {
+   "id": "X3b",
+   "name": "transfer: q1 = q_in + 1, q2 = p - 1 (field wrap)",
+   "expected": "UNSAT at Num2Bits",
+   "got": "UNSAT at Num2Bits L38",
+   "pass": true
+  },
+  {
+   "id": "ctl",
+   "name": "honest registration",
+   "expected": "SAT",
+   "got": "SAT",
+   "pass": true
+  },
+  {
+   "id": "X3a",
+   "name": "registration s + l (second nullifier for one human)",
+   "expected": "UNSAT at ZkDacRegister L32",
+   "got": "UNSAT at ZkDacRegister L32",
+   "pass": true
+  },
+  {
+   "id": "X3a",
+   "name": "registration nullifier for another domain",
+   "expected": "UNSAT at ZkDacRegister L48",
+   "got": "UNSAT at ZkDacRegister L48",
+   "pass": true
+  },
+  {
+   "id": "ctl",
+   "name": "honest chain with V at hop 0, D=2",
+   "expected": "SAT",
+   "got": "SAT",
+   "pass": true
+  },
+  {
+   "id": "X5a",
+   "name": "D=2 V at hop 0: no signature (S = 0, R8 = O)",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=2 V at hop 0: certificate signed by the adversary's key",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=2 V at hop 1: no signature (S = 0, R8 = O)",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=2 V at hop 1: certificate signed by the adversary's key",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=2 V at hop 1: V's real signature replayed from another certificate",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=2 V as terminal holder, adversary's secret",
+   "expected": "UNSAT at ZkDacChainV9 L194",
+   "got": "UNSAT at ZkDacChainV9 L194",
+   "pass": true
+  },
+  {
+   "id": "ctl",
+   "name": "honest chain with V at hop 0, D=4",
+   "expected": "SAT",
+   "got": "SAT",
+   "pass": true
+  },
+  {
+   "id": "X5a",
+   "name": "D=4 V at hop 0: no signature (S = 0, R8 = O)",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=4 V at hop 0: certificate signed by the adversary's key",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=4 V at hop 0: V's real signature replayed from another certificate",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=4 V at hop 1: no signature (S = 0, R8 = O)",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=4 V at hop 1: certificate signed by the adversary's key",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=4 V at hop 1: V's real signature replayed from another certificate",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=4 V at hop 2: no signature (S = 0, R8 = O)",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=4 V at hop 2: certificate signed by the adversary's key",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=4 V at hop 2: V's real signature replayed from another certificate",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=4 V at hop 3: no signature (S = 0, R8 = O)",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=4 V at hop 3: certificate signed by the adversary's key",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=4 V at hop 3: V's real signature replayed from another certificate",
+   "expected": "UNSAT at EdDSAPoseidonVerifier",
+   "got": "UNSAT at ForceEqualIfEnabled L56",
+   "pass": false
+  },
+  {
+   "id": "X5a",
+   "name": "D=4 V as terminal holder, adversary's secret",
+   "expected": "UNSAT at ZkDacChainV9 L194",
+   "got": "UNSAT at ZkDacChainV9 L194",
+   "pass": true
+  },
+  {
+   "id": "X5b",
+   "name": "D=4 adversary's witness with V's ciphertext words (own r, K kept)",
+   "expected": "UNSAT at AccHybridCompressed",
+   "got": "UNSAT at AccHybridCompressed L18",
+   "pass": true
+  },
+  {
+   "id": "X5b",
+   "name": "D=4 adversary's witness with V's whole ciphertext opening (r, K, words)",
+   "expected": "UNSAT at AccHybridCompressed",
+   "got": "UNSAT at AccHybridCompressed L23",
+   "pass": true
+  },
+  {
+   "id": "F-2 (extra)",
+   "name": "0·B8 (public key of holder_sk = 0)",
+   "expected": "identity (0, 1)",
+   "got": "0,1",
+   "pass": true
+  }
+ ]
+}
