@@ -41,3 +41,8 @@ Committed and pushed BEFORE any of these runs.
 - `RESULTS.md`, `RUN_RECORD.md`, `MANIFEST.sha256`.
 
 Failures are kept. Changes after this commit are amendments, recorded before the affected run.
+
+## Amendment A1 (2026-10-15T04:35Z, after the first Mac start, before any result)
+- The first Mac start of R3 failed immediately with "Cannot find module 'ethers'" (`results/mac/attempt1_t5s_path/`).
+- Cause: `t5s/` lies one directory deeper than T5, so `common.mjs` resolved `work/` one level too high.
+- Fix, a **fourth** change to the T5 copy: `WORK = path.resolve(HERE, "../../..")`. Nothing else changed. The run was restarted.

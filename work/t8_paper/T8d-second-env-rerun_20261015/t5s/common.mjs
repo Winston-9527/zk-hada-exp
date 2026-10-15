@@ -2,7 +2,7 @@
 // T5 (PREREGISTRATION.md): shared code. Credentials (state/creds.json, written once by build_world.mjs) + dynamic mirror of the on-chain state
 // (state/state.json: tree leaves in insertion order, each agent's current note, contract addresses). One action = prepare (S1..S5) + submit (S6..S8).
 import { createRequire } from "module"; import fs from "fs"; import os from "os"; import path from "path"; import crypto from "crypto";
-export const HERE = new URL(".", import.meta.url).pathname; const WORK = path.resolve(HERE, "../..") + "/";
+export const HERE = new URL(".", import.meta.url).pathname; const WORK = path.resolve(HERE, "../../..") + "/";      // T8d: one level deeper than T5
 const reqTC = createRequire(WORK + "t4_contracts/package.json"); export const { ethers } = reqTC("ethers");
 export const L7 = await import(WORK + "t2_circuit_fix/zkdac_v7/scripts/lib_v7.mjs");
 export const L8 = await import(WORK + "t2_circuit_fix/zkdac_v8/scripts/lib_v8.mjs");
