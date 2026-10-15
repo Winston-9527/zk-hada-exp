@@ -1,0 +1,46 @@
+Compiling 76 files with Solc 0.8.28
+Solc 0.8.28 finished in 2.25s
+Compiler run successful!
+
+Ran 13 tests for test/T7cWindowBoundary.t.sol:T7cWindowBoundaryTest
+[PASS] test_F3_issuedRootBoundary() (gas: 9501573)
+[PASS] test_F3_noteRootBoundary() (gas: 19032725)
+[PASS] test_GB2_amountMismatch() (gas: 30966834)
+[PASS] test_GB4_noteRootAfterWindow() (gas: 15585868)
+[PASS] test_GB5_mintNonOperator() (gas: 2741606)
+[FAIL: StaleRevokedRoot()] test_GB7_revocationFreezesBudget() (gas: 39535039)
+[PASS] test_actionThenTransferOfSameNote() (gas: 39302219)
+[PASS] test_gas() (gas: 29341608)
+[PASS] test_mintWrongAmount() (gas: 2779002)
+[PASS] test_sequence() (gas: 32311435)
+[PASS] test_v9_registerStateMatchesCircuit_permissionless_idempotent() (gas: 2222178)
+[PASS] test_v9_replayOfExecutedProof() (gas: 9967788)
+[PASS] test_v9_unregisteredStateCombination() (gas: 6808837)
+Suite result: FAILED. 12 passed; 1 failed; 0 skipped; finished in 55.31ms (302.49ms CPU time)
+
+Ran 11 tests for test/V92.t.sol:V92Test
+[PASS] test_GB2_amountMismatch() (gas: 30966811)
+[PASS] test_GB4_noteRootAfterWindow() (gas: 15585868)
+[PASS] test_GB5_mintNonOperator() (gas: 2741583)
+[FAIL: StaleRevokedRoot()] test_GB7_revocationFreezesBudget() (gas: 39535127)
+[PASS] test_actionThenTransferOfSameNote() (gas: 39302241)
+[PASS] test_gas() (gas: 29341608)
+[PASS] test_mintWrongAmount() (gas: 2779002)
+[PASS] test_sequence() (gas: 32311435)
+[PASS] test_v9_registerStateMatchesCircuit_permissionless_idempotent() (gas: 2222133)
+[PASS] test_v9_replayOfExecutedProof() (gas: 9967788)
+[PASS] test_v9_unregisteredStateCombination() (gas: 6808859)
+Suite result: FAILED. 10 passed; 1 failed; 0 skipped; finished in 62.23ms (248.06ms CPU time)
+
+Ran 2 test suites in 132.25ms (117.54ms CPU time): 22 tests passed, 2 failed, 0 skipped (24 total tests)
+
+Failing tests:
+Encountered 1 failing test in test/T7cWindowBoundary.t.sol:T7cWindowBoundaryTest
+[FAIL: StaleRevokedRoot()] test_GB7_revocationFreezesBudget() (gas: 39535039)
+
+Encountered 1 failing test in test/V92.t.sol:V92Test
+[FAIL: StaleRevokedRoot()] test_GB7_revocationFreezesBudget() (gas: 39535127)
+
+Encountered a total of 2 failing tests, 22 tests succeeded
+
+Tip: Run `forge test --rerun` to retry only the 2 failed tests
