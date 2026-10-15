@@ -67,3 +67,15 @@ v9.2 uses (MD, RD, RT, NT) = (16, 20, 20, 20). Here all four structures are set 
 - S2 was reduced (amendment A1).
 - S1's verifier-gas confirmation was not run on chain (see S1).
 - N = 32 reused the credentials cached in its smoke run, so its credential-build time is not reported. The credentials are deterministic.
+
+## Corrections after audits #80 and #81 (2026-10-15; no new experiment)
+- **S2 is compiled only.** No satisfying witness was ever generated for D = 8, so completeness is not tested.
+- **Amendment A1's header time (08:15Z) is later than its push** (fea941b, committed 08:08:27Z, pushed with `r1cs_info.txt`).
+- **S3 gas model: exploratory and post hoc.** The pre-registration specified neither the model nor the exclusion rule.
+  - Sequence: `gas ~ popcount + D` (R² 0.977) was fitted first; then the bit length was added and each run's first action excluded (R² = 1.0; audit: 0.99999995). Including the first actions gives R² 0.957.
+  - **bit_length takes only 4 values {6, 8, 11, 14}, one per N**, so it is confounded with N (VIF ≤ 2.7, not collinear).
+  - **The 0.87M at 2^20 is an extrapolation.**
+- **First-action excess.** Under the final model it is **34–54k, not 43–75k** (that range was the residual of the earlier model). The attribution "the target and the gate's counters" was wrong: `ZkDacGateV9.execute` has no counters. The target's first writes (`total`, `calls`) account for ≈ 34.2k; at N ≤ 1,024 about 20k remain unexplained.
+- **S3 mock list (corrected):** the registration and revocation verifiers were accept-all too, contrary to the pre-registration's "as in T5" (T5 used the real registration verifier). The transfer and mint verifiers were accept-all, and transfer was never called.
+  - This is not listed as a deviation above. "Chain setup 86 s" excludes registration and mint proofs, so it understates the one-time cost.
+- **"Otherwise idle" means "no other project process".** Load averages were 9.4–13 during S1 and 6.8–14.2 during S3 (15 cores). The ≈ 10 % gap between S1's D = 4 runs may be partly load.

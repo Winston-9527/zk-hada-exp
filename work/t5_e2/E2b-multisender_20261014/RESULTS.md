@@ -64,3 +64,15 @@ Two runs (B, k = 128, b = 2 s, seeds 0 and 12) failed twice at start-up with "co
 ## Deviations
 - Logical clock instead of interval mining (pre-registered deviation from the plan).
 - The two runs above used other ports in attempt 3.
+
+## Corrections after audit #79 (2026-10-15; no new experiment)
+- **Expectation "A's effective parallelism is at most 1/b" did not hold at b = 2:** 82 / 90 runs exceed 0.5 (max 0.528). The cause is the endpoint effect of EP = n / (last acceptance − first start). "The expectations of the pre-registration hold" is corrected accordingly.
+- **The ≈ 0.5 actions/s of condition A is a model value, not a protocol property.** It equals 1 / (b · ⌈t_p / b⌉) with t_p = 1.377 s: one acceptance per proving-plus-block cycle.
+- **Assumptions to carry into any use of these numbers:**
+  - senders of one agent share the wallet's note set, which favours A, so B − A is conservative;
+  - not covered: network latency, fee markets, priority fees.
+- **Scope of the hard check:** it reads qSpent from `BudgetUsed` events. It would not detect an inflated change-note value. That is the circuit's job (amount conservation, T3 A20 / X3b), and with honest senders it cannot occur here.
+- **Records:**
+  - The code comment in `e2b.mjs:2` still says "Mac median"; amendment A1 corrected only the pre-registration.
+  - "Port occupied" for the two failed runs is an inference: anvil ran with `stdio: "ignore"`.
+  - The attempt-3 command was `COND=B K=128 BLK=2 SEED=<0|12> PORT=<9600|9601> node e2b.mjs`.

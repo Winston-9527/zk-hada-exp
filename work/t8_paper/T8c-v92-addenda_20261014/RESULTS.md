@@ -52,3 +52,7 @@ Logs in `results/c/`.
 | C5 env-2 proofs (40, Xeon w7-3445) verified on the Mac | 40 / 40 ✓ |
 
 v9.2 reproduces in the second environment exactly as v9.1 did (T8b). Wall times are not reported, because the steps ran at nice 19 next to E2b.
+
+## Corrections after audits #80 and #81 (2026-10-15)
+- **Item A's order was fixed:** v9.1 first, then v9.2, in both pairs, while the load average rose from 4.4 to 15.6. 7 of 8 paired differences are positive. The +25 ms mean is therefore confounded with run order, and "not measurably slower" remains the only safe reading.
+- **`TIMING_SOURCE_AUDIT.md` is a snapshot of 2026-10-14 13:18Z.** It still calls T5c I1 a server run (it moved to the Mac by amendment A3), and it does not cover T5d, I2, E8, T8d or T8e. The audit (#81 F6) checked these by hand: no server timing enters a conclusion. A re-check is due before the paper is finalised.

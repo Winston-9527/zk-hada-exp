@@ -94,3 +94,22 @@ F-3..F-10 are documented design or scope points (D1 §8).
 
 ## Revision 2026-10-13 (appended)
 F-2 was fixed by the user's decision in **v9.2** (`../../t2_circuit_fix/zkdac_v9_2/`): the constraint holder_sk ≠ 0 is added. The PoC shows F-2 on v9.1, and v9.2 closes it, both at witness level and on the gate (E7d). The text above describes v9.1 and is unchanged. For v9.2, clause EX-8 additionally reads "holder_sk ≠ 0".
+
+## Corrections after audits #76 and #81 (2026-10-15; no new experiment — counts marked "audit" are the auditor's instrumented re-runs)
+- **"283 / 283 real witness = client predicate" is overstated** (#76 F2).
+  - `refine/diff.mjs:155` counts an over-amount execute as "agree" without computing a witness.
+  - Audit re-run: 283 = **237 positives + 18 negatives (all TR-4 amount conservation) + 28 not computed**.
+  - There are **0 revocation / non-membership negatives**, so R1b does not test the circuit's revocation predicate. T5c's citation of this number is withdrawn.
+- **Mock run (#76 F3).** Rejected steps with `pred = false` were never submitted (`diff.mjs:127/139`). Audit count: 1,030 steps, 41 % of all rejected steps (bad amount, unknown note, spent + bad amount), were judged only by the client predicate.
+  - Forced on chain under mock verifiers, the gate accepted 8 of 9 over-amount executes (audit). Amount conservation is therefore **not** enforced by the gate. It is enforced by the circuit: X3b, T3 A20.
+  - **Corrected scope of "In every category, model and implementation accept and reject the same steps":**
+    - for the implementation-side rejections (spent note through the nullifier; revoked > Δ through the window), model and chain agree;
+    - every other rejection category agrees by construction of the client predicate.
+  - MAPPING's references from TR-1, TR-4 and EX-13..15 to R1 are limited accordingly. Their circuit evidence is X1 / X3 / T3.
+- **Other records (#81 F7):**
+  - The harness-bug count is inconsistent: RUN_RECORD says 2 in the second run, this file says 3 in the "first full run". The hung run left no output, and bug 3 is not visible in the kept outputs.
+  - The Δ boundary is untestable by construction: every transaction is at least 2 s away from t + 2,500. A `<` vs `<=` change in the contract would pass R1.
+  - α does not compare note amounts, lineage, subtree counts, revocation roots or revocation authority. `now` is taken from the client variable.
+  - PLAN:75's "is c ∈ lineage reachable" was not reported.
+  - GAMES:121 "accepted transactions are Steps" needs the premise "under A-CR and a trusted operator".
+- **`MANIFEST.sha256` was stale** after the 2026-10-13 revision of this file (#81 F5). It is regenerated in this commit.

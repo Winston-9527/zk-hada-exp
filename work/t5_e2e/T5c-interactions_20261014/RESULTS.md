@@ -109,3 +109,37 @@ RTX6000, 36 runs (12 cells × 3 seeds), real proofs and verifiers, 30M gas, 12 s
 - **Caveat (design property, disclosed).** Actions go round-robin within a round, so for k < f only children 0..k−1 act. Yet every child is provisioned n_c = ceil(k / f) × R notes, as pre-registered.
   - The k < f cells (k = 1 with f = 8 or 32; k = 8 with f = 32) therefore include unused notes in their tree cost, and their per-chain tree cost is an over-provisioned upper bound.
   - The cells with k ≥ f give the clean comparison.
+
+## Corrections after audits #76, #79, #80 (2026-10-15; no new experiment)
+### I1 (#76 F1, F5, F6; #79 F4)
+- **What H1 = 0 shows, and what it does not.**
+  - The adversary only **replays a pre-revocation root**. H1 = 0 measures the contract window: that root is rejected after t_e + Δ. This part is real.
+  - The other half, "a revoked descendant cannot prove on the current root", **was never exercised by the circuit in I1**.
+  - "Fresh-root witnesses constructible: 0" is **zero by construction**. It is computed with `imt.has()` on the same IMT state that marked the agent as revoked (`t5c.mjs:120-121`). It is moved out of the hard checks and should be read as a tautology.
+  - With accept-all verifiers, a current-root submission would even have been accepted.
+  - **Circuit evidence for that half comes from T5b, T5d (substitute witnesses for every target) and the audit's control (#76 F1-ctl):** 984 affected agents, 10,712 real v9.2 evaluations, all rejected.
+- **Check (b) proves that the adversary's old-root witness is satisfiable.** Hence the refusal comes from the window, not from the circuit. It does not support "0 false accepts".
+  - Correction to the audit guide #75: 17 of the 24 r > 0 runs reached 30 samples. The guide's "7–28" overstated the gap; this RESULTS (Deviation) was accurate.
+- **The A1 rationale "T7c R1 found the JS predicate equal to the real circuit in 283 / 283 cases" is withdrawn.** Per audit #76 F2, those 283 contain 0 revocation / non-membership negatives, so they do not support a non-membership predicate (see T7c Corrections).
+- `lineage()` in `t5c.mjs` checks neither key slots nor cert[0], and the audit found disagreements with the circuit there. I1 revokes neither, so H1 and H2 are unaffected. The predicate must not be reused for key revocation.
+- **Interaction test:** the denial rate has zero variance in 11 of 12 cells, so the exchangeability assumption of Freedman–Lane fails, and the p values sit at the permutation floor. "Significant interaction" means descriptively: **only r = 10 %, Δ = 0 has transient denials (6.0 %).**
+- **"Any Δ ≥ t_p + one block … This is the window the deployment chooses" is over-stated.** It holds under the logical clock: zero propagation delay, and inclusion in the next block. Δ values between 0 and 30 s were not tested.
+  - Corrected reading: in this model, Δ = 0 costs availability at a high revocation rate, and Δ ∈ {30, 150, 600} s costs none.
+  - A deployment should choose Δ ≥ an upper bound on observation-to-inclusion delay.
+- Outputs are not byte-reproducible: ρ and the accountability randomness are fresh. The judgments do not depend on them.
+
+### I2 (#79 F1, F2)
+- **The action count is 1,674, not 1,104** (sum of `actions_total`). All 1,674 were accepted.
+- **The execute-gas interaction comes entirely from the k < f cells.** Every child is provisioned NC = ceil(k / f) · R notes, but only k act. The extra notes enlarge the note tree, and execute gas grows with the note index.
+  - On the k ≥ f subset the interaction share is **6.5 × 10⁻¹⁰** (recomputed from `results/i2/runs`); over all cells it is 0.151.
+  - The per-chain tree-gas interaction remains 0.29 on the k ≥ f subset: real amortization.
+  - **Only k ≥ f comparisons should be cited.**
+- "3 blocks / 43–45 actions per block" depends on the 1M per-transaction gas limit (amendment A1): ≤ ~2.3M gives 3 blocks, 3M gives 4.
+- `fixed_gas` includes `setMethod` (66,483 gas), which the pre-registered list does not name. This is a deviation.
+- The line "I2 is not done yet" at the top of this file is superseded. I2's run record is added to `RUN_RECORD.md`.
+
+### I3 (#80 F2, F3, F4)
+- **The mutation smoke's "holder_sk = 0" rows fail at the public-key check** (L195 / L182) before reaching the F-2 constraint, so they do not show that this constraint survives in the variant. The audit evaluated an F-2 instance on the noacc variant: UNSAT at L191, the F-2 constraint. The conclusion holds by the audit's check.
+- **"Warmed" target:** the fix initializes the target's storage slots; EIP-2929 warm / cold does not persist across transactions. It was decided after attempt 1 and is now recorded as a deviation, with attempt 1 kept.
+- **Implementation artefact in Δexecute:** the original gate pays one cold `SLOAD` of `selFor[nCt]` (≈ 2.1k gas), and the variant uses a constant. That is ≈ 2–3 % of the reported accountability cost.
+- `i3_gas.mjs` uses accept-all verifiers for registry, revocations, mint and transfer, only to build the tree. The measured execute path uses the real V92 and V92NoAcc verifiers.

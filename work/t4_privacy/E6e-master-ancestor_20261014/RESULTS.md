@@ -87,3 +87,10 @@ The features are M2's plus the verifier's view: method, target, amount, params, 
 ## Deviations
 - **Attempt 1:** the analysis chain failed because the scripts were missing (`RUN_RECORD.md`). No data were lost, and no analysis read the data. Attempt 2 is the reported run.
 - None in design or analysis beyond amendment A1.
+
+## Corrections after audit #78 (2026-10-15; no new experiment)
+- **Deviation not listed before:** the pre-registration (:143) asks for a 95 % cluster-bootstrap CI per AUC in M2 and M3, but `m2.json` and `m3.json` report none. "None in design or analysis beyond amendment A1" is therefore wrong. M1 reports CIs; M2 and M3 report AUC, p and null quantiles only.
+- **Power wording.** "One-bit leaks in fewer than 20 % of transcripts are not detected" is too broad. At λ = 0.2 one task out of four (M2b-P) is detected, at Holm p = 0.0096, right at the threshold.
+  - The λ = 0.1 explanation "at the edge of the null's 99 % quantile" is wrong. With 18 Holm-corrected cells and B = 5,000, a cell needs raw p ≤ 5.6 × 10⁻⁴, at most 1 null exceedance. The effective threshold is close to the null maximum, ≈ 0.533–0.540.
+  - The final statement, "≈ 0.54–0.55 reliably detected", is consistent with that threshold.
+- The pair-scoring construction inherited from E6d (canonical pair order, see E6d Corrections) also applies to M1. The test remains valid.

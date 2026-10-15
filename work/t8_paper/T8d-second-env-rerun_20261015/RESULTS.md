@@ -55,3 +55,10 @@ Only hardware-dependent quantities and fresh-randomness-dependent values differ.
 
 ## Attempts
 `results/mac/attempt1_t5s_path/`: the first Mac start failed on module resolution (amendment A1).
+
+## Corrections after audit #81 (2026-10-15; no new experiment)
+- **Amendment A1 (78d6e1d, pushed 04:34:51Z) came 56 s after the R3 Mac restart (04:33:55Z) that it governs.** Its content is only the module path.
+- **"compare.py was fixed before the comparison was read" cannot be verified from the history.** Only the fixed version was committed (9a3f1d0), together with the results. The committed version is correct: the audit's re-run reproduces `compare.json` byte for byte.
+  - The R3 judgment-only comparison was inline Python and not committed, so `compare_R3_judgments.json` is not reproducible from the repository. The audit compared E4a independently (94 / 94 equal).
+- **The revocation roots differ** between Mac and env 2 for a different reason than first stated. They differ because the two anvils had different NOW (block time), so certificate expiries, and with them the revoked leaves, differ. "Fresh randomness" was wrong.
+- **"30 witnesses per D" was not reachable at D = 1 and D = 2:** 11 and 17 steady actions, limited by the world size (8 and 14 agents). Not stated before.
