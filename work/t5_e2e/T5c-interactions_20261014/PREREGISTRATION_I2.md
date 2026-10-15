@@ -68,3 +68,15 @@ A minimal run (f = 8, k = 8, one seed) on the Mac precedes the full run. It is n
 - Gas, counts and block latencies do not depend on the machine. The wall time is recorded but not reported.
 
 Failures are kept. Changes after this commit are amendments, recorded before the affected run.
+
+## Amendment A1 (2026-10-15T04:05Z, after the smoke runs, before the full run)
+**Smoke runs (Mac, not evidence):**
+- f = 8, k = 8: 16 / 16 accepted, 1 block per round, 70 s.
+- f = 32, k = 128: 128 / 128 accepted.
+
+**Change: per-transaction gas limit of the actions, 3M → 1M.**
+- In the f = 32, k = 128 smoke run, 128 actions needed **4 blocks, not the expected 3**.
+- Every block stopped at about 27.4M gas. Anvil admits a transaction only while the block's remaining gas is at least the transaction's gas limit, and 3M is about 4.5 times the actual use (≈ 0.66M).
+- The number of blocks would therefore be an artefact of the harness's gas limit. 1M covers the measured maximum with a margin, as a wallet's estimate would.
+
+**Machine.** RTX6000 finished E2b at 2026-10-14T18:45Z, so the full run goes to the server as pre-registered, after a short smoke run there.
