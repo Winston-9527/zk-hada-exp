@@ -15,3 +15,8 @@ Files:
 - `results/gen_*.stderr`.
 
 The generator variable `V91` points to zkdac_v9_2 (see zkdac_v9_2/RESULTS.md, deviations).
+
+## Correction after audit #80 (2026-10-15)
+"The v9.2 gate rejects the F-2 proof" does not show that F-2 is closed: the proof was made with v9.1's key, and any v9.1 proof fails on the V92 verifier because the VKs differ. The meaningful rows are:
+- the **v9.1 gate accepts** the F-2 proof (F-2 was real on chain);
+- the closure is the circuit's UNSAT at the new constraint (`zkdac_v9_2/results/f2_poc.json`).

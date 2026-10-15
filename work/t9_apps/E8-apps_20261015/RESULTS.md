@@ -75,3 +75,22 @@
 2. Off-chain effects are not atomic with the on-chain spend. With reservation, commit and fail, 6.1 % of the calls ended uncertain under the injected crash rate, and they stay visible on chain.
 3. On-chain effects are atomic: proof, spend and transfer commit or roll back together.
 4. Non-custodial budgets strand on failed sub-agents. That limits the task success of bounded orchestration (83 %) unless slack is provisioned.
+
+## Corrections after audit #77 (2026-10-15; no new experiment, recomputed from the committed outputs by `summarize_v2.py` → `results/summary_v2.json`)
+- **A3 failure attribution was wrong (MAJOR, confirmed).**
+  - The 12 unassignable items split as follows:
+    - **planner budget exhausted: 2** (seeds 0, 26);
+    - **no capable live sub-agent: 10** (seeds 3, 11, 29). `reassign()` recorded no `why` for these.
+  - Seed 29 had 29 units left at the planner when its 2 items became unassignable.
+  - So **3 of the 5 failed runs failed for lack of capability redundancy, not for stranded budget.** The generator guarantees only 2 capable sub-agents per category, and both injected faults can hit the same category.
+  - **Revised design consequence:** bounded orchestration needs **capability redundancy** for the failures it must tolerate, and slack for budget stranded at failed sub-agents. The earlier text ("must provision slack") named only the second.
+- **Stranded budget** counted only each sub-agent's main note. Per-item notes reassigned to a sub-agent that later failed add 3 / 8 / 6 units in seeds 3 / 11 / 29. **Mean 12.7, not 12.2.**
+- **369 / 369 is not the number of protocol blocks.** 6 A3 attempts (category and budget attacks where the attacker held no note) failed inside the harness on a JS error and were counted as blocked. Under amendment A1's rule they are untestable, like the 21 revocation attempts.
+  - **Blocked by the circuit or the gate: 363** (A1 150, A2 120, A3 93). A3's cap and budget attacks are 27 / 27 each.
+  - **No attempt was accepted.**
+- **Seed 29's revocation attack was testable.** The revoked S3 still held a per-item note of value 5. It was recorded as untestable because only the main note was checked. So 21 revocation attempts were not tested, and 1 of them (seed 29) was misclassified: it was testable. None of the untestable cases hides an acceptance.
+- **The A1 gateway binds neither the tool nor single use** (`a1.mjs:18-20`, reproduced by the audit). A reservation for `search` can be redeemed as `admin`, repeatedly, and an uncertain reservation's id is public in its event. **"admin blocked 30 / 30" holds at the authorization layer only.** A deployed gateway must bind (id, tool) and serve once. A1 is an authorization-layer stand-in, not end-to-end access control.
+- **`spend_le_budget` cannot fail by construction** in A1 (bound 40 vs at most 9 calls per agent) and in A2 (the generator caps spend at 51 < 60). The evidence for budget enforcement is the over-budget attacks (A1 30, A2 30, A3 27), all refused by the circuit.
+- **`reason()` layer attribution** (`e8lib.mjs`) labels every non-gate address as "target": verifiers, Poseidon libraries, precompiles. At low gas limits it misattributes (the audit reproduced OOG cases). The selector map can also mislabel shared error names: the gate's `UnknownMethod` shows up as `E8Vault.UnknownMethod`.
+  - With E8's 1.5M gas limit, the only reverts that occurred were StaleRevokedRoot, BudgetSpent and A2's token revert, so the reported layers are right.
+  - The method is not reusable as is.

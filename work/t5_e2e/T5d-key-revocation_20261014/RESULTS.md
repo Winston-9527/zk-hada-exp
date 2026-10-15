@@ -48,3 +48,19 @@
 - Not covered:
   - master keys (ent[1]), which the circuit does not key-check (pre-registered limit);
   - partial knowledge between E-local and E-oracle.
+
+## Corrections after audit #76 (2026-10-15; no new experiment)
+The evidence behind "false accept 0 / collateral denial 0" is of three kinds, and only the first is circuit evidence:
+1. **Circuit (real v9.2 wasm).** Every target was evaluated with predecessor-leaf and own-leaf substitute witnesses for every revoked slot, key slots included, and all were rejected. These rejections carry the false-accept claim.
+   - The audit added more checks, none accepted: exhaustive leaves (1,984), end and sentinel leaves, forged `next`.
+   - It also evaluated all 981 / 981 non-targets of s30-r10-1 for K and E-oracle, and all were accepted. The original runs checked 64 controls per method.
+2. **Gate (accept-all verifier).** These checks are vacuous for targets: only agents whose JS predicate allowed a witness submitted a fresh transaction (`t5d.mjs:138-140`), so "target fresh transaction accepted: 0" cannot fail, and an accept-all verifier would accept anything submitted.
+3. **JS predicate.** "Target could construct a fresh witness: 0" is the definition of target under K (tautological).
+
+**Mock list, completed:** the mint and registration verifiers were accept-all too. RESULTS named only the execute verifier.
+
+**Pre-registration vs code:** the pre-registration says a reuser's certificate has "another issuer and another hop". The code did not require another hop. Effects:
+- the s30 worlds have 1–2 duplicate certificates (amendment A2);
+- 4 worlds each have one chain in which the same key appears twice.
+
+Neither affects the results.

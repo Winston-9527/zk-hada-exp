@@ -41,3 +41,9 @@ These reasons were stated in the pre-registration and are not re-tested beyond c
 ## Carry-over
 - T5, T6, E6b/E6b2 and E6c are carried over from v9.1 with one constraint added. The opening logic and the ciphertext are unchanged, and check 5 re-verified opening.
 - **T8b (second-environment reproduction) covers v9.1, not v9.2.** Re-running it for v9.2 needs a freeze tag and a release; see the PR.
+
+## Corrections after audit #80 (2026-10-15; no new experiment)
+- **What closes F-2 is the circuit:** with holder_sk = 0 the witness is unsatisfiable at the new constraint. The audit checked this at R1CS level: the ported v9.1 F-2 witness violates only the new constraint at D = 1..4.
+- **E7d's "the v9.2 gate rejects the F-2 proof" is not evidence that F-2 is closed.** That proof was generated with v9.1's key, and v9.1 and v9.2 have different VKs (`vk_delta_2`, `IC`), so the V92 verifier rejects any v9.1 proof (cf. `G7_control_v91ProofsOnV9Gate`).
+  - Corrected reading: **the v9.1 gate accepts the F-2 proof, which shows F-2 was real on chain; the circuit shows its closure.**
+- **Deviation:** one failed forge run during this work was not kept ("kept in no file", RUN_RECORD). That contradicts the pre-registration's "failures are kept".

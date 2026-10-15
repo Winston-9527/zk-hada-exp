@@ -15,3 +15,8 @@
 - Proving: the paired loop in `results/i3/bench_log.txt` (`prove_bench.mjs 10` of v9.2 and noacc, order on, off, on, off), 13:10–13:16 UTC.
   - The Mac ran no other project computation. The "busy_node" count of 3 is idle ssh polling shells whose command line contains a script name.
 - Mutation smoke: `node scripts/mutation_smoke.mjs > results/i3/mutation_smoke.json`.
+## I2 (added 2026-10-15 after audit #79)
+- **Smoke runs (Mac, not evidence):** f8-k8 and f32-k128. The f32-k128 run needed 4 blocks with a 3M gas limit; its output was not kept. That led to amendment A1.
+- **Server.** Worktree `~/projects/zk-hada-exp-i2` at ef51d60 (amendment A1); node_modules and builds symlinked from the main clone. Server smoke f32-k128: 3 blocks.
+- **Full run.** `nohup bash run_i2.sh 8`, 2026-10-15 04:16:56–05:21:58 UTC, 36 / 36 exit 0. Ports 8700–8735 were checked free beforehand.
+- **Statistics.** `python3 analyze_i2.py > results/i2/stats.json` (Mac, after copying `results/i2`).

@@ -117,3 +117,9 @@ One row per clause of `RELATION_SPEC_v9_1.md` (D1). Theorems and assumptions ref
 | GAP-2 | L-IMT / INV and the implementation → `Step` refinement are argued, not mechanized | — | candidate for the next Lean target |
 | GAP-3 | A-wSE and A-PRF are needed but not in the paper; the A-wSE citation must be checked | — | party A |
 | GAP-4 | party A's `main_sections.tex` / `security_mapping.md` not compared | — | needs the files |
+
+## Note after audit #76 (2026-10-15)
+References to R1 (refinement differential test) under TR-1, TR-4 and EX-13..15 are limited:
+- R1's mock run judged amount conservation and note membership with the client predicate only, and the real run had no non-membership negatives.
+- The circuit evidence for these clauses is X1 (IMT), X3 (nullifier / amounts) and T3 (A20).
+- R1 supports only the implementation-side checks: nullifier reuse, and the revoked-root window.

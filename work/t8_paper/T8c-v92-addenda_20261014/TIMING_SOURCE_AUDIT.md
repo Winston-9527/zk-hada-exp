@@ -180,3 +180,5 @@ Every time and rate macro is sourced from v9 or earlier. None has a v9.2 measure
   - the E2, E3, E6, T5, T5b, T6/T6b and E6b/E6b2 counts and statistics;
   - budget_transfer, registration and revocation constraints: unchanged by design, and re-confirmed at v9.1 by T8b.
 - **No paper file was edited.** `paper.tex` and every other `.tex` file are unchanged. Nothing was committed or pushed.
+
+> **Snapshot note (2026-10-15, after audit #81):** this audit reflects the repository at 2026-10-14 13:18Z. T5c I1 later moved to the Mac (amendment A3). T5d, I2, E8, T8d and T8e are not covered here; see the audit's manual check in #81 F6.

@@ -114,3 +114,12 @@ A2 adds per-bit agreement features: the low 64 bits of every position. Everythin
   - The A2 classify run used 5 workers instead of 8, for memory. Workers do not affect the results; seeds are per world and task.
 - Expectations not met: ε = 0.30 (all channels), and W1 at ε = 0 in the primary run.
 - Generation used 8 parallel processes and took ≈ 5 h (14:17–19:17 UTC; `results/gen_w*.stderr`).
+
+## Corrections after audit #78 (2026-10-15; no new experiment)
+- **The amendment A1 statement "looking scores up is identical to re-scoring" is not literal.** `featurize` is asymmetric in (a, b), and the pool scores each unordered pair once (i < j); swapping a pair changes a logreg score by up to 0.607 (audit). Observed and null use the same canonicalised statistic, so the test is **still valid**, but its statistic is "the score of the canonical order".
+- **The C1 null permuted transcript labels across rounds.** That is outside the design's symmetry group, which keeps one action per agent and round. E6e corrected this with within-round permutation. The audit compared both nulls on the same scores (SD 0.0103 vs 0.0102), and **no decision changes**: C1 remains void.
+- **W2's theoretical maximum AUC at ε = 0 is 0.609, not ≈ 0.57.** `a mod 600` reveals U + 30b. Exact enumeration gives 0.609375; the audit gives 0.518 at ε = 0.3. The measured 0.546–0.584 is therefore below what this control allows, so "W2 is weak by design" overstated the weakness.
+- **C2 control strength depends on the drawn bits** in worlds with only 4 test parents. The AUC ceilings at ε = 0 are 0.833 (w3, w5), 0.750 (w1, w6, w8) and 0.714 (w4, w7), and the control signal is 0 if all 4 bits coincide (probability 1/8). No seed hit that case.
+- **Cluster bootstrap:** `cluster_ci` clusters by agent for C2 too, although C2's dependence unit is the parent (the same issue as #54's open item 3). Both E6d and E6e bootstrap with fixed scores, without refitting; this was not stated before.
+- **A2's "check_a2 … ran before this commit" cannot be verified.** The committed `feature_check_a2.json` comes from the run that started at 19:35:34Z, after the 19:35:28Z push of 15f8eb0. The check reads no labels, so A2's post-hoc status is unchanged.
+- **Wording.** "No link detected at pair AUC above ≈ 0.55" refers to the AUC **these classifiers and features attain**, not to the strength of a leak. A leak these features cannot see — a single bit in a random word under F1 — would go undetected at any strength.
