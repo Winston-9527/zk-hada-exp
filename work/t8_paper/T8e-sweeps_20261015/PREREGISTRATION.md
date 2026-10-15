@@ -52,3 +52,12 @@ Committed and pushed BEFORE any variant circuit is written or any run is made.
 - `RESULTS.md`, `RUN_RECORD.md`, `MANIFEST.sha256`.
 
 Failures (including OOM and timeouts) are kept. Changes after this commit are amendments, recorded before the affected run.
+
+## Amendment A1 (2026-10-15T08:15Z): S2 reduced, by user decision
+- The D = 8 variant has 375,148 constraints, above the 2^18 = 262,144 capacity of the Hermez ptau used everywhere in this project. A setup would need a 2^19 ptau.
+- The user decided not to download one, and not to generate one locally.
+- **S2 therefore reports only:**
+  - the constraint count, 375,148;
+  - the public-input count, 24;
+  - the D = 4 control of the same variant (195,044, identical to v9.2's D = 4).
+- No setup, proving time or verifier gas is reported for D = 8. Everything else in S2 and in S1 / S3 is unchanged.

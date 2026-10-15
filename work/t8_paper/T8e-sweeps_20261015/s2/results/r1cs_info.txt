@@ -1,0 +1,2 @@
+main_var_d8 # of Wires: 375139;# of Constraints: 375148;# of Private Inputs: 1014;# of Public Inputs: 24; rss=1799061504
+main_var_d4 # of Wires: 195047;# of Constraints: 195044;# of Private Inputs: 514;# of Public Inputs: 20; rss=1493614592
