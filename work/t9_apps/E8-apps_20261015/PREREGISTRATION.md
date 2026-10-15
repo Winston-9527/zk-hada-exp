@@ -101,3 +101,15 @@ Seed 0 of each application at reduced size on the Mac, as a smoke run (not evide
 - `RESULTS.md`, `RUN_RECORD.md`, `MANIFEST.sha256`.
 
 Failures are kept. Changes after this commit are amendments, recorded before the affected run.
+
+## Amendment A1 (2026-10-15T06:56Z, after the Mac smoke runs, before the full run)
+Smoke runs, seed 0 of A1, A2 and A3 on the Mac, are not evidence. All attacks were blocked and A2 atomicity held. They exposed four harness issues and one classification question:
+1. **A3 cadence.** At 6 s per purchase round, all 24 purchases finished by t ≈ 46 s, before the offline (t = 100) and revocation (t = 190) events. The faults never hit a running task. Rounds are now **30 s**.
+2. **A3 `after_revocation`.** If the revoked sub-agent's note has fewer funds than the attack price, the attempt is refused for lack of budget (circuit Num2Bits), which does not test revocation. Such an attempt is now recorded as **untestable** and not counted as a revocation block. With the 30 s cadence the note is funded; in the smoke run the attempt was blocked at the gate with StaleRevokedRoot.
+3. **A3 reassignment.** When P's remaining budget cannot fund a reassigned item, the run crashed (unsatisfiable transfer). The item is now recorded as **unassignable**.
+   - The budget left at the offline or revoked sub-agent is recorded as **stranded**: notes belong to their holder, and the protocol has no claw-back.
+   - In the smoke run, 36 units were stranded and 1 item was unassignable, so the task failed. This is a property to report, not a harness fault.
+4. **A1 trace classification.** The frozen A1 traces keep calls planned before the permission change. A call by agent 0 to `fetch` after it lost `fetch` is therefore refused, at the circuit (CapSubset).
+   - Such calls are classified as **"became unauthorized"**: blocked as they must be, and not counted as failed legitimate calls.
+   - The traces are not regenerated.
+5. **Latency (E4).** Measured in dedicated Mac runs of seed 0 per application, run alone, after the code is frozen. The smoke runs' timings are not used.
