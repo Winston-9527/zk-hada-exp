@@ -66,7 +66,7 @@
 | S8 inclusion (anvil, not a real chain's finality) | 8 | 8 | 8 |
 | S9 action execution (read back) | 2 | 2 | — |
 
-- Proving dominates (≈ 87–90 % of the local path), as in T5.
+- Proving dominates (88 % at D = 2, 91 % at D = 3 of the local path S2–S6), as in T5.
 - S8 is local anvil inclusion: a real chain adds its block time and finality rule.
 - **Gaps:** S1 was recorded only in A2's output, and S9 is missing in A3's harness. Both are disclosed, not reconstructed.
 
