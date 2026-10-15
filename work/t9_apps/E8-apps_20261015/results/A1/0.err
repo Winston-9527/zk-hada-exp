@@ -1,0 +1,52 @@
+07:13:23 A1-0 setup done 30 s
+07:13:32 A1-0 20 call search accepted commit
+07:13:40 A1-0 35 call search accepted commit
+ERROR:  4 Error in template CapSubset_344 line: 65
+Error in template ZkDacChainV9_423 line: 208
+
+07:13:41 A1-0 38 attack tool_without_cap blocked circuit CapSubset L65
+(node:1813835) Warning: Closing file descriptor 205 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1813835) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+07:13:50 A1-0 49 call search accepted commit
+07:13:58 A1-0 59 call compute accepted commit
+07:14:07 A1-0 67 call fetch accepted commit
+07:14:33 A1-0 72 concurrent  accepted 
+07:14:42 A1-0 77 call search accepted commit
+07:14:49 A1-0 92 call fetch accepted commit
+ERROR:  4 Error in template Num2Bits_321 line: 38
+Error in template ZkDacChainV9_423 line: 230
+
+07:14:50 A1-0 104 attack over_budget blocked circuit Num2Bits L38
+(node:1813835) Warning: Closing file descriptor 205 on garbage collection
+07:14:58 A1-0 105 call search accepted commit
+07:15:08 A1-0 121 call search accepted commit
+07:15:14 A1-0 131 call compute accepted commit
+07:15:23 A1-0 146 call fetch accepted fail
+07:15:37 A1-0 153 permchange  
+07:15:46 A1-0 158 call search accepted commit
+07:15:55 A1-0 173 call compute accepted commit
+07:16:03 A1-0 185 call search accepted commit
+07:16:11 A1-0 193 call search accepted commit
+07:16:20 A1-0 201 call search accepted commit
+ERROR:  4 Error in template CapSubset_344 line: 65
+Error in template ZkDacChainV9_423 line: 208
+
+(node:1813835) Warning: Closing file descriptor 205 on garbage collection
+07:16:29 A1-0 203 attack tool_removed_by_permchange blocked circuit CapSubset L65
+ERROR:  4 Error in template CapSubset_344 line: 65
+Error in template ZkDacChainV9_423 line: 208
+
+07:16:30 A1-0 210 call fetch blocked circuit CapSubset L65
+(node:1813835) Warning: Closing file descriptor 177 on garbage collection
+07:16:36 A1-0 220 revoke  
+07:16:44 A1-0 236 call compute accepted commit
+07:16:52 A1-0 248 call search accepted commit
+07:17:02 A1-0 275 call compute accepted commit
+07:17:10 A1-0 280 attack after_revocation blocked gate ZkDacGateV9.StaleRevokedRoot
+07:17:18 A1-0 287 call compute accepted commit
+ERROR:  4 Error in template LeqU64_325 line: 75
+Error in template ZkDacChainV9_423 line: 147
+
+07:17:19 A1-0 320 attack after_expiry blocked circuit LeqU64 L75
+07:17:19 A1-0 done calls 20 / 21 commit 19 fail 1 uncertain 0 attacks blocked 5 / 5 {"all_attacks_blocked":true,"gateway_refused_every_unreserved_id":true,"spend_le_budget":true}

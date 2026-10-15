@@ -1,0 +1,251 @@
+{
+ "A1": {
+  "runs": 30,
+  "legit_calls": 619,
+  "reserved": 619,
+  "refused_legit": 0,
+  "committed": 528,
+  "commit_rate": 0.853,
+  "commit_ci95": [
+   0.8226,
+   0.88
+  ],
+  "failed": 53,
+  "uncertain": 38,
+  "uncertain_rate": 0.0614,
+  "became_unauthorized_after_permchange": 39,
+  "concurrent": {
+   "n": 30,
+   "one_budgetspent_then_retry_ok": 30
+  },
+  "hard": {
+   "all_attacks_blocked": true,
+   "gateway_refused_every_unreserved_id": true,
+   "spend_le_budget": true
+  },
+  "attacks": {
+   "n": 150,
+   "blocked": 150,
+   "blocked_ci95": [
+    0.9757,
+    1.0
+   ],
+   "by_kind": {
+    "tool_without_cap": {
+     "n": 30,
+     "blocked": 30,
+     "layers": {
+      "circuit: CapSubset L65": 30
+     }
+    },
+    "over_budget": {
+     "n": 30,
+     "blocked": 30,
+     "layers": {
+      "circuit: Num2Bits L38": 30
+     }
+    },
+    "tool_removed_by_permchange": {
+     "n": 30,
+     "blocked": 30,
+     "layers": {
+      "circuit: CapSubset L65": 30
+     }
+    },
+    "after_revocation": {
+     "n": 30,
+     "blocked": 30,
+     "layers": {
+      "gate: ZkDacGateV9.StaleRevokedRoot": 30
+     }
+    },
+    "after_expiry": {
+     "n": 30,
+     "blocked": 30,
+     "layers": {
+      "circuit: LeqU64 L75": 30
+     }
+    }
+   },
+   "by_layer": {
+    "circuit": 120,
+    "gate": 30
+   },
+   "untestable": 0
+  },
+  "stranded_on_old_cert_mean": 15.833333333333334
+ },
+ "A2": {
+  "runs": 30,
+  "legit": 510,
+  "settled": 510,
+  "settled_ci95": [
+   0.9928,
+   1.0
+  ],
+  "hard": {
+   "all_attacks_blocked": true,
+   "token_conservation": true,
+   "spend_le_budget": true
+  },
+  "atomicity": {
+   "n": 30,
+   "target_revert": 30,
+   "nullifier_unspent_after_revert": 30,
+   "vault_unchanged": 30,
+   "retry_accepted": 30
+  },
+  "attacks": {
+   "n": 120,
+   "blocked": 120,
+   "blocked_ci95": [
+    0.9697,
+    1.0
+   ],
+   "by_kind": {
+    "approve_without_cap": {
+     "n": 30,
+     "blocked": 30,
+     "layers": {
+      "circuit: CapSubset L65": 30
+     }
+    },
+    "over_budget": {
+     "n": 30,
+     "blocked": 30,
+     "layers": {
+      "circuit: Num2Bits L38": 30
+     }
+    },
+    "replay": {
+     "n": 30,
+     "blocked": 30,
+     "layers": {
+      "gate: ZkDacGateV9.BudgetSpent": 30
+     }
+    },
+    "after_revocation": {
+     "n": 30,
+     "blocked": 30,
+     "layers": {
+      "gate: ZkDacGateV9.StaleRevokedRoot": 30
+     }
+    }
+   },
+   "by_layer": {
+    "circuit": 60,
+    "gate": 60
+   },
+   "untestable": 0
+  }
+ },
+ "A3": {
+  "runs": 30,
+  "task_success": 25,
+  "task_success_ci95": [
+   0.6528,
+   0.9436
+  ],
+  "items_bought_distribution": {
+   "23": 2,
+   "24": 25,
+   "21": 1,
+   "19": 1,
+   "22": 1
+  },
+  "spend_le_B_all": true,
+  "unassignable_items_total": 12,
+  "runs_with_unassignable": 5,
+  "stranded_budget_mean": 12.17,
+  "slack_mean": 33.2,
+  "transient_retried_total": 59,
+  "stuck_total": 0,
+  "failed_runs": [
+   {
+    "seed": 0,
+    "items": 23,
+    "unassignable": 1,
+    "stranded": 36,
+    "n": 4
+   },
+   {
+    "seed": 3,
+    "items": 21,
+    "unassignable": 3,
+    "stranded": 35,
+    "n": 4
+   },
+   {
+    "seed": 11,
+    "items": 19,
+    "unassignable": 5,
+    "stranded": 40,
+    "n": 4
+   },
+   {
+    "seed": 26,
+    "items": 23,
+    "unassignable": 1,
+    "stranded": 34,
+    "n": 5
+   },
+   {
+    "seed": 29,
+    "items": 22,
+    "unassignable": 2,
+    "stranded": 6,
+    "n": 5
+   }
+  ],
+  "hard": {
+   "all_attacks_blocked": true
+  },
+  "attacks": {
+   "n": 99,
+   "blocked": 99,
+   "blocked_ci95": [
+    0.9634,
+    1.0
+   ],
+   "by_kind": {
+    "category_outside_cap": {
+     "n": 30,
+     "blocked": 30,
+     "layers": {
+      "circuit: CapSubset L65": 27,
+      "construction: note: Cannot read properties of null (reading 'q')": 3
+     }
+    },
+    "over_budget": {
+     "n": 30,
+     "blocked": 30,
+     "layers": {
+      "circuit: Num2Bits L38": 27,
+      "construction: note: Cannot read properties of null (reading 'q')": 3
+     }
+    },
+    "other_agents_note": {
+     "n": 30,
+     "blocked": 30,
+     "layers": {
+      "circuit: ZkDacChainV9 L227": 30
+     }
+    },
+    "after_revocation": {
+     "n": 9,
+     "blocked": 9,
+     "layers": {
+      "gate: ZkDacGateV9.StaleRevokedRoot": 9
+     }
+    }
+   },
+   "by_layer": {
+    "circuit": 84,
+    "gate": 9,
+    "construction": 6
+   },
+   "untestable": 21
+  }
+ },
+ "all_attacks_blocked_all_apps": true
+}

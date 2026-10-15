@@ -1,0 +1,21 @@
+07:07:05 A3-23 setup done: sub-agents 4 B 187 57 s
+07:10:10 A3-23 100 offline  
+ERROR:  4 Error in template CapSubset_344 line: 65
+Error in template ZkDacChainV9_423 line: 208
+
+07:11:28 A3-23 160 attack category_outside_cap blocked circuit CapSubset L65
+(node:1790843) Warning: Closing file descriptor 23 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:1790843) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+ERROR:  4 Error in template Num2Bits_321 line: 38
+Error in template ZkDacChainV9_423 line: 230
+
+07:12:07 A3-23 170 attack over_budget blocked circuit Num2Bits L38
+(node:1790843) Warning: Closing file descriptor 23 on garbage collection
+ERROR:  4 Error in template ZkDacChainV9_423 line: 227
+
+07:12:09 A3-23 180 attack other_agents_note blocked circuit ZkDacChainV9 L227
+(node:1790843) Warning: Closing file descriptor 23 on garbage collection
+07:12:26 A3-23 190 revoke  
+07:13:00 A3-23 260 attack after_revocation blocked gate ZkDacGateV9.StaleRevokedRoot
+07:13:00 A3-23 done items 24 / 24 spent 149 / 187 success true attacks blocked 4 / 4 {"all_attacks_blocked":true,"spend_le_B":true}
