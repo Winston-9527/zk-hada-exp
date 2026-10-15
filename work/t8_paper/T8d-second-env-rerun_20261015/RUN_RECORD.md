@@ -4,3 +4,5 @@
 - R3 env 2: `bash run_t5s.sh results/env2/t5s 8561`, 05:10:49–05:47:35 UTC; port 8561 checked free before the start.
 - Comparison: `python3 compare.py > results/compare.json` (R1 and a raw diff of R3); the judgment-only comparison of R3 was written by inline Python to `results/compare_R3_judgments.json`.
 - `results/*/t5s/state/` (anvil state, credentials with secret keys) is not committed.
+- **Correction (2026-10-15).** Commit 9a3f1d0 accidentally included `results/mac/t5s/state/{creds,state}.json`, because the ignore pattern `results/*/state/` did not match the deeper path. The next commit removes them and fixes the pattern (`results/**/state/`).
+  - Exposure: the keys in `creds.json` are test identities derived deterministically from names and seeds in the public code (`sha256("t5-node-" + name)`, the registration helper's fixed human keys). They are reproducible from the repository and were never secret. History was not rewritten.
