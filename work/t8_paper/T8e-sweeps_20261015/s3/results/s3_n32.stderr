@@ -1,0 +1,30 @@
+08:00:35 N32 creds 32 by D 1/1/4/26
+08:00:36 N32 setup done 1 s
+08:00:37 N32 action 0 D 1 status 1 gas 583852
+08:00:38 N32 action 1 D 2 status 1 gas 564402
+08:00:41 N32 action 2 D 3 status 1 gas 572154
+08:00:44 N32 action 3 D 4 status 1 gas 606948
+08:00:45 N32 action 4 D 1 status 1 gas 556650
+08:00:47 N32 action 5 D 2 status 1 gas 591456
+08:00:49 N32 action 6 D 3 status 1 gas 599220
+08:00:52 N32 action 7 D 4 status 1 gas 634050
+08:00:53 N32 action 8 D 1 status 1 gas 556626
+08:00:55 N32 action 9 D 2 status 1 gas 591456
+       21.59 real       133.48 user         6.12 sys
+          4150870016  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             2123992  page reclaims
+                 176  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                1148  messages sent
+                1183  messages received
+                   2  signals received
+                3024  voluntary context switches
+              292104  involuntary context switches
+       1230581506877  instructions retired
+        594804017490  cycles elapsed
+          4224168744  peak memory footprint
